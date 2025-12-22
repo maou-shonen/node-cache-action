@@ -1,0 +1,40 @@
+{
+  "name": "js-cache-action",
+  "version": "0.1.0",
+  "description": "Zero-config cache for Node.js dependencies (npm/pnpm/yarn/bun)",
+  "type": "module",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "build": "npm run build:main && npm run build:post",
+    "build:main": "ncc build src/main.ts -o dist/main --source-map --license licenses.txt",
+    "build:post": "ncc build src/cache-save.ts -o dist/cache-save --source-map --license licenses.txt",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "all": "npm run format && npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "keywords": ["actions", "node", "cache", "npm", "pnpm", "yarn", "bun"],
+  "author": "maou-shonen",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/cache": "^4.0.0",
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/glob": "^0.5.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.2",
+    "@vercel/ncc": "^0.38.3",
+    "@vitest/coverage-v8": "^2.1.8",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
