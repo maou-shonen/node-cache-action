@@ -36,6 +36,74 @@ jobs:
         uses: ./
         id: cache
 
+      - name: Verify detection outputs
+        run: |
+          echo "=== Detection Outputs ==="
+          echo "Package Manager: ${{ steps.cache.outputs.package-manager }}"
+          echo "Lockfile: ${{ steps.cache.outputs.lockfile }}"
+          echo "Cache Key: ${{ steps.cache.outputs.cache-key }}"
+          echo "Cache Paths:"
+          echo "${{ steps.cache.outputs.cache-paths }}"
+          echo ""
+          
+          # Verify package manager detection
+          if [ "${{ steps.cache.outputs.package-manager }}" != "${{ matrix.pm }}" ]; then
+            echo "❌ Expected package-manager: ${{ matrix.pm }}"
+            echo "❌ Got: ${{ steps.cache.outputs.package-manager }}"
+            exit 1
+          fi
+          echo "✓ Package manager correctly detected: ${{ matrix.pm }}"
+          
+          # Verify lockfile detection
+          case "${{ matrix.pm }}" in
+            npm)
+              expected_lockfile="package-lock.json"
+              ;;
+            pnpm)
+              expected_lockfile="pnpm-lock.yaml"
+              ;;
+            yarn)
+              expected_lockfile="yarn.lock"
+              ;;
+            bun)
+              expected_lockfile="bun.lockb"
+              ;;
+          esac
+          
+          if [ "${{ steps.cache.outputs.lockfile }}" != "$expected_lockfile" ]; then
+            echo "❌ Expected lockfile: $expected_lockfile"
+            echo "❌ Got: ${{ steps.cache.outputs.lockfile }}"
+            exit 1
+          fi
+          echo "✓ Lockfile correctly detected: $expected_lockfile"
+          
+          # Verify cache paths contain expected directories
+          cache_paths="${{ steps.cache.outputs.cache-paths }}"
+          case "${{ matrix.pm }}" in
+            npm)
+              echo "$cache_paths" | grep -q "~/.npm" || { echo "❌ Cache paths missing ~/.npm"; exit 1; }
+              ;;
+            pnpm)
+              echo "$cache_paths" | grep -q "~/.local/share/pnpm/store" || { echo "❌ Cache paths missing ~/.local/share/pnpm/store"; exit 1; }
+              ;;
+            yarn)
+              echo "$cache_paths" | grep -q "~/.cache/yarn" || { echo "❌ Cache paths missing ~/.cache/yarn"; exit 1; }
+              ;;
+            bun)
+              echo "$cache_paths" | grep -q "~/.bun/install/cache" || { echo "❌ Cache paths missing ~/.bun/install/cache"; exit 1; }
+              ;;
+          esac
+          echo "$cache_paths" | grep -q "node_modules" || { echo "❌ Cache paths missing node_modules"; exit 1; }
+          echo "✓ Cache paths correctly configured"
+          
+          # Verify cache key format
+          if [ -z "${{ steps.cache.outputs.cache-key }}" ]; then
+            echo "❌ Cache key is empty"
+            exit 1
+          fi
+          echo "${{ steps.cache.outputs.cache-key }}" | grep -q "^${{ matrix.pm }}-" || { echo "❌ Cache key doesn't start with PM name"; exit 1; }
+          echo "✓ Cache key format is valid"
+
       - name: Verify cache miss on first run
         run: |
           if [ "${{ steps.cache.outputs.cache-hit }}" == "true" ]; then
@@ -58,10 +126,76 @@ jobs:
           [ -f node_modules/ms/package.json ] || { echo "❌ Dependencies not installed"; exit 1; }
           echo "✓ Dependencies installed successfully"
 
+  test-multiple-lockfiles:
+    name: Test lockfile priority - ${{ matrix.scenario.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        scenario:
+          - name: "bun > pnpm"
+            files: "bun.lockb pnpm-lock.yaml"
+            expected: "bun"
+            expected_lockfile: "bun.lockb"
+          - name: "pnpm > yarn"
+            files: "pnpm-lock.yaml yarn.lock"
+            expected: "pnpm"
+            expected_lockfile: "pnpm-lock.yaml"
+          - name: "yarn > npm"
+            files: "yarn.lock package-lock.json"
+            expected: "yarn"
+            expected_lockfile: "yarn.lock"
+          - name: "bun > npm"
+            files: "bun.lockb package-lock.json"
+            expected: "bun"
+            expected_lockfile: "bun.lockb"
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: Create multiple lockfiles
+        run: |
+          touch ${{ matrix.scenario.files }}
+          echo "Created lockfiles: ${{ matrix.scenario.files }}"
+          ls -la *.lock* 2>/dev/null || true
+      
+      - name: Run action with multiple lockfiles
+        uses: ./
+        id: cache
+      
+      - name: Verify priority order
+        run: |
+          echo "Expected: ${{ matrix.scenario.expected }}"
+          echo "Got: ${{ steps.cache.outputs.package-manager }}"
+          
+          if [ "${{ steps.cache.outputs.package-manager }}" != "${{ matrix.scenario.expected }}" ]; then
+            echo "❌ Priority order incorrect!"
+            echo "Expected package manager: ${{ matrix.scenario.expected }}"
+            echo "Got: ${{ steps.cache.outputs.package-manager }}"
+            exit 1
+          fi
+          
+          if [ "${{ steps.cache.outputs.lockfile }}" != "${{ matrix.scenario.expected_lockfile }}" ]; then
+            echo "❌ Wrong lockfile selected!"
+            echo "Expected: ${{ matrix.scenario.expected_lockfile }}"
+            echo "Got: ${{ steps.cache.outputs.lockfile }}"
+            exit 1
+          fi
+          
+          echo "✓ Priority order correct: ${{ matrix.scenario.expected }} selected"
+
   test-no-lockfile:
     name: Test without lockfile
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Verify action skips gracefully without lockfile
+      - name: Run action without lockfile
         uses: ./
+        id: cache
+      
+      - name: Verify graceful handling
+        run: |
+          # When no lockfile exists, package-manager output should be empty
+          if [ -n "${{ steps.cache.outputs.package-manager }}" ]; then
+            echo "❌ Expected empty package-manager, got: ${{ steps.cache.outputs.package-manager }}"
+            exit 1
+          fi
+          echo "✓ Action handled no-lockfile scenario gracefully"

@@ -9,6 +9,18 @@ outputs:
   cache-hit:
     description: 'A boolean value to indicate an exact match was found for the cache key'
     value: ${{ steps.cache.outputs.cache-hit }}
+  package-manager:
+    description: 'Detected package manager (npm, pnpm, yarn, or bun)'
+    value: ${{ steps.detect.outputs.package-manager }}
+  lockfile:
+    description: 'Detected lockfile path'
+    value: ${{ steps.detect.outputs.lockfile }}
+  cache-paths:
+    description: 'Cache paths being used'
+    value: ${{ steps.detect.outputs.cache-paths }}
+  cache-key:
+    description: 'Generated cache key'
+    value: ${{ steps.cache-key.outputs.key }}
 
 runs:
   using: 'composite'

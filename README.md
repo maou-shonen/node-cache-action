@@ -33,10 +33,19 @@ Cache key: `{pm}-{runner.os}-{lockfile-hash}`
 
 ## Outputs
 
-- `cache-hit`: `true` if cache was found
+| Output | Description | Example |
+|--------|-------------|---------|
+| `cache-hit` | `true` if cache was restored | `true` |
+| `package-manager` | Detected package manager | `npm`, `pnpm`, `yarn`, `bun` |
+| `lockfile` | Detected lockfile path | `package-lock.json` |
+| `cache-paths` | Cache paths being used | `~/.npm\nnode_modules` |
+| `cache-key` | Generated cache key | `npm-Linux-abc123...` |
 
 ```yaml
 - uses: maou-shonen/node-cache-action@v1
   id: cache
-- run: echo "${{ steps.cache.outputs.cache-hit }}"
+- run: |
+    echo "Cache hit: ${{ steps.cache.outputs.cache-hit }}"
+    echo "Package manager: ${{ steps.cache.outputs.package-manager }}"
+    echo "Cache key: ${{ steps.cache.outputs.cache-key }}"
 ```
