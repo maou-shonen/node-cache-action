@@ -20,7 +20,7 @@ outputs:
     value: ${{ steps.detect.outputs.cache-paths }}
   cache-key:
     description: 'Generated cache key'
-    value: ${{ steps.cache-key.outputs.key }}
+    value: ${{ steps.cachekey.outputs.key }}
 
 runs:
   using: 'composite'
@@ -93,7 +93,7 @@ runs:
         fi
 
     - name: Generate cache key
-      id: cache-key
+      id: cachekey
       if: steps.detect.outputs.found == 'true'
       shell: bash
       run: |
@@ -108,6 +108,6 @@ runs:
       uses: actions/cache@v4
       with:
         path: ${{ steps.detect.outputs.cache-paths }}
-        key: ${{ steps.cache-key.outputs.key }}
+        key: ${{ steps.cachekey.outputs.key }}
         restore-keys: |
           ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-
