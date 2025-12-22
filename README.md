@@ -20,14 +20,16 @@ Zero-config GitHub Action for caching Node.js dependencies.
 
 Auto-detects package manager from lockfile and caches dependencies:
 
-| Lockfile | Package Manager | Cached Directories |
-|----------|----------------|-------------------|
-| `bun.lockb` / `bun.lock` | Bun | `~/.bun`, `node_modules` |
-| `pnpm-lock.yaml` | pnpm | `~/.pnpm-store`, `node_modules` |
-| `yarn.lock` | Yarn | `~/.yarn`, `node_modules` |
+| Lockfile | Package Manager | Cached Directories (Linux/macOS) |
+|----------|----------------|----------------------------------|
+| `bun.lockb` / `bun.lock` | Bun | `~/.bun/install/cache`, `node_modules` |
+| `pnpm-lock.yaml` | pnpm | `~/.local/share/pnpm/store`, `node_modules` |
+| `yarn.lock` | Yarn | `~/.cache/yarn`, `.yarn/cache`, `node_modules` |
 | `package-lock.json` | npm | `~/.npm`, `node_modules` |
 
 Cache key: `{pm}-{runner.os}-{lockfile-hash}`
+
+**Note**: Cache paths are defaults for Linux/macOS. If you've customized cache locations via config files or environment variables, you may need to use `actions/cache` directly with your custom paths.
 
 ## Outputs
 

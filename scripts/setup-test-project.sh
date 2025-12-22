@@ -27,7 +27,7 @@ case "$PM" in
     echo "✓ Created yarn.lock"
     ;;
   bun)
-    bun install
+    bun install --lockfile-only
     echo "✓ Created bun.lockb"
     ;;
   *)

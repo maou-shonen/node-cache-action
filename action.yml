@@ -19,6 +19,19 @@ runs:
       run: |
         set -e
         
+        # Check for multiple lockfiles
+        FOUND_LOCKFILES=()
+        [ -f "bun.lockb" ] && FOUND_LOCKFILES+=("bun.lockb")
+        [ -f "bun.lock" ] && FOUND_LOCKFILES+=("bun.lock")
+        [ -f "pnpm-lock.yaml" ] && FOUND_LOCKFILES+=("pnpm-lock.yaml")
+        [ -f "yarn.lock" ] && FOUND_LOCKFILES+=("yarn.lock")
+        [ -f "package-lock.json" ] && FOUND_LOCKFILES+=("package-lock.json")
+        
+        if [ ${#FOUND_LOCKFILES[@]} -gt 1 ]; then
+          echo "::warning::Multiple lockfiles detected: ${FOUND_LOCKFILES[*]}"
+          echo "::warning::Using priority order: bun → pnpm → yarn → npm"
+        fi
+        
         # Detection order: bun → pnpm → yarn → npm
         PACKAGE_MANAGER=""
         LOCKFILE=""
@@ -27,22 +40,23 @@ runs:
         if [ -f "bun.lockb" ]; then
           PACKAGE_MANAGER="bun"
           LOCKFILE="bun.lockb"
-          CACHE_PATHS="~/.bun
+          CACHE_PATHS="~/.bun/install/cache
         node_modules"
         elif [ -f "bun.lock" ]; then
           PACKAGE_MANAGER="bun"
           LOCKFILE="bun.lock"
-          CACHE_PATHS="~/.bun
+          CACHE_PATHS="~/.bun/install/cache
         node_modules"
         elif [ -f "pnpm-lock.yaml" ]; then
           PACKAGE_MANAGER="pnpm"
           LOCKFILE="pnpm-lock.yaml"
-          CACHE_PATHS="~/.pnpm-store
+          CACHE_PATHS="~/.local/share/pnpm/store
         node_modules"
         elif [ -f "yarn.lock" ]; then
           PACKAGE_MANAGER="yarn"
           LOCKFILE="yarn.lock"
-          CACHE_PATHS="~/.yarn
+          CACHE_PATHS="~/.cache/yarn
+        .yarn/cache
         node_modules"
         elif [ -f "package-lock.json" ]; then
           PACKAGE_MANAGER="npm"
