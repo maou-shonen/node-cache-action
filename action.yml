@@ -66,12 +66,22 @@ runs:
           echo "EOF" >> $GITHUB_OUTPUT
         fi
 
+    - name: Generate cache key
+      id: cache-key
+      if: steps.detect.outputs.found == 'true'
+      shell: bash
+      run: |
+        LOCKFILE="${{ steps.detect.outputs.lockfile }}"
+        HASH=$(sha256sum "$LOCKFILE" | cut -d' ' -f1)
+        echo "hash=$HASH" >> $GITHUB_OUTPUT
+        echo "key=${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-$HASH" >> $GITHUB_OUTPUT
+
     - name: Cache dependencies
       id: cache
       if: steps.detect.outputs.found == 'true'
       uses: actions/cache@v4
       with:
         path: ${{ steps.detect.outputs.cache-paths }}
-        key: ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-${{ hashFiles(steps.detect.outputs.lockfile) }}
+        key: ${{ steps.cache-key.outputs.key }}
         restore-keys: |
           ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-
