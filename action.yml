@@ -8,106 +8,16 @@ branding:
 outputs:
   cache-hit:
     description: 'A boolean value to indicate an exact match was found for the cache key'
-    value: ${{ steps.cache.outputs.cache-hit }}
   package-manager:
     description: 'Detected package manager (npm, pnpm, yarn, or bun)'
-    value: ${{ steps.detect.outputs.package-manager }}
   lockfile:
     description: 'Detected lockfile path'
-    value: ${{ steps.detect.outputs.lockfile }}
   cache-paths:
     description: 'Cache paths being used'
-    value: ${{ steps.detect.outputs.cache-paths }}
   cache-key:
     description: 'Generated cache key'
-    value: ${{ steps.cachekey.outputs.key }}
 
 runs:
-  using: 'composite'
-  steps:
-    - name: Detect package manager and lockfile
-      id: detect
-      shell: bash
-      run: |
-        set -e
-        
-        # Check for multiple lockfiles
-        FOUND_LOCKFILES=()
-        [ -f "bun.lockb" ] && FOUND_LOCKFILES+=("bun.lockb")
-        [ -f "bun.lock" ] && FOUND_LOCKFILES+=("bun.lock")
-        [ -f "pnpm-lock.yaml" ] && FOUND_LOCKFILES+=("pnpm-lock.yaml")
-        [ -f "yarn.lock" ] && FOUND_LOCKFILES+=("yarn.lock")
-        [ -f "package-lock.json" ] && FOUND_LOCKFILES+=("package-lock.json")
-        
-        if [ ${#FOUND_LOCKFILES[@]} -gt 1 ]; then
-          echo "::warning::Multiple lockfiles detected: ${FOUND_LOCKFILES[*]}"
-          echo "::warning::Using priority order: bun → pnpm → yarn → npm"
-        fi
-        
-        # Detection order: bun → pnpm → yarn → npm
-        PACKAGE_MANAGER=""
-        LOCKFILE=""
-        CACHE_PATHS=""
-        
-        if [ -f "bun.lockb" ]; then
-          PACKAGE_MANAGER="bun"
-          LOCKFILE="bun.lockb"
-          CACHE_PATHS="~/.bun/install/cache
-        node_modules"
-        elif [ -f "bun.lock" ]; then
-          PACKAGE_MANAGER="bun"
-          LOCKFILE="bun.lock"
-          CACHE_PATHS="~/.bun/install/cache
-        node_modules"
-        elif [ -f "pnpm-lock.yaml" ]; then
-          PACKAGE_MANAGER="pnpm"
-          LOCKFILE="pnpm-lock.yaml"
-          CACHE_PATHS="~/.local/share/pnpm/store
-        node_modules"
-        elif [ -f "yarn.lock" ]; then
-          PACKAGE_MANAGER="yarn"
-          LOCKFILE="yarn.lock"
-          CACHE_PATHS="~/.cache/yarn
-        .yarn/cache
-        node_modules"
-        elif [ -f "package-lock.json" ]; then
-          PACKAGE_MANAGER="npm"
-          LOCKFILE="package-lock.json"
-          CACHE_PATHS="~/.npm
-        node_modules"
-        fi
-        
-        if [ -z "$PACKAGE_MANAGER" ]; then
-          echo "No supported lockfile found. Skip dependency cache."
-          echo "found=false" >> $GITHUB_OUTPUT
-        else
-          echo "Detected package manager: $PACKAGE_MANAGER"
-          echo "Using lockfile: $LOCKFILE"
-          echo "found=true" >> $GITHUB_OUTPUT
-          echo "package-manager=$PACKAGE_MANAGER" >> $GITHUB_OUTPUT
-          echo "lockfile=$LOCKFILE" >> $GITHUB_OUTPUT
-          # Multi-line output for cache paths
-          echo "cache-paths<<EOF" >> $GITHUB_OUTPUT
-          echo "$CACHE_PATHS" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-        fi
-
-    - name: Generate cache key
-      id: cachekey
-      if: steps.detect.outputs.found == 'true'
-      shell: bash
-      run: |
-        LOCKFILE="${{ steps.detect.outputs.lockfile }}"
-        HASH=$(sha256sum "$LOCKFILE" | cut -d' ' -f1)
-        echo "hash=$HASH" >> $GITHUB_OUTPUT
-        echo "key=${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-$HASH" >> $GITHUB_OUTPUT
-
-    - name: Cache dependencies
-      id: cache
-      if: steps.detect.outputs.found == 'true'
-      uses: actions/cache@v4
-      with:
-        path: ${{ steps.detect.outputs.cache-paths }}
-        key: ${{ steps.cachekey.outputs.key }}
-        restore-keys: |
-          ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-
+  using: 'node24'
+  main: 'dist/main/index.js'
+  post: 'dist/cache-save/index.js'
