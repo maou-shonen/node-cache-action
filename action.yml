@@ -1,0 +1,77 @@
+name: 'Node Cache Action'
+description: 'Zero-config cache for Node.js dependencies (npm/pnpm/yarn/bun)'
+author: 'maou-shonen'
+branding:
+  icon: 'package'
+  color: 'blue'
+
+outputs:
+  cache-hit:
+    description: 'A boolean value to indicate an exact match was found for the cache key'
+    value: ${{ steps.cache.outputs.cache-hit }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Detect package manager and lockfile
+      id: detect
+      shell: bash
+      run: |
+        set -e
+        
+        # Detection order: bun → pnpm → yarn → npm
+        PACKAGE_MANAGER=""
+        LOCKFILE=""
+        CACHE_PATHS=""
+        
+        if [ -f "bun.lockb" ]; then
+          PACKAGE_MANAGER="bun"
+          LOCKFILE="bun.lockb"
+          CACHE_PATHS="~/.bun
+        node_modules"
+        elif [ -f "bun.lock" ]; then
+          PACKAGE_MANAGER="bun"
+          LOCKFILE="bun.lock"
+          CACHE_PATHS="~/.bun
+        node_modules"
+        elif [ -f "pnpm-lock.yaml" ]; then
+          PACKAGE_MANAGER="pnpm"
+          LOCKFILE="pnpm-lock.yaml"
+          CACHE_PATHS="~/.pnpm-store
+        node_modules"
+        elif [ -f "yarn.lock" ]; then
+          PACKAGE_MANAGER="yarn"
+          LOCKFILE="yarn.lock"
+          CACHE_PATHS="~/.yarn
+        node_modules"
+        elif [ -f "package-lock.json" ]; then
+          PACKAGE_MANAGER="npm"
+          LOCKFILE="package-lock.json"
+          CACHE_PATHS="~/.npm
+        node_modules"
+        fi
+        
+        if [ -z "$PACKAGE_MANAGER" ]; then
+          echo "No supported lockfile found. Skip dependency cache."
+          echo "found=false" >> $GITHUB_OUTPUT
+        else
+          echo "Detected package manager: $PACKAGE_MANAGER"
+          echo "Using lockfile: $LOCKFILE"
+          echo "found=true" >> $GITHUB_OUTPUT
+          echo "package-manager=$PACKAGE_MANAGER" >> $GITHUB_OUTPUT
+          echo "lockfile=$LOCKFILE" >> $GITHUB_OUTPUT
+          # Multi-line output for cache paths
+          echo "cache-paths<<EOF" >> $GITHUB_OUTPUT
+          echo "$CACHE_PATHS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Cache dependencies
+      id: cache
+      if: steps.detect.outputs.found == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ${{ steps.detect.outputs.cache-paths }}
+        key: ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-${{ hashFiles(steps.detect.outputs.lockfile) }}
+        restore-keys: |
+          ${{ steps.detect.outputs.package-manager }}-${{ runner.os }}-

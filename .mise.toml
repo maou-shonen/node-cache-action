@@ -1,0 +1,6 @@
+[tools]
+act = "latest"
+
+[tasks.test]
+description = "Runs tests"
+run = "act -W .github/workflows/test.yml"

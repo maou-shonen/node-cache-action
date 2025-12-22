@@ -1,0 +1,66 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test with ${{ matrix.pm }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        pm: [npm, pnpm, yarn, bun]
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v4
+        if: matrix.pm == 'pnpm'
+        with:
+          version: 10
+
+      - uses: oven-sh/setup-bun@v2
+        if: matrix.pm == 'bun'
+
+      - uses: actions/setup-node@v4
+        if: matrix.pm != 'bun'
+        with:
+          node-version: 24
+
+      - name: Setup test project
+        run: ./scripts/setup-test-project.sh ${{ matrix.pm }}
+
+      - name: First run - cache miss
+        uses: ./
+
+      - name: Install dependencies
+        run: |
+          case "${{ matrix.pm }}" in
+            npm) npm ci ;;
+            pnpm) pnpm install --frozen-lockfile ;;
+            yarn) yarn install --immutable ;;
+            bun) bun install --frozen-lockfile ;;
+          esac
+
+      - name: Remove node_modules
+        run: rm -rf node_modules
+
+      - name: Second run - should restore from cache
+        uses: ./
+        id: cache
+
+      - name: Verify cache restored node_modules
+        run: |
+          [ "${{ steps.cache.outputs.cache-hit }}" == "true" ] || { echo "❌ Expected cache hit"; exit 1; }
+          [ -f node_modules/ms/package.json ] || { echo "❌ node_modules not restored"; exit 1; }
+          echo "✓ Cache hit and node_modules restored"
+
+  test-no-lockfile:
+    name: Test without lockfile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify action skips gracefully without lockfile
+        uses: ./
