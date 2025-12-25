@@ -59,9 +59,13 @@ async function getDynamicCachePaths(packageManager: PackageManager): Promise<str
     }
 
     case 'bun': {
-      // Bun doesn't have a config command yet, use default
-      // but include node_modules
-      paths.push('~/.bun/install/cache', 'node_modules')
+      const cacheDir = await execCommand('bun', ['pm', 'cache'])
+      if (cacheDir) {
+        paths.push(cacheDir, 'node_modules')
+      } else {
+        // Fallback for older Bun versions
+        paths.push('~/.bun/install/cache', 'node_modules')
+      }
       break
     }
   }

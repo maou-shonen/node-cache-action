@@ -48,8 +48,9 @@ async function run(): Promise<void> {
       core.info(`Cache restored from key: ${restoredKey}`)
       const isExactMatch = restoredKey === cacheKey
       core.setOutput(OUTPUT_KEYS.CACHE_HIT, isExactMatch.toString())
-
+      // Save cache-hit state for post action (only if exact match)
       if (isExactMatch) {
+        core.saveState(STATE_KEYS.CACHE_HIT, 'true')
         core.info('Cache hit! Exact match found.')
       } else {
         core.info('Cache partial hit! Using restored cache as base.')

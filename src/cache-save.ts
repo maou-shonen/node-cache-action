@@ -18,7 +18,7 @@ async function run(): Promise<void> {
 
     // Check if cache was hit (exact match)
     // If it was an exact match, we don't need to save
-    const cacheHit = core.getInput('cache-hit') === 'true'
+    const cacheHit = core.getState(STATE_KEYS.CACHE_HIT) === 'true'
     if (cacheHit) {
       core.info('Cache hit occurred, skipping cache save')
       return

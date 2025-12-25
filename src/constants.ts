@@ -34,6 +34,7 @@ export const STATE_KEYS = {
   LOCKFILE: 'lockfile',
   CACHE_PATHS: 'cache-paths',
   CACHE_KEY: 'cache-key',
+  CACHE_HIT: 'cache-hit',
 } as const
 
 export const OUTPUT_KEYS = {
