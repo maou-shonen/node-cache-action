@@ -6,8 +6,21 @@ import { expandPaths, expandTilde, fileExists, hashFile } from '../src/utils.js'
 
 describe('utils', () => {
   describe('fileExists', () => {
+    let tempDir: string
+    let testFile: string
+
+    beforeEach(async () => {
+      tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'test-'))
+      testFile = path.join(tempDir, 'exists.txt')
+      await fs.writeFile(testFile, 'test')
+    })
+
+    afterEach(async () => {
+      await fs.rm(tempDir, { recursive: true, force: true })
+    })
+
     it('should return true for existing file', async () => {
-      const result = await fileExists(__filename)
+      const result = await fileExists(testFile)
       expect(result).toBe(true)
     })
 
