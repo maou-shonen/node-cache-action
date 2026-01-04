@@ -38,24 +38,29 @@ async function execCommand(command: string, args: string[]): Promise<string> {
   let stdout = ''
   let stderr = ''
 
-  const exitCode = await exec.exec(command, args, {
-    silent: true,
-    ignoreReturnCode: true,
-    listeners: {
-      stdout: (data: Buffer) => {
-        stdout += data.toString()
+  try {
+    const exitCode = await exec.exec(command, args, {
+      silent: true,
+      ignoreReturnCode: true,
+      listeners: {
+        stdout: (data: Buffer) => {
+          stdout += data.toString()
+        },
+        stderr: (data: Buffer) => {
+          stderr += data.toString()
+        },
       },
-      stderr: (data: Buffer) => {
-        stderr += data.toString()
-      },
-    },
-  })
+    })
 
-  if (exitCode !== 0) {
-    core.debug(`Command failed: ${command} ${args.join(' ')}`)
-    core.debug(`stderr: ${stderr}`)
+    if (exitCode !== 0) {
+      core.debug(`Command failed: ${command} ${args.join(' ')}`)
+      core.debug(`stderr: ${stderr}`)
+      return ''
+    }
+
+    return stdout.trim()
+  } catch {
+    core.debug(`Command not found or failed to execute: ${command}`)
     return ''
   }
-
-  return stdout.trim()
 }

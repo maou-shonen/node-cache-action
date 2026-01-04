@@ -86435,24 +86435,30 @@ async function getDynamicCachePath(packageManager) {
 async function execCommand(command, args) {
     let stdout = '';
     let stderr = '';
-    const exitCode = await exec.exec(command, args, {
-        silent: true,
-        ignoreReturnCode: true,
-        listeners: {
-            stdout: (data) => {
-                stdout += data.toString();
+    try {
+        const exitCode = await exec.exec(command, args, {
+            silent: true,
+            ignoreReturnCode: true,
+            listeners: {
+                stdout: (data) => {
+                    stdout += data.toString();
+                },
+                stderr: (data) => {
+                    stderr += data.toString();
+                },
             },
-            stderr: (data) => {
-                stderr += data.toString();
-            },
-        },
-    });
-    if (exitCode !== 0) {
-        core.debug(`Command failed: ${command} ${args.join(' ')}`);
-        core.debug(`stderr: ${stderr}`);
+        });
+        if (exitCode !== 0) {
+            core.debug(`Command failed: ${command} ${args.join(' ')}`);
+            core.debug(`stderr: ${stderr}`);
+            return '';
+        }
+        return stdout.trim();
+    }
+    catch {
+        core.debug(`Command not found or failed to execute: ${command}`);
         return '';
     }
-    return stdout.trim();
 }
 
 ;// CONCATENATED MODULE: ./src/detector.ts
