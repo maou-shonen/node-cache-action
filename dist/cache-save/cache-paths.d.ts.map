@@ -1,1 +1,1 @@
-{"version":3,"file":"","sourceRoot":"","sources":["file:///home/shonen/js-cache-action/src/cache-paths.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,gBAAgB,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAA;AAGtE;;;GAGG;AACH,wBAAsB,aAAa,CAAC,cAAc,EAAE,cAAc,GAAG,OAAO,CAAC,gBAAgB,CAAC,CAiB7F"}
+{"version":3,"file":"","sourceRoot":"","sources":["file:///home/shonen/node-cache-action/src/cache-paths.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,gBAAgB,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAA;AAGtE,wBAAsB,aAAa,CAAC,cAAc,EAAE,cAAc,GAAG,OAAO,CAAC,gBAAgB,CAAC,CAU7F"}

@@ -1,19 +1,15 @@
 export type PackageManager = 'npm' | 'pnpm' | 'yarn' | 'bun'
 
-export interface LockfileInfo {
-  packageManager: PackageManager
-  lockfile: string
-}
-
-export interface DetectionResult extends LockfileInfo {
-  found: boolean
-  lockfiles?: string[]
-}
+export type DetectionResult =
+  | { found: false }
+  | { found: true; packageManager: PackageManager; lockfile: string; lockfiles: string[] }
 
 export interface CachePathsResult {
   paths: string[]
   source: 'dynamic' | 'fallback'
 }
+
+export const PACKAGE_MANAGER_PRIORITY: PackageManager[] = ['bun', 'pnpm', 'yarn', 'npm']
 
 export const LOCKFILE_PATTERNS: Record<PackageManager, string[]> = {
   bun: ['bun.lockb', 'bun.lock'],

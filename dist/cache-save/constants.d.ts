@@ -1,16 +1,17 @@
 export type PackageManager = 'npm' | 'pnpm' | 'yarn' | 'bun';
-export interface LockfileInfo {
+export type DetectionResult = {
+    found: false;
+} | {
+    found: true;
     packageManager: PackageManager;
     lockfile: string;
-}
-export interface DetectionResult extends LockfileInfo {
-    found: boolean;
-    lockfiles?: string[];
-}
+    lockfiles: string[];
+};
 export interface CachePathsResult {
     paths: string[];
     source: 'dynamic' | 'fallback';
 }
+export declare const PACKAGE_MANAGER_PRIORITY: PackageManager[];
 export declare const LOCKFILE_PATTERNS: Record<PackageManager, string[]>;
 export declare const DEFAULT_CACHE_PATHS: Record<PackageManager, string[]>;
 export declare const STATE_KEYS: {
@@ -18,6 +19,7 @@ export declare const STATE_KEYS: {
     readonly LOCKFILE: "lockfile";
     readonly CACHE_PATHS: "cache-paths";
     readonly CACHE_KEY: "cache-key";
+    readonly CACHE_HIT: "cache-hit";
 };
 export declare const OUTPUT_KEYS: {
     readonly CACHE_HIT: "cache-hit";

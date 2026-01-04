@@ -1,5 +1,7 @@
 [tools]
+node = "lts"
 act = "latest"
+pnpm = "latest"
 
 [tasks.test]
 description = "Runs tests"
