@@ -44,7 +44,7 @@ jobs:
           cp fixtures/package.json .
           cp fixtures/${{ matrix.pm == 'npm' && 'package-lock.json' || matrix.pm == 'pnpm' && 'pnpm-lock.yaml' || matrix.pm == 'yarn' && 'yarn.lock' || 'bun.lock' }} .
 
-      - uses: maou-shonen/node-cache-action@${{ inputs.ref }}
+      - uses: maou-shonen/node-cache-action@${{ github.event.inputs.ref }}
         id: cache
 
       - name: Output cache status
