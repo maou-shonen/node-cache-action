@@ -2,10 +2,6 @@ name: Integration Test
 
 on:
   workflow_dispatch:
-    inputs:
-      ref:
-        description: "Action ref to test (e.g. v1, main, sha)"
-        default: "v1"
 
 jobs:
   test:
@@ -17,12 +13,16 @@ jobs:
         pm: [npm, pnpm, yarn, bun]
         include:
           - pm: npm
+            lockfile: package-lock.json
             install: npm ci
           - pm: pnpm
+            lockfile: pnpm-lock.yaml
             install: pnpm install --frozen-lockfile
           - pm: yarn
+            lockfile: yarn.lock
             install: yarn install --immutable
           - pm: bun
+            lockfile: bun.lock
             install: bun install --frozen-lockfile
     steps:
       - uses: actions/checkout@v4
@@ -42,9 +42,9 @@ jobs:
         run: |
           rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
           cp fixtures/package.json .
-          cp fixtures/${{ matrix.pm == 'npm' && 'package-lock.json' || matrix.pm == 'pnpm' && 'pnpm-lock.yaml' || matrix.pm == 'yarn' && 'yarn.lock' || 'bun.lock' }} .
+          cp fixtures/${{ matrix.lockfile }} .
 
-      - uses: maou-shonen/node-cache-action@${{ github.event.inputs.ref }}
+      - uses: maou-shonen/node-cache-action@v1
         id: cache
 
       - name: Output cache status
