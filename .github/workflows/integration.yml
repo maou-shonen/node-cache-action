@@ -1,0 +1,58 @@
+name: Integration Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Action ref to test (e.g. v1, main, sha)"
+        default: "v1"
+
+jobs:
+  test:
+    name: ${{ matrix.pm }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pm: [npm, pnpm, yarn, bun]
+        include:
+          - pm: npm
+            install: npm ci
+          - pm: pnpm
+            install: pnpm install --frozen-lockfile
+          - pm: yarn
+            install: yarn install --immutable
+          - pm: bun
+            install: bun install --frozen-lockfile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        if: matrix.pm == 'pnpm'
+
+      - uses: oven-sh/setup-bun@v2
+        if: matrix.pm == 'bun'
+
+      - uses: actions/setup-node@v4
+        if: matrix.pm != 'bun'
+        with:
+          node-version: 24
+
+      - name: Setup test project
+        run: |
+          rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
+          cp fixtures/package.json .
+          cp fixtures/${{ matrix.pm == 'npm' && 'package-lock.json' || matrix.pm == 'pnpm' && 'pnpm-lock.yaml' || matrix.pm == 'yarn' && 'yarn.lock' || 'bun.lock' }} .
+
+      - uses: maou-shonen/node-cache-action@${{ inputs.ref }}
+        id: cache
+
+      - name: Output cache status
+        run: |
+          echo "package-manager: ${{ steps.cache.outputs.package-manager }}"
+          echo "lockfile: ${{ steps.cache.outputs.lockfile }}"
+          echo "cache-hit: ${{ steps.cache.outputs.cache-hit }}"
+          echo "cache-key: ${{ steps.cache.outputs.cache-key }}"
+
+      - run: ${{ matrix.install }}
+      - run: test -f node_modules/ms/package.json
