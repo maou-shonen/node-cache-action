@@ -43,6 +43,7 @@ jobs:
 
       - name: Setup test project
         run: |
+          rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
           cp fixtures/package.json .
           cp fixtures/${{ matrix.lockfile }} .
 
@@ -91,6 +92,7 @@ jobs:
 
       - name: Setup test project
         run: |
+          rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
           cp fixtures/package.json .
           cp fixtures/${{ matrix.lockfile }} .
 
@@ -119,7 +121,10 @@ jobs:
             expected: yarn
     steps:
       - uses: actions/checkout@v4
-      - run: touch ${{ matrix.files }}
+      - name: Setup test lockfiles
+        run: |
+          rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
+          touch ${{ matrix.files }}
       - uses: ./
         id: cache
       - run: '[ "${{ steps.cache.outputs.package-manager }}" = "${{ matrix.expected }}" ]'
@@ -128,6 +133,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Remove all lockfiles
+        run: rm -f pnpm-lock.yaml package-lock.json yarn.lock bun.lock bun.lockb
       - uses: ./
         id: cache
       - run: '[ -z "${{ steps.cache.outputs.package-manager }}" ]'
