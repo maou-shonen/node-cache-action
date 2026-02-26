@@ -1,5 +1,11 @@
 name: Integration Test
 
+# Why this workflow exists:
+# - test.yml uses `./` (local dist/) to validate code changes during PR
+# - This workflow uses `@v1` (published release) to validate the release itself
+# - Ensures the v1 tag points to correct commit with working dist/ files
+# - Run manually after creating/updating releases to verify real-world usage
+
 on:
   workflow_dispatch:
 
