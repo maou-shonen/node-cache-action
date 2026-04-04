@@ -11,9 +11,9 @@
     "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
   },
   "dependencies": {
-    "@actions/cache": "^5.0.1",
-    "@actions/core": "^2.0.1",
-    "@actions/exec": "^2.0.0"
+    "@actions/cache": "^6.0.0",
+    "@actions/core": "^3.0.0",
+    "@actions/exec": "^3.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
@@ -21,6 +21,12 @@
     "@vercel/ncc": "^0.38.4",
     "typescript": "^5.9.3",
     "vitest": "^4.0.16"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch@<3.1.4": "~3.1.4",
+      "fast-xml-parser@<5.5.7": "^5.5.7"
+    }
   },
   "packageManager": "pnpm@10.27.0"
 }
