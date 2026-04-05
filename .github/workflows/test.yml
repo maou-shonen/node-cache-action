@@ -36,7 +36,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         if: matrix.pm == 'bun'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6
         if: matrix.pm != 'bun'
         with:
           node-version: 24
@@ -85,7 +85,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         if: matrix.pm == 'bun'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6
         if: matrix.pm != 'bun'
         with:
           node-version: 24
