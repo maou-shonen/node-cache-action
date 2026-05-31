@@ -28,5 +28,5 @@
       "fast-xml-parser@<5.5.7": "^5.5.7"
     }
   },
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@10.34.1"
 }
