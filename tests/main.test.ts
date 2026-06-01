@@ -60,6 +60,7 @@ vi.mock('../src/utils.js', () => ({
 
 describe('main', () => {
   beforeEach(() => {
+    vi.clearAllMocks()
     vi.resetModules()
   })
 

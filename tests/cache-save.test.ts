@@ -1,13 +1,16 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
-const mockSaveCache = vi.fn()
+const { mockSaveCache, mockInfo, mockWarning, mockGetState } = vi.hoisted(() => ({
+  mockSaveCache: vi.fn(),
+  mockInfo: vi.fn(),
+  mockWarning: vi.fn(),
+  mockGetState: vi.fn(),
+}))
+
 vi.mock('@actions/cache', () => ({
   saveCache: mockSaveCache,
 }))
 
-const mockInfo = vi.fn()
-const mockWarning = vi.fn()
-const mockGetState = vi.fn()
 vi.mock('@actions/core', () => ({
   info: mockInfo,
   warning: mockWarning,
@@ -16,6 +19,7 @@ vi.mock('@actions/core', () => ({
 
 describe('cache-save', () => {
   beforeEach(() => {
+    vi.clearAllMocks()
     vi.resetModules()
   })
 
