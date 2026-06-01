@@ -32,6 +32,8 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         if: matrix.pm == 'pnpm'
+        with:
+          version: latest
 
       - uses: oven-sh/setup-bun@v2
         if: matrix.pm == 'bun'
@@ -81,6 +83,8 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         if: matrix.pm == 'pnpm'
+        with:
+          version: latest
 
       - uses: oven-sh/setup-bun@v2
         if: matrix.pm == 'bun'

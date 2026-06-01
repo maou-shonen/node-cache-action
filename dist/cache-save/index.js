@@ -1,7 +1,7 @@
 import './sourcemap-register.cjs';import { createRequire as __WEBPACK_EXTERNAL_createRequire } from "module";
 /******/ var __webpack_modules__ = ({
 
-/***/ 9113:
+/***/ 7889:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -58,7 +58,7 @@ exports.ClientStreamingCall = ClientStreamingCall;
 
 /***/ }),
 
-/***/ 7961:
+/***/ 1409:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -151,7 +151,7 @@ exports.Deferred = Deferred;
 
 /***/ }),
 
-/***/ 7090:
+/***/ 6826:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -207,7 +207,7 @@ exports.DuplexStreamingCall = DuplexStreamingCall;
 
 /***/ }),
 
-/***/ 5980:
+/***/ 4420:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 var __webpack_unused_export__;
@@ -216,50 +216,50 @@ var __webpack_unused_export__;
 // Note: we do not use `export * from ...` to help tree shakers,
 // webpack verbose output hints that this should be useful
 __webpack_unused_export__ = ({ value: true });
-var service_type_1 = __nccwpck_require__(1636);
+var service_type_1 = __nccwpck_require__(6892);
 Object.defineProperty(exports, "C0", ({ enumerable: true, get: function () { return service_type_1.ServiceType; } }));
-var reflection_info_1 = __nccwpck_require__(9768);
+var reflection_info_1 = __nccwpck_require__(2496);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return reflection_info_1.readMethodOptions; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return reflection_info_1.readMethodOption; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return reflection_info_1.readServiceOption; } });
-var rpc_error_1 = __nccwpck_require__(5908);
+var rpc_error_1 = __nccwpck_require__(8636);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_error_1.RpcError; } });
-var rpc_options_1 = __nccwpck_require__(1816);
+var rpc_options_1 = __nccwpck_require__(8576);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_options_1.mergeRpcOptions; } });
-var rpc_output_stream_1 = __nccwpck_require__(7374);
+var rpc_output_stream_1 = __nccwpck_require__(2726);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_output_stream_1.RpcOutputStreamController; } });
-var test_transport_1 = __nccwpck_require__(8330);
+var test_transport_1 = __nccwpck_require__(9122);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return test_transport_1.TestTransport; } });
-var deferred_1 = __nccwpck_require__(7961);
+var deferred_1 = __nccwpck_require__(1409);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return deferred_1.Deferred; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return deferred_1.DeferredState; } });
-var duplex_streaming_call_1 = __nccwpck_require__(7090);
+var duplex_streaming_call_1 = __nccwpck_require__(6826);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return duplex_streaming_call_1.DuplexStreamingCall; } });
-var client_streaming_call_1 = __nccwpck_require__(9113);
+var client_streaming_call_1 = __nccwpck_require__(7889);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return client_streaming_call_1.ClientStreamingCall; } });
-var server_streaming_call_1 = __nccwpck_require__(2069);
+var server_streaming_call_1 = __nccwpck_require__(6173);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return server_streaming_call_1.ServerStreamingCall; } });
-var unary_call_1 = __nccwpck_require__(368);
+var unary_call_1 = __nccwpck_require__(9288);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return unary_call_1.UnaryCall; } });
-var rpc_interceptor_1 = __nccwpck_require__(8854);
+var rpc_interceptor_1 = __nccwpck_require__(2849);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_interceptor_1.stackIntercept; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_interceptor_1.stackDuplexStreamingInterceptors; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_interceptor_1.stackClientStreamingInterceptors; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_interceptor_1.stackServerStreamingInterceptors; } });
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return rpc_interceptor_1.stackUnaryInterceptors; } });
-var server_call_context_1 = __nccwpck_require__(7072);
+var server_call_context_1 = __nccwpck_require__(3352);
 __webpack_unused_export__ = ({ enumerable: true, get: function () { return server_call_context_1.ServerCallContextController; } });
 
 
 /***/ }),
 
-/***/ 9768:
+/***/ 2496:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.readServiceOption = exports.readMethodOption = exports.readMethodOptions = exports.normalizeMethodInfo = void 0;
-const runtime_1 = __nccwpck_require__(8140);
+const runtime_1 = __nccwpck_require__(8886);
 /**
  * Turns PartialMethodInfo into MethodInfo.
  */
@@ -317,7 +317,7 @@ exports.readServiceOption = readServiceOption;
 
 /***/ }),
 
-/***/ 5908:
+/***/ 8636:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -360,13 +360,13 @@ exports.RpcError = RpcError;
 
 /***/ }),
 
-/***/ 8854:
+/***/ 2849:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.stackDuplexStreamingInterceptors = exports.stackClientStreamingInterceptors = exports.stackServerStreamingInterceptors = exports.stackUnaryInterceptors = exports.stackIntercept = void 0;
-const runtime_1 = __nccwpck_require__(8140);
+const runtime_1 = __nccwpck_require__(8886);
 /**
  * Creates a "stack" of of all interceptors specified in the given `RpcOptions`.
  * Used by generated client implementations.
@@ -441,13 +441,13 @@ exports.stackDuplexStreamingInterceptors = stackDuplexStreamingInterceptors;
 
 /***/ }),
 
-/***/ 1816:
+/***/ 8576:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.mergeRpcOptions = void 0;
-const runtime_1 = __nccwpck_require__(8140);
+const runtime_1 = __nccwpck_require__(8886);
 /**
  * Merges custom RPC options with defaults. Returns a new instance and keeps
  * the "defaults" and the "options" unmodified.
@@ -514,14 +514,14 @@ function copy(a, into) {
 
 /***/ }),
 
-/***/ 7374:
+/***/ 2726:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RpcOutputStreamController = void 0;
-const deferred_1 = __nccwpck_require__(7961);
-const runtime_1 = __nccwpck_require__(8140);
+const deferred_1 = __nccwpck_require__(1409);
+const runtime_1 = __nccwpck_require__(8886);
 /**
  * A `RpcOutputStream` that you control.
  */
@@ -691,7 +691,7 @@ exports.RpcOutputStreamController = RpcOutputStreamController;
 
 /***/ }),
 
-/***/ 7072:
+/***/ 3352:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -758,7 +758,7 @@ exports.ServerCallContextController = ServerCallContextController;
 
 /***/ }),
 
-/***/ 2069:
+/***/ 6173:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -815,13 +815,13 @@ exports.ServerStreamingCall = ServerStreamingCall;
 
 /***/ }),
 
-/***/ 1636:
+/***/ 6892:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ServiceType = void 0;
-const reflection_info_1 = __nccwpck_require__(9768);
+const reflection_info_1 = __nccwpck_require__(2496);
 class ServiceType {
     constructor(typeName, methods, options) {
         this.typeName = typeName;
@@ -834,7 +834,7 @@ exports.ServiceType = ServiceType;
 
 /***/ }),
 
-/***/ 8330:
+/***/ 9122:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -849,14 +849,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.TestTransport = void 0;
-const rpc_error_1 = __nccwpck_require__(5908);
-const runtime_1 = __nccwpck_require__(8140);
-const rpc_output_stream_1 = __nccwpck_require__(7374);
-const rpc_options_1 = __nccwpck_require__(1816);
-const unary_call_1 = __nccwpck_require__(368);
-const server_streaming_call_1 = __nccwpck_require__(2069);
-const client_streaming_call_1 = __nccwpck_require__(9113);
-const duplex_streaming_call_1 = __nccwpck_require__(7090);
+const rpc_error_1 = __nccwpck_require__(8636);
+const runtime_1 = __nccwpck_require__(8886);
+const rpc_output_stream_1 = __nccwpck_require__(2726);
+const rpc_options_1 = __nccwpck_require__(8576);
+const unary_call_1 = __nccwpck_require__(9288);
+const server_streaming_call_1 = __nccwpck_require__(6173);
+const client_streaming_call_1 = __nccwpck_require__(7889);
+const duplex_streaming_call_1 = __nccwpck_require__(6826);
 /**
  * Transport for testing.
  */
@@ -1162,7 +1162,7 @@ class TestInputStream {
 
 /***/ }),
 
-/***/ 368:
+/***/ 9288:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -1218,7 +1218,7 @@ exports.UnaryCall = UnaryCall;
 
 /***/ }),
 
-/***/ 4828:
+/***/ 8602:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -1268,7 +1268,7 @@ exports.assertFloat32 = assertFloat32;
 
 /***/ }),
 
-/***/ 841:
+/***/ 6335:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -1393,7 +1393,7 @@ exports.base64encode = base64encode;
 
 /***/ }),
 
-/***/ 8218:
+/***/ 4816:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -1500,15 +1500,15 @@ var WireType;
 
 /***/ }),
 
-/***/ 2076:
+/***/ 2889:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BinaryReader = exports.binaryReadOptions = void 0;
-const binary_format_contract_1 = __nccwpck_require__(8218);
-const pb_long_1 = __nccwpck_require__(8819);
-const goog_varint_1 = __nccwpck_require__(1605);
+const binary_format_contract_1 = __nccwpck_require__(4816);
+const pb_long_1 = __nccwpck_require__(1753);
+const goog_varint_1 = __nccwpck_require__(3223);
 const defaultsRead = {
     readUnknownField: true,
     readerFactory: bytes => new BinaryReader(bytes),
@@ -1690,15 +1690,15 @@ exports.BinaryReader = BinaryReader;
 
 /***/ }),
 
-/***/ 79:
+/***/ 3957:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BinaryWriter = exports.binaryWriteOptions = void 0;
-const pb_long_1 = __nccwpck_require__(8819);
-const goog_varint_1 = __nccwpck_require__(1605);
-const assert_1 = __nccwpck_require__(4828);
+const pb_long_1 = __nccwpck_require__(1753);
+const goog_varint_1 = __nccwpck_require__(3223);
+const assert_1 = __nccwpck_require__(8602);
 const defaultsWrite = {
     writeUnknownFields: true,
     writerFactory: () => new BinaryWriter(),
@@ -1929,7 +1929,7 @@ exports.BinaryWriter = BinaryWriter;
 
 /***/ }),
 
-/***/ 4903:
+/***/ 257:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2023,7 +2023,7 @@ exports.listEnumNumbers = listEnumNumbers;
 
 /***/ }),
 
-/***/ 1605:
+/***/ 3223:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2304,7 +2304,7 @@ exports.varint32read = varint32read;
 
 /***/ }),
 
-/***/ 8140:
+/***/ 8886:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
@@ -2313,46 +2313,46 @@ exports.varint32read = varint32read;
 // webpack verbose output hints that this should be useful
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 // Convenience JSON typings and corresponding type guards
-var json_typings_1 = __nccwpck_require__(3417);
+var json_typings_1 = __nccwpck_require__(9999);
 Object.defineProperty(exports, "typeofJsonValue", ({ enumerable: true, get: function () { return json_typings_1.typeofJsonValue; } }));
 Object.defineProperty(exports, "isJsonObject", ({ enumerable: true, get: function () { return json_typings_1.isJsonObject; } }));
 // Base 64 encoding
-var base64_1 = __nccwpck_require__(841);
+var base64_1 = __nccwpck_require__(6335);
 Object.defineProperty(exports, "base64decode", ({ enumerable: true, get: function () { return base64_1.base64decode; } }));
 Object.defineProperty(exports, "base64encode", ({ enumerable: true, get: function () { return base64_1.base64encode; } }));
 // UTF8 encoding
-var protobufjs_utf8_1 = __nccwpck_require__(9016);
+var protobufjs_utf8_1 = __nccwpck_require__(8950);
 Object.defineProperty(exports, "utf8read", ({ enumerable: true, get: function () { return protobufjs_utf8_1.utf8read; } }));
 // Binary format contracts, options for reading and writing, for example
-var binary_format_contract_1 = __nccwpck_require__(8218);
+var binary_format_contract_1 = __nccwpck_require__(4816);
 Object.defineProperty(exports, "WireType", ({ enumerable: true, get: function () { return binary_format_contract_1.WireType; } }));
 Object.defineProperty(exports, "mergeBinaryOptions", ({ enumerable: true, get: function () { return binary_format_contract_1.mergeBinaryOptions; } }));
 Object.defineProperty(exports, "UnknownFieldHandler", ({ enumerable: true, get: function () { return binary_format_contract_1.UnknownFieldHandler; } }));
 // Standard IBinaryReader implementation
-var binary_reader_1 = __nccwpck_require__(2076);
+var binary_reader_1 = __nccwpck_require__(2889);
 Object.defineProperty(exports, "BinaryReader", ({ enumerable: true, get: function () { return binary_reader_1.BinaryReader; } }));
 Object.defineProperty(exports, "binaryReadOptions", ({ enumerable: true, get: function () { return binary_reader_1.binaryReadOptions; } }));
 // Standard IBinaryWriter implementation
-var binary_writer_1 = __nccwpck_require__(79);
+var binary_writer_1 = __nccwpck_require__(3957);
 Object.defineProperty(exports, "BinaryWriter", ({ enumerable: true, get: function () { return binary_writer_1.BinaryWriter; } }));
 Object.defineProperty(exports, "binaryWriteOptions", ({ enumerable: true, get: function () { return binary_writer_1.binaryWriteOptions; } }));
 // Int64 and UInt64 implementations required for the binary format
-var pb_long_1 = __nccwpck_require__(8819);
+var pb_long_1 = __nccwpck_require__(1753);
 Object.defineProperty(exports, "PbLong", ({ enumerable: true, get: function () { return pb_long_1.PbLong; } }));
 Object.defineProperty(exports, "PbULong", ({ enumerable: true, get: function () { return pb_long_1.PbULong; } }));
 // JSON format contracts, options for reading and writing, for example
-var json_format_contract_1 = __nccwpck_require__(8069);
+var json_format_contract_1 = __nccwpck_require__(9367);
 Object.defineProperty(exports, "jsonReadOptions", ({ enumerable: true, get: function () { return json_format_contract_1.jsonReadOptions; } }));
 Object.defineProperty(exports, "jsonWriteOptions", ({ enumerable: true, get: function () { return json_format_contract_1.jsonWriteOptions; } }));
 Object.defineProperty(exports, "mergeJsonOptions", ({ enumerable: true, get: function () { return json_format_contract_1.mergeJsonOptions; } }));
 // Message type contract
-var message_type_contract_1 = __nccwpck_require__(9251);
+var message_type_contract_1 = __nccwpck_require__(3785);
 Object.defineProperty(exports, "MESSAGE_TYPE", ({ enumerable: true, get: function () { return message_type_contract_1.MESSAGE_TYPE; } }));
 // Message type implementation via reflection
-var message_type_1 = __nccwpck_require__(9940);
+var message_type_1 = __nccwpck_require__(5106);
 Object.defineProperty(exports, "MessageType", ({ enumerable: true, get: function () { return message_type_1.MessageType; } }));
 // Reflection info, generated by the plugin, exposed to the user, used by reflection ops
-var reflection_info_1 = __nccwpck_require__(7048);
+var reflection_info_1 = __nccwpck_require__(7910);
 Object.defineProperty(exports, "ScalarType", ({ enumerable: true, get: function () { return reflection_info_1.ScalarType; } }));
 Object.defineProperty(exports, "LongType", ({ enumerable: true, get: function () { return reflection_info_1.LongType; } }));
 Object.defineProperty(exports, "RepeatType", ({ enumerable: true, get: function () { return reflection_info_1.RepeatType; } }));
@@ -2361,44 +2361,44 @@ Object.defineProperty(exports, "readFieldOptions", ({ enumerable: true, get: fun
 Object.defineProperty(exports, "readFieldOption", ({ enumerable: true, get: function () { return reflection_info_1.readFieldOption; } }));
 Object.defineProperty(exports, "readMessageOption", ({ enumerable: true, get: function () { return reflection_info_1.readMessageOption; } }));
 // Message operations via reflection
-var reflection_type_check_1 = __nccwpck_require__(73);
+var reflection_type_check_1 = __nccwpck_require__(5167);
 Object.defineProperty(exports, "ReflectionTypeCheck", ({ enumerable: true, get: function () { return reflection_type_check_1.ReflectionTypeCheck; } }));
-var reflection_create_1 = __nccwpck_require__(8892);
+var reflection_create_1 = __nccwpck_require__(5726);
 Object.defineProperty(exports, "reflectionCreate", ({ enumerable: true, get: function () { return reflection_create_1.reflectionCreate; } }));
-var reflection_scalar_default_1 = __nccwpck_require__(9348);
+var reflection_scalar_default_1 = __nccwpck_require__(9526);
 Object.defineProperty(exports, "reflectionScalarDefault", ({ enumerable: true, get: function () { return reflection_scalar_default_1.reflectionScalarDefault; } }));
-var reflection_merge_partial_1 = __nccwpck_require__(586);
+var reflection_merge_partial_1 = __nccwpck_require__(8044);
 Object.defineProperty(exports, "reflectionMergePartial", ({ enumerable: true, get: function () { return reflection_merge_partial_1.reflectionMergePartial; } }));
-var reflection_equals_1 = __nccwpck_require__(8797);
+var reflection_equals_1 = __nccwpck_require__(4827);
 Object.defineProperty(exports, "reflectionEquals", ({ enumerable: true, get: function () { return reflection_equals_1.reflectionEquals; } }));
-var reflection_binary_reader_1 = __nccwpck_require__(6537);
+var reflection_binary_reader_1 = __nccwpck_require__(9611);
 Object.defineProperty(exports, "ReflectionBinaryReader", ({ enumerable: true, get: function () { return reflection_binary_reader_1.ReflectionBinaryReader; } }));
-var reflection_binary_writer_1 = __nccwpck_require__(7685);
+var reflection_binary_writer_1 = __nccwpck_require__(6907);
 Object.defineProperty(exports, "ReflectionBinaryWriter", ({ enumerable: true, get: function () { return reflection_binary_writer_1.ReflectionBinaryWriter; } }));
-var reflection_json_reader_1 = __nccwpck_require__(8944);
+var reflection_json_reader_1 = __nccwpck_require__(6790);
 Object.defineProperty(exports, "ReflectionJsonReader", ({ enumerable: true, get: function () { return reflection_json_reader_1.ReflectionJsonReader; } }));
-var reflection_json_writer_1 = __nccwpck_require__(7324);
+var reflection_json_writer_1 = __nccwpck_require__(1094);
 Object.defineProperty(exports, "ReflectionJsonWriter", ({ enumerable: true, get: function () { return reflection_json_writer_1.ReflectionJsonWriter; } }));
-var reflection_contains_message_type_1 = __nccwpck_require__(2092);
+var reflection_contains_message_type_1 = __nccwpck_require__(9946);
 Object.defineProperty(exports, "containsMessageType", ({ enumerable: true, get: function () { return reflection_contains_message_type_1.containsMessageType; } }));
 // Oneof helpers
-var oneof_1 = __nccwpck_require__(9473);
+var oneof_1 = __nccwpck_require__(8063);
 Object.defineProperty(exports, "isOneofGroup", ({ enumerable: true, get: function () { return oneof_1.isOneofGroup; } }));
 Object.defineProperty(exports, "setOneofValue", ({ enumerable: true, get: function () { return oneof_1.setOneofValue; } }));
 Object.defineProperty(exports, "getOneofValue", ({ enumerable: true, get: function () { return oneof_1.getOneofValue; } }));
 Object.defineProperty(exports, "clearOneofValue", ({ enumerable: true, get: function () { return oneof_1.clearOneofValue; } }));
 Object.defineProperty(exports, "getSelectedOneofValue", ({ enumerable: true, get: function () { return oneof_1.getSelectedOneofValue; } }));
 // Enum object type guard and reflection util, may be interesting to the user.
-var enum_object_1 = __nccwpck_require__(4903);
+var enum_object_1 = __nccwpck_require__(257);
 Object.defineProperty(exports, "listEnumValues", ({ enumerable: true, get: function () { return enum_object_1.listEnumValues; } }));
 Object.defineProperty(exports, "listEnumNames", ({ enumerable: true, get: function () { return enum_object_1.listEnumNames; } }));
 Object.defineProperty(exports, "listEnumNumbers", ({ enumerable: true, get: function () { return enum_object_1.listEnumNumbers; } }));
 Object.defineProperty(exports, "isEnumObject", ({ enumerable: true, get: function () { return enum_object_1.isEnumObject; } }));
 // lowerCamelCase() is exported for plugin, rpc-runtime and other rpc packages
-var lower_camel_case_1 = __nccwpck_require__(23);
+var lower_camel_case_1 = __nccwpck_require__(4073);
 Object.defineProperty(exports, "lowerCamelCase", ({ enumerable: true, get: function () { return lower_camel_case_1.lowerCamelCase; } }));
 // assertion functions are exported for plugin, may also be useful to user
-var assert_1 = __nccwpck_require__(4828);
+var assert_1 = __nccwpck_require__(8602);
 Object.defineProperty(exports, "assert", ({ enumerable: true, get: function () { return assert_1.assert; } }));
 Object.defineProperty(exports, "assertNever", ({ enumerable: true, get: function () { return assert_1.assertNever; } }));
 Object.defineProperty(exports, "assertInt32", ({ enumerable: true, get: function () { return assert_1.assertInt32; } }));
@@ -2408,7 +2408,7 @@ Object.defineProperty(exports, "assertFloat32", ({ enumerable: true, get: functi
 
 /***/ }),
 
-/***/ 8069:
+/***/ 9367:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2450,7 +2450,7 @@ exports.mergeJsonOptions = mergeJsonOptions;
 
 /***/ }),
 
-/***/ 3417:
+/***/ 9999:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2482,7 +2482,7 @@ exports.isJsonObject = isJsonObject;
 
 /***/ }),
 
-/***/ 23:
+/***/ 4073:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2524,7 +2524,7 @@ exports.lowerCamelCase = lowerCamelCase;
 
 /***/ }),
 
-/***/ 9251:
+/***/ 3785:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2541,26 +2541,26 @@ exports.MESSAGE_TYPE = Symbol.for("protobuf-ts/message-type");
 
 /***/ }),
 
-/***/ 9940:
+/***/ 5106:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MessageType = void 0;
-const message_type_contract_1 = __nccwpck_require__(9251);
-const reflection_info_1 = __nccwpck_require__(7048);
-const reflection_type_check_1 = __nccwpck_require__(73);
-const reflection_json_reader_1 = __nccwpck_require__(8944);
-const reflection_json_writer_1 = __nccwpck_require__(7324);
-const reflection_binary_reader_1 = __nccwpck_require__(6537);
-const reflection_binary_writer_1 = __nccwpck_require__(7685);
-const reflection_create_1 = __nccwpck_require__(8892);
-const reflection_merge_partial_1 = __nccwpck_require__(586);
-const json_typings_1 = __nccwpck_require__(3417);
-const json_format_contract_1 = __nccwpck_require__(8069);
-const reflection_equals_1 = __nccwpck_require__(8797);
-const binary_writer_1 = __nccwpck_require__(79);
-const binary_reader_1 = __nccwpck_require__(2076);
+const message_type_contract_1 = __nccwpck_require__(3785);
+const reflection_info_1 = __nccwpck_require__(7910);
+const reflection_type_check_1 = __nccwpck_require__(5167);
+const reflection_json_reader_1 = __nccwpck_require__(6790);
+const reflection_json_writer_1 = __nccwpck_require__(1094);
+const reflection_binary_reader_1 = __nccwpck_require__(9611);
+const reflection_binary_writer_1 = __nccwpck_require__(6907);
+const reflection_create_1 = __nccwpck_require__(5726);
+const reflection_merge_partial_1 = __nccwpck_require__(8044);
+const json_typings_1 = __nccwpck_require__(9999);
+const json_format_contract_1 = __nccwpck_require__(9367);
+const reflection_equals_1 = __nccwpck_require__(4827);
+const binary_writer_1 = __nccwpck_require__(3957);
+const binary_reader_1 = __nccwpck_require__(2889);
 const baseDescriptors = Object.getOwnPropertyDescriptors(Object.getPrototypeOf({}));
 const messageTypeDescriptor = baseDescriptors[message_type_contract_1.MESSAGE_TYPE] = {};
 /**
@@ -2725,7 +2725,7 @@ exports.MessageType = MessageType;
 
 /***/ }),
 
-/***/ 9473:
+/***/ 8063:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -2846,13 +2846,13 @@ exports.getSelectedOneofValue = getSelectedOneofValue;
 
 /***/ }),
 
-/***/ 8819:
+/***/ 1753:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PbLong = exports.PbULong = exports.detectBi = void 0;
-const goog_varint_1 = __nccwpck_require__(1605);
+const goog_varint_1 = __nccwpck_require__(3223);
 let BI;
 function detectBi() {
     const dv = new DataView(new ArrayBuffer(8));
@@ -3091,7 +3091,7 @@ PbLong.ZERO = new PbLong(0, 0);
 
 /***/ }),
 
-/***/ 9016:
+/***/ 8950:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -3173,16 +3173,16 @@ exports.utf8read = utf8read;
 
 /***/ }),
 
-/***/ 6537:
+/***/ 9611:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReflectionBinaryReader = void 0;
-const binary_format_contract_1 = __nccwpck_require__(8218);
-const reflection_info_1 = __nccwpck_require__(7048);
-const reflection_long_convert_1 = __nccwpck_require__(5232);
-const reflection_scalar_default_1 = __nccwpck_require__(9348);
+const binary_format_contract_1 = __nccwpck_require__(4816);
+const reflection_info_1 = __nccwpck_require__(7910);
+const reflection_long_convert_1 = __nccwpck_require__(3402);
+const reflection_scalar_default_1 = __nccwpck_require__(9526);
 /**
  * Reads proto3 messages in binary format using reflection information.
  *
@@ -3363,16 +3363,16 @@ exports.ReflectionBinaryReader = ReflectionBinaryReader;
 
 /***/ }),
 
-/***/ 7685:
+/***/ 6907:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReflectionBinaryWriter = void 0;
-const binary_format_contract_1 = __nccwpck_require__(8218);
-const reflection_info_1 = __nccwpck_require__(7048);
-const assert_1 = __nccwpck_require__(4828);
-const pb_long_1 = __nccwpck_require__(8819);
+const binary_format_contract_1 = __nccwpck_require__(4816);
+const reflection_info_1 = __nccwpck_require__(7910);
+const assert_1 = __nccwpck_require__(8602);
+const pb_long_1 = __nccwpck_require__(1753);
 /**
  * Writes proto3 messages in binary format using reflection information.
  *
@@ -3603,13 +3603,13 @@ exports.ReflectionBinaryWriter = ReflectionBinaryWriter;
 
 /***/ }),
 
-/***/ 2092:
+/***/ 9946:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.containsMessageType = void 0;
-const message_type_contract_1 = __nccwpck_require__(9251);
+const message_type_contract_1 = __nccwpck_require__(3785);
 /**
  * Check if the provided object is a proto message.
  *
@@ -3624,14 +3624,14 @@ exports.containsMessageType = containsMessageType;
 
 /***/ }),
 
-/***/ 8892:
+/***/ 5726:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.reflectionCreate = void 0;
-const reflection_scalar_default_1 = __nccwpck_require__(9348);
-const message_type_contract_1 = __nccwpck_require__(9251);
+const reflection_scalar_default_1 = __nccwpck_require__(9526);
+const message_type_contract_1 = __nccwpck_require__(3785);
 /**
  * Creates an instance of the generic message, using the field
  * information.
@@ -3679,13 +3679,13 @@ exports.reflectionCreate = reflectionCreate;
 
 /***/ }),
 
-/***/ 8797:
+/***/ 4827:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.reflectionEquals = void 0;
-const reflection_info_1 = __nccwpck_require__(7048);
+const reflection_info_1 = __nccwpck_require__(7910);
 /**
  * Determines whether two message of the same type have the same field values.
  * Checks for deep equality, traversing repeated fields, oneof groups, maps
@@ -3763,13 +3763,13 @@ function repeatedMsgEq(type, a, b) {
 
 /***/ }),
 
-/***/ 7048:
+/***/ 7910:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.readMessageOption = exports.readFieldOption = exports.readFieldOptions = exports.normalizeFieldInfo = exports.RepeatType = exports.LongType = exports.ScalarType = void 0;
-const lower_camel_case_1 = __nccwpck_require__(23);
+const lower_camel_case_1 = __nccwpck_require__(4073);
 /**
  * Scalar value types. This is a subset of field types declared by protobuf
  * enum google.protobuf.FieldDescriptorProto.Type The types GROUP and MESSAGE
@@ -3928,18 +3928,18 @@ exports.readMessageOption = readMessageOption;
 
 /***/ }),
 
-/***/ 8944:
+/***/ 6790:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReflectionJsonReader = void 0;
-const json_typings_1 = __nccwpck_require__(3417);
-const base64_1 = __nccwpck_require__(841);
-const reflection_info_1 = __nccwpck_require__(7048);
-const pb_long_1 = __nccwpck_require__(8819);
-const assert_1 = __nccwpck_require__(4828);
-const reflection_long_convert_1 = __nccwpck_require__(5232);
+const json_typings_1 = __nccwpck_require__(9999);
+const base64_1 = __nccwpck_require__(6335);
+const reflection_info_1 = __nccwpck_require__(7910);
+const pb_long_1 = __nccwpck_require__(1753);
+const assert_1 = __nccwpck_require__(8602);
+const reflection_long_convert_1 = __nccwpck_require__(3402);
 /**
  * Reads proto3 messages in canonical JSON format using reflection information.
  *
@@ -4252,16 +4252,16 @@ exports.ReflectionJsonReader = ReflectionJsonReader;
 
 /***/ }),
 
-/***/ 7324:
+/***/ 1094:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReflectionJsonWriter = void 0;
-const base64_1 = __nccwpck_require__(841);
-const pb_long_1 = __nccwpck_require__(8819);
-const reflection_info_1 = __nccwpck_require__(7048);
-const assert_1 = __nccwpck_require__(4828);
+const base64_1 = __nccwpck_require__(6335);
+const pb_long_1 = __nccwpck_require__(1753);
+const reflection_info_1 = __nccwpck_require__(7910);
+const assert_1 = __nccwpck_require__(8602);
 /**
  * Writes proto3 messages in canonical JSON format using reflection
  * information.
@@ -4489,13 +4489,13 @@ exports.ReflectionJsonWriter = ReflectionJsonWriter;
 
 /***/ }),
 
-/***/ 5232:
+/***/ 3402:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.reflectionLongConvert = void 0;
-const reflection_info_1 = __nccwpck_require__(7048);
+const reflection_info_1 = __nccwpck_require__(7910);
 /**
  * Utility method to convert a PbLong or PbUlong to a JavaScript
  * representation during runtime.
@@ -4520,7 +4520,7 @@ exports.reflectionLongConvert = reflectionLongConvert;
 
 /***/ }),
 
-/***/ 586:
+/***/ 8044:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -4617,15 +4617,15 @@ exports.reflectionMergePartial = reflectionMergePartial;
 
 /***/ }),
 
-/***/ 9348:
+/***/ 9526:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.reflectionScalarDefault = void 0;
-const reflection_info_1 = __nccwpck_require__(7048);
-const reflection_long_convert_1 = __nccwpck_require__(5232);
-const pb_long_1 = __nccwpck_require__(8819);
+const reflection_info_1 = __nccwpck_require__(7910);
+const reflection_long_convert_1 = __nccwpck_require__(3402);
+const pb_long_1 = __nccwpck_require__(1753);
 /**
  * Creates the default value for a scalar type.
  */
@@ -4661,14 +4661,14 @@ exports.reflectionScalarDefault = reflectionScalarDefault;
 
 /***/ }),
 
-/***/ 73:
+/***/ 5167:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReflectionTypeCheck = void 0;
-const reflection_info_1 = __nccwpck_require__(7048);
-const oneof_1 = __nccwpck_require__(9473);
+const reflection_info_1 = __nccwpck_require__(7910);
+const oneof_1 = __nccwpck_require__(8063);
 // noinspection JSMethodCanBeStatic
 class ReflectionTypeCheck {
     constructor(info) {
@@ -4898,7 +4898,7 @@ exports.ReflectionTypeCheck = ReflectionTypeCheck;
 
 /***/ }),
 
-/***/ 4455:
+/***/ 5183:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -4970,7 +4970,7 @@ exports.req = req;
 
 /***/ }),
 
-/***/ 646:
+/***/ 8894:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -5005,7 +5005,7 @@ exports.Agent = void 0;
 const net = __importStar(__nccwpck_require__(9278));
 const http = __importStar(__nccwpck_require__(8611));
 const https_1 = __nccwpck_require__(5692);
-__exportStar(__nccwpck_require__(4455), exports);
+__exportStar(__nccwpck_require__(5183), exports);
 const INTERNAL = Symbol('AgentBaseInternalState');
 class Agent extends http.Agent {
     constructor(opts) {
@@ -5154,7 +5154,7 @@ exports.Agent = Agent;
 
 /***/ }),
 
-/***/ 870:
+/***/ 9380:
 /***/ ((module) => {
 
 
@@ -5223,11 +5223,11 @@ function range(a, b, str) {
 
 /***/ }),
 
-/***/ 7912:
+/***/ 4691:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-var concatMap = __nccwpck_require__(1196);
-var balanced = __nccwpck_require__(870);
+var concatMap = __nccwpck_require__(7087);
+var balanced = __nccwpck_require__(9380);
 
 module.exports = expandTop;
 
@@ -5290,9 +5290,12 @@ function parseCommaParts(str) {
   return parts;
 }
 
-function expandTop(str) {
+function expandTop(str, options) {
   if (!str)
     return [];
+
+  options = options || {};
+  var max = options.max == null ? Infinity : options.max;
 
   // I don't know why Bash 4.3 does this, but it does.
   // Anything starting with {} will have the first two bytes preserved
@@ -5304,7 +5307,7 @@ function expandTop(str) {
     str = '\\{\\}' + str.substr(2);
   }
 
-  return expand(escapeBraces(str), true).map(unescapeBraces);
+  return expand(escapeBraces(str), max, true).map(unescapeBraces);
 }
 
 function identity(e) {
@@ -5325,7 +5328,7 @@ function gte(i, y) {
   return i >= y;
 }
 
-function expand(str, isTop) {
+function expand(str, max, isTop) {
   var expansions = [];
 
   var m = balanced('{', '}', str);
@@ -5339,7 +5342,7 @@ function expand(str, isTop) {
     // {a},b}
     if (m.post.match(/,(?!,).*\}/)) {
       str = m.pre + '{' + m.body + escClose + m.post;
-      return expand(str);
+      return expand(str, max, true);
     }
     return [str];
   }
@@ -5351,10 +5354,10 @@ function expand(str, isTop) {
     n = parseCommaParts(m.body);
     if (n.length === 1) {
       // x{{a,b}}y ==> x{a}y x{b}y
-      n = expand(n[0], false).map(embrace);
+      n = expand(n[0], max, false).map(embrace);
       if (n.length === 1) {
         var post = m.post.length
-          ? expand(m.post, false)
+          ? expand(m.post, max, false)
           : [''];
         return post.map(function(p) {
           return m.pre + n[0] + p;
@@ -5369,7 +5372,7 @@ function expand(str, isTop) {
   // no need to expand pre, since it is guaranteed to be free of brace-sets
   var pre = m.pre;
   var post = m.post.length
-    ? expand(m.post, false)
+    ? expand(m.post, max, false)
     : [''];
 
   var N;
@@ -5379,7 +5382,7 @@ function expand(str, isTop) {
     var y = numeric(n[1]);
     var width = Math.max(n[0].length, n[1].length)
     var incr = n.length == 3
-      ? Math.abs(numeric(n[2]))
+      ? Math.max(Math.abs(numeric(n[2])), 1)
       : 1;
     var test = lte;
     var reverse = y < x;
@@ -5391,7 +5394,7 @@ function expand(str, isTop) {
 
     N = [];
 
-    for (var i = x; test(i, y); i += incr) {
+    for (var i = x; test(i, y) && N.length < max; i += incr) {
       var c;
       if (isAlphaSequence) {
         c = String.fromCharCode(i);
@@ -5413,11 +5416,11 @@ function expand(str, isTop) {
       N.push(c);
     }
   } else {
-    N = concatMap(n, function(el) { return expand(el, false) });
+    N = concatMap(n, function(el) { return expand(el, max, false) });
   }
 
   for (var j = 0; j < N.length; j++) {
-    for (var k = 0; k < post.length; k++) {
+    for (var k = 0; k < post.length && expansions.length < max; k++) {
       var expansion = pre + N[j] + post[k];
       if (!isTop || isSequence || expansion)
         expansions.push(expansion);
@@ -5428,10 +5431,9 @@ function expand(str, isTop) {
 }
 
 
-
 /***/ }),
 
-/***/ 1196:
+/***/ 7087:
 /***/ ((module) => {
 
 module.exports = function (xs, fn) {
@@ -5451,7 +5453,7 @@ var isArray = Array.isArray || function (xs) {
 
 /***/ }),
 
-/***/ 7451:
+/***/ 6110:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 /* eslint-env browser */
@@ -5711,7 +5713,7 @@ function localstorage() {
 	}
 }
 
-module.exports = __nccwpck_require__(3350)(exports);
+module.exports = __nccwpck_require__(897)(exports);
 
 const {formatters} = module.exports;
 
@@ -5730,7 +5732,7 @@ formatters.j = function (v) {
 
 /***/ }),
 
-/***/ 3350:
+/***/ 897:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -5746,7 +5748,7 @@ function setup(env) {
 	createDebug.disable = disable;
 	createDebug.enable = enable;
 	createDebug.enabled = enabled;
-	createDebug.humanize = __nccwpck_require__(6647);
+	createDebug.humanize = __nccwpck_require__(744);
 	createDebug.destroy = destroy;
 
 	Object.keys(env).forEach(key => {
@@ -6029,7 +6031,7 @@ module.exports = setup;
 
 /***/ }),
 
-/***/ 8263:
+/***/ 2830:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /**
@@ -6038,15 +6040,15 @@ module.exports = setup;
  */
 
 if (typeof process === 'undefined' || process.type === 'renderer' || process.browser === true || process.__nwjs) {
-	module.exports = __nccwpck_require__(7451);
+	module.exports = __nccwpck_require__(6110);
 } else {
-	module.exports = __nccwpck_require__(6423);
+	module.exports = __nccwpck_require__(5108);
 }
 
 
 /***/ }),
 
-/***/ 6423:
+/***/ 5108:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 /**
@@ -6080,7 +6082,7 @@ exports.colors = [6, 2, 3, 4, 5, 1];
 try {
 	// Optional dependency (as in, doesn't need to be installed, NOT like optionalDependencies in package.json)
 	// eslint-disable-next-line import/no-extraneous-dependencies
-	const supportsColor = __nccwpck_require__(4000);
+	const supportsColor = __nccwpck_require__(75);
 
 	if (supportsColor && (supportsColor.stderr || supportsColor).level >= 2) {
 		exports.colors = [
@@ -6288,7 +6290,7 @@ function init(debug) {
 	}
 }
 
-module.exports = __nccwpck_require__(3350)(exports);
+module.exports = __nccwpck_require__(897)(exports);
 
 const {formatters} = module.exports;
 
@@ -6316,7 +6318,7 @@ formatters.O = function (v) {
 
 /***/ }),
 
-/***/ 4249:
+/***/ 1970:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -6350,9 +6352,9 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.HttpProxyAgent = void 0;
 const net = __importStar(__nccwpck_require__(9278));
 const tls = __importStar(__nccwpck_require__(4756));
-const debug_1 = __importDefault(__nccwpck_require__(8263));
+const debug_1 = __importDefault(__nccwpck_require__(2830));
 const events_1 = __nccwpck_require__(4434);
-const agent_base_1 = __nccwpck_require__(646);
+const agent_base_1 = __nccwpck_require__(8894);
 const url_1 = __nccwpck_require__(7016);
 const debug = (0, debug_1.default)('http-proxy-agent');
 /**
@@ -6470,7 +6472,7 @@ function omit(obj, ...keys) {
 
 /***/ }),
 
-/***/ 1475:
+/***/ 3669:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -6505,10 +6507,10 @@ exports.HttpsProxyAgent = void 0;
 const net = __importStar(__nccwpck_require__(9278));
 const tls = __importStar(__nccwpck_require__(4756));
 const assert_1 = __importDefault(__nccwpck_require__(2613));
-const debug_1 = __importDefault(__nccwpck_require__(8263));
-const agent_base_1 = __nccwpck_require__(646);
+const debug_1 = __importDefault(__nccwpck_require__(2830));
+const agent_base_1 = __nccwpck_require__(8894);
 const url_1 = __nccwpck_require__(7016);
-const parse_proxy_response_1 = __nccwpck_require__(625);
+const parse_proxy_response_1 = __nccwpck_require__(7943);
 const debug = (0, debug_1.default)('https-proxy-agent');
 const setServernameFromNonIpHost = (options) => {
     if (options.servername === undefined &&
@@ -6656,7 +6658,7 @@ function omit(obj, ...keys) {
 
 /***/ }),
 
-/***/ 625:
+/***/ 7943:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -6665,7 +6667,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.parseProxyResponse = void 0;
-const debug_1 = __importDefault(__nccwpck_require__(8263));
+const debug_1 = __importDefault(__nccwpck_require__(2830));
 const debug = (0, debug_1.default)('https-proxy-agent:parse-proxy-response');
 function parseProxyResponse(socket) {
     return new Promise((resolve, reject) => {
@@ -6763,7 +6765,7 @@ exports.parseProxyResponse = parseProxyResponse;
 
 /***/ }),
 
-/***/ 2152:
+/***/ 3772:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 module.exports = minimatch
@@ -6775,7 +6777,7 @@ var path = (function () { try { return __nccwpck_require__(6928) } catch (e) {}}
 minimatch.sep = path.sep
 
 var GLOBSTAR = minimatch.GLOBSTAR = Minimatch.GLOBSTAR = {}
-var expand = __nccwpck_require__(7912)
+var expand = __nccwpck_require__(4691)
 
 var plTypes = {
   '!': { open: '(?:(?!(?:', close: '))[^/]*?)'},
@@ -7775,7 +7777,7 @@ function regExpEscape (s) {
 
 /***/ }),
 
-/***/ 6647:
+/***/ 744:
 /***/ ((module) => {
 
 /**
@@ -7944,7 +7946,7 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ 6222:
+/***/ 9379:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -8084,17 +8086,17 @@ class Comparator {
 
 module.exports = Comparator
 
-const parseOptions = __nccwpck_require__(977)
-const { safeRe: re, t } = __nccwpck_require__(5580)
-const cmp = __nccwpck_require__(2977)
-const debug = __nccwpck_require__(1542)
-const SemVer = __nccwpck_require__(4154)
-const Range = __nccwpck_require__(3137)
+const parseOptions = __nccwpck_require__(356)
+const { safeRe: re, t } = __nccwpck_require__(5471)
+const cmp = __nccwpck_require__(8646)
+const debug = __nccwpck_require__(1159)
+const SemVer = __nccwpck_require__(7163)
+const Range = __nccwpck_require__(6782)
 
 
 /***/ }),
 
-/***/ 3137:
+/***/ 6782:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -8197,6 +8199,9 @@ class Range {
   }
 
   parseRange (range) {
+    // strip build metadata so it can't bleed into the version
+    range = range.replace(BUILDSTRIPRE, '')
+
     // memoize range parsing for performance.
     // this is a very hot path, and fully deterministic.
     const memoOpts =
@@ -8313,21 +8318,25 @@ class Range {
 
 module.exports = Range
 
-const LRU = __nccwpck_require__(5088)
+const LRU = __nccwpck_require__(1383)
 const cache = new LRU()
 
-const parseOptions = __nccwpck_require__(977)
-const Comparator = __nccwpck_require__(6222)
-const debug = __nccwpck_require__(1542)
-const SemVer = __nccwpck_require__(4154)
+const parseOptions = __nccwpck_require__(356)
+const Comparator = __nccwpck_require__(9379)
+const debug = __nccwpck_require__(1159)
+const SemVer = __nccwpck_require__(7163)
 const {
   safeRe: re,
+  src,
   t,
   comparatorTrimReplace,
   tildeTrimReplace,
   caretTrimReplace,
-} = __nccwpck_require__(5580)
-const { FLAG_INCLUDE_PRERELEASE, FLAG_LOOSE } = __nccwpck_require__(4256)
+} = __nccwpck_require__(5471)
+const { FLAG_INCLUDE_PRERELEASE, FLAG_LOOSE } = __nccwpck_require__(5101)
+
+// unbounded global build-metadata stripper used by parseRange
+const BUILDSTRIPRE = new RegExp(src[t.BUILD], 'g')
 
 const isNullSet = c => c.value === '<0.0.0-0'
 const isAny = c => c.value === ''
@@ -8658,17 +8667,17 @@ const testSet = (set, version, options) => {
 
 /***/ }),
 
-/***/ 4154:
+/***/ 7163:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const debug = __nccwpck_require__(1542)
-const { MAX_LENGTH, MAX_SAFE_INTEGER } = __nccwpck_require__(4256)
-const { safeRe: re, t } = __nccwpck_require__(5580)
+const debug = __nccwpck_require__(1159)
+const { MAX_LENGTH, MAX_SAFE_INTEGER } = __nccwpck_require__(5101)
+const { safeRe: re, t } = __nccwpck_require__(5471)
 
-const parseOptions = __nccwpck_require__(977)
-const { compareIdentifiers } = __nccwpck_require__(1713)
+const parseOptions = __nccwpck_require__(356)
+const { compareIdentifiers } = __nccwpck_require__(3348)
 class SemVer {
   constructor (version, options) {
     options = parseOptions(options)
@@ -8998,12 +9007,12 @@ module.exports = SemVer
 
 /***/ }),
 
-/***/ 9956:
+/***/ 1799:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const parse = __nccwpck_require__(3854)
+const parse = __nccwpck_require__(6353)
 const clean = (version, options) => {
   const s = parse(version.trim().replace(/^[=v]+/, ''), options)
   return s ? s.version : null
@@ -9013,17 +9022,17 @@ module.exports = clean
 
 /***/ }),
 
-/***/ 2977:
+/***/ 8646:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const eq = __nccwpck_require__(2563)
-const neq = __nccwpck_require__(5969)
-const gt = __nccwpck_require__(2098)
-const gte = __nccwpck_require__(5851)
-const lt = __nccwpck_require__(5045)
-const lte = __nccwpck_require__(5462)
+const eq = __nccwpck_require__(5082)
+const neq = __nccwpck_require__(4974)
+const gt = __nccwpck_require__(6599)
+const gte = __nccwpck_require__(1236)
+const lt = __nccwpck_require__(3872)
+const lte = __nccwpck_require__(6717)
 
 const cmp = (a, op, b, loose) => {
   switch (op) {
@@ -9074,14 +9083,14 @@ module.exports = cmp
 
 /***/ }),
 
-/***/ 7420:
+/***/ 5385:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
-const parse = __nccwpck_require__(3854)
-const { safeRe: re, t } = __nccwpck_require__(5580)
+const SemVer = __nccwpck_require__(7163)
+const parse = __nccwpck_require__(6353)
+const { safeRe: re, t } = __nccwpck_require__(5471)
 
 const coerce = (version, options) => {
   if (version instanceof SemVer) {
@@ -9143,12 +9152,12 @@ module.exports = coerce
 
 /***/ }),
 
-/***/ 7083:
+/***/ 7648:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const compareBuild = (a, b, loose) => {
   const versionA = new SemVer(a, loose)
   const versionB = new SemVer(b, loose)
@@ -9159,24 +9168,24 @@ module.exports = compareBuild
 
 /***/ }),
 
-/***/ 825:
+/***/ 6874:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const compareLoose = (a, b) => compare(a, b, true)
 module.exports = compareLoose
 
 
 /***/ }),
 
-/***/ 1306:
+/***/ 8469:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const compare = (a, b, loose) =>
   new SemVer(a, loose).compare(new SemVer(b, loose))
 
@@ -9185,12 +9194,12 @@ module.exports = compare
 
 /***/ }),
 
-/***/ 4962:
+/***/ 711:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const parse = __nccwpck_require__(3854)
+const parse = __nccwpck_require__(6353)
 
 const diff = (version1, version2) => {
   const v1 = parse(version1, null, true)
@@ -9252,48 +9261,48 @@ module.exports = diff
 
 /***/ }),
 
-/***/ 2563:
+/***/ 5082:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const eq = (a, b, loose) => compare(a, b, loose) === 0
 module.exports = eq
 
 
 /***/ }),
 
-/***/ 2098:
+/***/ 6599:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const gt = (a, b, loose) => compare(a, b, loose) > 0
 module.exports = gt
 
 
 /***/ }),
 
-/***/ 5851:
+/***/ 1236:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const gte = (a, b, loose) => compare(a, b, loose) >= 0
 module.exports = gte
 
 
 /***/ }),
 
-/***/ 2341:
+/***/ 2338:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 
 const inc = (version, release, options, identifier, identifierBase) => {
   if (typeof (options) === 'string') {
@@ -9316,72 +9325,72 @@ module.exports = inc
 
 /***/ }),
 
-/***/ 5045:
+/***/ 3872:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const lt = (a, b, loose) => compare(a, b, loose) < 0
 module.exports = lt
 
 
 /***/ }),
 
-/***/ 5462:
+/***/ 6717:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const lte = (a, b, loose) => compare(a, b, loose) <= 0
 module.exports = lte
 
 
 /***/ }),
 
-/***/ 6468:
+/***/ 8511:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const major = (a, loose) => new SemVer(a, loose).major
 module.exports = major
 
 
 /***/ }),
 
-/***/ 7032:
+/***/ 2603:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const minor = (a, loose) => new SemVer(a, loose).minor
 module.exports = minor
 
 
 /***/ }),
 
-/***/ 5969:
+/***/ 4974:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const neq = (a, b, loose) => compare(a, b, loose) !== 0
 module.exports = neq
 
 
 /***/ }),
 
-/***/ 3854:
+/***/ 6353:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const parse = (version, options, throwErrors = false) => {
   if (version instanceof SemVer) {
     return version
@@ -9401,24 +9410,24 @@ module.exports = parse
 
 /***/ }),
 
-/***/ 6447:
+/***/ 8756:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
+const SemVer = __nccwpck_require__(7163)
 const patch = (a, loose) => new SemVer(a, loose).patch
 module.exports = patch
 
 
 /***/ }),
 
-/***/ 8359:
+/***/ 5714:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const parse = __nccwpck_require__(3854)
+const parse = __nccwpck_require__(6353)
 const prerelease = (version, options) => {
   const parsed = parse(version, options)
   return (parsed && parsed.prerelease.length) ? parsed.prerelease : null
@@ -9428,36 +9437,36 @@ module.exports = prerelease
 
 /***/ }),
 
-/***/ 6156:
+/***/ 2173:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compare = __nccwpck_require__(1306)
+const compare = __nccwpck_require__(8469)
 const rcompare = (a, b, loose) => compare(b, a, loose)
 module.exports = rcompare
 
 
 /***/ }),
 
-/***/ 2659:
+/***/ 7192:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compareBuild = __nccwpck_require__(7083)
+const compareBuild = __nccwpck_require__(7648)
 const rsort = (list, loose) => list.sort((a, b) => compareBuild(b, a, loose))
 module.exports = rsort
 
 
 /***/ }),
 
-/***/ 7575:
+/***/ 8011:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Range = __nccwpck_require__(3137)
+const Range = __nccwpck_require__(6782)
 const satisfies = (version, range, options) => {
   try {
     range = new Range(range, options)
@@ -9471,24 +9480,79 @@ module.exports = satisfies
 
 /***/ }),
 
-/***/ 2397:
+/***/ 9872:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const compareBuild = __nccwpck_require__(7083)
+const compareBuild = __nccwpck_require__(7648)
 const sort = (list, loose) => list.sort((a, b) => compareBuild(a, b, loose))
 module.exports = sort
 
 
 /***/ }),
 
-/***/ 8691:
+/***/ 6114:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const parse = __nccwpck_require__(3854)
+const parse = __nccwpck_require__(6353)
+const constants = __nccwpck_require__(5101)
+const SemVer = __nccwpck_require__(7163)
+
+const truncate = (version, truncation, options) => {
+  if (!constants.RELEASE_TYPES.includes(truncation)) {
+    return null
+  }
+
+  const clonedVersion = cloneInputVersion(version, options)
+  return clonedVersion && doTruncation(clonedVersion, truncation)
+}
+
+const cloneInputVersion = (version, options) => {
+  const versionStringToParse = (
+    version instanceof SemVer ? version.version : version
+  )
+
+  return parse(versionStringToParse, options)
+}
+
+const doTruncation = (version, truncation) => {
+  if (isPrerelease(truncation)) {
+    return version.version
+  }
+
+  version.prerelease = []
+
+  switch (truncation) {
+    case 'major':
+      version.minor = 0
+      version.patch = 0
+      break
+    case 'minor':
+      version.patch = 0
+      break
+  }
+
+  return version.format()
+}
+
+const isPrerelease = (type) => {
+  return type.startsWith('pre')
+}
+
+module.exports = truncate
+
+
+/***/ }),
+
+/***/ 8780:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+
+
+const parse = __nccwpck_require__(6353)
 const valid = (version, options) => {
   const v = parse(version, options)
   return v ? v.version : null
@@ -9498,53 +9562,54 @@ module.exports = valid
 
 /***/ }),
 
-/***/ 9419:
+/***/ 2088:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 // just pre-load all the stuff that index.js lazily exports
-const internalRe = __nccwpck_require__(5580)
-const constants = __nccwpck_require__(4256)
-const SemVer = __nccwpck_require__(4154)
-const identifiers = __nccwpck_require__(1713)
-const parse = __nccwpck_require__(3854)
-const valid = __nccwpck_require__(8691)
-const clean = __nccwpck_require__(9956)
-const inc = __nccwpck_require__(2341)
-const diff = __nccwpck_require__(4962)
-const major = __nccwpck_require__(6468)
-const minor = __nccwpck_require__(7032)
-const patch = __nccwpck_require__(6447)
-const prerelease = __nccwpck_require__(8359)
-const compare = __nccwpck_require__(1306)
-const rcompare = __nccwpck_require__(6156)
-const compareLoose = __nccwpck_require__(825)
-const compareBuild = __nccwpck_require__(7083)
-const sort = __nccwpck_require__(2397)
-const rsort = __nccwpck_require__(2659)
-const gt = __nccwpck_require__(2098)
-const lt = __nccwpck_require__(5045)
-const eq = __nccwpck_require__(2563)
-const neq = __nccwpck_require__(5969)
-const gte = __nccwpck_require__(5851)
-const lte = __nccwpck_require__(5462)
-const cmp = __nccwpck_require__(2977)
-const coerce = __nccwpck_require__(7420)
-const Comparator = __nccwpck_require__(6222)
-const Range = __nccwpck_require__(3137)
-const satisfies = __nccwpck_require__(7575)
-const toComparators = __nccwpck_require__(4377)
-const maxSatisfying = __nccwpck_require__(4150)
-const minSatisfying = __nccwpck_require__(2420)
-const minVersion = __nccwpck_require__(7815)
-const validRange = __nccwpck_require__(8072)
-const outside = __nccwpck_require__(4421)
-const gtr = __nccwpck_require__(7173)
-const ltr = __nccwpck_require__(2156)
-const intersects = __nccwpck_require__(2150)
-const simplifyRange = __nccwpck_require__(3963)
-const subset = __nccwpck_require__(826)
+const internalRe = __nccwpck_require__(5471)
+const constants = __nccwpck_require__(5101)
+const SemVer = __nccwpck_require__(7163)
+const identifiers = __nccwpck_require__(3348)
+const parse = __nccwpck_require__(6353)
+const valid = __nccwpck_require__(8780)
+const clean = __nccwpck_require__(1799)
+const inc = __nccwpck_require__(2338)
+const diff = __nccwpck_require__(711)
+const major = __nccwpck_require__(8511)
+const minor = __nccwpck_require__(2603)
+const patch = __nccwpck_require__(8756)
+const prerelease = __nccwpck_require__(5714)
+const compare = __nccwpck_require__(8469)
+const rcompare = __nccwpck_require__(2173)
+const compareLoose = __nccwpck_require__(6874)
+const compareBuild = __nccwpck_require__(7648)
+const sort = __nccwpck_require__(9872)
+const rsort = __nccwpck_require__(7192)
+const gt = __nccwpck_require__(6599)
+const lt = __nccwpck_require__(3872)
+const eq = __nccwpck_require__(5082)
+const neq = __nccwpck_require__(4974)
+const gte = __nccwpck_require__(1236)
+const lte = __nccwpck_require__(6717)
+const cmp = __nccwpck_require__(8646)
+const coerce = __nccwpck_require__(5385)
+const truncate = __nccwpck_require__(6114)
+const Comparator = __nccwpck_require__(9379)
+const Range = __nccwpck_require__(6782)
+const satisfies = __nccwpck_require__(8011)
+const toComparators = __nccwpck_require__(4750)
+const maxSatisfying = __nccwpck_require__(5574)
+const minSatisfying = __nccwpck_require__(8595)
+const minVersion = __nccwpck_require__(1866)
+const validRange = __nccwpck_require__(4737)
+const outside = __nccwpck_require__(280)
+const gtr = __nccwpck_require__(2276)
+const ltr = __nccwpck_require__(5213)
+const intersects = __nccwpck_require__(3465)
+const simplifyRange = __nccwpck_require__(2028)
+const subset = __nccwpck_require__(1489)
 module.exports = {
   parse,
   valid,
@@ -9569,6 +9634,7 @@ module.exports = {
   lte,
   cmp,
   coerce,
+  truncate,
   Comparator,
   Range,
   satisfies,
@@ -9596,7 +9662,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4256:
+/***/ 5101:
 /***/ ((module) => {
 
 
@@ -9640,7 +9706,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1542:
+/***/ 1159:
 /***/ ((module) => {
 
 
@@ -9658,7 +9724,7 @@ module.exports = debug
 
 /***/ }),
 
-/***/ 1713:
+/***/ 3348:
 /***/ ((module) => {
 
 
@@ -9694,7 +9760,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5088:
+/***/ 1383:
 /***/ ((module) => {
 
 
@@ -9743,7 +9809,7 @@ module.exports = LRUCache
 
 /***/ }),
 
-/***/ 977:
+/***/ 356:
 /***/ ((module) => {
 
 
@@ -9767,7 +9833,7 @@ module.exports = parseOptions
 
 /***/ }),
 
-/***/ 5580:
+/***/ 5471:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 
@@ -9776,8 +9842,8 @@ const {
   MAX_SAFE_COMPONENT_LENGTH,
   MAX_SAFE_BUILD_LENGTH,
   MAX_LENGTH,
-} = __nccwpck_require__(4256)
-const debug = __nccwpck_require__(1542)
+} = __nccwpck_require__(5101)
+const debug = __nccwpck_require__(1159)
 exports = module.exports = {}
 
 // The actual regexps go on exports.re
@@ -9908,7 +9974,7 @@ createToken('LOOSE', `^${src[t.LOOSEPLAIN]}$`)
 createToken('GTLT', '((?:<|>)?=?)')
 
 // Something like "2.*" or "1.2.x".
-// Note that "x.x" is a valid xRange identifer, meaning "any version"
+// Note that "x.x" is a valid xRange identifier, meaning "any version"
 // Only the first item is strictly required.
 createToken('XRANGEIDENTIFIERLOOSE', `${src[t.NUMERICIDENTIFIERLOOSE]}|x|X|\\*`)
 createToken('XRANGEIDENTIFIER', `${src[t.NUMERICIDENTIFIER]}|x|X|\\*`)
@@ -9997,25 +10063,25 @@ createToken('GTE0PRE', '^\\s*>=\\s*0\\.0\\.0-0\\s*$')
 
 /***/ }),
 
-/***/ 7173:
+/***/ 2276:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 // Determine if version is greater than all the versions possible in the range.
-const outside = __nccwpck_require__(4421)
+const outside = __nccwpck_require__(280)
 const gtr = (version, range, options) => outside(version, range, '>', options)
 module.exports = gtr
 
 
 /***/ }),
 
-/***/ 2150:
+/***/ 3465:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Range = __nccwpck_require__(3137)
+const Range = __nccwpck_require__(6782)
 const intersects = (r1, r2, options) => {
   r1 = new Range(r1, options)
   r2 = new Range(r2, options)
@@ -10026,12 +10092,12 @@ module.exports = intersects
 
 /***/ }),
 
-/***/ 2156:
+/***/ 5213:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const outside = __nccwpck_require__(4421)
+const outside = __nccwpck_require__(280)
 // Determine if version is less than all the versions possible in the range
 const ltr = (version, range, options) => outside(version, range, '<', options)
 module.exports = ltr
@@ -10039,13 +10105,13 @@ module.exports = ltr
 
 /***/ }),
 
-/***/ 4150:
+/***/ 5574:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
-const Range = __nccwpck_require__(3137)
+const SemVer = __nccwpck_require__(7163)
+const Range = __nccwpck_require__(6782)
 
 const maxSatisfying = (versions, range, options) => {
   let max = null
@@ -10073,13 +10139,13 @@ module.exports = maxSatisfying
 
 /***/ }),
 
-/***/ 2420:
+/***/ 8595:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
-const Range = __nccwpck_require__(3137)
+const SemVer = __nccwpck_require__(7163)
+const Range = __nccwpck_require__(6782)
 const minSatisfying = (versions, range, options) => {
   let min = null
   let minSV = null
@@ -10106,14 +10172,14 @@ module.exports = minSatisfying
 
 /***/ }),
 
-/***/ 7815:
+/***/ 1866:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
-const Range = __nccwpck_require__(3137)
-const gt = __nccwpck_require__(2098)
+const SemVer = __nccwpck_require__(7163)
+const Range = __nccwpck_require__(6782)
+const gt = __nccwpck_require__(6599)
 
 const minVersion = (range, loose) => {
   range = new Range(range, loose)
@@ -10176,20 +10242,20 @@ module.exports = minVersion
 
 /***/ }),
 
-/***/ 4421:
+/***/ 280:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const SemVer = __nccwpck_require__(4154)
-const Comparator = __nccwpck_require__(6222)
+const SemVer = __nccwpck_require__(7163)
+const Comparator = __nccwpck_require__(9379)
 const { ANY } = Comparator
-const Range = __nccwpck_require__(3137)
-const satisfies = __nccwpck_require__(7575)
-const gt = __nccwpck_require__(2098)
-const lt = __nccwpck_require__(5045)
-const lte = __nccwpck_require__(5462)
-const gte = __nccwpck_require__(5851)
+const Range = __nccwpck_require__(6782)
+const satisfies = __nccwpck_require__(8011)
+const gt = __nccwpck_require__(6599)
+const lt = __nccwpck_require__(3872)
+const lte = __nccwpck_require__(6717)
+const gte = __nccwpck_require__(1236)
 
 const outside = (version, range, hilo, options) => {
   version = new SemVer(version, options)
@@ -10265,7 +10331,7 @@ module.exports = outside
 
 /***/ }),
 
-/***/ 3963:
+/***/ 2028:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -10273,8 +10339,8 @@ module.exports = outside
 // given a set of versions and a range, create a "simplified" range
 // that includes the same versions that the original range does
 // If the original range is shorter than the simplified one, return that.
-const satisfies = __nccwpck_require__(7575)
-const compare = __nccwpck_require__(1306)
+const satisfies = __nccwpck_require__(8011)
+const compare = __nccwpck_require__(8469)
 module.exports = (versions, range, options) => {
   const set = []
   let first = null
@@ -10321,16 +10387,16 @@ module.exports = (versions, range, options) => {
 
 /***/ }),
 
-/***/ 826:
+/***/ 1489:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Range = __nccwpck_require__(3137)
-const Comparator = __nccwpck_require__(6222)
+const Range = __nccwpck_require__(6782)
+const Comparator = __nccwpck_require__(9379)
 const { ANY } = Comparator
-const satisfies = __nccwpck_require__(7575)
-const compare = __nccwpck_require__(1306)
+const satisfies = __nccwpck_require__(8011)
+const compare = __nccwpck_require__(8469)
 
 // Complex range `r1 || r2 || ...` is a subset of `R1 || R2 || ...` iff:
 // - Every simple range `r1, r2, ...` is a null set, OR
@@ -10500,7 +10566,7 @@ const simpleSubset = (sub, dom, options) => {
         if (higher === c && higher !== gt) {
           return false
         }
-      } else if (gt.operator === '>=' && !satisfies(gt.semver, String(c), options)) {
+      } else if (gt.operator === '>=' && !c.test(gt.semver)) {
         return false
       }
     }
@@ -10518,7 +10584,7 @@ const simpleSubset = (sub, dom, options) => {
         if (lower === c && lower !== lt) {
           return false
         }
-      } else if (lt.operator === '<=' && !satisfies(lt.semver, String(c), options)) {
+      } else if (lt.operator === '<=' && !c.test(lt.semver)) {
         return false
       }
     }
@@ -10577,12 +10643,12 @@ module.exports = subset
 
 /***/ }),
 
-/***/ 4377:
+/***/ 4750:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Range = __nccwpck_require__(3137)
+const Range = __nccwpck_require__(6782)
 
 // Mostly just for testing and legacy API reasons
 const toComparators = (range, options) =>
@@ -10594,12 +10660,12 @@ module.exports = toComparators
 
 /***/ }),
 
-/***/ 8072:
+/***/ 4737:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Range = __nccwpck_require__(3137)
+const Range = __nccwpck_require__(6782)
 const validRange = (range, options) => {
   try {
     // Return '*' instead of '' so that truthiness works.
@@ -10614,15 +10680,15 @@ module.exports = validRange
 
 /***/ }),
 
-/***/ 329:
+/***/ 770:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-module.exports = __nccwpck_require__(4179);
+module.exports = __nccwpck_require__(218);
 
 
 /***/ }),
 
-/***/ 4179:
+/***/ 218:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 var __webpack_unused_export__;
@@ -10894,34 +10960,34 @@ __webpack_unused_export__ = debug; // for test
 
 /***/ }),
 
-/***/ 5134:
+/***/ 6752:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 var __webpack_unused_export__;
 
 
-const Client = __nccwpck_require__(9695)
-const Dispatcher = __nccwpck_require__(8921)
-const Pool = __nccwpck_require__(142)
-const BalancedPool = __nccwpck_require__(4167)
-const Agent = __nccwpck_require__(1539)
-const ProxyAgent = __nccwpck_require__(4286)
-const EnvHttpProxyAgent = __nccwpck_require__(9627)
-const RetryAgent = __nccwpck_require__(9384)
-const errors = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
+const Client = __nccwpck_require__(3701)
+const Dispatcher = __nccwpck_require__(883)
+const Pool = __nccwpck_require__(628)
+const BalancedPool = __nccwpck_require__(837)
+const Agent = __nccwpck_require__(7405)
+const ProxyAgent = __nccwpck_require__(6672)
+const EnvHttpProxyAgent = __nccwpck_require__(3137)
+const RetryAgent = __nccwpck_require__(50)
+const errors = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
 const { InvalidArgumentError } = errors
-const api = __nccwpck_require__(9281)
-const buildConnector = __nccwpck_require__(626)
-const MockClient = __nccwpck_require__(2007)
-const MockAgent = __nccwpck_require__(8555)
-const MockPool = __nccwpck_require__(4950)
-const mockErrors = __nccwpck_require__(9456)
-const RetryHandler = __nccwpck_require__(1446)
-const { getGlobalDispatcher, setGlobalDispatcher } = __nccwpck_require__(263)
-const DecoratorHandler = __nccwpck_require__(3461)
-const RedirectHandler = __nccwpck_require__(9904)
-const createRedirectInterceptor = __nccwpck_require__(1578)
+const api = __nccwpck_require__(6615)
+const buildConnector = __nccwpck_require__(9136)
+const MockClient = __nccwpck_require__(7365)
+const MockAgent = __nccwpck_require__(7501)
+const MockPool = __nccwpck_require__(4004)
+const mockErrors = __nccwpck_require__(2429)
+const RetryHandler = __nccwpck_require__(7816)
+const { getGlobalDispatcher, setGlobalDispatcher } = __nccwpck_require__(2581)
+const DecoratorHandler = __nccwpck_require__(8155)
+const RedirectHandler = __nccwpck_require__(8754)
+const createRedirectInterceptor = __nccwpck_require__(5092)
 
 Object.assign(Dispatcher.prototype, api)
 
@@ -10939,10 +11005,10 @@ __webpack_unused_export__ = DecoratorHandler
 __webpack_unused_export__ = RedirectHandler
 __webpack_unused_export__ = createRedirectInterceptor
 __webpack_unused_export__ = {
-  redirect: __nccwpck_require__(9500),
-  retry: __nccwpck_require__(2148),
-  dump: __nccwpck_require__(4650),
-  dns: __nccwpck_require__(4997)
+  redirect: __nccwpck_require__(1514),
+  retry: __nccwpck_require__(2026),
+  dump: __nccwpck_require__(8060),
+  dns: __nccwpck_require__(379)
 }
 
 __webpack_unused_export__ = buildConnector
@@ -11004,7 +11070,7 @@ function makeDispatcher (fn) {
 __webpack_unused_export__ = setGlobalDispatcher
 __webpack_unused_export__ = getGlobalDispatcher
 
-const fetchImpl = (__nccwpck_require__(2652).fetch)
+const fetchImpl = (__nccwpck_require__(4398).fetch)
 __webpack_unused_export__ = async function fetch (init, options = undefined) {
   try {
     return await fetchImpl(init, options)
@@ -11016,39 +11082,39 @@ __webpack_unused_export__ = async function fetch (init, options = undefined) {
     throw err
   }
 }
-/* unused reexport */ __nccwpck_require__(6238).Headers
-/* unused reexport */ __nccwpck_require__(5973).Response
-/* unused reexport */ __nccwpck_require__(6529).Request
-/* unused reexport */ __nccwpck_require__(7288).FormData
+/* unused reexport */ __nccwpck_require__(660).Headers
+/* unused reexport */ __nccwpck_require__(9051).Response
+/* unused reexport */ __nccwpck_require__(9967).Request
+/* unused reexport */ __nccwpck_require__(5910).FormData
 __webpack_unused_export__ = globalThis.File ?? (__nccwpck_require__(4573).File)
-/* unused reexport */ __nccwpck_require__(6049).FileReader
+/* unused reexport */ __nccwpck_require__(8355).FileReader
 
-const { setGlobalOrigin, getGlobalOrigin } = __nccwpck_require__(6629)
+const { setGlobalOrigin, getGlobalOrigin } = __nccwpck_require__(1059)
 
 __webpack_unused_export__ = setGlobalOrigin
 __webpack_unused_export__ = getGlobalOrigin
 
-const { CacheStorage } = __nccwpck_require__(1339)
-const { kConstruct } = __nccwpck_require__(5983)
+const { CacheStorage } = __nccwpck_require__(3245)
+const { kConstruct } = __nccwpck_require__(109)
 
 // Cache & CacheStorage are tightly coupled with fetch. Even if it may run
 // in an older version of Node, it doesn't have any use without fetch.
 __webpack_unused_export__ = new CacheStorage(kConstruct)
 
-const { deleteCookie, getCookies, getSetCookies, setCookie } = __nccwpck_require__(4799)
+const { deleteCookie, getCookies, getSetCookies, setCookie } = __nccwpck_require__(9061)
 
 __webpack_unused_export__ = deleteCookie
 __webpack_unused_export__ = getCookies
 __webpack_unused_export__ = getSetCookies
 __webpack_unused_export__ = setCookie
 
-const { parseMIMEType, serializeAMimeType } = __nccwpck_require__(5406)
+const { parseMIMEType, serializeAMimeType } = __nccwpck_require__(1900)
 
 __webpack_unused_export__ = parseMIMEType
 __webpack_unused_export__ = serializeAMimeType
 
-const { CloseEvent, ErrorEvent, MessageEvent } = __nccwpck_require__(3630)
-/* unused reexport */ __nccwpck_require__(4488).WebSocket
+const { CloseEvent, ErrorEvent, MessageEvent } = __nccwpck_require__(5188)
+/* unused reexport */ __nccwpck_require__(3726).WebSocket
 __webpack_unused_export__ = CloseEvent
 __webpack_unused_export__ = ErrorEvent
 __webpack_unused_export__ = MessageEvent
@@ -11064,18 +11130,18 @@ __webpack_unused_export__ = MockPool
 __webpack_unused_export__ = MockAgent
 __webpack_unused_export__ = mockErrors
 
-const { EventSource } = __nccwpck_require__(8680)
+const { EventSource } = __nccwpck_require__(1238)
 
 __webpack_unused_export__ = EventSource
 
 
 /***/ }),
 
-/***/ 9744:
+/***/ 158:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { addAbortListener } = __nccwpck_require__(6250)
-const { RequestAbortedError } = __nccwpck_require__(8225)
+const { addAbortListener } = __nccwpck_require__(3440)
+const { RequestAbortedError } = __nccwpck_require__(8707)
 
 const kListener = Symbol('kListener')
 const kSignal = Symbol('kSignal')
@@ -11135,16 +11201,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8654:
+/***/ 2279:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { InvalidArgumentError, SocketError } = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
-const { addSignal, removeSignal } = __nccwpck_require__(9744)
+const { InvalidArgumentError, SocketError } = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
+const { addSignal, removeSignal } = __nccwpck_require__(158)
 
 class ConnectHandler extends AsyncResource {
   constructor (opts, callback) {
@@ -11250,7 +11316,7 @@ module.exports = connect
 
 /***/ }),
 
-/***/ 4660:
+/***/ 6862:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -11264,10 +11330,10 @@ const {
   InvalidArgumentError,
   InvalidReturnValueError,
   RequestAbortedError
-} = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
+} = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { addSignal, removeSignal } = __nccwpck_require__(9744)
+const { addSignal, removeSignal } = __nccwpck_require__(158)
 const assert = __nccwpck_require__(4589)
 
 const kResume = Symbol('resume')
@@ -11508,16 +11574,16 @@ module.exports = pipeline
 
 /***/ }),
 
-/***/ 8401:
+/***/ 4043:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { Readable } = __nccwpck_require__(9449)
-const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
-const { getResolveErrorBodyCallback } = __nccwpck_require__(6473)
+const { Readable } = __nccwpck_require__(9927)
+const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
+const { getResolveErrorBodyCallback } = __nccwpck_require__(7655)
 const { AsyncResource } = __nccwpck_require__(6698)
 
 class RequestHandler extends AsyncResource {
@@ -11729,18 +11795,18 @@ module.exports.RequestHandler = RequestHandler
 
 /***/ }),
 
-/***/ 1154:
+/***/ 3560:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { finished, PassThrough } = __nccwpck_require__(7075)
-const { InvalidArgumentError, InvalidReturnValueError } = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
-const { getResolveErrorBodyCallback } = __nccwpck_require__(6473)
+const { InvalidArgumentError, InvalidReturnValueError } = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
+const { getResolveErrorBodyCallback } = __nccwpck_require__(7655)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { addSignal, removeSignal } = __nccwpck_require__(9744)
+const { addSignal, removeSignal } = __nccwpck_require__(158)
 
 class StreamHandler extends AsyncResource {
   constructor (opts, factory, callback) {
@@ -11956,15 +12022,15 @@ module.exports = stream
 
 /***/ }),
 
-/***/ 2224:
+/***/ 1882:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { InvalidArgumentError, SocketError } = __nccwpck_require__(8225)
+const { InvalidArgumentError, SocketError } = __nccwpck_require__(8707)
 const { AsyncResource } = __nccwpck_require__(6698)
-const util = __nccwpck_require__(6250)
-const { addSignal, removeSignal } = __nccwpck_require__(9744)
+const util = __nccwpck_require__(3440)
+const { addSignal, removeSignal } = __nccwpck_require__(158)
 const assert = __nccwpck_require__(4589)
 
 class UpgradeHandler extends AsyncResource {
@@ -12071,21 +12137,21 @@ module.exports = upgrade
 
 /***/ }),
 
-/***/ 9281:
+/***/ 6615:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-module.exports.request = __nccwpck_require__(8401)
-module.exports.stream = __nccwpck_require__(1154)
-module.exports.pipeline = __nccwpck_require__(4660)
-module.exports.upgrade = __nccwpck_require__(2224)
-module.exports.connect = __nccwpck_require__(8654)
+module.exports.request = __nccwpck_require__(4043)
+module.exports.stream = __nccwpck_require__(3560)
+module.exports.pipeline = __nccwpck_require__(6862)
+module.exports.upgrade = __nccwpck_require__(1882)
+module.exports.connect = __nccwpck_require__(2279)
 
 
 /***/ }),
 
-/***/ 9449:
+/***/ 9927:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // Ported from https://github.com/nodejs/undici/pull/907
@@ -12094,9 +12160,9 @@ module.exports.connect = __nccwpck_require__(8654)
 
 const assert = __nccwpck_require__(4589)
 const { Readable } = __nccwpck_require__(7075)
-const { RequestAbortedError, NotSupportedError, InvalidArgumentError, AbortError } = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
-const { ReadableStreamFrom } = __nccwpck_require__(6250)
+const { RequestAbortedError, NotSupportedError, InvalidArgumentError, AbortError } = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
+const { ReadableStreamFrom } = __nccwpck_require__(3440)
 
 const kConsume = Symbol('kConsume')
 const kReading = Symbol('kReading')
@@ -12477,15 +12543,15 @@ module.exports = { Readable: BodyReadable, chunksDecode }
 
 /***/ }),
 
-/***/ 6473:
+/***/ 7655:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const assert = __nccwpck_require__(4589)
 const {
   ResponseStatusCodeError
-} = __nccwpck_require__(8225)
+} = __nccwpck_require__(8707)
 
-const { chunksDecode } = __nccwpck_require__(9449)
+const { chunksDecode } = __nccwpck_require__(9927)
 const CHUNK_LIMIT = 128 * 1024
 
 async function getResolveErrorBodyCallback ({ callback, body, contentType, statusCode, statusMessage, headers }) {
@@ -12577,16 +12643,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 626:
+/***/ 9136:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const net = __nccwpck_require__(7030)
 const assert = __nccwpck_require__(4589)
-const util = __nccwpck_require__(6250)
-const { InvalidArgumentError, ConnectTimeoutError } = __nccwpck_require__(8225)
-const timers = __nccwpck_require__(8793)
+const util = __nccwpck_require__(3440)
+const { InvalidArgumentError, ConnectTimeoutError } = __nccwpck_require__(8707)
+const timers = __nccwpck_require__(6603)
 
 function noop () {}
 
@@ -12824,7 +12890,7 @@ module.exports = buildConnector
 
 /***/ }),
 
-/***/ 7125:
+/***/ 735:
 /***/ ((module) => {
 
 
@@ -12949,7 +13015,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5204:
+/***/ 2414:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -13158,7 +13224,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8225:
+/***/ 8707:
 /***/ ((module) => {
 
 
@@ -13590,7 +13656,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1437:
+/***/ 4655:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -13598,7 +13664,7 @@ module.exports = {
 const {
   InvalidArgumentError,
   NotSupportedError
-} = __nccwpck_require__(8225)
+} = __nccwpck_require__(8707)
 const assert = __nccwpck_require__(4589)
 const {
   isValidHTTPToken,
@@ -13613,9 +13679,9 @@ const {
   validateHandler,
   getServerName,
   normalizedMethodRecords
-} = __nccwpck_require__(6250)
-const { channels } = __nccwpck_require__(5204)
-const { headerNameLowerCasedRecord } = __nccwpck_require__(7125)
+} = __nccwpck_require__(3440)
+const { channels } = __nccwpck_require__(2414)
+const { headerNameLowerCasedRecord } = __nccwpck_require__(735)
 
 // Verifies that a given path is valid does not contain control chars \x00 to \x20
 const invalidPathRegex = /[^\u0021-\u00ff]/
@@ -14002,7 +14068,7 @@ module.exports = Request
 
 /***/ }),
 
-/***/ 7233:
+/***/ 6443:
 /***/ ((module) => {
 
 module.exports = {
@@ -14076,7 +14142,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4094:
+/***/ 7752:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -14084,7 +14150,7 @@ module.exports = {
 const {
   wellknownHeaderNames,
   headerNameLowerCasedRecord
-} = __nccwpck_require__(7125)
+} = __nccwpck_require__(735)
 
 class TstNode {
   /** @type {any} */
@@ -14235,13 +14301,13 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6250:
+/***/ 3440:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { kDestroyed, kBodyUsed, kListeners, kBody } = __nccwpck_require__(7233)
+const { kDestroyed, kBodyUsed, kListeners, kBody } = __nccwpck_require__(6443)
 const { IncomingMessage } = __nccwpck_require__(7067)
 const stream = __nccwpck_require__(7075)
 const net = __nccwpck_require__(7030)
@@ -14249,9 +14315,9 @@ const { Blob } = __nccwpck_require__(4573)
 const nodeUtil = __nccwpck_require__(7975)
 const { stringify } = __nccwpck_require__(1792)
 const { EventEmitter: EE } = __nccwpck_require__(8474)
-const { InvalidArgumentError } = __nccwpck_require__(8225)
-const { headerNameLowerCasedRecord } = __nccwpck_require__(7125)
-const { tree } = __nccwpck_require__(4094)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
+const { headerNameLowerCasedRecord } = __nccwpck_require__(735)
+const { tree } = __nccwpck_require__(7752)
 
 const [nodeMajor, nodeMinor] = process.versions.node.split('.').map(v => Number(v))
 
@@ -14961,18 +15027,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1539:
+/***/ 7405:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { InvalidArgumentError } = __nccwpck_require__(8225)
-const { kClients, kRunning, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(7233)
-const DispatcherBase = __nccwpck_require__(2147)
-const Pool = __nccwpck_require__(142)
-const Client = __nccwpck_require__(9695)
-const util = __nccwpck_require__(6250)
-const createRedirectInterceptor = __nccwpck_require__(1578)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
+const { kClients, kRunning, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(6443)
+const DispatcherBase = __nccwpck_require__(1841)
+const Pool = __nccwpck_require__(628)
+const Client = __nccwpck_require__(3701)
+const util = __nccwpck_require__(3440)
+const createRedirectInterceptor = __nccwpck_require__(5092)
 
 const kOnConnect = Symbol('onConnect')
 const kOnDisconnect = Symbol('onDisconnect')
@@ -14990,8 +15056,6 @@ function defaultFactory (origin, opts) {
 
 class Agent extends DispatcherBase {
   constructor ({ factory = defaultFactory, maxRedirections = 0, connect, ...options } = {}) {
-    super()
-
     if (typeof factory !== 'function') {
       throw new InvalidArgumentError('factory must be a function.')
     }
@@ -15003,6 +15067,8 @@ class Agent extends DispatcherBase {
     if (!Number.isInteger(maxRedirections) || maxRedirections < 0) {
       throw new InvalidArgumentError('maxRedirections must be a positive number')
     }
+
+    super(options)
 
     if (connect && typeof connect !== 'function') {
       connect = { ...connect }
@@ -15097,7 +15163,7 @@ module.exports = Agent
 
 /***/ }),
 
-/***/ 4167:
+/***/ 837:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -15105,7 +15171,7 @@ module.exports = Agent
 const {
   BalancedPoolMissingUpstreamError,
   InvalidArgumentError
-} = __nccwpck_require__(8225)
+} = __nccwpck_require__(8707)
 const {
   PoolBase,
   kClients,
@@ -15113,10 +15179,10 @@ const {
   kAddClient,
   kRemoveClient,
   kGetDispatcher
-} = __nccwpck_require__(5342)
-const Pool = __nccwpck_require__(142)
-const { kUrl, kInterceptors } = __nccwpck_require__(7233)
-const { parseOrigin } = __nccwpck_require__(6250)
+} = __nccwpck_require__(2128)
+const Pool = __nccwpck_require__(628)
+const { kUrl, kInterceptors } = __nccwpck_require__(6443)
+const { parseOrigin } = __nccwpck_require__(3440)
 const kFactory = Symbol('factory')
 
 const kOptions = Symbol('options')
@@ -15313,7 +15379,7 @@ module.exports = BalancedPool
 
 /***/ }),
 
-/***/ 763:
+/***/ 637:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -15321,9 +15387,9 @@ module.exports = BalancedPool
 /* global WebAssembly */
 
 const assert = __nccwpck_require__(4589)
-const util = __nccwpck_require__(6250)
-const { channels } = __nccwpck_require__(5204)
-const timers = __nccwpck_require__(8793)
+const util = __nccwpck_require__(3440)
+const { channels } = __nccwpck_require__(2414)
+const timers = __nccwpck_require__(6603)
 const {
   RequestContentLengthMismatchError,
   ResponseContentLengthMismatchError,
@@ -15335,7 +15401,7 @@ const {
   BodyTimeoutError,
   HTTPParserError,
   ResponseExceededMaxSizeError
-} = __nccwpck_require__(8225)
+} = __nccwpck_require__(8707)
 const {
   kUrl,
   kReset,
@@ -15368,9 +15434,9 @@ const {
   kOnError,
   kResume,
   kHTTPContext
-} = __nccwpck_require__(7233)
+} = __nccwpck_require__(6443)
 
-const constants = __nccwpck_require__(6162)
+const constants = __nccwpck_require__(2824)
 const EMPTY_BUF = Buffer.alloc(0)
 const FastBuffer = Buffer[Symbol.species]
 const addListener = util.addListener
@@ -15379,11 +15445,11 @@ const removeAllListeners = util.removeAllListeners
 let extractBody
 
 async function lazyllhttp () {
-  const llhttpWasmData = process.env.JEST_WORKER_ID ? __nccwpck_require__(9784) : undefined
+  const llhttpWasmData = process.env.JEST_WORKER_ID ? __nccwpck_require__(3870) : undefined
 
   let mod
   try {
-    mod = await WebAssembly.compile(__nccwpck_require__(6400))
+    mod = await WebAssembly.compile(__nccwpck_require__(3434))
   } catch (e) {
     /* istanbul ignore next */
 
@@ -15391,7 +15457,7 @@ async function lazyllhttp () {
     // being enabled, but the occurring of this other error
     // * https://github.com/emscripten-core/emscripten/issues/11495
     // got me to remove that check to avoid breaking Node 12.
-    mod = await WebAssembly.compile(llhttpWasmData || __nccwpck_require__(9784))
+    mod = await WebAssembly.compile(llhttpWasmData || __nccwpck_require__(3870))
   }
 
   return await WebAssembly.instantiate(mod, {
@@ -15597,27 +15663,69 @@ class Parser {
 
       const offset = llhttp.llhttp_get_error_pos(this.ptr) - currentBufferPtr
 
-      if (ret === constants.ERROR.PAUSED_UPGRADE) {
-        this.onUpgrade(data.slice(offset))
-      } else if (ret === constants.ERROR.PAUSED) {
-        this.paused = true
-        socket.unshift(data.slice(offset))
-      } else if (ret !== constants.ERROR.OK) {
-        const ptr = llhttp.llhttp_get_error_reason(this.ptr)
-        let message = ''
-        /* istanbul ignore else: difficult to make a test case for */
-        if (ptr) {
-          const len = new Uint8Array(llhttp.memory.buffer, ptr).indexOf(0)
-          message =
-            'Response does not match the HTTP/1.1 protocol (' +
-            Buffer.from(llhttp.memory.buffer, ptr, len).toString() +
-            ')'
+      if (ret !== constants.ERROR.OK) {
+        const body = data.subarray(offset)
+
+        if (ret === constants.ERROR.PAUSED_UPGRADE) {
+          this.onUpgrade(body)
+        } else if (ret === constants.ERROR.PAUSED) {
+          this.paused = true
+          socket.unshift(body)
+        } else {
+          throw this.createError(ret, body)
         }
-        throw new HTTPParserError(message, constants.ERROR[ret], data.slice(offset))
       }
     } catch (err) {
       util.destroy(socket, err)
     }
+  }
+
+  finish () {
+    assert(currentParser === null)
+    assert(this.ptr != null)
+    assert(!this.paused)
+
+    const { llhttp } = this
+
+    let ret
+
+    try {
+      currentParser = this
+      ret = llhttp.llhttp_finish(this.ptr)
+    } finally {
+      currentParser = null
+    }
+
+    if (ret === constants.ERROR.OK) {
+      return null
+    }
+
+    if (ret === constants.ERROR.PAUSED || ret === constants.ERROR.PAUSED_UPGRADE) {
+      this.paused = true
+      return null
+    }
+
+    return this.createError(ret, EMPTY_BUF)
+  }
+
+  createError (ret, data) {
+    const { llhttp, contentLength, bytesRead } = this
+
+    if (contentLength && bytesRead !== parseInt(contentLength, 10)) {
+      return new ResponseContentLengthMismatchError()
+    }
+
+    const ptr = llhttp.llhttp_get_error_reason(this.ptr)
+    let message = ''
+    if (ptr) {
+      const len = new Uint8Array(llhttp.memory.buffer, ptr).indexOf(0)
+      message =
+        'Response does not match the HTTP/1.1 protocol (' +
+        Buffer.from(llhttp.memory.buffer, ptr, len).toString() +
+        ')'
+    }
+
+    return new HTTPParserError(message, constants.ERROR[ret], data)
   }
 
   destroy () {
@@ -15991,8 +16099,11 @@ async function connectH1 (client, socket) {
     // On Mac OS, we get an ECONNRESET even if there is a full body to be forwarded
     // to the user.
     if (err.code === 'ECONNRESET' && parser.statusCode && !parser.shouldKeepAlive) {
-      // We treat all incoming data so for as a valid response.
-      parser.onMessageComplete()
+      const parserErr = parser.finish()
+      if (parserErr) {
+        this[kError] = parserErr
+        this[kClient][kOnError](parserErr)
+      }
       return
     }
 
@@ -16011,8 +16122,10 @@ async function connectH1 (client, socket) {
     const parser = this[kParser]
 
     if (parser.statusCode && !parser.shouldKeepAlive) {
-      // We treat all incoming data so far as a valid response.
-      parser.onMessageComplete()
+      const parserErr = parser.finish()
+      if (parserErr) {
+        util.destroy(this, parserErr)
+      }
       return
     }
 
@@ -16024,8 +16137,7 @@ async function connectH1 (client, socket) {
 
     if (parser) {
       if (!this[kError] && parser.statusCode && !parser.shouldKeepAlive) {
-        // We treat all incoming data so far as a valid response.
-        parser.onMessageComplete()
+        this[kError] = parser.finish() || this[kError]
       }
 
       this[kParser].destroy()
@@ -16186,7 +16298,7 @@ function writeH1 (client, request) {
 
   if (util.isFormDataLike(body)) {
     if (!extractBody) {
-      extractBody = (__nccwpck_require__(6402).extractBody)
+      extractBody = (__nccwpck_require__(4492).extractBody)
     }
 
     const [bodyStream, contentType] = extractBody(body)
@@ -16690,20 +16802,20 @@ module.exports = connectH1
 
 /***/ }),
 
-/***/ 7278:
+/***/ 8788:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { pipeline } = __nccwpck_require__(7075)
-const util = __nccwpck_require__(6250)
+const util = __nccwpck_require__(3440)
 const {
   RequestContentLengthMismatchError,
   RequestAbortedError,
   SocketError,
   InformationalError
-} = __nccwpck_require__(8225)
+} = __nccwpck_require__(8707)
 const {
   kUrl,
   kReset,
@@ -16722,7 +16834,7 @@ const {
   kResume,
   kSize,
   kHTTPContext
-} = __nccwpck_require__(7233)
+} = __nccwpck_require__(6443)
 
 const kOpenStreams = Symbol('open streams')
 
@@ -17081,7 +17193,7 @@ function writeH2 (client, request) {
   let contentLength = util.bodyLength(body)
 
   if (util.isFormDataLike(body)) {
-    extractBody ??= (__nccwpck_require__(6402).extractBody)
+    extractBody ??= (__nccwpck_require__(4492).extractBody)
 
     const [bodyStream, contentType] = extractBody(body)
     headers['content-type'] = contentType
@@ -17441,7 +17553,7 @@ module.exports = connectH2
 
 /***/ }),
 
-/***/ 9695:
+/***/ 3701:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
@@ -17451,16 +17563,16 @@ module.exports = connectH2
 const assert = __nccwpck_require__(4589)
 const net = __nccwpck_require__(7030)
 const http = __nccwpck_require__(7067)
-const util = __nccwpck_require__(6250)
-const { channels } = __nccwpck_require__(5204)
-const Request = __nccwpck_require__(1437)
-const DispatcherBase = __nccwpck_require__(2147)
+const util = __nccwpck_require__(3440)
+const { channels } = __nccwpck_require__(2414)
+const Request = __nccwpck_require__(4655)
+const DispatcherBase = __nccwpck_require__(1841)
 const {
   InvalidArgumentError,
   InformationalError,
   ClientDestroyedError
-} = __nccwpck_require__(8225)
-const buildConnector = __nccwpck_require__(626)
+} = __nccwpck_require__(8707)
+const buildConnector = __nccwpck_require__(9136)
 const {
   kUrl,
   kServerName,
@@ -17502,9 +17614,9 @@ const {
   kHTTPContext,
   kMaxConcurrentStreams,
   kResume
-} = __nccwpck_require__(7233)
-const connectH1 = __nccwpck_require__(763)
-const connectH2 = __nccwpck_require__(7278)
+} = __nccwpck_require__(6443)
+const connectH1 = __nccwpck_require__(637)
+const connectH2 = __nccwpck_require__(8788)
 let deprecatedInterceptorWarned = false
 
 const kClosedResolve = Symbol('kClosedResolve')
@@ -17552,9 +17664,10 @@ class Client extends DispatcherBase {
     autoSelectFamilyAttemptTimeout,
     // h2
     maxConcurrentStreams,
-    allowH2
+    allowH2,
+    webSocket
   } = {}) {
-    super()
+    super({ webSocket })
 
     if (keepAlive !== undefined) {
       throw new InvalidArgumentError('unsupported keepAlive, use pipelining=0 instead')
@@ -17810,7 +17923,7 @@ class Client extends DispatcherBase {
   }
 }
 
-const createRedirectInterceptor = __nccwpck_require__(1578)
+const createRedirectInterceptor = __nccwpck_require__(5092)
 
 function onError (client, err) {
   if (
@@ -18070,31 +18183,39 @@ module.exports = Client
 
 /***/ }),
 
-/***/ 2147:
+/***/ 1841:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Dispatcher = __nccwpck_require__(8921)
+const Dispatcher = __nccwpck_require__(883)
 const {
   ClientDestroyedError,
   ClientClosedError,
   InvalidArgumentError
-} = __nccwpck_require__(8225)
-const { kDestroy, kClose, kClosed, kDestroyed, kDispatch, kInterceptors } = __nccwpck_require__(7233)
+} = __nccwpck_require__(8707)
+const { kDestroy, kClose, kClosed, kDestroyed, kDispatch, kInterceptors } = __nccwpck_require__(6443)
 
 const kOnDestroyed = Symbol('onDestroyed')
 const kOnClosed = Symbol('onClosed')
 const kInterceptedDispatch = Symbol('Intercepted Dispatch')
+const kWebSocketOptions = Symbol('webSocketOptions')
 
 class DispatcherBase extends Dispatcher {
-  constructor () {
+  constructor (opts) {
     super()
 
     this[kDestroyed] = false
     this[kOnDestroyed] = null
     this[kClosed] = false
     this[kOnClosed] = []
+    this[kWebSocketOptions] = opts?.webSocket ?? {}
+  }
+
+  get webSocketOptions () {
+    return {
+      maxPayloadSize: this[kWebSocketOptions].maxPayloadSize ?? 128 * 1024 * 1024
+    }
   }
 
   get destroyed () {
@@ -18267,7 +18388,7 @@ module.exports = DispatcherBase
 
 /***/ }),
 
-/***/ 8921:
+/***/ 883:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -18339,15 +18460,15 @@ module.exports = Dispatcher
 
 /***/ }),
 
-/***/ 9627:
+/***/ 3137:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const DispatcherBase = __nccwpck_require__(2147)
-const { kClose, kDestroy, kClosed, kDestroyed, kDispatch, kNoProxyAgent, kHttpProxyAgent, kHttpsProxyAgent } = __nccwpck_require__(7233)
-const ProxyAgent = __nccwpck_require__(4286)
-const Agent = __nccwpck_require__(1539)
+const DispatcherBase = __nccwpck_require__(1841)
+const { kClose, kDestroy, kClosed, kDestroyed, kDispatch, kNoProxyAgent, kHttpProxyAgent, kHttpsProxyAgent } = __nccwpck_require__(6443)
+const ProxyAgent = __nccwpck_require__(6672)
+const Agent = __nccwpck_require__(7405)
 
 const DEFAULT_PORTS = {
   'http:': 80,
@@ -18506,7 +18627,7 @@ module.exports = EnvHttpProxyAgent
 
 /***/ }),
 
-/***/ 8670:
+/***/ 4660:
 /***/ ((module) => {
 
 /* eslint-disable */
@@ -18630,15 +18751,15 @@ module.exports = class FixedQueue {
 
 /***/ }),
 
-/***/ 5342:
+/***/ 2128:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const DispatcherBase = __nccwpck_require__(2147)
-const FixedQueue = __nccwpck_require__(8670)
-const { kConnected, kSize, kRunning, kPending, kQueued, kBusy, kFree, kUrl, kClose, kDestroy, kDispatch } = __nccwpck_require__(7233)
-const PoolStats = __nccwpck_require__(9312)
+const DispatcherBase = __nccwpck_require__(1841)
+const FixedQueue = __nccwpck_require__(4660)
+const { kConnected, kSize, kRunning, kPending, kQueued, kBusy, kFree, kUrl, kClose, kDestroy, kDispatch } = __nccwpck_require__(6443)
+const PoolStats = __nccwpck_require__(3246)
 
 const kClients = Symbol('clients')
 const kNeedDrain = Symbol('needDrain')
@@ -18654,8 +18775,8 @@ const kRemoveClient = Symbol('remove client')
 const kStats = Symbol('stats')
 
 class PoolBase extends DispatcherBase {
-  constructor () {
-    super()
+  constructor (opts) {
+    super(opts)
 
     this[kQueue] = new FixedQueue()
     this[kClients] = []
@@ -18831,10 +18952,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9312:
+/***/ 3246:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { kFree, kConnected, kPending, kQueued, kRunning, kSize } = __nccwpck_require__(7233)
+const { kFree, kConnected, kPending, kQueued, kRunning, kSize } = __nccwpck_require__(6443)
 const kPool = Symbol('pool')
 
 class PoolStats {
@@ -18872,7 +18993,7 @@ module.exports = PoolStats
 
 /***/ }),
 
-/***/ 142:
+/***/ 628:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -18883,14 +19004,14 @@ const {
   kNeedDrain,
   kAddClient,
   kGetDispatcher
-} = __nccwpck_require__(5342)
-const Client = __nccwpck_require__(9695)
+} = __nccwpck_require__(2128)
+const Client = __nccwpck_require__(3701)
 const {
   InvalidArgumentError
-} = __nccwpck_require__(8225)
-const util = __nccwpck_require__(6250)
-const { kUrl, kInterceptors } = __nccwpck_require__(7233)
-const buildConnector = __nccwpck_require__(626)
+} = __nccwpck_require__(8707)
+const util = __nccwpck_require__(3440)
+const { kUrl, kInterceptors } = __nccwpck_require__(6443)
+const buildConnector = __nccwpck_require__(9136)
 
 const kOptions = Symbol('options')
 const kConnections = Symbol('connections')
@@ -18914,8 +19035,6 @@ class Pool extends PoolBase {
     allowH2,
     ...options
   } = {}) {
-    super()
-
     if (connections != null && (!Number.isFinite(connections) || connections < 0)) {
       throw new InvalidArgumentError('invalid connections')
     }
@@ -18939,6 +19058,8 @@ class Pool extends PoolBase {
         ...connect
       })
     }
+
+    super(options)
 
     this[kInterceptors] = options.interceptors?.Pool && Array.isArray(options.interceptors.Pool)
       ? options.interceptors.Pool
@@ -18986,19 +19107,19 @@ module.exports = Pool
 
 /***/ }),
 
-/***/ 4286:
+/***/ 6672:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kProxy, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(7233)
+const { kProxy, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(6443)
 const { URL } = __nccwpck_require__(3136)
-const Agent = __nccwpck_require__(1539)
-const Pool = __nccwpck_require__(142)
-const DispatcherBase = __nccwpck_require__(2147)
-const { InvalidArgumentError, RequestAbortedError, SecureProxyConnectionError } = __nccwpck_require__(8225)
-const buildConnector = __nccwpck_require__(626)
-const Client = __nccwpck_require__(9695)
+const Agent = __nccwpck_require__(7405)
+const Pool = __nccwpck_require__(628)
+const DispatcherBase = __nccwpck_require__(1841)
+const { InvalidArgumentError, RequestAbortedError, SecureProxyConnectionError } = __nccwpck_require__(8707)
+const buildConnector = __nccwpck_require__(9136)
+const Client = __nccwpck_require__(3701)
 
 const kAgent = Symbol('proxy agent')
 const kClient = Symbol('proxy client')
@@ -19267,13 +19388,13 @@ module.exports = ProxyAgent
 
 /***/ }),
 
-/***/ 9384:
+/***/ 50:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Dispatcher = __nccwpck_require__(8921)
-const RetryHandler = __nccwpck_require__(1446)
+const Dispatcher = __nccwpck_require__(883)
+const RetryHandler = __nccwpck_require__(7816)
 
 class RetryAgent extends Dispatcher {
   #agent = null
@@ -19309,7 +19430,7 @@ module.exports = RetryAgent
 
 /***/ }),
 
-/***/ 263:
+/***/ 2581:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -19317,8 +19438,8 @@ module.exports = RetryAgent
 // We include a version number for the Dispatcher API. In case of breaking changes,
 // this version number must be increased to avoid conflicts.
 const globalDispatcher = Symbol.for('undici.globalDispatcher.1')
-const { InvalidArgumentError } = __nccwpck_require__(8225)
-const Agent = __nccwpck_require__(1539)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
+const Agent = __nccwpck_require__(7405)
 
 if (getGlobalDispatcher() === undefined) {
   setGlobalDispatcher(new Agent())
@@ -19348,7 +19469,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3461:
+/***/ 8155:
 /***/ ((module) => {
 
 
@@ -19399,15 +19520,15 @@ module.exports = class DecoratorHandler {
 
 /***/ }),
 
-/***/ 9904:
+/***/ 8754:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6250)
-const { kBodyUsed } = __nccwpck_require__(7233)
+const util = __nccwpck_require__(3440)
+const { kBodyUsed } = __nccwpck_require__(6443)
 const assert = __nccwpck_require__(4589)
-const { InvalidArgumentError } = __nccwpck_require__(8225)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
 const EE = __nccwpck_require__(8474)
 
 const redirectableStatusCodes = [300, 301, 302, 303, 307, 308]
@@ -19638,20 +19759,20 @@ module.exports = RedirectHandler
 
 /***/ }),
 
-/***/ 1446:
+/***/ 7816:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const assert = __nccwpck_require__(4589)
 
-const { kRetryHandlerDefaultRetry } = __nccwpck_require__(7233)
-const { RequestRetryError } = __nccwpck_require__(8225)
+const { kRetryHandlerDefaultRetry } = __nccwpck_require__(6443)
+const { RequestRetryError } = __nccwpck_require__(8707)
 const {
   isDisturbed,
   parseHeaders,
   parseRangeHeader,
   wrapRequestBody
-} = __nccwpck_require__(6250)
+} = __nccwpck_require__(3440)
 
 function calculateRetryAfterHeader (retryAfter) {
   const current = Date.now()
@@ -20019,14 +20140,14 @@ module.exports = RetryHandler
 
 /***/ }),
 
-/***/ 4997:
+/***/ 379:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const { isIP } = __nccwpck_require__(7030)
 const { lookup } = __nccwpck_require__(610)
-const DecoratorHandler = __nccwpck_require__(3461)
-const { InvalidArgumentError, InformationalError } = __nccwpck_require__(8225)
+const DecoratorHandler = __nccwpck_require__(8155)
+const { InvalidArgumentError, InformationalError } = __nccwpck_require__(8707)
 const maxInt = Math.pow(2, 31) - 1
 
 class DNSInstance {
@@ -20401,14 +20522,14 @@ module.exports = interceptorOpts => {
 
 /***/ }),
 
-/***/ 4650:
+/***/ 8060:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6250)
-const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8225)
-const DecoratorHandler = __nccwpck_require__(3461)
+const util = __nccwpck_require__(3440)
+const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8707)
+const DecoratorHandler = __nccwpck_require__(8155)
 
 class DumpHandler extends DecoratorHandler {
   #maxSize = 1024 * 1024
@@ -20531,12 +20652,12 @@ module.exports = createDumpInterceptor
 
 /***/ }),
 
-/***/ 1578:
+/***/ 5092:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const RedirectHandler = __nccwpck_require__(9904)
+const RedirectHandler = __nccwpck_require__(8754)
 
 function createRedirectInterceptor ({ maxRedirections: defaultMaxRedirections }) {
   return (dispatch) => {
@@ -20559,11 +20680,11 @@ module.exports = createRedirectInterceptor
 
 /***/ }),
 
-/***/ 9500:
+/***/ 1514:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
-const RedirectHandler = __nccwpck_require__(9904)
+const RedirectHandler = __nccwpck_require__(8754)
 
 module.exports = opts => {
   const globalMaxRedirections = opts?.maxRedirections
@@ -20590,11 +20711,11 @@ module.exports = opts => {
 
 /***/ }),
 
-/***/ 2148:
+/***/ 2026:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
-const RetryHandler = __nccwpck_require__(1446)
+const RetryHandler = __nccwpck_require__(7816)
 
 module.exports = globalOpts => {
   return dispatch => {
@@ -20616,13 +20737,13 @@ module.exports = globalOpts => {
 
 /***/ }),
 
-/***/ 6162:
+/***/ 2824:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SPECIAL_HEADERS = exports.HEADER_STATE = exports.MINOR = exports.MAJOR = exports.CONNECTION_TOKEN_CHARS = exports.HEADER_CHARS = exports.TOKEN = exports.STRICT_TOKEN = exports.HEX = exports.URL_CHAR = exports.STRICT_URL_CHAR = exports.USERINFO_CHARS = exports.MARK = exports.ALPHANUM = exports.NUM = exports.HEX_MAP = exports.NUM_MAP = exports.ALPHA = exports.FINISH = exports.H_METHOD_MAP = exports.METHOD_MAP = exports.METHODS_RTSP = exports.METHODS_ICE = exports.METHODS_HTTP = exports.METHODS = exports.LENIENT_FLAGS = exports.FLAGS = exports.TYPE = exports.ERROR = void 0;
-const utils_1 = __nccwpck_require__(3994);
+const utils_1 = __nccwpck_require__(172);
 // C headers
 var ERROR;
 (function (ERROR) {
@@ -20900,7 +21021,7 @@ exports.SPECIAL_HEADERS = {
 
 /***/ }),
 
-/***/ 9784:
+/***/ 3870:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -20912,7 +21033,7 @@ module.exports = Buffer.from('AGFzbQEAAAABJwdgAX8Bf2ADf39/AX9gAX8AYAJ/fwBgBH9/f3
 
 /***/ }),
 
-/***/ 6400:
+/***/ 3434:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -20924,7 +21045,7 @@ module.exports = Buffer.from('AGFzbQEAAAABJwdgAX8Bf2ADf39/AX9gAX8AYAJ/fwBgBH9/f3
 
 /***/ }),
 
-/***/ 3994:
+/***/ 172:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -20945,13 +21066,13 @@ exports.enumToMap = enumToMap;
 
 /***/ }),
 
-/***/ 8555:
+/***/ 7501:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kClients } = __nccwpck_require__(7233)
-const Agent = __nccwpck_require__(1539)
+const { kClients } = __nccwpck_require__(6443)
+const Agent = __nccwpck_require__(7405)
 const {
   kAgent,
   kMockAgentSet,
@@ -20962,14 +21083,14 @@ const {
   kGetNetConnect,
   kOptions,
   kFactory
-} = __nccwpck_require__(4635)
-const MockClient = __nccwpck_require__(2007)
-const MockPool = __nccwpck_require__(4950)
-const { matchValue, buildMockOptions } = __nccwpck_require__(2543)
-const { InvalidArgumentError, UndiciError } = __nccwpck_require__(8225)
-const Dispatcher = __nccwpck_require__(8921)
-const Pluralizer = __nccwpck_require__(1207)
-const PendingInterceptorsFormatter = __nccwpck_require__(3972)
+} = __nccwpck_require__(1117)
+const MockClient = __nccwpck_require__(7365)
+const MockPool = __nccwpck_require__(4004)
+const { matchValue, buildMockOptions } = __nccwpck_require__(3397)
+const { InvalidArgumentError, UndiciError } = __nccwpck_require__(8707)
+const Dispatcher = __nccwpck_require__(883)
+const Pluralizer = __nccwpck_require__(1529)
+const PendingInterceptorsFormatter = __nccwpck_require__(6142)
 
 class MockAgent extends Dispatcher {
   constructor (opts) {
@@ -21112,14 +21233,14 @@ module.exports = MockAgent
 
 /***/ }),
 
-/***/ 2007:
+/***/ 7365:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { promisify } = __nccwpck_require__(7975)
-const Client = __nccwpck_require__(9695)
-const { buildMockDispatch } = __nccwpck_require__(2543)
+const Client = __nccwpck_require__(3701)
+const { buildMockDispatch } = __nccwpck_require__(3397)
 const {
   kDispatches,
   kMockAgent,
@@ -21128,10 +21249,10 @@ const {
   kOrigin,
   kOriginalDispatch,
   kConnected
-} = __nccwpck_require__(4635)
-const { MockInterceptor } = __nccwpck_require__(2897)
-const Symbols = __nccwpck_require__(7233)
-const { InvalidArgumentError } = __nccwpck_require__(8225)
+} = __nccwpck_require__(1117)
+const { MockInterceptor } = __nccwpck_require__(1511)
+const Symbols = __nccwpck_require__(6443)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
 
 /**
  * MockClient provides an API that extends the Client to influence the mockDispatches.
@@ -21178,12 +21299,12 @@ module.exports = MockClient
 
 /***/ }),
 
-/***/ 9456:
+/***/ 2429:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { UndiciError } = __nccwpck_require__(8225)
+const { UndiciError } = __nccwpck_require__(8707)
 
 const kMockNotMatchedError = Symbol.for('undici.error.UND_MOCK_ERR_MOCK_NOT_MATCHED')
 
@@ -21213,12 +21334,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2897:
+/***/ 1511:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { getResponseData, buildKey, addMockDispatch } = __nccwpck_require__(2543)
+const { getResponseData, buildKey, addMockDispatch } = __nccwpck_require__(3397)
 const {
   kDispatches,
   kDispatchKey,
@@ -21226,9 +21347,9 @@ const {
   kDefaultTrailers,
   kContentLength,
   kMockDispatch
-} = __nccwpck_require__(4635)
-const { InvalidArgumentError } = __nccwpck_require__(8225)
-const { buildURL } = __nccwpck_require__(6250)
+} = __nccwpck_require__(1117)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
+const { buildURL } = __nccwpck_require__(3440)
 
 /**
  * Defines the scope API for an interceptor reply
@@ -21427,14 +21548,14 @@ module.exports.MockScope = MockScope
 
 /***/ }),
 
-/***/ 4950:
+/***/ 4004:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { promisify } = __nccwpck_require__(7975)
-const Pool = __nccwpck_require__(142)
-const { buildMockDispatch } = __nccwpck_require__(2543)
+const Pool = __nccwpck_require__(628)
+const { buildMockDispatch } = __nccwpck_require__(3397)
 const {
   kDispatches,
   kMockAgent,
@@ -21443,10 +21564,10 @@ const {
   kOrigin,
   kOriginalDispatch,
   kConnected
-} = __nccwpck_require__(4635)
-const { MockInterceptor } = __nccwpck_require__(2897)
-const Symbols = __nccwpck_require__(7233)
-const { InvalidArgumentError } = __nccwpck_require__(8225)
+} = __nccwpck_require__(1117)
+const { MockInterceptor } = __nccwpck_require__(1511)
+const Symbols = __nccwpck_require__(6443)
+const { InvalidArgumentError } = __nccwpck_require__(8707)
 
 /**
  * MockPool provides an API that extends the Pool to influence the mockDispatches.
@@ -21493,7 +21614,7 @@ module.exports = MockPool
 
 /***/ }),
 
-/***/ 4635:
+/***/ 1117:
 /***/ ((module) => {
 
 
@@ -21523,20 +21644,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2543:
+/***/ 3397:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { MockNotMatchedError } = __nccwpck_require__(9456)
+const { MockNotMatchedError } = __nccwpck_require__(2429)
 const {
   kDispatches,
   kMockAgent,
   kOriginalDispatch,
   kOrigin,
   kGetNetConnect
-} = __nccwpck_require__(4635)
-const { buildURL } = __nccwpck_require__(6250)
+} = __nccwpck_require__(1117)
+const { buildURL } = __nccwpck_require__(3440)
 const { STATUS_CODES } = __nccwpck_require__(7067)
 const {
   types: {
@@ -21897,7 +22018,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3972:
+/***/ 6142:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -21947,7 +22068,7 @@ module.exports = class PendingInterceptorsFormatter {
 
 /***/ }),
 
-/***/ 1207:
+/***/ 1529:
 /***/ ((module) => {
 
 
@@ -21983,7 +22104,7 @@ module.exports = class Pluralizer {
 
 /***/ }),
 
-/***/ 8793:
+/***/ 6603:
 /***/ ((module) => {
 
 
@@ -22413,20 +22534,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5924:
+/***/ 9634:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConstruct } = __nccwpck_require__(5983)
-const { urlEquals, getFieldValues } = __nccwpck_require__(7100)
-const { kEnumerableProperty, isDisturbed } = __nccwpck_require__(6250)
-const { webidl } = __nccwpck_require__(9059)
-const { Response, cloneResponse, fromInnerResponse } = __nccwpck_require__(5973)
-const { Request, fromInnerRequest } = __nccwpck_require__(6529)
-const { kState } = __nccwpck_require__(8013)
-const { fetching } = __nccwpck_require__(2652)
-const { urlIsHttpHttpsScheme, createDeferredPromise, readAllBytes } = __nccwpck_require__(9406)
+const { kConstruct } = __nccwpck_require__(109)
+const { urlEquals, getFieldValues } = __nccwpck_require__(6798)
+const { kEnumerableProperty, isDisturbed } = __nccwpck_require__(3440)
+const { webidl } = __nccwpck_require__(5893)
+const { Response, cloneResponse, fromInnerResponse } = __nccwpck_require__(9051)
+const { Request, fromInnerRequest } = __nccwpck_require__(9967)
+const { kState } = __nccwpck_require__(3627)
+const { fetching } = __nccwpck_require__(4398)
+const { urlIsHttpHttpsScheme, createDeferredPromise, readAllBytes } = __nccwpck_require__(3168)
 const assert = __nccwpck_require__(4589)
 
 /**
@@ -23279,15 +23400,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1339:
+/***/ 3245:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConstruct } = __nccwpck_require__(5983)
-const { Cache } = __nccwpck_require__(5924)
-const { webidl } = __nccwpck_require__(9059)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
+const { kConstruct } = __nccwpck_require__(109)
+const { Cache } = __nccwpck_require__(9634)
+const { webidl } = __nccwpck_require__(5893)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
 
 class CacheStorage {
   /**
@@ -23438,26 +23559,26 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5983:
+/***/ 109:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 module.exports = {
-  kConstruct: (__nccwpck_require__(7233).kConstruct)
+  kConstruct: (__nccwpck_require__(6443).kConstruct)
 }
 
 
 /***/ }),
 
-/***/ 7100:
+/***/ 6798:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { URLSerializer } = __nccwpck_require__(5406)
-const { isValidHeaderName } = __nccwpck_require__(9406)
+const { URLSerializer } = __nccwpck_require__(1900)
+const { isValidHeaderName } = __nccwpck_require__(3168)
 
 /**
  * @see https://url.spec.whatwg.org/#concept-url-equals
@@ -23502,7 +23623,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 946:
+/***/ 1276:
 /***/ ((module) => {
 
 
@@ -23521,15 +23642,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4799:
+/***/ 9061:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { parseSetCookie } = __nccwpck_require__(5464)
-const { stringify } = __nccwpck_require__(1711)
-const { webidl } = __nccwpck_require__(9059)
-const { Headers } = __nccwpck_require__(6238)
+const { parseSetCookie } = __nccwpck_require__(1978)
+const { stringify } = __nccwpck_require__(7797)
+const { webidl } = __nccwpck_require__(5893)
+const { Headers } = __nccwpck_require__(660)
 
 /**
  * @typedef {Object} Cookie
@@ -23712,14 +23833,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5464:
+/***/ 1978:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { maxNameValuePairSize, maxAttributeValueSize } = __nccwpck_require__(946)
-const { isCTLExcludingHtab } = __nccwpck_require__(1711)
-const { collectASequenceOfCodePointsFast } = __nccwpck_require__(5406)
+const { maxNameValuePairSize, maxAttributeValueSize } = __nccwpck_require__(1276)
+const { isCTLExcludingHtab } = __nccwpck_require__(7797)
+const { collectASequenceOfCodePointsFast } = __nccwpck_require__(1900)
 const assert = __nccwpck_require__(4589)
 
 /**
@@ -24036,7 +24157,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1711:
+/***/ 7797:
 /***/ ((module) => {
 
 
@@ -24325,12 +24446,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6525:
+/***/ 4031:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const { Transform } = __nccwpck_require__(7075)
-const { isASCIINumber, isValidLastEventId } = __nccwpck_require__(1921)
+const { isASCIINumber, isValidLastEventId } = __nccwpck_require__(4811)
 
 /**
  * @type {number[]} BOM
@@ -24730,22 +24851,22 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8680:
+/***/ 1238:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { pipeline } = __nccwpck_require__(7075)
-const { fetching } = __nccwpck_require__(2652)
-const { makeRequest } = __nccwpck_require__(6529)
-const { webidl } = __nccwpck_require__(9059)
-const { EventSourceStream } = __nccwpck_require__(6525)
-const { parseMIMEType } = __nccwpck_require__(5406)
-const { createFastMessageEvent } = __nccwpck_require__(3630)
-const { isNetworkError } = __nccwpck_require__(5973)
-const { delay } = __nccwpck_require__(1921)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
-const { environmentSettingsObject } = __nccwpck_require__(9406)
+const { fetching } = __nccwpck_require__(4398)
+const { makeRequest } = __nccwpck_require__(9967)
+const { webidl } = __nccwpck_require__(5893)
+const { EventSourceStream } = __nccwpck_require__(4031)
+const { parseMIMEType } = __nccwpck_require__(1900)
+const { createFastMessageEvent } = __nccwpck_require__(5188)
+const { isNetworkError } = __nccwpck_require__(9051)
+const { delay } = __nccwpck_require__(4811)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
+const { environmentSettingsObject } = __nccwpck_require__(3168)
 
 let experimentalWarned = false
 
@@ -25217,7 +25338,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1921:
+/***/ 4811:
 /***/ ((module) => {
 
 
@@ -25261,12 +25382,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6402:
+/***/ 4492:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6250)
+const util = __nccwpck_require__(3440)
 const {
   ReadableStreamFrom,
   isBlobLike,
@@ -25276,16 +25397,16 @@ const {
   fullyReadBody,
   extractMimeType,
   utf8DecodeBytes
-} = __nccwpck_require__(9406)
-const { FormData } = __nccwpck_require__(7288)
-const { kState } = __nccwpck_require__(8013)
-const { webidl } = __nccwpck_require__(9059)
+} = __nccwpck_require__(3168)
+const { FormData } = __nccwpck_require__(5910)
+const { kState } = __nccwpck_require__(3627)
+const { webidl } = __nccwpck_require__(5893)
 const { Blob } = __nccwpck_require__(4573)
 const assert = __nccwpck_require__(4589)
 const { isErrored, isDisturbed } = __nccwpck_require__(7075)
 const { isArrayBuffer } = __nccwpck_require__(3429)
-const { serializeAMimeType } = __nccwpck_require__(5406)
-const { multipartFormDataParser } = __nccwpck_require__(9734)
+const { serializeAMimeType } = __nccwpck_require__(1900)
+const { multipartFormDataParser } = __nccwpck_require__(116)
 let random
 
 try {
@@ -25797,7 +25918,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8833:
+/***/ 4495:
 /***/ ((module) => {
 
 
@@ -25928,7 +26049,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5406:
+/***/ 1900:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -26679,12 +26800,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7367:
+/***/ 6653:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConnected, kSize } = __nccwpck_require__(7233)
+const { kConnected, kSize } = __nccwpck_require__(6443)
 
 class CompatWeakRef {
   constructor (value) {
@@ -26732,14 +26853,14 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ 5300:
+/***/ 7114:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Blob, File } = __nccwpck_require__(4573)
-const { kState } = __nccwpck_require__(8013)
-const { webidl } = __nccwpck_require__(9059)
+const { kState } = __nccwpck_require__(3627)
+const { webidl } = __nccwpck_require__(5893)
 
 // TODO(@KhafraDev): remove
 class FileLike {
@@ -26865,16 +26986,16 @@ module.exports = { FileLike, isFileLike }
 
 /***/ }),
 
-/***/ 9734:
+/***/ 116:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { isUSVString, bufferToLowerCasedHeaderName } = __nccwpck_require__(6250)
-const { utf8DecodeBytes } = __nccwpck_require__(9406)
-const { HTTP_TOKEN_CODEPOINTS, isomorphicDecode } = __nccwpck_require__(5406)
-const { isFileLike } = __nccwpck_require__(5300)
-const { makeEntry } = __nccwpck_require__(7288)
+const { isUSVString, bufferToLowerCasedHeaderName } = __nccwpck_require__(3440)
+const { utf8DecodeBytes } = __nccwpck_require__(3168)
+const { HTTP_TOKEN_CODEPOINTS, isomorphicDecode } = __nccwpck_require__(1900)
+const { isFileLike } = __nccwpck_require__(7114)
+const { makeEntry } = __nccwpck_require__(5910)
 const assert = __nccwpck_require__(4589)
 const { File: NodeFile } = __nccwpck_require__(4573)
 
@@ -27346,16 +27467,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7288:
+/***/ 5910:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { isBlobLike, iteratorMixin } = __nccwpck_require__(9406)
-const { kState } = __nccwpck_require__(8013)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
-const { FileLike, isFileLike } = __nccwpck_require__(5300)
-const { webidl } = __nccwpck_require__(9059)
+const { isBlobLike, iteratorMixin } = __nccwpck_require__(3168)
+const { kState } = __nccwpck_require__(3627)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
+const { FileLike, isFileLike } = __nccwpck_require__(7114)
+const { webidl } = __nccwpck_require__(5893)
 const { File: NativeFile } = __nccwpck_require__(4573)
 const nodeUtil = __nccwpck_require__(7975)
 
@@ -27605,7 +27726,7 @@ module.exports = { FormData, makeEntry }
 
 /***/ }),
 
-/***/ 6629:
+/***/ 1059:
 /***/ ((module) => {
 
 
@@ -27652,21 +27773,21 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6238:
+/***/ 660:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // https://github.com/Ethan-Arrowood/undici-fetch
 
 
 
-const { kConstruct } = __nccwpck_require__(7233)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
+const { kConstruct } = __nccwpck_require__(6443)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
 const {
   iteratorMixin,
   isValidHeaderName,
   isValidHeaderValue
-} = __nccwpck_require__(9406)
-const { webidl } = __nccwpck_require__(9059)
+} = __nccwpck_require__(3168)
+const { webidl } = __nccwpck_require__(5893)
 const assert = __nccwpck_require__(4589)
 const util = __nccwpck_require__(7975)
 
@@ -28346,7 +28467,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2652:
+/***/ 4398:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // https://github.com/Ethan-Arrowood/undici-fetch
@@ -28359,9 +28480,9 @@ const {
   filterResponse,
   makeResponse,
   fromInnerResponse
-} = __nccwpck_require__(5973)
-const { HeadersList } = __nccwpck_require__(6238)
-const { Request, cloneRequest } = __nccwpck_require__(6529)
+} = __nccwpck_require__(9051)
+const { HeadersList } = __nccwpck_require__(660)
+const { Request, cloneRequest } = __nccwpck_require__(9967)
 const zlib = __nccwpck_require__(8522)
 const {
   bytesMatch,
@@ -28397,23 +28518,23 @@ const {
   buildContentRange,
   createInflate,
   extractMimeType
-} = __nccwpck_require__(9406)
-const { kState, kDispatcher } = __nccwpck_require__(8013)
+} = __nccwpck_require__(3168)
+const { kState, kDispatcher } = __nccwpck_require__(3627)
 const assert = __nccwpck_require__(4589)
-const { safelyExtractBody, extractBody } = __nccwpck_require__(6402)
+const { safelyExtractBody, extractBody } = __nccwpck_require__(4492)
 const {
   redirectStatusSet,
   nullBodyStatus,
   safeMethodsSet,
   requestBodyHeader,
   subresourceSet
-} = __nccwpck_require__(8833)
+} = __nccwpck_require__(4495)
 const EE = __nccwpck_require__(8474)
 const { Readable, pipeline, finished } = __nccwpck_require__(7075)
-const { addAbortListener, isErrored, isReadable, bufferToLowerCasedHeaderName } = __nccwpck_require__(6250)
-const { dataURLProcessor, serializeAMimeType, minimizeSupportedMimeType } = __nccwpck_require__(5406)
-const { getGlobalDispatcher } = __nccwpck_require__(263)
-const { webidl } = __nccwpck_require__(9059)
+const { addAbortListener, isErrored, isReadable, bufferToLowerCasedHeaderName } = __nccwpck_require__(3440)
+const { dataURLProcessor, serializeAMimeType, minimizeSupportedMimeType } = __nccwpck_require__(1900)
+const { getGlobalDispatcher } = __nccwpck_require__(2581)
+const { webidl } = __nccwpck_require__(5893)
 const { STATUS_CODES } = __nccwpck_require__(7067)
 const GET_OR_HEAD = ['GET', 'HEAD']
 
@@ -30625,23 +30746,23 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6529:
+/***/ 9967:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /* globals AbortController */
 
 
 
-const { extractBody, mixinBody, cloneBody, bodyUnusable } = __nccwpck_require__(6402)
-const { Headers, fill: fillHeaders, HeadersList, setHeadersGuard, getHeadersGuard, setHeadersList, getHeadersList } = __nccwpck_require__(6238)
-const { FinalizationRegistry } = __nccwpck_require__(7367)()
-const util = __nccwpck_require__(6250)
+const { extractBody, mixinBody, cloneBody, bodyUnusable } = __nccwpck_require__(4492)
+const { Headers, fill: fillHeaders, HeadersList, setHeadersGuard, getHeadersGuard, setHeadersList, getHeadersList } = __nccwpck_require__(660)
+const { FinalizationRegistry } = __nccwpck_require__(6653)()
+const util = __nccwpck_require__(3440)
 const nodeUtil = __nccwpck_require__(7975)
 const {
   isValidHTTPToken,
   sameOrigin,
   environmentSettingsObject
-} = __nccwpck_require__(9406)
+} = __nccwpck_require__(3168)
 const {
   forbiddenMethodsSet,
   corsSafeListedMethodsSet,
@@ -30651,12 +30772,12 @@ const {
   requestCredentials,
   requestCache,
   requestDuplex
-} = __nccwpck_require__(8833)
+} = __nccwpck_require__(4495)
 const { kEnumerableProperty, normalizedMethodRecordsBase, normalizedMethodRecords } = util
-const { kHeaders, kSignal, kState, kDispatcher } = __nccwpck_require__(8013)
-const { webidl } = __nccwpck_require__(9059)
-const { URLSerializer } = __nccwpck_require__(5406)
-const { kConstruct } = __nccwpck_require__(7233)
+const { kHeaders, kSignal, kState, kDispatcher } = __nccwpck_require__(3627)
+const { webidl } = __nccwpck_require__(5893)
+const { URLSerializer } = __nccwpck_require__(1900)
+const { kConstruct } = __nccwpck_require__(6443)
 const assert = __nccwpck_require__(4589)
 const { getMaxListeners, setMaxListeners, getEventListeners, defaultMaxListeners } = __nccwpck_require__(8474)
 
@@ -31669,14 +31790,14 @@ module.exports = { Request, makeRequest, fromInnerRequest, cloneRequest }
 
 /***/ }),
 
-/***/ 5973:
+/***/ 9051:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { Headers, HeadersList, fill, getHeadersGuard, setHeadersGuard, setHeadersList } = __nccwpck_require__(6238)
-const { extractBody, cloneBody, mixinBody, hasFinalizationRegistry, streamRegistry, bodyUnusable } = __nccwpck_require__(6402)
-const util = __nccwpck_require__(6250)
+const { Headers, HeadersList, fill, getHeadersGuard, setHeadersGuard, setHeadersList } = __nccwpck_require__(660)
+const { extractBody, cloneBody, mixinBody, hasFinalizationRegistry, streamRegistry, bodyUnusable } = __nccwpck_require__(4492)
+const util = __nccwpck_require__(3440)
 const nodeUtil = __nccwpck_require__(7975)
 const { kEnumerableProperty } = util
 const {
@@ -31688,16 +31809,16 @@ const {
   isErrorLike,
   isomorphicEncode,
   environmentSettingsObject: relevantRealm
-} = __nccwpck_require__(9406)
+} = __nccwpck_require__(3168)
 const {
   redirectStatusSet,
   nullBodyStatus
-} = __nccwpck_require__(8833)
-const { kState, kHeaders } = __nccwpck_require__(8013)
-const { webidl } = __nccwpck_require__(9059)
-const { FormData } = __nccwpck_require__(7288)
-const { URLSerializer } = __nccwpck_require__(5406)
-const { kConstruct } = __nccwpck_require__(7233)
+} = __nccwpck_require__(4495)
+const { kState, kHeaders } = __nccwpck_require__(3627)
+const { webidl } = __nccwpck_require__(5893)
+const { FormData } = __nccwpck_require__(5910)
+const { URLSerializer } = __nccwpck_require__(1900)
+const { kConstruct } = __nccwpck_require__(6443)
 const assert = __nccwpck_require__(4589)
 const { types } = __nccwpck_require__(7975)
 
@@ -32286,7 +32407,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8013:
+/***/ 3627:
 /***/ ((module) => {
 
 
@@ -32302,21 +32423,21 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9406:
+/***/ 3168:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Transform } = __nccwpck_require__(7075)
 const zlib = __nccwpck_require__(8522)
-const { redirectStatusSet, referrerPolicySet: referrerPolicyTokens, badPortsSet } = __nccwpck_require__(8833)
-const { getGlobalOrigin } = __nccwpck_require__(6629)
-const { collectASequenceOfCodePoints, collectAnHTTPQuotedString, removeChars, parseMIMEType } = __nccwpck_require__(5406)
+const { redirectStatusSet, referrerPolicySet: referrerPolicyTokens, badPortsSet } = __nccwpck_require__(4495)
+const { getGlobalOrigin } = __nccwpck_require__(1059)
+const { collectASequenceOfCodePoints, collectAnHTTPQuotedString, removeChars, parseMIMEType } = __nccwpck_require__(1900)
 const { performance } = __nccwpck_require__(643)
-const { isBlobLike, ReadableStreamFrom, isValidHTTPToken, normalizedMethodRecordsBase } = __nccwpck_require__(6250)
+const { isBlobLike, ReadableStreamFrom, isValidHTTPToken, normalizedMethodRecordsBase } = __nccwpck_require__(3440)
 const assert = __nccwpck_require__(4589)
 const { isUint8Array } = __nccwpck_require__(3429)
-const { webidl } = __nccwpck_require__(9059)
+const { webidl } = __nccwpck_require__(5893)
 
 let supportedHashes = []
 
@@ -33941,14 +34062,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9059:
+/***/ 5893:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { types, inspect } = __nccwpck_require__(7975)
 const { markAsUncloneable } = __nccwpck_require__(5919)
-const { toUSVString } = __nccwpck_require__(6250)
+const { toUSVString } = __nccwpck_require__(3440)
 
 /** @type {import('../../../types/webidl').Webidl} */
 const webidl = {}
@@ -34643,7 +34764,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7885:
+/***/ 2607:
 /***/ ((module) => {
 
 
@@ -34940,7 +35061,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6049:
+/***/ 8355:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -34949,16 +35070,16 @@ const {
   staticPropertyDescriptors,
   readOperation,
   fireAProgressEvent
-} = __nccwpck_require__(9380)
+} = __nccwpck_require__(3610)
 const {
   kState,
   kError,
   kResult,
   kEvents,
   kAborted
-} = __nccwpck_require__(2983)
-const { webidl } = __nccwpck_require__(9059)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
+} = __nccwpck_require__(961)
+const { webidl } = __nccwpck_require__(5893)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
 
 class FileReader extends EventTarget {
   constructor () {
@@ -35291,12 +35412,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6219:
+/***/ 8573:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(9059)
+const { webidl } = __nccwpck_require__(5893)
 
 const kState = Symbol('ProgressEvent state')
 
@@ -35376,7 +35497,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2983:
+/***/ 961:
 /***/ ((module) => {
 
 
@@ -35393,7 +35514,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9380:
+/***/ 3610:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -35404,10 +35525,10 @@ const {
   kResult,
   kAborted,
   kLastProgressEventFired
-} = __nccwpck_require__(2983)
-const { ProgressEvent } = __nccwpck_require__(6219)
-const { getEncoding } = __nccwpck_require__(7885)
-const { serializeAMimeType, parseMIMEType } = __nccwpck_require__(5406)
+} = __nccwpck_require__(961)
+const { ProgressEvent } = __nccwpck_require__(8573)
+const { getEncoding } = __nccwpck_require__(2607)
+const { serializeAMimeType, parseMIMEType } = __nccwpck_require__(1900)
 const { types } = __nccwpck_require__(7975)
 const { StringDecoder } = __nccwpck_require__(3193)
 const { btoa } = __nccwpck_require__(4573)
@@ -35791,27 +35912,27 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3659:
+/***/ 6897:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { uid, states, sentCloseFrameState, emptyBuffer, opcodes } = __nccwpck_require__(5082)
+const { uid, states, sentCloseFrameState, emptyBuffer, opcodes } = __nccwpck_require__(736)
 const {
   kReadyState,
   kSentClose,
   kByteParser,
   kReceivedClose,
   kResponse
-} = __nccwpck_require__(9530)
-const { fireEvent, failWebsocketConnection, isClosing, isClosed, isEstablished, parseExtensions } = __nccwpck_require__(391)
-const { channels } = __nccwpck_require__(5204)
-const { CloseEvent } = __nccwpck_require__(3630)
-const { makeRequest } = __nccwpck_require__(6529)
-const { fetching } = __nccwpck_require__(2652)
-const { Headers, getHeadersList } = __nccwpck_require__(6238)
-const { getDecodeSplit } = __nccwpck_require__(9406)
-const { WebsocketFrameSend } = __nccwpck_require__(7010)
+} = __nccwpck_require__(1216)
+const { fireEvent, failWebsocketConnection, isClosing, isClosed, isEstablished, parseExtensions } = __nccwpck_require__(8625)
+const { channels } = __nccwpck_require__(2414)
+const { CloseEvent } = __nccwpck_require__(5188)
+const { makeRequest } = __nccwpck_require__(9967)
+const { fetching } = __nccwpck_require__(4398)
+const { Headers, getHeadersList } = __nccwpck_require__(660)
+const { getDecodeSplit } = __nccwpck_require__(3168)
+const { WebsocketFrameSend } = __nccwpck_require__(3264)
 
 /** @type {import('crypto')} */
 let crypto
@@ -36169,7 +36290,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5082:
+/***/ 736:
 /***/ ((module) => {
 
 
@@ -36242,14 +36363,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3630:
+/***/ 5188:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(9059)
-const { kEnumerableProperty } = __nccwpck_require__(6250)
-const { kConstruct } = __nccwpck_require__(7233)
+const { webidl } = __nccwpck_require__(5893)
+const { kEnumerableProperty } = __nccwpck_require__(3440)
+const { kConstruct } = __nccwpck_require__(6443)
 const { MessagePort } = __nccwpck_require__(5919)
 
 /**
@@ -36578,12 +36699,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7010:
+/***/ 3264:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { maxUnsigned16Bit } = __nccwpck_require__(5082)
+const { maxUnsigned16Bit } = __nccwpck_require__(736)
 
 const BUFFER_SIZE = 16386
 
@@ -36681,21 +36802,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8495:
+/***/ 9469:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { createInflateRaw, Z_DEFAULT_WINDOWBITS } = __nccwpck_require__(8522)
-const { isValidClientWindowBits } = __nccwpck_require__(391)
-const { MessageSizeExceededError } = __nccwpck_require__(8225)
+const { isValidClientWindowBits } = __nccwpck_require__(8625)
+const { MessageSizeExceededError } = __nccwpck_require__(8707)
 
 const tail = Buffer.from([0x00, 0x00, 0xff, 0xff])
 const kBuffer = Symbol('kBuffer')
 const kLength = Symbol('kLength')
-
-// Default maximum decompressed message size: 4 MB
-const kDefaultMaxDecompressedSize = 4 * 1024 * 1024
 
 class PerMessageDeflate {
   /** @type {import('node:zlib').InflateRaw} */
@@ -36703,31 +36821,29 @@ class PerMessageDeflate {
 
   #options = {}
 
-  /** @type {boolean} */
-  #aborted = false
-
-  /** @type {Function|null} */
-  #currentCallback = null
+  #maxPayloadSize = 0
 
   /**
    * @param {Map<string, string>} extensions
    */
-  constructor (extensions) {
+  constructor (extensions, options) {
     this.#options.serverNoContextTakeover = extensions.has('server_no_context_takeover')
     this.#options.serverMaxWindowBits = extensions.get('server_max_window_bits')
+
+    this.#maxPayloadSize = options.maxPayloadSize
   }
 
+  /**
+   * Decompress a compressed payload.
+   * @param {Buffer} chunk Compressed data
+   * @param {boolean} fin Final fragment flag
+   * @param {Function} callback Callback function
+   */
   decompress (chunk, fin, callback) {
     // An endpoint uses the following algorithm to decompress a message.
     // 1.  Append 4 octets of 0x00 0x00 0xff 0xff to the tail end of the
     //     payload of the message.
     // 2.  Decompress the resulting data using DEFLATE.
-
-    if (this.#aborted) {
-      callback(new MessageSizeExceededError())
-      return
-    }
-
     if (!this.#inflate) {
       let windowBits = Z_DEFAULT_WINDOWBITS
 
@@ -36750,23 +36866,12 @@ class PerMessageDeflate {
       this.#inflate[kLength] = 0
 
       this.#inflate.on('data', (data) => {
-        if (this.#aborted) {
-          return
-        }
-
         this.#inflate[kLength] += data.length
 
-        if (this.#inflate[kLength] > kDefaultMaxDecompressedSize) {
-          this.#aborted = true
+        if (this.#maxPayloadSize > 0 && this.#inflate[kLength] > this.#maxPayloadSize) {
+          callback(new MessageSizeExceededError())
           this.#inflate.removeAllListeners()
-          this.#inflate.destroy()
           this.#inflate = null
-
-          if (this.#currentCallback) {
-            const cb = this.#currentCallback
-            this.#currentCallback = null
-            cb(new MessageSizeExceededError())
-          }
           return
         }
 
@@ -36779,14 +36884,13 @@ class PerMessageDeflate {
       })
     }
 
-    this.#currentCallback = callback
     this.#inflate.write(chunk)
     if (fin) {
       this.#inflate.write(tail)
     }
 
     this.#inflate.flush(() => {
-      if (this.#aborted || !this.#inflate) {
+      if (!this.#inflate) {
         return
       }
 
@@ -36794,7 +36898,6 @@ class PerMessageDeflate {
 
       this.#inflate[kBuffer].length = 0
       this.#inflate[kLength] = 0
-      this.#currentCallback = null
 
       callback(null, full)
     })
@@ -36806,16 +36909,16 @@ module.exports = { PerMessageDeflate }
 
 /***/ }),
 
-/***/ 1410:
+/***/ 1652:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Writable } = __nccwpck_require__(7075)
 const assert = __nccwpck_require__(4589)
-const { parserStates, opcodes, states, emptyBuffer, sentCloseFrameState } = __nccwpck_require__(5082)
-const { kReadyState, kSentClose, kResponse, kReceivedClose } = __nccwpck_require__(9530)
-const { channels } = __nccwpck_require__(5204)
+const { parserStates, opcodes, states, emptyBuffer, sentCloseFrameState } = __nccwpck_require__(736)
+const { kReadyState, kSentClose, kResponse, kReceivedClose } = __nccwpck_require__(1216)
+const { channels } = __nccwpck_require__(2414)
 const {
   isValidStatusCode,
   isValidOpcode,
@@ -36825,10 +36928,11 @@ const {
   isControlFrame,
   isTextBinaryFrame,
   isContinuationFrame
-} = __nccwpck_require__(391)
-const { WebsocketFrameSend } = __nccwpck_require__(7010)
-const { closeWebSocketConnection } = __nccwpck_require__(3659)
-const { PerMessageDeflate } = __nccwpck_require__(8495)
+} = __nccwpck_require__(8625)
+const { WebsocketFrameSend } = __nccwpck_require__(3264)
+const { closeWebSocketConnection } = __nccwpck_require__(6897)
+const { PerMessageDeflate } = __nccwpck_require__(9469)
+const { MessageSizeExceededError } = __nccwpck_require__(8707)
 
 // This code was influenced by ws released under the MIT license.
 // Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>
@@ -36837,6 +36941,7 @@ const { PerMessageDeflate } = __nccwpck_require__(8495)
 
 class ByteParser extends Writable {
   #buffers = []
+  #fragmentsBytes = 0
   #byteOffset = 0
   #loop = false
 
@@ -36848,18 +36953,23 @@ class ByteParser extends Writable {
   /** @type {Map<string, PerMessageDeflate>} */
   #extensions
 
+  /** @type {number} */
+  #maxPayloadSize
+
   /**
    * @param {import('./websocket').WebSocket} ws
    * @param {Map<string, string>|null} extensions
+   * @param {{ maxPayloadSize?: number }} [options]
    */
-  constructor (ws, extensions) {
+  constructor (ws, extensions, options = {}) {
     super()
 
     this.ws = ws
     this.#extensions = extensions == null ? new Map() : extensions
+    this.#maxPayloadSize = options.maxPayloadSize ?? 0
 
     if (this.#extensions.has('permessage-deflate')) {
-      this.#extensions.set('permessage-deflate', new PerMessageDeflate(extensions))
+      this.#extensions.set('permessage-deflate', new PerMessageDeflate(extensions, options))
     }
   }
 
@@ -36873,6 +36983,19 @@ class ByteParser extends Writable {
     this.#loop = true
 
     this.run(callback)
+  }
+
+  #validatePayloadLength () {
+    if (
+      this.#maxPayloadSize > 0 &&
+      !isControlFrame(this.#info.opcode) &&
+      this.#info.payloadLength > this.#maxPayloadSize
+    ) {
+      failWebsocketConnection(this.ws, 'Payload size exceeds maximum allowed size')
+      return false
+    }
+
+    return true
   }
 
   /**
@@ -36963,6 +37086,10 @@ class ByteParser extends Writable {
         if (payloadLength <= 125) {
           this.#info.payloadLength = payloadLength
           this.#state = parserStates.READ_DATA
+
+          if (!this.#validatePayloadLength()) {
+            return
+          }
         } else if (payloadLength === 126) {
           this.#state = parserStates.PAYLOADLENGTH_16
         } else if (payloadLength === 127) {
@@ -36987,6 +37114,10 @@ class ByteParser extends Writable {
 
         this.#info.payloadLength = buffer.readUInt16BE(0)
         this.#state = parserStates.READ_DATA
+
+        if (!this.#validatePayloadLength()) {
+          return
+        }
       } else if (this.#state === parserStates.PAYLOADLENGTH_64) {
         if (this.#byteOffset < 8) {
           return callback()
@@ -37009,6 +37140,10 @@ class ByteParser extends Writable {
 
         this.#info.payloadLength = lower
         this.#state = parserStates.READ_DATA
+
+        if (!this.#validatePayloadLength()) {
+          return
+        }
       } else if (this.#state === parserStates.READ_DATA) {
         if (this.#byteOffset < this.#info.payloadLength) {
           return callback()
@@ -37021,42 +37156,53 @@ class ByteParser extends Writable {
           this.#state = parserStates.INFO
         } else {
           if (!this.#info.compressed) {
-            this.#fragments.push(body)
+            this.writeFragments(body)
+
+            if (this.#maxPayloadSize > 0 && this.#fragmentsBytes > this.#maxPayloadSize) {
+              failWebsocketConnection(this.ws, new MessageSizeExceededError().message)
+              return
+            }
 
             // If the frame is not fragmented, a message has been received.
             // If the frame is fragmented, it will terminate with a fin bit set
             // and an opcode of 0 (continuation), therefore we handle that when
             // parsing continuation frames, not here.
             if (!this.#info.fragmented && this.#info.fin) {
-              const fullMessage = Buffer.concat(this.#fragments)
-              websocketMessageReceived(this.ws, this.#info.binaryType, fullMessage)
-              this.#fragments.length = 0
+              websocketMessageReceived(this.ws, this.#info.binaryType, this.consumeFragments())
             }
 
             this.#state = parserStates.INFO
           } else {
-            this.#extensions.get('permessage-deflate').decompress(body, this.#info.fin, (error, data) => {
-              if (error) {
-                failWebsocketConnection(this.ws, error.message)
-                return
-              }
+            this.#extensions.get('permessage-deflate').decompress(
+              body,
+              this.#info.fin,
+              (error, data) => {
+                if (error) {
+                  failWebsocketConnection(this.ws, error.message)
+                  return
+                }
 
-              this.#fragments.push(data)
+                this.writeFragments(data)
 
-              if (!this.#info.fin) {
-                this.#state = parserStates.INFO
+                if (this.#maxPayloadSize > 0 && this.#fragmentsBytes > this.#maxPayloadSize) {
+                  failWebsocketConnection(this.ws, new MessageSizeExceededError().message)
+                  return
+                }
+
+                if (!this.#info.fin) {
+                  this.#state = parserStates.INFO
+                  this.#loop = true
+                  this.run(callback)
+                  return
+                }
+
+                websocketMessageReceived(this.ws, this.#info.binaryType, this.consumeFragments())
+
                 this.#loop = true
+                this.#state = parserStates.INFO
                 this.run(callback)
-                return
               }
-
-              websocketMessageReceived(this.ws, this.#info.binaryType, Buffer.concat(this.#fragments))
-
-              this.#loop = true
-              this.#state = parserStates.INFO
-              this.#fragments.length = 0
-              this.run(callback)
-            })
+            )
 
             this.#loop = false
             break
@@ -37106,6 +37252,26 @@ class ByteParser extends Writable {
     this.#byteOffset -= n
 
     return buffer
+  }
+
+  writeFragments (fragment) {
+    this.#fragmentsBytes += fragment.length
+    this.#fragments.push(fragment)
+  }
+
+  consumeFragments () {
+    const fragments = this.#fragments
+
+    if (fragments.length === 1) {
+      this.#fragmentsBytes = 0
+      return fragments.shift()
+    }
+
+    const output = Buffer.concat(fragments, this.#fragmentsBytes)
+    this.#fragments = []
+    this.#fragmentsBytes = 0
+
+    return output
   }
 
   parseCloseBody (data) {
@@ -37240,14 +37406,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1958:
+/***/ 3900:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { WebsocketFrameSend } = __nccwpck_require__(7010)
-const { opcodes, sendHints } = __nccwpck_require__(5082)
-const FixedQueue = __nccwpck_require__(8670)
+const { WebsocketFrameSend } = __nccwpck_require__(3264)
+const { opcodes, sendHints } = __nccwpck_require__(736)
+const FixedQueue = __nccwpck_require__(4660)
 
 /** @type {typeof Uint8Array} */
 const FastBuffer = Buffer[Symbol.species]
@@ -37351,7 +37517,7 @@ module.exports = { SendQueue }
 
 /***/ }),
 
-/***/ 9530:
+/***/ 1216:
 /***/ ((module) => {
 
 
@@ -37370,16 +37536,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 391:
+/***/ 8625:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kReadyState, kController, kResponse, kBinaryType, kWebSocketURL } = __nccwpck_require__(9530)
-const { states, opcodes } = __nccwpck_require__(5082)
-const { ErrorEvent, createFastMessageEvent } = __nccwpck_require__(3630)
+const { kReadyState, kController, kResponse, kBinaryType, kWebSocketURL } = __nccwpck_require__(1216)
+const { states, opcodes } = __nccwpck_require__(736)
+const { ErrorEvent, createFastMessageEvent } = __nccwpck_require__(5188)
 const { isUtf8 } = __nccwpck_require__(4573)
-const { collectASequenceOfCodePointsFast, removeHTTPWhitespace } = __nccwpck_require__(5406)
+const { collectASequenceOfCodePointsFast, removeHTTPWhitespace } = __nccwpck_require__(1900)
 
 /* globals Blob */
 
@@ -37699,15 +37865,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4488:
+/***/ 3726:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(9059)
-const { URLSerializer } = __nccwpck_require__(5406)
-const { environmentSettingsObject } = __nccwpck_require__(9406)
-const { staticPropertyDescriptors, states, sentCloseFrameState, sendHints } = __nccwpck_require__(5082)
+const { webidl } = __nccwpck_require__(5893)
+const { URLSerializer } = __nccwpck_require__(1900)
+const { environmentSettingsObject } = __nccwpck_require__(3168)
+const { staticPropertyDescriptors, states, sentCloseFrameState, sendHints } = __nccwpck_require__(736)
 const {
   kWebSocketURL,
   kReadyState,
@@ -37716,21 +37882,21 @@ const {
   kResponse,
   kSentClose,
   kByteParser
-} = __nccwpck_require__(9530)
+} = __nccwpck_require__(1216)
 const {
   isConnecting,
   isEstablished,
   isClosing,
   isValidSubprotocol,
   fireEvent
-} = __nccwpck_require__(391)
-const { establishWebSocketConnection, closeWebSocketConnection } = __nccwpck_require__(3659)
-const { ByteParser } = __nccwpck_require__(1410)
-const { kEnumerableProperty, isBlobLike } = __nccwpck_require__(6250)
-const { getGlobalDispatcher } = __nccwpck_require__(263)
+} = __nccwpck_require__(8625)
+const { establishWebSocketConnection, closeWebSocketConnection } = __nccwpck_require__(6897)
+const { ByteParser } = __nccwpck_require__(1652)
+const { kEnumerableProperty, isBlobLike } = __nccwpck_require__(3440)
+const { getGlobalDispatcher } = __nccwpck_require__(2581)
 const { types } = __nccwpck_require__(7975)
-const { ErrorEvent, CloseEvent } = __nccwpck_require__(3630)
-const { SendQueue } = __nccwpck_require__(1958)
+const { ErrorEvent, CloseEvent } = __nccwpck_require__(5188)
+const { SendQueue } = __nccwpck_require__(3900)
 
 // https://websockets.spec.whatwg.org/#interface-definition
 class WebSocket extends EventTarget {
@@ -38139,7 +38305,11 @@ class WebSocket extends EventTarget {
     // once this happens, the connection is open
     this[kResponse] = response
 
-    const parser = new ByteParser(this, parsedExtensions)
+    const maxPayloadSize = this[kController]?.dispatcher?.webSocketOptions?.maxPayloadSize
+
+    const parser = new ByteParser(this, parsedExtensions, {
+      maxPayloadSize
+    })
     parser.on('drain', onParserDrain)
     parser.on('error', onParserError.bind(this))
 
@@ -38294,7 +38464,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4000:
+/***/ 75:
 /***/ ((module) => {
 
 module.exports = eval("require")("supports-color");
@@ -38519,7 +38689,7 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 
 /***/ }),
 
-/***/ 9582:
+/***/ 3345:
 /***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
@@ -38538,7 +38708,7 @@ exports.w = {
 
 /***/ }),
 
-/***/ 4480:
+/***/ 8914:
 /***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;
@@ -38559,7 +38729,7 @@ exports.w = {
 
 /***/ }),
 
-/***/ 5575:
+/***/ 8658:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // This file exists as a CommonJS module to read the version from package.json.
@@ -38567,16 +38737,16 @@ exports.w = {
 // ESLint rules and doesn't work reliably across all Node.js versions.
 // By keeping this as a .cjs file, we can use require() naturally and export
 // the version for the ESM modules to import.
-const packageJson = __nccwpck_require__(3112)
+const packageJson = __nccwpck_require__(4012)
 module.exports = { version: packageJson.version }
 
 
 /***/ }),
 
-/***/ 3112:
+/***/ 4012:
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"name":"@actions/cache","version":"6.0.0","description":"Actions cache lib","keywords":["github","actions","cache"],"homepage":"https://github.com/actions/toolkit/tree/main/packages/cache","license":"MIT","type":"module","main":"lib/cache.js","types":"lib/cache.d.ts","exports":{".":{"types":"./lib/cache.d.ts","import":"./lib/cache.js"}},"directories":{"lib":"lib","test":"__tests__"},"files":["lib","!.DS_Store"],"publishConfig":{"access":"public"},"repository":{"type":"git","url":"git+https://github.com/actions/toolkit.git","directory":"packages/cache"},"scripts":{"audit-moderate":"npm install && npm audit --json --audit-level=moderate > audit.json","test":"echo \\"Error: run tests from root\\" && exit 1","tsc":"tsc && cp src/internal/shared/package-version.cjs lib/internal/shared/"},"bugs":{"url":"https://github.com/actions/toolkit/issues"},"dependencies":{"@actions/core":"^3.0.0","@actions/exec":"^3.0.0","@actions/glob":"^0.6.1","@actions/http-client":"^4.0.0","@actions/io":"^3.0.0","@azure/core-rest-pipeline":"^1.22.0","@azure/storage-blob":"^12.30.0","@protobuf-ts/runtime-rpc":"^2.11.1","semver":"^7.7.3"},"devDependencies":{"@protobuf-ts/plugin":"^2.9.4","@types/node":"^25.1.0","@types/semver":"^7.7.1","typescript":"^5.2.2"},"overrides":{"uri-js":"npm:uri-js-replace@^1.0.1","node-fetch":"^3.3.2"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"@actions/cache","version":"6.0.1","description":"Actions cache lib","keywords":["github","actions","cache"],"homepage":"https://github.com/actions/toolkit/tree/main/packages/cache","license":"MIT","type":"module","main":"lib/cache.js","types":"lib/cache.d.ts","exports":{".":{"types":"./lib/cache.d.ts","import":"./lib/cache.js"}},"directories":{"lib":"lib","test":"__tests__"},"files":["lib","!.DS_Store"],"publishConfig":{"access":"public"},"repository":{"type":"git","url":"git+https://github.com/actions/toolkit.git","directory":"packages/cache"},"scripts":{"audit-moderate":"npm install && npm audit --json --audit-level=moderate > audit.json","test":"echo \\"Error: run tests from root\\" && exit 1","tsc":"tsc && cp src/internal/shared/package-version.cjs lib/internal/shared/"},"bugs":{"url":"https://github.com/actions/toolkit/issues"},"dependencies":{"@actions/core":"^3.0.1","@actions/exec":"^3.0.0","@actions/glob":"^0.6.1","@actions/http-client":"^4.0.1","@actions/io":"^3.0.2","@azure/core-rest-pipeline":"^1.23.0","@azure/storage-blob":"^12.31.0","@protobuf-ts/runtime-rpc":"^2.11.1","semver":"^7.7.4"},"devDependencies":{"@protobuf-ts/plugin":"^2.11.1","@types/node":"^25.6.0","@types/semver":"^7.7.1","typescript":"^5.9.3"},"overrides":{"uri-js":"npm:uri-js-replace@^1.0.1","node-fetch":"^3.3.2"}}');
 
 /***/ })
 
@@ -38678,7 +38848,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"@actions/cache","version":"6.
 /************************************************************************/
 var __webpack_exports__ = {};
 
-// NAMESPACE OBJECT: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/models/mappers.js
+// NAMESPACE OBJECT: ./node_modules/@azure/storage-blob/dist/esm/generated/src/models/mappers.js
 var mappers_namespaceObject = {};
 __nccwpck_require__.r(mappers_namespaceObject);
 __nccwpck_require__.d(mappers_namespaceObject, {
@@ -38865,7 +39035,7 @@ __nccwpck_require__.d(mappers_namespaceObject, {
 
 ;// CONCATENATED MODULE: external "os"
 const external_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("os");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/utils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/utils.js
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
@@ -38901,7 +39071,7 @@ function utils_toCommandProperties(annotationProperties) {
     };
 }
 //# sourceMappingURL=utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/command.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/command.js
 
 
 /**
@@ -38997,7 +39167,7 @@ function escapeProperty(s) {
 const external_crypto_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("crypto");
 ;// CONCATENATED MODULE: external "fs"
 const external_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("fs");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/file-command.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/file-command.js
 // For internal use, subject to change.
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -39040,7 +39210,7 @@ var external_http_namespaceObject = /*#__PURE__*/__nccwpck_require__.t(external_
 // EXTERNAL MODULE: external "https"
 var external_https_ = __nccwpck_require__(5692);
 var external_https_namespaceObject = /*#__PURE__*/__nccwpck_require__.t(external_https_, 2);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/proxy.js
+;// CONCATENATED MODULE: ./node_modules/@actions/http-client/lib/proxy.js
 function getProxyUrl(reqUrl) {
     const usingSsl = reqUrl.protocol === 'https:';
     if (checkBypass(reqUrl)) {
@@ -39131,11 +39301,11 @@ class DecodedURL extends URL {
     }
 }
 //# sourceMappingURL=proxy.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/tunnel@0.0.6/node_modules/tunnel/index.js
-var tunnel = __nccwpck_require__(329);
-// EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.24.1/node_modules/undici/index.js
-var undici = __nccwpck_require__(5134);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/index.js
+// EXTERNAL MODULE: ./node_modules/tunnel/index.js
+var tunnel = __nccwpck_require__(770);
+// EXTERNAL MODULE: ./node_modules/undici/index.js
+var undici = __nccwpck_require__(6752);
+;// CONCATENATED MODULE: ./node_modules/@actions/http-client/lib/index.js
 /* eslint-disable @typescript-eslint/no-explicit-any */
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -39832,7 +40002,7 @@ class lib_HttpClient {
 }
 const lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/auth.js
+;// CONCATENATED MODULE: ./node_modules/@actions/http-client/lib/auth.js
 var auth_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -39908,7 +40078,7 @@ class PersonalAccessTokenCredentialHandler {
     }
 }
 //# sourceMappingURL=auth.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/oidc-utils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/oidc-utils.js
 var oidc_utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -39982,7 +40152,7 @@ class oidc_utils_OidcClient {
     }
 }
 //# sourceMappingURL=oidc-utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/summary.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/summary.js
 var summary_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -40263,7 +40433,7 @@ const _summary = new Summary();
 const markdownSummary = (/* unused pure expression or super */ null && (_summary));
 const summary = (/* unused pure expression or super */ null && (_summary));
 //# sourceMappingURL=summary.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/path-utils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/path-utils.js
 
 /**
  * toPosixPath converts the given path to the posix form. On Windows, \\ will be
@@ -40305,7 +40475,7 @@ var external_events_ = __nccwpck_require__(4434);
 const external_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("child_process");
 // EXTERNAL MODULE: external "assert"
 var external_assert_ = __nccwpck_require__(2613);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io-util.js
+;// CONCATENATED MODULE: ./node_modules/@actions/io/lib/io-util.js
 var io_util_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -40485,7 +40655,7 @@ function getCmdPath() {
     return (_a = process.env['COMSPEC']) !== null && _a !== void 0 ? _a : `cmd.exe`;
 }
 //# sourceMappingURL=io-util.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io.js
+;// CONCATENATED MODULE: ./node_modules/@actions/io/lib/io.js
 var io_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -40759,7 +40929,7 @@ function io_copyFile(srcFile, destFile, force) {
 //# sourceMappingURL=io.js.map
 ;// CONCATENATED MODULE: external "timers"
 const external_timers_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("timers");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/toolrunner.js
+;// CONCATENATED MODULE: ./node_modules/@actions/exec/lib/toolrunner.js
 var toolrunner_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -41347,7 +41517,7 @@ class ExecState extends external_events_.EventEmitter {
     }
 }
 //# sourceMappingURL=toolrunner.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/exec.js
+;// CONCATENATED MODULE: ./node_modules/@actions/exec/lib/exec.js
 var exec_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -41427,7 +41597,7 @@ function getExecOutput(commandLine, args, options) {
     });
 }
 //# sourceMappingURL=exec.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/platform.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/platform.js
 var platform_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -41492,7 +41662,7 @@ function getDetails() {
     });
 }
 //# sourceMappingURL=platform.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.0/node_modules/@actions/core/lib/core.js
+;// CONCATENATED MODULE: ./node_modules/@actions/core/lib/core.js
 var core_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -41810,7 +41980,7 @@ function getIDToken(aud) {
  */
 
 //# sourceMappingURL=core.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-glob-options-helper.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-glob-options-helper.js
 
 /**
  * Returns a copy with defaults filled in.
@@ -41848,7 +42018,7 @@ function getOptions(copy) {
     return result;
 }
 //# sourceMappingURL=internal-glob-options-helper.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-path-helper.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-path-helper.js
 
 
 const internal_path_helper_IS_WINDOWS = process.platform === 'win32';
@@ -42016,7 +42186,7 @@ function safeTrimTrailingSeparator(p) {
     return p.substr(0, p.length - 1);
 }
 //# sourceMappingURL=internal-path-helper.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-match-kind.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-match-kind.js
 /**
  * Indicates whether a pattern matches a path
  */
@@ -42032,7 +42202,7 @@ var MatchKind;
     MatchKind[MatchKind["All"] = 3] = "All";
 })(MatchKind || (MatchKind = {}));
 //# sourceMappingURL=internal-match-kind.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-pattern-helper.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-pattern-helper.js
 
 
 const internal_pattern_helper_IS_WINDOWS = process.platform === 'win32';
@@ -42102,9 +42272,9 @@ function internal_pattern_helper_partialMatch(patterns, itemPath) {
     return patterns.some(x => !x.negate && x.partialMatch(itemPath));
 }
 //# sourceMappingURL=internal-pattern-helper.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/minimatch@3.1.5/node_modules/minimatch/minimatch.js
-var minimatch = __nccwpck_require__(2152);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-path.js
+// EXTERNAL MODULE: ./node_modules/minimatch/minimatch.js
+var minimatch = __nccwpck_require__(3772);
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-path.js
 
 
 
@@ -42192,7 +42362,7 @@ class Path {
     }
 }
 //# sourceMappingURL=internal-path.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-pattern.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-pattern.js
 
 
 
@@ -42422,7 +42592,7 @@ class Pattern {
     }
 }
 //# sourceMappingURL=internal-pattern.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-search-state.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-search-state.js
 class SearchState {
     constructor(path, level) {
         this.path = path;
@@ -42430,7 +42600,7 @@ class SearchState {
     }
 }
 //# sourceMappingURL=internal-search-state.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-globber.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-globber.js
 var internal_globber_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42654,7 +42824,7 @@ class DefaultGlobber {
 const external_stream_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("stream");
 // EXTERNAL MODULE: external "util"
 var external_util_ = __nccwpck_require__(9023);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/internal-hash-files.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/internal-hash-files.js
 var internal_hash_files_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42731,7 +42901,7 @@ function hashFiles(globber_1, currentWorkspace_1) {
     });
 }
 //# sourceMappingURL=internal-hash-files.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+glob@0.6.1/node_modules/@actions/glob/lib/glob.js
+;// CONCATENATED MODULE: ./node_modules/@actions/glob/lib/glob.js
 var glob_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42773,9 +42943,9 @@ function glob_hashFiles(patterns_1) {
     });
 }
 //# sourceMappingURL=glob.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/semver@7.7.4/node_modules/semver/index.js
-var semver = __nccwpck_require__(9419);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/constants.js
+// EXTERNAL MODULE: ./node_modules/semver/index.js
+var semver = __nccwpck_require__(2088);
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/constants.js
 var CacheFilename;
 (function (CacheFilename) {
     CacheFilename["Gzip"] = "cache.tgz";
@@ -42810,7 +42980,7 @@ const TarFilename = 'cache.tar';
 const ManifestFilename = 'manifest.txt';
 const CacheFileSizeLimit = 10 * Math.pow(1024, 3); // 10GiB per repository
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/cacheUtils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/cacheUtils.js
 var cacheUtils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42992,7 +43162,7 @@ function getRuntimeToken() {
 //# sourceMappingURL=cacheUtils.js.map
 // EXTERNAL MODULE: external "url"
 var external_url_ = __nccwpck_require__(7016);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/abort-controller/AbortError.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/abort-controller/AbortError.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -43037,7 +43207,7 @@ const external_node_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import
 var external_node_util_ = __nccwpck_require__(7975);
 ;// CONCATENATED MODULE: external "node:process"
 const external_node_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:process");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/logger/log.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/logger/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43047,7 +43217,7 @@ function log(message, ...args) {
     external_node_process_namespaceObject.stderr.write(`${external_node_util_.format(message, ...args)}${external_node_os_namespaceObject.EOL}`);
 }
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/logger/debug.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/logger/debug.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43233,7 +43403,7 @@ function extend(namespace) {
 }
 /* harmony default export */ const logger_debug = (debugObj);
 //# sourceMappingURL=debug.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/logger/logger.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/logger/logger.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43359,7 +43529,7 @@ function createClientLogger(namespace) {
     return context.createClientLogger(namespace);
 }
 //# sourceMappingURL=logger.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/httpHeaders.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/httpHeaders.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 function normalizeName(name) {
@@ -43449,7 +43619,7 @@ function httpHeaders_createHttpHeaders(rawHeaders) {
     return new HttpHeadersImpl(rawHeaders);
 }
 //# sourceMappingURL=httpHeaders.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/uuidUtils.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/uuidUtils.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -43461,7 +43631,7 @@ function randomUUID() {
     return crypto.randomUUID();
 }
 //# sourceMappingURL=uuidUtils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/pipelineRequest.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/pipelineRequest.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43517,7 +43687,7 @@ function pipelineRequest_createPipelineRequest(options) {
     return new PipelineRequestImpl(options);
 }
 //# sourceMappingURL=pipelineRequest.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/pipeline.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/pipeline.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 const ValidPhaseNames = new Set(["Deserialize", "Serialize", "Retry", "Sign"]);
@@ -43780,7 +43950,7 @@ function pipeline_createEmptyPipeline() {
     return HttpPipeline.create();
 }
 //# sourceMappingURL=pipeline.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/object.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/object.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -43795,7 +43965,7 @@ function isObject(input) {
         !(input instanceof Date));
 }
 //# sourceMappingURL=object.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/error.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/error.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43812,13 +43982,13 @@ function isError(e) {
     return false;
 }
 //# sourceMappingURL=error.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/inspect.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/inspect.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 const custom = external_node_util_.inspect.custom;
 //# sourceMappingURL=inspect.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/sanitizer.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/sanitizer.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -43894,13 +44064,13 @@ class Sanitizer {
                     message: value.message,
                 };
             }
-            if (key === "headers") {
+            if (key === "headers" && isObject(value)) {
                 return this.sanitizeHeaders(value);
             }
-            else if (key === "url") {
+            else if (key === "url" && typeof value === "string") {
                 return this.sanitizeUrl(value);
             }
-            else if (key === "query") {
+            else if (key === "query" && isObject(value)) {
                 return this.sanitizeQuery(value);
             }
             else if (key === "body") {
@@ -43974,7 +44144,7 @@ class Sanitizer {
     }
 }
 //# sourceMappingURL=sanitizer.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/restError.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/restError.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44072,13 +44242,13 @@ const external_node_https_namespaceObject = __WEBPACK_EXTERNAL_createRequire(imp
 var external_node_zlib_ = __nccwpck_require__(8522);
 // EXTERNAL MODULE: external "node:stream"
 var external_node_stream_ = __nccwpck_require__(7075);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/log.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 const log_logger = createClientLogger("ts-http-runtime");
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/nodeHttpClient.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/nodeHttpClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44426,7 +44596,7 @@ function createNodeHttpClient() {
     return new NodeHttpClient();
 }
 //# sourceMappingURL=nodeHttpClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/defaultHttpClient.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/defaultHttpClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44437,7 +44607,7 @@ function defaultHttpClient_createDefaultHttpClient() {
     return createNodeHttpClient();
 }
 //# sourceMappingURL=defaultHttpClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/logPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/logPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44471,7 +44641,69 @@ function logPolicy_logPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=logPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/userAgentPlatform.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/redirectPolicy.js
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
+/**
+ * The programmatic identifier of the redirectPolicy.
+ */
+const redirectPolicyName = "redirectPolicy";
+/**
+ * Methods that are allowed to follow redirects 301 and 302
+ */
+const allowedRedirect = ["GET", "HEAD"];
+/**
+ * A policy to follow Location headers from the server in order
+ * to support server-side redirection.
+ * In the browser, this policy is not used.
+ * @param options - Options to control policy behavior.
+ */
+function redirectPolicy_redirectPolicy(options = {}) {
+    const { maxRetries = 20, allowCrossOriginRedirects = false } = options;
+    return {
+        name: redirectPolicyName,
+        async sendRequest(request, next) {
+            const response = await next(request);
+            return handleRedirect(next, response, maxRetries, allowCrossOriginRedirects);
+        },
+    };
+}
+async function handleRedirect(next, response, maxRetries, allowCrossOriginRedirects, currentRetries = 0) {
+    const { request, status, headers } = response;
+    const locationHeader = headers.get("location");
+    if (locationHeader &&
+        (status === 300 ||
+            (status === 301 && allowedRedirect.includes(request.method)) ||
+            (status === 302 && allowedRedirect.includes(request.method)) ||
+            (status === 303 && request.method === "POST") ||
+            status === 307) &&
+        currentRetries < maxRetries) {
+        const url = new URL(locationHeader, request.url);
+        // Only follow redirects to the same origin by default.
+        if (!allowCrossOriginRedirects) {
+            const originalUrl = new URL(request.url);
+            if (url.origin !== originalUrl.origin) {
+                log_logger.verbose(`Skipping cross-origin redirect from ${originalUrl.origin} to ${url.origin}.`);
+                return response;
+            }
+        }
+        request.url = url.toString();
+        // POST request with Status code 303 should be converted into a
+        // redirected GET request if the redirect url is present in the location header
+        if (status === 303) {
+            request.method = "GET";
+            request.headers.delete("Content-Length");
+            delete request.body;
+        }
+        request.headers.delete("Authorization");
+        const res = await next(request);
+        return handleRedirect(next, res, maxRetries, allowCrossOriginRedirects, currentRetries + 1);
+    }
+    return response;
+}
+//# sourceMappingURL=redirectPolicy.js.map
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/userAgentPlatform.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44488,20 +44720,19 @@ function getHeaderName() {
 async function userAgentPlatform_setPlatformSpecificData(map) {
     if (process && process.versions) {
         const osInfo = `${os.type()} ${os.release()}; ${os.arch()}`;
-        const versions = process.versions;
-        if (versions.bun) {
-            map.set("Bun", `${versions.bun} (${osInfo})`);
+        if (process.versions.bun) {
+            map.set("Bun", `${process.versions.bun} (${osInfo})`);
         }
-        else if (versions.deno) {
-            map.set("Deno", `${versions.deno} (${osInfo})`);
+        else if (process.versions.deno) {
+            map.set("Deno", `${process.versions.deno} (${osInfo})`);
         }
-        else if (versions.node) {
-            map.set("Node", `${versions.node} (${osInfo})`);
+        else if (process.versions.node) {
+            map.set("Node", `${process.versions.node} (${osInfo})`);
         }
     }
 }
 //# sourceMappingURL=userAgentPlatform.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/userAgent.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/userAgent.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44532,7 +44763,7 @@ async function userAgent_getUserAgentValue(prefix) {
     return userAgentValue;
 }
 //# sourceMappingURL=userAgent.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/userAgentPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/userAgentPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44559,7 +44790,7 @@ function userAgentPolicy_userAgentPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=userAgentPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/random.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/random.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -44581,7 +44812,7 @@ function random_getRandomIntegerInclusive(min, max) {
     return offset + min;
 }
 //# sourceMappingURL=random.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/delay.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/delay.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44602,7 +44833,7 @@ function calculateRetryDelay(retryAttempt, config) {
     return { retryAfterInMs };
 }
 //# sourceMappingURL=delay.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/helpers.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/helpers.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44661,7 +44892,7 @@ function parseHeaderValueAsNumber(response, headerName) {
     return valueAsNum;
 }
 //# sourceMappingURL=helpers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/retryStrategies/throttlingRetryStrategy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/retryStrategies/throttlingRetryStrategy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44736,7 +44967,7 @@ function throttlingRetryStrategy_throttlingRetryStrategy() {
     };
 }
 //# sourceMappingURL=throttlingRetryStrategy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/retryStrategies/exponentialRetryStrategy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/retryStrategies/exponentialRetryStrategy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44800,15 +45031,16 @@ function isSystemError(err) {
         err.code === "ENOTFOUND");
 }
 //# sourceMappingURL=exponentialRetryStrategy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/constants.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/constants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-const constants_SDK_VERSION = "0.3.2";
+const constants_SDK_VERSION = "0.3.5";
 const constants_DEFAULT_RETRY_POLICY_COUNT = 3;
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/retryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/retryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
+
 
 
 
@@ -44843,11 +45075,11 @@ function retryPolicy_retryPolicy(strategies, options = { maxRetries: constants_D
                     // RestErrors are valid targets for the retry strategies.
                     // If none of the retry strategies can work with them, they will be thrown later in this policy.
                     // If the received error is not a RestError, it is immediately thrown.
-                    responseError = e;
-                    if (!e || responseError.name !== "RestError") {
+                    if (!restError_isRestError(e)) {
                         throw e;
                     }
-                    response = responseError.response;
+                    responseError = e;
+                    response = e.response;
                 }
                 if (request.abortSignal?.aborted) {
                     logger.error(`Retry ${retryCount}: Request aborted.`);
@@ -44911,7 +45143,7 @@ function retryPolicy_retryPolicy(strategies, options = { maxRetries: constants_D
     };
 }
 //# sourceMappingURL=retryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/defaultRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/defaultRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -44937,7 +45169,7 @@ function defaultRetryPolicy_defaultRetryPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=defaultRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/bytesEncoding.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/bytesEncoding.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -44959,7 +45191,7 @@ function bytesEncoding_stringToUint8Array(value, format) {
     return Buffer.from(value, format);
 }
 //# sourceMappingURL=bytesEncoding.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/checkEnvironment.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/checkEnvironment.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -45001,7 +45233,7 @@ const isNodeRuntime = checkEnvironment_isNodeLike && !isBun && !isDeno;
 // https://github.com/facebook/react-native/blob/main/packages/react-native/Libraries/Core/setUpNavigator.js
 const isReactNative = typeof navigator !== "undefined" && navigator?.product === "ReactNative";
 //# sourceMappingURL=checkEnvironment.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/formDataPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/formDataPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45098,11 +45330,11 @@ async function prepareFormData(formData, request) {
     request.multipartBody = { parts };
 }
 //# sourceMappingURL=formDataPolicy.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/https-proxy-agent@7.0.6/node_modules/https-proxy-agent/dist/index.js
-var dist = __nccwpck_require__(1475);
-// EXTERNAL MODULE: ./node_modules/.pnpm/http-proxy-agent@7.0.2/node_modules/http-proxy-agent/dist/index.js
-var http_proxy_agent_dist = __nccwpck_require__(4249);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/proxyPolicy.js
+// EXTERNAL MODULE: ./node_modules/https-proxy-agent/dist/index.js
+var dist = __nccwpck_require__(3669);
+// EXTERNAL MODULE: ./node_modules/http-proxy-agent/dist/index.js
+var http_proxy_agent_dist = __nccwpck_require__(1970);
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/proxyPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45248,16 +45480,15 @@ function setProxyAgentOnRequest(request, cachedAgents, proxyUrl) {
     if (request.tlsSettings) {
         log_logger.warning("TLS settings are not supported in combination with custom Proxy, certificates provided to the client will be ignored.");
     }
-    const headers = request.headers.toJSON();
     if (isInsecure) {
         if (!cachedAgents.httpProxyAgent) {
-            cachedAgents.httpProxyAgent = new http_proxy_agent_dist.HttpProxyAgent(proxyUrl, { headers });
+            cachedAgents.httpProxyAgent = new http_proxy_agent_dist.HttpProxyAgent(proxyUrl);
         }
         request.agent = cachedAgents.httpProxyAgent;
     }
     else {
         if (!cachedAgents.httpsProxyAgent) {
-            cachedAgents.httpsProxyAgent = new dist.HttpsProxyAgent(proxyUrl, { headers });
+            cachedAgents.httpsProxyAgent = new dist.HttpsProxyAgent(proxyUrl);
         }
         request.agent = cachedAgents.httpsProxyAgent;
     }
@@ -45293,7 +45524,7 @@ function proxyPolicy_proxyPolicy(proxySettings, options) {
     };
 }
 //# sourceMappingURL=proxyPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/typeGuards.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/typeGuards.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 function isNodeReadableStream(x) {
@@ -45309,16 +45540,16 @@ function typeGuards_isBinaryBody(body) {
         (body instanceof Uint8Array ||
             typeGuards_isReadableStream(body) ||
             typeof body === "function" ||
-            body instanceof Blob));
+            (typeof Blob !== "undefined" && body instanceof Blob)));
 }
 function typeGuards_isReadableStream(x) {
     return isNodeReadableStream(x) || isWebReadableStream(x);
 }
-function isBlob(x) {
-    return typeof x.stream === "function";
+function typeGuards_isBlob(x) {
+    return typeof Blob !== "undefined" && x instanceof Blob;
 }
 //# sourceMappingURL=typeGuards.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/concat.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/concat.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45359,7 +45590,7 @@ function toStream(source) {
     if (source instanceof Uint8Array) {
         return external_stream_namespaceObject.Readable.from(Buffer.from(source));
     }
-    else if (isBlob(source)) {
+    else if (typeGuards_isBlob(source)) {
         return ensureNodeStream(source.stream());
     }
     else {
@@ -45388,7 +45619,7 @@ async function concat(sources) {
     };
 }
 //# sourceMappingURL=concat.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/multipartPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/multipartPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45409,7 +45640,7 @@ function getLength(source) {
     if (source instanceof Uint8Array) {
         return source.byteLength;
     }
-    else if (isBlob(source)) {
+    else if (typeGuards_isBlob(source)) {
         // if was created using createFile then -1 means we have an unknown size
         return source.size === -1 ? undefined : source.size;
     }
@@ -45500,7 +45731,7 @@ function multipartPolicy_multipartPolicy() {
     };
 }
 //# sourceMappingURL=multipartPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/createPipelineFromOptions.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/createPipelineFromOptions.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45547,7 +45778,7 @@ function createPipelineFromOptions_createPipelineFromOptions(options) {
     return pipeline;
 }
 //# sourceMappingURL=createPipelineFromOptions.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/checkInsecureConnection.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/checkInsecureConnection.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45598,7 +45829,7 @@ function checkInsecureConnection_ensureSecureConnection(request, options) {
     }
 }
 //# sourceMappingURL=checkInsecureConnection.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/apiKeyAuthenticationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/apiKeyAuthenticationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45629,7 +45860,7 @@ function apiKeyAuthenticationPolicy_apiKeyAuthenticationPolicy(options) {
     };
 }
 //# sourceMappingURL=apiKeyAuthenticationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/basicAuthenticationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/basicAuthenticationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45660,7 +45891,7 @@ function basicAuthenticationPolicy_basicAuthenticationPolicy(options) {
     };
 }
 //# sourceMappingURL=basicAuthenticationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/bearerAuthenticationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/bearerAuthenticationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45691,7 +45922,7 @@ function bearerAuthenticationPolicy_bearerAuthenticationPolicy(options) {
     };
 }
 //# sourceMappingURL=bearerAuthenticationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/oauth2AuthenticationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/auth/oauth2AuthenticationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45722,7 +45953,7 @@ function oauth2AuthenticationPolicy_oauth2AuthenticationPolicy(options) {
     };
 }
 //# sourceMappingURL=oauth2AuthenticationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/client/clientHelpers.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/client/clientHelpers.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45764,7 +45995,7 @@ function clientHelpers_getCachedDefaultHttpsClient() {
     return cachedHttpClient;
 }
 //# sourceMappingURL=clientHelpers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/client/multipart.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/client/multipart.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45885,7 +46116,7 @@ function multipart_buildMultipartBody(parts) {
     return { parts: parts.map(buildBodyPart) };
 }
 //# sourceMappingURL=multipart.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/client/sendRequest.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/client/sendRequest.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -45938,9 +46169,14 @@ async function sendRequest_sendRequest(method, url, pipeline, options = {}, cust
  * @returns returns the content-type
  */
 function getRequestContentType(options = {}) {
-    return (options.contentType ??
-        options.headers?.["content-type"] ??
-        getContentType(options.body));
+    if (options.contentType) {
+        return options.contentType;
+    }
+    const headerContentType = options.headers?.["content-type"];
+    if (typeof headerContentType === "string") {
+        return headerContentType;
+    }
+    return getContentType(options.body);
 }
 /**
  * Function to determine the content-type of a body
@@ -45949,8 +46185,14 @@ function getRequestContentType(options = {}) {
  * @returns returns the content-type
  */
 function getContentType(body) {
+    if (body === undefined) {
+        return undefined;
+    }
     if (ArrayBuffer.isView(body)) {
         return "application/octet-stream";
+    }
+    if (isBlob(body) && body.type) {
+        return body.type;
     }
     if (typeof body === "string") {
         try {
@@ -45968,12 +46210,10 @@ function getContentType(body) {
 function buildPipelineRequest(method, url, options = {}) {
     const requestContentType = getRequestContentType(options);
     const { body, multipartBody } = getRequestBody(options.body, requestContentType);
-    const hasContent = body !== undefined || multipartBody !== undefined;
     const headers = createHttpHeaders({
         ...(options.headers ? options.headers : {}),
         accept: options.accept ?? options.headers?.accept ?? "application/json",
-        ...(hasContent &&
-            requestContentType && {
+        ...(requestContentType && {
             "content-type": requestContentType,
         }),
     });
@@ -46004,8 +46244,14 @@ function getRequestBody(body, contentType = "") {
     if (typeof FormData !== "undefined" && body instanceof FormData) {
         return { body };
     }
+    if (isBlob(body)) {
+        return { body };
+    }
     if (isReadableStream(body)) {
         return { body };
+    }
+    if (typeof body === "function") {
+        return { body: body };
     }
     if (ArrayBuffer.isView(body)) {
         return { body: body instanceof Uint8Array ? body : JSON.stringify(body) };
@@ -46065,7 +46311,7 @@ function createParseError(response, err) {
     });
 }
 //# sourceMappingURL=sendRequest.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/client/getClient.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/client/getClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46152,7 +46398,7 @@ function buildOperation(method, url, pipeline, options, allowInsecureConnection,
     };
 }
 //# sourceMappingURL=getClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/client/restError.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/client/restError.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46182,11 +46428,9 @@ function statusCodeToNumber(statusCode) {
     return Number.isNaN(status) ? undefined : status;
 }
 //# sourceMappingURL=restError.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-
-
 
 
 
@@ -46199,7 +46443,7 @@ function statusCodeToNumber(statusCode) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/pipeline.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/pipeline.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46211,12 +46455,12 @@ function esm_pipeline_createEmptyPipeline() {
     return pipeline_createEmptyPipeline();
 }
 //# sourceMappingURL=pipeline.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/logger/internal.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/logger/internal.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 //# sourceMappingURL=internal.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+logger@1.3.0/node_modules/@azure/logger/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/logger/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46257,13 +46501,13 @@ function esm_createClientLogger(namespace) {
     return esm_context.createClientLogger(namespace);
 }
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/log.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 const esm_log_logger = esm_createClientLogger("core-rest-pipeline");
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/agentPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/agentPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -46286,7 +46530,7 @@ function agentPolicy_agentPolicy(agent) {
     };
 }
 //# sourceMappingURL=agentPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/decompressResponsePolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/decompressResponsePolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -46310,7 +46554,7 @@ function decompressResponsePolicy_decompressResponsePolicy() {
     };
 }
 //# sourceMappingURL=decompressResponsePolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/exponentialRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/exponentialRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46335,7 +46579,7 @@ function exponentialRetryPolicy(options = {}) {
     });
 }
 //# sourceMappingURL=exponentialRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/systemErrorRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/systemErrorRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46365,7 +46609,7 @@ function systemErrorRetryPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=systemErrorRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/throttlingRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/throttlingRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46394,60 +46638,7 @@ function throttlingRetryPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=throttlingRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/redirectPolicy.js
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-/**
- * The programmatic identifier of the redirectPolicy.
- */
-const redirectPolicyName = "redirectPolicy";
-/**
- * Methods that are allowed to follow redirects 301 and 302
- */
-const allowedRedirect = ["GET", "HEAD"];
-/**
- * A policy to follow Location headers from the server in order
- * to support server-side redirection.
- * In the browser, this policy is not used.
- * @param options - Options to control policy behavior.
- */
-function redirectPolicy_redirectPolicy(options = {}) {
-    const { maxRetries = 20 } = options;
-    return {
-        name: redirectPolicyName,
-        async sendRequest(request, next) {
-            const response = await next(request);
-            return handleRedirect(next, response, maxRetries);
-        },
-    };
-}
-async function handleRedirect(next, response, maxRetries, currentRetries = 0) {
-    const { request, status, headers } = response;
-    const locationHeader = headers.get("location");
-    if (locationHeader &&
-        (status === 300 ||
-            (status === 301 && allowedRedirect.includes(request.method)) ||
-            (status === 302 && allowedRedirect.includes(request.method)) ||
-            (status === 303 && request.method === "POST") ||
-            status === 307) &&
-        currentRetries < maxRetries) {
-        const url = new URL(locationHeader, request.url);
-        request.url = url.toString();
-        // POST request with Status code 303 should be converted into a
-        // redirected GET request if the redirect url is present in the location header
-        if (status === 303) {
-            request.method = "GET";
-            request.headers.delete("Content-Length");
-            delete request.body;
-        }
-        request.headers.delete("Authorization");
-        const res = await next(request);
-        return handleRedirect(next, res, maxRetries, currentRetries + 1);
-    }
-    return response;
-}
-//# sourceMappingURL=redirectPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/tlsPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/tlsPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -46470,7 +46661,7 @@ function tlsPolicy_tlsPolicy(tlsSettings) {
     };
 }
 //# sourceMappingURL=tlsPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/policies/internal.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/policies/internal.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46488,7 +46679,7 @@ function tlsPolicy_tlsPolicy(tlsSettings) {
 
 
 //# sourceMappingURL=internal.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/logPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/logPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46508,7 +46699,7 @@ function policies_logPolicy_logPolicy(options = {}) {
     });
 }
 //# sourceMappingURL=logPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/redirectPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/redirectPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46526,7 +46717,7 @@ function policies_redirectPolicy_redirectPolicy(options = {}) {
     return redirectPolicy_redirectPolicy(options);
 }
 //# sourceMappingURL=redirectPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/util/userAgentPlatform.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/util/userAgentPlatform.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46556,13 +46747,13 @@ async function util_userAgentPlatform_setPlatformSpecificData(map) {
     }
 }
 //# sourceMappingURL=userAgentPlatform.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/constants.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/constants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-const esm_constants_SDK_VERSION = "1.22.2";
+const esm_constants_SDK_VERSION = "1.22.3";
 const esm_constants_DEFAULT_RETRY_POLICY_COUNT = 3;
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/util/userAgent.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/util/userAgent.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46593,7 +46784,7 @@ async function util_userAgent_getUserAgentValue(prefix) {
     return userAgentValue;
 }
 //# sourceMappingURL=userAgent.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/userAgentPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/userAgentPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46622,7 +46813,7 @@ function policies_userAgentPolicy_userAgentPolicy(options = {}) {
 //# sourceMappingURL=userAgentPolicy.js.map
 // EXTERNAL MODULE: external "node:crypto"
 var external_node_crypto_ = __nccwpck_require__(7598);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/sha256.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/sha256.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46645,7 +46836,7 @@ async function computeSha256Hash(content, encoding) {
     return createHash("sha256").update(content).digest(encoding);
 }
 //# sourceMappingURL=sha256.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@typespec+ts-http-runtime@0.3.2/node_modules/@typespec/ts-http-runtime/dist/esm/util/internal.js
+;// CONCATENATED MODULE: ./node_modules/@typespec/ts-http-runtime/dist/esm/util/internal.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46658,7 +46849,7 @@ async function computeSha256Hash(content, encoding) {
 
 
 //# sourceMappingURL=internal.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+abort-controller@2.1.2/node_modules/@azure/abort-controller/dist/esm/AbortError.js
+;// CONCATENATED MODULE: ./node_modules/@azure/abort-controller/dist/esm/AbortError.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 /**
@@ -46686,12 +46877,12 @@ class AbortError_AbortError extends Error {
     }
 }
 //# sourceMappingURL=AbortError.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+abort-controller@2.1.2/node_modules/@azure/abort-controller/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/abort-controller/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-util@1.13.1/node_modules/@azure/core-util/dist/esm/createAbortablePromise.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-util/dist/esm/createAbortablePromise.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46734,7 +46925,7 @@ function createAbortablePromise(buildPromise, options) {
     });
 }
 //# sourceMappingURL=createAbortablePromise.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-util@1.13.1/node_modules/@azure/core-util/dist/esm/delay.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-util/dist/esm/delay.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46774,7 +46965,7 @@ function delay_calculateRetryDelay(retryAttempt, config) {
     return { retryAfterInMs };
 }
 //# sourceMappingURL=delay.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-util@1.13.1/node_modules/@azure/core-util/dist/esm/error.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-util/dist/esm/error.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46805,7 +46996,7 @@ function getErrorMessage(e) {
     }
 }
 //# sourceMappingURL=error.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-util@1.13.1/node_modules/@azure/core-util/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-util/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -46937,7 +47128,7 @@ function esm_stringToUint8Array(value, format) {
     return tspRuntime.stringToUint8Array(value, format);
 }
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/util/file.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/util/file.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47067,7 +47258,7 @@ function toArrayBuffer(source) {
     return source.map((x) => x);
 }
 //# sourceMappingURL=file.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/multipartPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/multipartPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47096,7 +47287,7 @@ function policies_multipartPolicy_multipartPolicy() {
     };
 }
 //# sourceMappingURL=multipartPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/decompressResponsePolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/decompressResponsePolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47112,7 +47303,7 @@ function policies_decompressResponsePolicy_decompressResponsePolicy() {
     return decompressResponsePolicy_decompressResponsePolicy();
 }
 //# sourceMappingURL=decompressResponsePolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/defaultRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/defaultRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47130,7 +47321,7 @@ function policies_defaultRetryPolicy_defaultRetryPolicy(options = {}) {
     return defaultRetryPolicy_defaultRetryPolicy(options);
 }
 //# sourceMappingURL=defaultRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/formDataPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/formDataPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47145,7 +47336,7 @@ function policies_formDataPolicy_formDataPolicy() {
     return formDataPolicy_formDataPolicy();
 }
 //# sourceMappingURL=formDataPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/proxyPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/proxyPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47174,7 +47365,7 @@ function policies_proxyPolicy_proxyPolicy(proxySettings, options) {
     return proxyPolicy_proxyPolicy(proxySettings, options);
 }
 //# sourceMappingURL=proxyPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/setClientRequestIdPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/setClientRequestIdPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -47199,7 +47390,7 @@ function setClientRequestIdPolicy(requestIdHeaderName = "x-ms-client-request-id"
     };
 }
 //# sourceMappingURL=setClientRequestIdPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/agentPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/agentPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47214,7 +47405,7 @@ function policies_agentPolicy_agentPolicy(agent) {
     return agentPolicy_agentPolicy(agent);
 }
 //# sourceMappingURL=agentPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/tlsPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/tlsPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47229,7 +47420,7 @@ function policies_tlsPolicy_tlsPolicy(tlsSettings) {
     return tlsPolicy_tlsPolicy(tlsSettings);
 }
 //# sourceMappingURL=tlsPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/esm/tracingContext.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-tracing/dist/esm/tracingContext.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /** @internal */
@@ -47278,9 +47469,9 @@ class TracingContextImpl {
     }
 }
 //# sourceMappingURL=tracingContext.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/commonjs/state.js
-var commonjs_state = __nccwpck_require__(4480);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/esm/state.js
+// EXTERNAL MODULE: ./node_modules/@azure/core-tracing/dist/commonjs/state.js
+var commonjs_state = __nccwpck_require__(8914);
+;// CONCATENATED MODULE: ./node_modules/@azure/core-tracing/dist/esm/state.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // @ts-expect-error The recommended approach to sharing module state between ESM and CJS.
@@ -47291,7 +47482,7 @@ var commonjs_state = __nccwpck_require__(4480);
  */
 const state_state = commonjs_state/* state */.w;
 //# sourceMappingURL=state.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/esm/instrumenter.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-tracing/dist/esm/instrumenter.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47355,7 +47546,7 @@ function getInstrumenter() {
     return state_state.instrumenterImplementation;
 }
 //# sourceMappingURL=instrumenter.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/esm/tracingClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-tracing/dist/esm/tracingClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47434,13 +47625,13 @@ function createTracingClient(options) {
     };
 }
 //# sourceMappingURL=tracingClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-tracing@1.3.1/node_modules/@azure/core-tracing/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-tracing/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/restError.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/restError.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47457,7 +47648,7 @@ function esm_restError_isRestError(e) {
     return restError_isRestError(e);
 }
 //# sourceMappingURL=restError.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/tracingPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/tracingPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47589,7 +47780,7 @@ function tryProcessResponse(span, response) {
     }
 }
 //# sourceMappingURL=tracingPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/util/wrapAbortSignal.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/util/wrapAbortSignal.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -47621,7 +47812,7 @@ function wrapAbortSignalLike(abortSignalLike) {
     return { abortSignal: controller.signal, cleanup };
 }
 //# sourceMappingURL=wrapAbortSignal.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/wrapAbortSignalLikePolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/wrapAbortSignalLikePolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47651,7 +47842,7 @@ function wrapAbortSignalLikePolicy() {
     };
 }
 //# sourceMappingURL=wrapAbortSignalLikePolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/createPipelineFromOptions.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/createPipelineFromOptions.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47706,7 +47897,7 @@ function esm_createPipelineFromOptions_createPipelineFromOptions(options) {
     return pipeline;
 }
 //# sourceMappingURL=createPipelineFromOptions.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/defaultHttpClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/defaultHttpClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47734,7 +47925,7 @@ function esm_defaultHttpClient_createDefaultHttpClient() {
     };
 }
 //# sourceMappingURL=defaultHttpClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/httpHeaders.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/httpHeaders.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47746,7 +47937,7 @@ function esm_httpHeaders_createHttpHeaders(rawHeaders) {
     return httpHeaders_createHttpHeaders(rawHeaders);
 }
 //# sourceMappingURL=httpHeaders.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/pipelineRequest.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/pipelineRequest.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47762,7 +47953,7 @@ function esm_pipelineRequest_createPipelineRequest(options) {
     return pipelineRequest_createPipelineRequest(options);
 }
 //# sourceMappingURL=pipelineRequest.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/exponentialRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/exponentialRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47778,7 +47969,7 @@ function exponentialRetryPolicy_exponentialRetryPolicy(options = {}) {
     return tspExponentialRetryPolicy(options);
 }
 //# sourceMappingURL=exponentialRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/systemErrorRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/systemErrorRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47796,7 +47987,7 @@ function systemErrorRetryPolicy_systemErrorRetryPolicy(options = {}) {
     return tspSystemErrorRetryPolicy(options);
 }
 //# sourceMappingURL=systemErrorRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/throttlingRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/throttlingRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47818,7 +48009,7 @@ function throttlingRetryPolicy_throttlingRetryPolicy(options = {}) {
     return tspThrottlingRetryPolicy(options);
 }
 //# sourceMappingURL=throttlingRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/retryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/retryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -47838,7 +48029,7 @@ function policies_retryPolicy_retryPolicy(strategies, options = { maxRetries: DE
     });
 }
 //# sourceMappingURL=retryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48002,7 +48193,7 @@ function tokenCycler_createTokenCycler(credential, tokenCyclerOptions) {
     };
 }
 //# sourceMappingURL=tokenCycler.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48238,7 +48429,7 @@ function getCaeChallengeClaims(challenges) {
     return parsedChallenges.find((x) => x.scheme === "Bearer" && x.params.claims && x.params.error === "insufficient_claims")?.params.claims;
 }
 //# sourceMappingURL=bearerTokenAuthenticationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/policies/auxiliaryAuthenticationHeaderPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/policies/auxiliaryAuthenticationHeaderPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48301,7 +48492,7 @@ function auxiliaryAuthenticationHeaderPolicy(options) {
     };
 }
 //# sourceMappingURL=auxiliaryAuthenticationHeaderPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-rest-pipeline@1.22.2/node_modules/@azure/core-rest-pipeline/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-rest-pipeline/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48331,7 +48522,7 @@ function auxiliaryAuthenticationHeaderPolicy(options) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-auth@1.10.1/node_modules/@azure/core-auth/dist/esm/keyCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-auth/dist/esm/keyCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48344,7 +48535,7 @@ function isKeyCredential(credential) {
     return isObjectWithProperties(credential, ["key"]) && typeof credential.key === "string";
 }
 //# sourceMappingURL=keyCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-auth@1.10.1/node_modules/@azure/core-auth/dist/esm/azureNamedKeyCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-auth/dist/esm/azureNamedKeyCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48409,7 +48600,7 @@ function isNamedKeyCredential(credential) {
         typeof credential.name === "string");
 }
 //# sourceMappingURL=azureNamedKeyCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-auth@1.10.1/node_modules/@azure/core-auth/dist/esm/azureSASCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-auth/dist/esm/azureSASCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -48461,7 +48652,7 @@ function isSASCredential(credential) {
     return (isObjectWithProperties(credential, ["signature"]) && typeof credential.signature === "string");
 }
 //# sourceMappingURL=azureSASCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-auth@1.10.1/node_modules/@azure/core-auth/dist/esm/tokenCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-auth/dist/esm/tokenCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -48497,14 +48688,14 @@ function isTokenCredential(credential) {
         (castCredential.signRequest === undefined || castCredential.getToken.length > 0));
 }
 //# sourceMappingURL=tokenCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-auth@1.10.1/node_modules/@azure/core-auth/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-auth/dist/esm/index.js
 
 
 
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/policies/disableKeepAlivePolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/policies/disableKeepAlivePolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 const disableKeepAlivePolicyName = "DisableKeepAlivePolicy";
@@ -48524,7 +48715,7 @@ function pipelineContainsDisableKeepAlivePolicy(pipeline) {
     return pipeline.getOrderedPolicies().some((policy) => policy.name === disableKeepAlivePolicyName);
 }
 //# sourceMappingURL=disableKeepAlivePolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/base64.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/base64.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -48561,7 +48752,7 @@ function base64_decodeStringToString(value) {
     return Buffer.from(value, "base64").toString();
 }
 //# sourceMappingURL=base64.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/interfaces.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/interfaces.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -48573,7 +48764,7 @@ const XML_ATTRKEY = "$";
  */
 const XML_CHARKEY = "_";
 //# sourceMappingURL=interfaces.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/utils.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/utils.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -48702,7 +48893,7 @@ function flattenResponse(fullResponse, responseSpec) {
     });
 }
 //# sourceMappingURL=utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/serializer.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/serializer.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -49624,9 +49815,9 @@ const MapperTypeNames = {
     UnixTime: "UnixTime",
 };
 //# sourceMappingURL=serializer.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/commonjs/state.js
-var dist_commonjs_state = __nccwpck_require__(9582);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/state.js
+// EXTERNAL MODULE: ./node_modules/@azure/core-client/dist/commonjs/state.js
+var dist_commonjs_state = __nccwpck_require__(3345);
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/state.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // @ts-expect-error The recommended approach to sharing module state between ESM and CJS.
@@ -49637,7 +49828,7 @@ var dist_commonjs_state = __nccwpck_require__(9582);
  */
 const esm_state_state = dist_commonjs_state/* state */.w;
 //# sourceMappingURL=state.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/operationHelpers.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/operationHelpers.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -49732,7 +49923,7 @@ function getOperationRequestInfo(request) {
     return info;
 }
 //# sourceMappingURL=operationHelpers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/deserializationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/deserializationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -49963,7 +50154,7 @@ async function parse(jsonContentTypes, xmlContentTypes, operationResponse, opts,
     return operationResponse;
 }
 //# sourceMappingURL=deserializationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/interfaceHelpers.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/interfaceHelpers.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50003,7 +50194,7 @@ function getPathStringFromParameter(parameter) {
     return result;
 }
 //# sourceMappingURL=interfaceHelpers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/serializationPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/serializationPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50155,7 +50346,7 @@ function prepareXMLRootList(obj, elementName, xmlNamespaceKey, xmlNamespace) {
     return result;
 }
 //# sourceMappingURL=serializationPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/pipeline.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/pipeline.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50182,7 +50373,7 @@ function createClientPipeline(options = {}) {
     return pipeline;
 }
 //# sourceMappingURL=pipeline.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/httpClientCache.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/httpClientCache.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50194,7 +50385,7 @@ function getCachedDefaultHttpClient() {
     return httpClientCache_cachedHttpClient;
 }
 //# sourceMappingURL=httpClientCache.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/urlHelpers.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/urlHelpers.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50428,13 +50619,13 @@ function appendQueryParams(url, queryParams, sequenceParams, noOverwrite = false
     return parsedUrl.toString();
 }
 //# sourceMappingURL=urlHelpers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/log.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 const dist_esm_log_logger = esm_createClientLogger("core-client");
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/serviceClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/serviceClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50607,7 +50798,7 @@ function getCredentialScopes(options) {
     return undefined;
 }
 //# sourceMappingURL=serviceClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/authorizeRequestOnClaimChallenge.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/authorizeRequestOnClaimChallenge.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50680,7 +50871,7 @@ async function authorizeRequestOnClaimChallenge(onChallengeOptions) {
     return true;
 }
 //# sourceMappingURL=authorizeRequestOnClaimChallenge.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/authorizeRequestOnTenantChallenge.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/authorizeRequestOnTenantChallenge.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -50797,7 +50988,7 @@ function requestToOptions(request) {
     };
 }
 //# sourceMappingURL=authorizeRequestOnTenantChallenge.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-client@1.10.1/node_modules/@azure/core-client/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-client/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -50809,7 +51000,7 @@ function requestToOptions(request) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/util.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/util.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -51072,7 +51263,7 @@ class HttpHeaders {
     }
 }
 //# sourceMappingURL=util.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/response.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/response.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -51140,7 +51331,7 @@ function response_toPipelineResponse(compatResponse) {
     }
 }
 //# sourceMappingURL=response.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/extendedClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/extendedClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -51193,7 +51384,7 @@ class ExtendedServiceClient extends ServiceClient {
     }
 }
 //# sourceMappingURL=extendedClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/policies/requestPolicyFactoryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/policies/requestPolicyFactoryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -51245,7 +51436,7 @@ function createRequestPolicyFactoryPolicy(factories) {
     };
 }
 //# sourceMappingURL=requestPolicyFactoryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/httpClientAdapter.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/httpClientAdapter.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -51264,7 +51455,7 @@ function convertHttpClient(requestPolicyClient) {
     };
 }
 //# sourceMappingURL=httpClientAdapter.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-http-compat@2.3.1/node_modules/@azure/core-http-compat/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-http-compat/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -51277,8 +51468,9 @@ function convertHttpClient(requestPolicyClient) {
 
 
 
+
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.2.1/node_modules/path-expression-matcher/src/Expression.js
+;// CONCATENATED MODULE: ./node_modules/path-expression-matcher/src/Expression.js
 /**
  * Expression - Parses and stores a tag pattern expression
  * 
@@ -51296,11 +51488,11 @@ class Expression {
    * @param {Object} options - Configuration options
    * @param {string} options.separator - Path separator (default: '.')
    */
-  constructor(pattern, options = {}) {
+  constructor(pattern, options = {}, data) {
     this.pattern = pattern;
     this.separator = options.separator || '.';
     this.segments = this._parse(pattern);
-
+    this.data = data;
     // Cache expensive checks for performance (O(1) instead of O(n))
     this._hasDeepWildcard = this.segments.some(seg => seg.type === 'deep-wildcard');
     this._hasAttributeCondition = this.segments.some(seg => seg.attrName !== undefined);
@@ -51511,58 +51703,207 @@ class Expression {
     return this.pattern;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.2.1/node_modules/path-expression-matcher/src/Matcher.js
+;// CONCATENATED MODULE: ./node_modules/path-expression-matcher/src/Matcher.js
+
+
 /**
- * Matcher - Tracks current path in XML/JSON tree and matches against Expressions
- * 
+ * MatcherView - A lightweight read-only view over a Matcher's internal state.
+ *
+ * Created once by Matcher and reused across all callbacks. Holds a direct
+ * reference to the parent Matcher so it always reflects current parser state
+ * with zero copying or freezing overhead.
+ *
+ * Users receive this via {@link Matcher#readOnly} or directly from parser
+ * callbacks. It exposes all query and matching methods but has no mutation
+ * methods — misuse is caught at the TypeScript level rather than at runtime.
+ *
+ * @example
+ * const matcher = new Matcher();
+ * const view = matcher.readOnly();
+ *
+ * matcher.push("root", {});
+ * view.getCurrentTag(); // "root"
+ * view.getDepth();      // 1
+ */
+class MatcherView {
+  /**
+   * @param {Matcher} matcher - The parent Matcher instance to read from.
+   */
+  constructor(matcher) {
+    this._matcher = matcher;
+  }
+
+  /**
+   * Get the path separator used by the parent matcher.
+   * @returns {string}
+   */
+  get separator() {
+    return this._matcher.separator;
+  }
+
+  /**
+   * Get current tag name.
+   * @returns {string|undefined}
+   */
+  getCurrentTag() {
+    const path = this._matcher.path;
+    return path.length > 0 ? path[path.length - 1].tag : undefined;
+  }
+
+  /**
+   * Get current namespace.
+   * @returns {string|undefined}
+   */
+  getCurrentNamespace() {
+    const path = this._matcher.path;
+    return path.length > 0 ? path[path.length - 1].namespace : undefined;
+  }
+
+  /**
+   * Get current node's attribute value.
+   * @param {string} attrName
+   * @returns {*}
+   */
+  getAttrValue(attrName) {
+    const path = this._matcher.path;
+    if (path.length === 0) return undefined;
+    return path[path.length - 1].values?.[attrName];
+  }
+
+  /**
+   * Check if current node has an attribute.
+   * @param {string} attrName
+   * @returns {boolean}
+   */
+  hasAttr(attrName) {
+    const path = this._matcher.path;
+    if (path.length === 0) return false;
+    const current = path[path.length - 1];
+    return current.values !== undefined && attrName in current.values;
+  }
+
+  /**
+   * Get current node's sibling position (child index in parent).
+   * @returns {number}
+   */
+  getPosition() {
+    const path = this._matcher.path;
+    if (path.length === 0) return -1;
+    return path[path.length - 1].position ?? 0;
+  }
+
+  /**
+   * Get current node's repeat counter (occurrence count of this tag name).
+   * @returns {number}
+   */
+  getCounter() {
+    const path = this._matcher.path;
+    if (path.length === 0) return -1;
+    return path[path.length - 1].counter ?? 0;
+  }
+
+  /**
+   * Get current node's sibling index (alias for getPosition).
+   * @returns {number}
+   * @deprecated Use getPosition() or getCounter() instead
+   */
+  getIndex() {
+    return this.getPosition();
+  }
+
+  /**
+   * Get current path depth.
+   * @returns {number}
+   */
+  getDepth() {
+    return this._matcher.path.length;
+  }
+
+  /**
+   * Get path as string.
+   * @param {string} [separator] - Optional separator (uses default if not provided)
+   * @param {boolean} [includeNamespace=true]
+   * @returns {string}
+   */
+  toString(separator, includeNamespace = true) {
+    return this._matcher.toString(separator, includeNamespace);
+  }
+
+  /**
+   * Get path as array of tag names.
+   * @returns {string[]}
+   */
+  toArray() {
+    return this._matcher.path.map(n => n.tag);
+  }
+
+  /**
+   * Match current path against an Expression.
+   * @param {Expression} expression
+   * @returns {boolean}
+   */
+  matches(expression) {
+    return this._matcher.matches(expression);
+  }
+
+  /**
+   * Match any expression in the given set against the current path.
+   * @param {ExpressionSet} exprSet
+   * @returns {boolean}
+   */
+  matchesAny(exprSet) {
+    return exprSet.matchesAny(this._matcher);
+  }
+}
+
+/**
+ * Matcher - Tracks current path in XML/JSON tree and matches against Expressions.
+ *
  * The matcher maintains a stack of nodes representing the current path from root to
  * current tag. It only stores attribute values for the current (top) node to minimize
  * memory usage. Sibling tracking is used to auto-calculate position and counter.
- * 
+ *
+ * Use {@link Matcher#readOnly} to obtain a {@link MatcherView} safe to pass to
+ * user callbacks — it always reflects current state with no Proxy overhead.
+ *
  * @example
  * const matcher = new Matcher();
  * matcher.push("root", {});
  * matcher.push("users", {});
  * matcher.push("user", { id: "123", type: "admin" });
- * 
+ *
  * const expr = new Expression("root.users.user");
  * matcher.matches(expr); // true
  */
-
-/**
- * Names of methods that mutate Matcher state.
- * Any attempt to call these on a read-only view throws a TypeError.
- * @type {Set<string>}
- */
-const MUTATING_METHODS = new Set(['push', 'pop', 'reset', 'updateCurrent', 'restore']);
-
 class Matcher {
   /**
-   * Create a new Matcher
-   * @param {Object} options - Configuration options
-   * @param {string} options.separator - Default path separator (default: '.')
+   * Create a new Matcher.
+   * @param {Object} [options={}]
+   * @param {string} [options.separator='.'] - Default path separator
    */
   constructor(options = {}) {
     this.separator = options.separator || '.';
     this.path = [];
     this.siblingStacks = [];
-    // Each path node: { tag: string, values: object, position: number, counter: number }
+    // Each path node: { tag, values, position, counter, namespace? }
     // values only present for current (last) node
     // Each siblingStacks entry: Map<tagName, count> tracking occurrences at each level
+    this._pathStringCache = null;
+    this._view = new MatcherView(this);
   }
 
   /**
-   * Push a new tag onto the path
-   * @param {string} tagName - Name of the tag
-   * @param {Object} attrValues - Attribute key-value pairs for current node (optional)
-   * @param {string} namespace - Namespace for the tag (optional)
+   * Push a new tag onto the path.
+   * @param {string} tagName
+   * @param {Object|null} [attrValues=null]
+   * @param {string|null} [namespace=null]
    */
   push(tagName, attrValues = null, namespace = null) {
-    this._pathStringCache = null; // invalidate
+    this._pathStringCache = null;
+
     // Remove values from previous current node (now becoming ancestor)
     if (this.path.length > 0) {
-      const prev = this.path[this.path.length - 1];
-      prev.values = undefined;
+      this.path[this.path.length - 1].values = undefined;
     }
 
     // Get or create sibling tracking for current level
@@ -51595,12 +51936,10 @@ class Matcher {
       counter: counter
     };
 
-    // Store namespace if provided
     if (namespace !== null && namespace !== undefined) {
       node.namespace = namespace;
     }
 
-    // Store values only for current node
     if (attrValues !== null && attrValues !== undefined) {
       node.values = attrValues;
     }
@@ -51609,19 +51948,15 @@ class Matcher {
   }
 
   /**
-   * Pop the last tag from the path
+   * Pop the last tag from the path.
    * @returns {Object|undefined} The popped node
    */
   pop() {
-    if (this.path.length === 0) {
-      return undefined;
-    }
-    this._pathStringCache = null; // invalidate
+    if (this.path.length === 0) return undefined;
+    this._pathStringCache = null;
+
     const node = this.path.pop();
 
-    // Clean up sibling tracking for levels deeper than current
-    // After pop, path.length is the new depth
-    // We need to clean up siblingStacks[path.length + 1] and beyond
     if (this.siblingStacks.length > this.path.length + 1) {
       this.siblingStacks.length = this.path.length + 1;
     }
@@ -51630,9 +51965,9 @@ class Matcher {
   }
 
   /**
-   * Update current node's attribute values
-   * Useful when attributes are parsed after push
-   * @param {Object} attrValues - Attribute values
+   * Update current node's attribute values.
+   * Useful when attributes are parsed after push.
+   * @param {Object} attrValues
    */
   updateCurrent(attrValues) {
     if (this.path.length > 0) {
@@ -51644,7 +51979,7 @@ class Matcher {
   }
 
   /**
-   * Get current tag name
+   * Get current tag name.
    * @returns {string|undefined}
    */
   getCurrentTag() {
@@ -51652,7 +51987,7 @@ class Matcher {
   }
 
   /**
-   * Get current namespace
+   * Get current namespace.
    * @returns {string|undefined}
    */
   getCurrentNamespace() {
@@ -51660,19 +51995,18 @@ class Matcher {
   }
 
   /**
-   * Get current node's attribute value
-   * @param {string} attrName - Attribute name
-   * @returns {*} Attribute value or undefined
+   * Get current node's attribute value.
+   * @param {string} attrName
+   * @returns {*}
    */
   getAttrValue(attrName) {
     if (this.path.length === 0) return undefined;
-    const current = this.path[this.path.length - 1];
-    return current.values?.[attrName];
+    return this.path[this.path.length - 1].values?.[attrName];
   }
 
   /**
-   * Check if current node has an attribute
-   * @param {string} attrName - Attribute name
+   * Check if current node has an attribute.
+   * @param {string} attrName
    * @returns {boolean}
    */
   hasAttr(attrName) {
@@ -51682,7 +52016,7 @@ class Matcher {
   }
 
   /**
-   * Get current node's sibling position (child index in parent)
+   * Get current node's sibling position (child index in parent).
    * @returns {number}
    */
   getPosition() {
@@ -51691,7 +52025,7 @@ class Matcher {
   }
 
   /**
-   * Get current node's repeat counter (occurrence count of this tag name)
+   * Get current node's repeat counter (occurrence count of this tag name).
    * @returns {number}
    */
   getCounter() {
@@ -51700,7 +52034,7 @@ class Matcher {
   }
 
   /**
-   * Get current node's sibling index (alias for getPosition for backward compatibility)
+   * Get current node's sibling index (alias for getPosition).
    * @returns {number}
    * @deprecated Use getPosition() or getCounter() instead
    */
@@ -51709,7 +52043,7 @@ class Matcher {
   }
 
   /**
-   * Get current path depth
+   * Get current path depth.
    * @returns {number}
    */
   getDepth() {
@@ -51717,9 +52051,9 @@ class Matcher {
   }
 
   /**
-   * Get path as string
-   * @param {string} separator - Optional separator (uses default if not provided)
-   * @param {boolean} includeNamespace - Whether to include namespace in output (default: true)
+   * Get path as string.
+   * @param {string} [separator] - Optional separator (uses default if not provided)
+   * @param {boolean} [includeNamespace=true]
    * @returns {string}
    */
   toString(separator, includeNamespace = true) {
@@ -51727,24 +52061,23 @@ class Matcher {
     const isDefault = (sep === this.separator && includeNamespace === true);
 
     if (isDefault) {
-      if (this._pathStringCache !== null && this._pathStringCache !== undefined) {
+      if (this._pathStringCache !== null) {
         return this._pathStringCache;
       }
       const result = this.path.map(n =>
-        (includeNamespace && n.namespace) ? `${n.namespace}:${n.tag}` : n.tag
+        (n.namespace) ? `${n.namespace}:${n.tag}` : n.tag
       ).join(sep);
       this._pathStringCache = result;
       return result;
     }
 
-    // Non-default separator or includeNamespace=false: don't cache (rare case)
     return this.path.map(n =>
       (includeNamespace && n.namespace) ? `${n.namespace}:${n.tag}` : n.tag
     ).join(sep);
   }
 
   /**
-   * Get path as array of tag names
+   * Get path as array of tag names.
    * @returns {string[]}
    */
   toArray() {
@@ -51752,18 +52085,18 @@ class Matcher {
   }
 
   /**
-   * Reset the path to empty
+   * Reset the path to empty.
    */
   reset() {
-    this._pathStringCache = null; // invalidate
+    this._pathStringCache = null;
     this.path = [];
     this.siblingStacks = [];
   }
 
   /**
-   * Match current path against an Expression
-   * @param {Expression} expression - The expression to match against
-   * @returns {boolean} True if current path matches the expression
+   * Match current path against an Expression.
+   * @param {Expression} expression
+   * @returns {boolean}
    */
   matches(expression) {
     const segments = expression.segments;
@@ -51772,32 +52105,23 @@ class Matcher {
       return false;
     }
 
-    // Handle deep wildcard patterns
     if (expression.hasDeepWildcard()) {
       return this._matchWithDeepWildcard(segments);
     }
 
-    // Simple path matching (no deep wildcards)
     return this._matchSimple(segments);
   }
 
   /**
-   * Match simple path (no deep wildcards)
    * @private
    */
   _matchSimple(segments) {
-    // Path must be same length as segments
     if (this.path.length !== segments.length) {
       return false;
     }
 
-    // Match each segment bottom-to-top
     for (let i = 0; i < segments.length; i++) {
-      const segment = segments[i];
-      const node = this.path[i];
-      const isCurrentNode = (i === this.path.length - 1);
-
-      if (!this._matchSegment(segment, node, isCurrentNode)) {
+      if (!this._matchSegment(segments[i], this.path[i], i === this.path.length - 1)) {
         return false;
       }
     }
@@ -51806,32 +52130,27 @@ class Matcher {
   }
 
   /**
-   * Match path with deep wildcards
    * @private
    */
   _matchWithDeepWildcard(segments) {
-    let pathIdx = this.path.length - 1;  // Start from current node (bottom)
-    let segIdx = segments.length - 1;     // Start from last segment
+    let pathIdx = this.path.length - 1;
+    let segIdx = segments.length - 1;
 
     while (segIdx >= 0 && pathIdx >= 0) {
       const segment = segments[segIdx];
 
       if (segment.type === 'deep-wildcard') {
-        // ".." matches zero or more levels
         segIdx--;
 
         if (segIdx < 0) {
-          // Pattern ends with "..", always matches
           return true;
         }
 
-        // Find where next segment matches in the path
         const nextSeg = segments[segIdx];
         let found = false;
 
         for (let i = pathIdx; i >= 0; i--) {
-          const isCurrentNode = (i === this.path.length - 1);
-          if (this._matchSegment(nextSeg, this.path[i], isCurrentNode)) {
+          if (this._matchSegment(nextSeg, this.path[i], i === this.path.length - 1)) {
             pathIdx = i - 1;
             segIdx--;
             found = true;
@@ -51843,9 +52162,7 @@ class Matcher {
           return false;
         }
       } else {
-        // Regular segment
-        const isCurrentNode = (pathIdx === this.path.length - 1);
-        if (!this._matchSegment(segment, this.path[pathIdx], isCurrentNode)) {
+        if (!this._matchSegment(segment, this.path[pathIdx], pathIdx === this.path.length - 1)) {
           return false;
         }
         pathIdx--;
@@ -51853,38 +52170,25 @@ class Matcher {
       }
     }
 
-    // All segments must be consumed
     return segIdx < 0;
   }
 
   /**
-   * Match a single segment against a node
    * @private
-   * @param {Object} segment - Segment from Expression
-   * @param {Object} node - Node from path
-   * @param {boolean} isCurrentNode - Whether this is the current (last) node
-   * @returns {boolean}
    */
   _matchSegment(segment, node, isCurrentNode) {
-    // Match tag name (* is wildcard)
     if (segment.tag !== '*' && segment.tag !== node.tag) {
       return false;
     }
 
-    // Match namespace if specified in segment
     if (segment.namespace !== undefined) {
-      // Segment has namespace - node must match it
       if (segment.namespace !== '*' && segment.namespace !== node.namespace) {
         return false;
       }
     }
-    // If segment has no namespace, it matches nodes with or without namespace
 
-    // Match attribute name (check if node has this attribute)
-    // Can only check for current node since ancestors don't have values
     if (segment.attrName !== undefined) {
       if (!isCurrentNode) {
-        // Can't check attributes for ancestor nodes (values not stored)
         return false;
       }
 
@@ -51892,20 +52196,15 @@ class Matcher {
         return false;
       }
 
-      // Match attribute value (only possible for current node)
       if (segment.attrValue !== undefined) {
-        const actualValue = node.values[segment.attrName];
-        // Both should be strings
-        if (String(actualValue) !== String(segment.attrValue)) {
+        if (String(node.values[segment.attrName]) !== String(segment.attrValue)) {
           return false;
         }
       }
     }
 
-    // Match position (only for current node)
     if (segment.position !== undefined) {
       if (!isCurrentNode) {
-        // Can't check position for ancestor nodes
         return false;
       }
 
@@ -51917,10 +52216,8 @@ class Matcher {
         return false;
       } else if (segment.position === 'even' && counter % 2 !== 0) {
         return false;
-      } else if (segment.position === 'nth') {
-        if (counter !== segment.positionValue) {
-          return false;
-        }
+      } else if (segment.position === 'nth' && counter !== segment.positionValue) {
+        return false;
       }
     }
 
@@ -51928,8 +52225,17 @@ class Matcher {
   }
 
   /**
-   * Create a snapshot of current state
-   * @returns {Object} State snapshot
+   * Match any expression in the given set against the current path.
+   * @param {ExpressionSet} exprSet
+   * @returns {boolean}
+   */
+  matchesAny(exprSet) {
+    return exprSet.matchesAny(this);
+  }
+
+  /**
+   * Create a snapshot of current state.
+   * @returns {Object}
    */
   snapshot() {
     return {
@@ -51939,105 +52245,378 @@ class Matcher {
   }
 
   /**
-   * Restore state from snapshot
-   * @param {Object} snapshot - State snapshot
+   * Restore state from snapshot.
+   * @param {Object} snapshot
    */
   restore(snapshot) {
-    this._pathStringCache = null; // invalidate
+    this._pathStringCache = null;
     this.path = snapshot.path.map(node => ({ ...node }));
     this.siblingStacks = snapshot.siblingStacks.map(map => new Map(map));
   }
 
   /**
-   * Return a read-only view of this matcher.
+   * Return the read-only {@link MatcherView} for this matcher.
    *
-   * The returned object exposes all query/inspection methods but throws a
-   * TypeError if any state-mutating method is called (`push`, `pop`, `reset`,
-   * `updateCurrent`, `restore`).  Property reads (e.g. `.path`, `.separator`)
-   * are allowed but the returned arrays/objects are frozen so callers cannot
-   * mutate internal state through them either.
+   * The same instance is returned on every call — no allocation occurs.
+   * It always reflects the current parser state and is safe to pass to
+   * user callbacks without risk of accidental mutation.
    *
-   * @returns {ReadOnlyMatcher} A proxy that forwards read operations and blocks writes.
+   * @returns {MatcherView}
    *
    * @example
-   * const matcher = new Matcher();
-   * matcher.push("root", {});
-   *
-   * const ro = matcher.readOnly();
-   * ro.matches(expr);      // ✓ works
-   * ro.getCurrentTag();    // ✓ works
-   * ro.push("child", {}); // ✗ throws TypeError
-   * ro.reset();            // ✗ throws TypeError
+   * const view = matcher.readOnly();
+   * // pass view to callbacks — it stays in sync automatically
+   * view.matches(expr);       // ✓
+   * view.getCurrentTag();     // ✓
+   * // view.push(...)         // ✗ method does not exist — caught by TypeScript
    */
   readOnly() {
-    const self = this;
-
-    return new Proxy(self, {
-      get(target, prop, receiver) {
-        // Block mutating methods
-        if (MUTATING_METHODS.has(prop)) {
-          return () => {
-            throw new TypeError(
-              `Cannot call '${prop}' on a read-only Matcher. ` +
-              `Obtain a writable instance to mutate state.`
-            );
-          };
-        }
-
-        const value = Reflect.get(target, prop, receiver);
-
-        // Freeze array/object properties so callers can't mutate internal
-        // state through direct property access (e.g. matcher.path.push(...))
-        if (prop === 'path' || prop === 'siblingStacks') {
-          return Object.freeze(
-            Array.isArray(value)
-              ? value.map(item =>
-                item instanceof Map
-                  ? Object.freeze(new Map(item))   // freeze a copy of each Map
-                  : Object.freeze({ ...item })      // freeze a copy of each node
-              )
-              : value
-          );
-        }
-
-        // Bind methods so `this` inside them still refers to the real Matcher
-        if (typeof value === 'function') {
-          return value.bind(target);
-        }
-
-        return value;
-      },
-
-      // Prevent any property assignment on the read-only view
-      set(_target, prop) {
-        throw new TypeError(
-          `Cannot set property '${String(prop)}' on a read-only Matcher.`
-        );
-      },
-
-      // Prevent property deletion
-      deleteProperty(_target, prop) {
-        throw new TypeError(
-          `Cannot delete property '${String(prop)}' from a read-only Matcher.`
-        );
-      }
-    });
+    return this._view;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-builder@1.1.4/node_modules/fast-xml-builder/src/orderedJs2Xml.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-builder/src/util.js
+
+
+function safeComment(val) {
+  return String(val)
+    .replace(/--/g, '- -')   // -- is illegal anywhere in comment content
+    .replace(/--/g, '- -')   // handle the scenario when 2 consiucative dashes appears 
+    .replace(/-$/, '- ');    // trailing - would form -- with the closing -->
+}
+
+function safeCdata(val) {
+  return String(val).replace(/\]\]>/g, ']]]]><![CDATA[>')
+}
+
+function escapeAttribute(val) {
+  return String(val).replace(/"/g, '&quot;').replace(/'/g, '&apos;')
+}
+;// CONCATENATED MODULE: ./node_modules/xml-naming/src/index.js
+/**
+ * xml-naming
+ * Validates XML Name productions as defined in the XML 1.0 and 1.1 specifications.
+ * Covers: Name, NCName, QName, NMToken, NMTokens
+ *
+ * XML 1.0 spec: https://www.w3.org/TR/xml/#NT-Name
+ * XML 1.1 spec: https://www.w3.org/TR/xml11/#NT-NameStartChar
+ * XML NS spec:  https://www.w3.org/TR/xml-names/#NT-NCName
+ */
+
+// ---------------------------------------------------------------------------
+// Character class strings — XML 1.0
+//
+// NameStartChar ::= ":" | [A-Z] | "_" | [a-z]
+//   | [#xC0-#xD6]   | [#xD8-#xF6]   | [#xF8-#x2FF]
+//   | [#x370-#x37D] | [#x37F-#x1FFF]    <- split to exclude #x0487
+//   | [#x200C-#x200D]
+//   | [#x2070-#x218F] | [#x2C00-#x2FEF]
+//   | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD]
+//
+// NameChar ::= NameStartChar | "-" | "." | [0-9]
+//   | #xB7 | [#x0300-#x036F] | [#x203F-#x2040]
+//
+// Note: \u0487 (Combining Cyrillic Millions Sign) was added in Unicode 4.0,
+// after XML 1.0 was defined against Unicode 2.0. It falls inside the range
+// \u037F-\u1FFF but must be excluded. We split that range into
+// \u037F-\u0486 and \u0488-\u1FFF to exclude it explicitly.
+// ---------------------------------------------------------------------------
+
+const nameStartChar10 =
+  ':A-Za-z_' +
+  '\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF' +
+  '\u0370-\u037D' +
+  '\u037F-\u0486\u0488-\u1FFF' +  // split to exclude \u0487
+  '\u200C-\u200D' +
+  '\u2070-\u218F' +
+  '\u2C00-\u2FEF' +
+  '\u3001-\uD7FF' +
+  '\uF900-\uFDCF' +
+  '\uFDF0-\uFFFD';
+
+const nameChar10 =
+  nameStartChar10 +
+  '\\-\\.\\d' +
+  '\u00B7' +
+  '\u0300-\u036F' +
+  '\u203F-\u2040';
+
+// ---------------------------------------------------------------------------
+// Character class strings — XML 1.1
+//
+// Differences from XML 1.0:
+//
+// NameStartChar:
+//   1.0 has split ranges: \u00C0-\u00D6, \u00D8-\u00F6, \u00F8-\u02FF
+//   1.1 merges them into: \u00C0-\u02FF
+//   (\u00D7 x and \u00F7 / are division symbols, excluded in both versions)
+//
+//   1.0 tops out at \uFFFD (BMP only)
+//   1.1 adds \u{10000}-\u{EFFFF} (supplementary planes)
+//   These require the /u flag on the RegExp — see buildRegexes below.
+//
+// NameChar:
+//   1.1 adds \u0487 (Combining Cyrillic Millions Sign, added in Unicode 4.0)
+// ---------------------------------------------------------------------------
+
+const nameStartChar11 =
+  ':A-Za-z_' +
+  '\u00C0-\u02FF' +                    // merged — 1.0 had three split ranges here
+  '\u0370-\u037D' +
+  '\u037F-\u0486\u0488-\u1FFF' +       // split to exclude \u0487 (combining mark, never a NameStartChar)
+  '\u200C-\u200D' +
+  '\u2070-\u218F' +
+  '\u2C00-\u2FEF' +
+  '\u3001-\uD7FF' +
+  '\uF900-\uFDCF' +
+  '\uFDF0-\uFFFD' +
+  '\u{10000}-\u{EFFFF}';     // supplementary planes — REQUIRES /u flag on RegExp
+
+const nameChar11 =
+  nameStartChar11 +
+  '\\-\\.\\d' +
+  '\u00B7' +
+  '\u0300-\u036F' +
+  '\u0487' +                 // Combining Cyrillic Millions Sign — valid in 1.1, not 1.0
+  '\u203F-\u2040';
+
+// ---------------------------------------------------------------------------
+// Regex builders
+//
+// XML 1.0 regexes: no flags — BMP only, standard JS regex behaviour.
+// XML 1.1 regexes: /u flag — required for \u{10000}-\u{EFFFF} to match actual
+//   supplementary code points rather than lone surrogates (which are illegal XML).
+// ---------------------------------------------------------------------------
+
+const buildRegexes = (startChar, char, flags = '') => {
+  const ncStart = startChar.replace(':', '');
+  const ncChar = char.replace(':', '');
+  const ncNamePat = `[${ncStart}][${ncChar}]*`;
+
+  return {
+    name: new RegExp(`^[${startChar}][${char}]*$`, flags),
+    ncName: new RegExp(`^${ncNamePat}$`, flags),
+    qName: new RegExp(`^${ncNamePat}(?::${ncNamePat})?$`, flags),
+    nmToken: new RegExp(`^[${char}]+$`, flags),
+    nmTokens: new RegExp(`^[${char}]+(?:\\s+[${char}]+)*$`, flags),
+  };
+};
+
+const regexes10 = buildRegexes(nameStartChar10, nameChar10);       // no /u — BMP only
+const regexes11 = buildRegexes(nameStartChar11, nameChar11, 'u');  // /u — enables \u{10000}-\u{EFFFF}
+
+const getRegexes = (xmlVersion = '1.0') =>
+  xmlVersion === '1.1' ? regexes11 : regexes10;
+
+// ---------------------------------------------------------------------------
+// Boolean validators
+// ---------------------------------------------------------------------------
+
+/**
+ * Returns true if the string is a valid XML Name.
+ * Colons are allowed anywhere (Name production).
+ * Used for: DOCTYPE entity names, notation names, DTD element declarations.
+ */
+const src_name = (str, { xmlVersion = '1.0' } = {}) =>
+  getRegexes(xmlVersion).name.test(str);
+
+/**
+ * Returns true if the string is a valid NCName (Non-Colonized Name).
+ * Colons are not permitted.
+ * Used for: namespace prefixes, local names, SVG id attributes.
+ */
+const ncName = (str, { xmlVersion = '1.0' } = {}) =>
+  getRegexes(xmlVersion).ncName.test(str);
+
+/**
+ * Returns true if the string is a valid QName (Qualified Name).
+ * Allows exactly one colon as a prefix separator: prefix:localName.
+ * Used for: element and attribute names in namespace-aware XML/SVG.
+ */
+const qName = (str, { xmlVersion = '1.0' } = {}) =>
+  getRegexes(xmlVersion).qName.test(str);
+
+/**
+ * Returns true if the string is a valid NMToken.
+ * Like Name but no restriction on the first character.
+ * Used for: DTD NMTOKEN attribute values.
+ */
+const nmToken = (str, { xmlVersion = '1.0' } = {}) =>
+  getRegexes(xmlVersion).nmToken.test(str);
+
+/**
+ * Returns true if the string is a valid NMTokens value.
+ * A whitespace-separated list of NMToken values.
+ * Used for: DTD NMTOKENS attribute values.
+ */
+const nmTokens = (str, { xmlVersion = '1.0' } = {}) =>
+  getRegexes(xmlVersion).nmTokens.test(str);
+
+// ---------------------------------------------------------------------------
+// Diagnostic validator
+// ---------------------------------------------------------------------------
+
+const PRODUCTIONS = (/* unused pure expression or super */ null && (['name', 'ncName', 'qName', 'nmToken', 'nmTokens']));
+
+/**
+ * Validates a string against a named production and returns a detailed result.
+ *
+ * @param {string} str
+ * @param {'name'|'ncName'|'qName'|'nmToken'|'nmTokens'} production
+ * @param {{ xmlVersion?: '1.0'|'1.1' }} [opts]
+ * @returns {{ valid: boolean, production: string, input: string, reason?: string, position?: number }}
+ */
+const validate = (str, production, { xmlVersion = '1.0' } = {}) => {
+  if (!PRODUCTIONS.includes(production)) {
+    throw new TypeError(
+      `Unknown production "${production}". Must be one of: ${PRODUCTIONS.join(', ')}`
+    );
+  }
+
+  const validators = { name: src_name, ncName, qName, nmToken, nmTokens };
+  const isValid = validators[production](str, { xmlVersion });
+
+  if (isValid) return { valid: true, production, input: str };
+
+  let reason = 'Does not match the production rules';
+  let position;
+
+  if (str.length === 0) {
+    reason = 'Input is empty';
+  } else if (production === 'ncName' && str.includes(':')) {
+    position = str.indexOf(':');
+    reason = 'Colon is not allowed in NCName';
+  } else if (production === 'qName' && str.startsWith(':')) {
+    reason = 'QName cannot start with a colon';
+    position = 0;
+  } else if (production === 'qName' && str.endsWith(':')) {
+    reason = 'QName cannot end with a colon';
+    position = str.length - 1;
+  } else if (production === 'qName' && (str.match(/:/g) || []).length > 1) {
+    reason = 'QName can have at most one colon';
+    position = str.lastIndexOf(':');
+  } else if (
+    ['name', 'ncName', 'qName'].includes(production) &&
+    !/^[:A-Za-z_\u00C0-\uFFFD]/.test(str[0])
+  ) {
+    reason = `First character "${str[0]}" is not a valid NameStartChar`;
+    position = 0;
+  } else {
+    for (let i = 0; i < str.length; i++) {
+      if (!/[\w\-\\.:\u00B7\u00C0-\uFFFD]/.test(str[i])) {
+        reason = `Character "${str[i]}" at position ${i} is not a valid NameChar`;
+        position = i;
+        break;
+      }
+    }
+  }
+
+  return { valid: false, production, input: str, reason, position };
+};
+
+// ---------------------------------------------------------------------------
+// Batch validator
+// ---------------------------------------------------------------------------
+
+/**
+ * Validates an array of strings against a named production.
+ *
+ * @param {string[]} strings
+ * @param {'name'|'ncName'|'qName'|'nmToken'|'nmTokens'} production
+ * @param {{ xmlVersion?: '1.0'|'1.1' }} [opts]
+ * @returns {Array<{ valid: boolean, production: string, input: string, reason?: string, position?: number }>}
+ */
+const validateAll = (strings, production, opts = {}) =>
+  strings.map(str => validate(str, production, opts));
+
+// ---------------------------------------------------------------------------
+// Sanitizer
+// ---------------------------------------------------------------------------
+
+/**
+ * Transforms an invalid string into the nearest valid XML name for the given production.
+ *
+ * @param {string} str
+ * @param {'name'|'ncName'|'qName'|'nmToken'|'nmTokens'} production
+ * @param {{ replacement?: string }} [opts]
+ * @returns {string}
+ */
+const sanitize = (str, production = 'name', { replacement = '_' } = {}) => {
+  if (!str) return replacement;
+
+  let result = str;
+
+  // Strip colons for NCName
+  if (production === 'ncName') {
+    result = result.replace(/:/g, '');
+  }
+
+  // Replace illegal characters
+  result = result.replace(/[^\w\-\.:\u00B7\u00C0-\uFFFD]/g, replacement);
+
+  // Fix invalid start character for Name / NCName / QName
+  if (production !== 'nmToken' && production !== 'nmTokens') {
+    if (/^[\-\.\d]/.test(result)) {
+      result = replacement + result;
+    }
+  }
+
+  return result || replacement;
+};
+;// CONCATENATED MODULE: ./node_modules/fast-xml-builder/src/orderedJs2Xml.js
+
+
 
 
 const EOL = "\n";
 
 /**
- * 
- * @param {array} jArray 
- * @param {any} options 
- * @returns 
+ * Detect XML version from the first element of the ordered array input.
+ * The first element must be a ?xml processing instruction with a version attribute.
+ * Returns '1.0' if not found.
+ *
+ * @param {array}  jArray
+ * @param {object} options
+ */
+function detectXmlVersionFromArray(jArray, options) {
+    if (!Array.isArray(jArray) || jArray.length === 0) return '1.0';
+    const first = jArray[0];
+    const firstKey = propName(first);
+    if (firstKey === '?xml') {
+        const attrs = first[':@'];
+        if (attrs) {
+            const versionKey = options.attributeNamePrefix + 'version';
+            if (attrs[versionKey]) return attrs[versionKey];
+        }
+    }
+    return '1.0';
+}
+
+/**
+ * Resolve a tag or attribute name through sanitizeName if configured.
+ * Validation via xml-naming's qName is performed first; the sanitizeName
+ * callback is invoked only when the name is invalid. If sanitizeName is
+ * false (default), no validation occurs and the name is used as-is.
+ *
+ * @param {string}  name        - raw name from the JS object
+ * @param {boolean} isAttribute - true when resolving an attribute name
+ * @param {object}  options
+ * @param {Matcher} matcher     - current matcher state (readonly from callback perspective)
+ * @param {string}  xmlVersion  - '1.0' or '1.1', forwarded to xml-naming
+ */
+function resolveTagName(name, isAttribute, options, matcher, xmlVersion) {
+    if (!options.sanitizeName) return name;
+    if (qName(name, { xmlVersion })) return name;
+    return options.sanitizeName(name, { isAttribute, matcher: matcher.readOnly() });
+}
+
+/**
+ * @param {array} jArray
+ * @param {any} options
+ * @returns
  */
 function toXml(jArray, options) {
     let indentation = "";
-    if (options.format && options.indentBy.length > 0) {
+    if (options.format) {
         indentation = EOL;
     }
 
@@ -52054,13 +52633,16 @@ function toXml(jArray, options) {
         }
     }
 
+    // Detect XML version for use in name validation
+    const xmlVersion = detectXmlVersionFromArray(jArray, options);
+
     // Initialize matcher for path tracking
     const matcher = new Matcher();
 
-    return arrToStr(jArray, options, indentation, matcher, stopNodeExpressions);
+    return arrToStr(jArray, options, indentation, matcher, stopNodeExpressions, xmlVersion);
 }
 
-function arrToStr(arr, options, indentation, matcher, stopNodeExpressions) {
+function arrToStr(arr, options, indentation, matcher, stopNodeExpressions, xmlVersion) {
     let xmlStr = "";
     let isPreviousElementTag = false;
 
@@ -52080,20 +52662,32 @@ function arrToStr(arr, options, indentation, matcher, stopNodeExpressions) {
 
     for (let i = 0; i < arr.length; i++) {
         const tagObj = arr[i];
-        const tagName = propName(tagObj);
-        if (tagName === undefined) continue;
+        const rawTagName = propName(tagObj);
+        if (rawTagName === undefined) continue;
+
+        // Special names are exempt from sanitizeName: internal conventions and PI tags
+        // are not user-supplied XML element names.
+        const isSpecialName = rawTagName === options.textNodeName
+            || rawTagName === options.cdataPropName
+            || rawTagName === options.commentPropName
+            || rawTagName[0] === '?';
+
+        // Resolve tag name (may transform it; may throw for invalid names)
+        const tagName = isSpecialName
+            ? rawTagName
+            : resolveTagName(rawTagName, false, options, matcher, xmlVersion);
 
         // Extract attributes from ":@" property
         const attrValues = extractAttributeValues(tagObj[":@"], options);
 
-        // Push tag to matcher WITH attributes
+        // Push resolved tag to matcher WITH attributes
         matcher.push(tagName, attrValues);
 
         // Check if this is a stop node using Expression matching
         const isStopNode = checkStopNode(matcher, stopNodeExpressions);
 
         if (tagName === options.textNodeName) {
-            let tagText = tagObj[tagName];
+            let tagText = tagObj[rawTagName];
             if (!isStopNode) {
                 tagText = options.tagValueProcessor(tagName, tagText);
                 tagText = replaceEntitiesValue(tagText, options);
@@ -52109,21 +52703,25 @@ function arrToStr(arr, options, indentation, matcher, stopNodeExpressions) {
             if (isPreviousElementTag) {
                 xmlStr += indentation;
             }
-            xmlStr += `<![CDATA[${tagObj[tagName][0][options.textNodeName]}]]>`;
+            const val = tagObj[rawTagName][0][options.textNodeName];
+            const safeVal = safeCdata(val);
+            xmlStr += `<![CDATA[${safeVal}]]>`;
             isPreviousElementTag = false;
             matcher.pop();
             continue;
         } else if (tagName === options.commentPropName) {
-            xmlStr += indentation + `<!--${tagObj[tagName][0][options.textNodeName]}-->`;
+            const val = tagObj[rawTagName][0][options.textNodeName];
+            const safeVal = safeComment(val);
+            xmlStr += indentation + `<!--${safeVal}-->`;
             isPreviousElementTag = true;
             matcher.pop();
             continue;
         } else if (tagName[0] === "?") {
-            const attStr = attr_to_str(tagObj[":@"], options, isStopNode);
+            const attStr = attr_to_str(tagObj[":@"], options, isStopNode, matcher, xmlVersion);
             const tempInd = tagName === "?xml" ? "" : indentation;
-            let piTextNodeName = tagObj[tagName][0][options.textNodeName];
-            piTextNodeName = piTextNodeName.length !== 0 ? " " + piTextNodeName : ""; //remove extra spacing
-            xmlStr += tempInd + `<${tagName}${piTextNodeName}${attStr}?>`;
+            // Text node content on PI/XML declaration tags is intentionally ignored.
+            // Only attributes are valid on these tags per the XML spec.
+            xmlStr += tempInd + `<${tagName}${attStr}?>`;
             isPreviousElementTag = true;
             matcher.pop();
             continue;
@@ -52135,16 +52733,15 @@ function arrToStr(arr, options, indentation, matcher, stopNodeExpressions) {
         }
 
         // Pass isStopNode to attr_to_str so attributes are also not processed for stopNodes
-        const attStr = attr_to_str(tagObj[":@"], options, isStopNode);
+        const attStr = attr_to_str(tagObj[":@"], options, isStopNode, matcher, xmlVersion);
         const tagStart = indentation + `<${tagName}${attStr}`;
 
         // If this is a stopNode, get raw content without processing
         let tagValue;
         if (isStopNode) {
-            tagValue = orderedJs2Xml_getRawContent(tagObj[tagName], options);
+            tagValue = orderedJs2Xml_getRawContent(tagObj[rawTagName], options);
         } else {
-
-            tagValue = arrToStr(tagObj[tagName], options, newIdentation, matcher, stopNodeExpressions);
+            tagValue = arrToStr(tagObj[rawTagName], options, newIdentation, matcher, stopNodeExpressions, xmlVersion);
         }
 
         if (options.unpairedTags.indexOf(tagName) !== -1) {
@@ -52188,7 +52785,7 @@ function extractAttributeValues(attrMap, options) {
         const cleanAttrName = attr.startsWith(options.attributeNamePrefix)
             ? attr.substr(options.attributeNamePrefix.length)
             : attr;
-        attrValues[cleanAttrName] = attrMap[attr];
+        attrValues[cleanAttrName] = escapeAttribute(attrMap[attr]);
         hasAttrs = true;
     }
 
@@ -52226,9 +52823,7 @@ function orderedJs2Xml_getRawContent(arr, options) {
             // Processing instruction - skip for stopNodes
             continue;
         } else if (tagName) {
-            // Nested tags within stopNode
-            // Recursively get raw content and reconstruct the tag
-            // For stopNodes, we don't process attributes either
+            // Nested tags within stopNode — no sanitizeName, content is raw
             const attStr = attr_to_str_raw(item[":@"], options);
             const nestedContent = orderedJs2Xml_getRawContent(item[tagName], options);
 
@@ -52255,7 +52850,7 @@ function attr_to_str_raw(attrMap, options) {
             if (attrVal === true && options.suppressBooleanAttributes) {
                 attrStr += ` ${attr.substr(options.attributeNamePrefix.length)}`;
             } else {
-                attrStr += ` ${attr.substr(options.attributeNamePrefix.length)}="${attrVal}"`;
+                attrStr += ` ${attr.substr(options.attributeNamePrefix.length)}="${escapeAttribute(attrVal)}"`;
             }
         }
     }
@@ -52271,13 +52866,23 @@ function propName(obj) {
     }
 }
 
-function attr_to_str(attrMap, options, isStopNode) {
+/**
+ * Build attribute string, resolving attribute names through sanitizeName when configured.
+ * Accepts matcher so the callback has path context.
+ */
+function attr_to_str(attrMap, options, isStopNode, matcher, xmlVersion) {
     let attrStr = "";
     if (attrMap && !options.ignoreAttributes) {
         for (let attr in attrMap) {
             if (!Object.prototype.hasOwnProperty.call(attrMap, attr)) continue;
-            let attrVal;
 
+            // Strip prefix to get the clean XML attribute name, then optionally sanitize it
+            const cleanAttrName = attr.substr(options.attributeNamePrefix.length);
+            const resolvedAttrName = isStopNode
+                ? cleanAttrName  // stopNodes are raw — skip sanitizeName for attr names too
+                : resolveTagName(cleanAttrName, true, options, matcher, xmlVersion);
+
+            let attrVal;
             if (isStopNode) {
                 // For stopNodes, use raw value without any processing
                 attrVal = attrMap[attr];
@@ -52288,9 +52893,9 @@ function attr_to_str(attrMap, options, isStopNode) {
             }
 
             if (attrVal === true && options.suppressBooleanAttributes) {
-                attrStr += ` ${attr.substr(options.attributeNamePrefix.length)}`;
+                attrStr += ` ${resolvedAttrName}`;
             } else {
-                attrStr += ` ${attr.substr(options.attributeNamePrefix.length)}="${attrVal}"`;
+                attrStr += ` ${resolvedAttrName}="${escapeAttribute(attrVal)}"`;
             }
         }
     }
@@ -52317,7 +52922,7 @@ function replaceEntitiesValue(textValue, options) {
     }
     return textValue;
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-builder@1.1.4/node_modules/fast-xml-builder/src/ignoreAttributes.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-builder/src/ignoreAttributes.js
 function getIgnoreAttributesFn(ignoreAttributes) {
     if (typeof ignoreAttributes === 'function') {
         return ignoreAttributes
@@ -52336,9 +52941,11 @@ function getIgnoreAttributesFn(ignoreAttributes) {
     }
     return () => false
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-builder@1.1.4/node_modules/fast-xml-builder/src/fxb.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-builder/src/fxb.js
 
 //parse Empty Node as self closing node
+
+
 
 
 
@@ -52376,7 +52983,11 @@ const defaultOptions = {
   // transformAttributeName: false,
   oneListGroup: false,
   maxNestedTags: 100,
-  jPath: true  // When true, callbacks receive string jPath; when false, receive Matcher instance
+  jPath: true,  // When true, callbacks receive string jPath; when false, receive Matcher instance
+  sanitizeName: false  // false = allow all names as-is (default, backward-compatible).
+  // Set to a function (name, { isAttribute, matcher }) => string to
+  // validate/sanitize tag and attribute names. Throw inside the function
+  // to reject an invalid name.
 };
 
 function Builder(options) {
@@ -52433,6 +53044,44 @@ function Builder(options) {
   }
 }
 
+/**
+ * Detect XML version from the ?xml declaration at the root of a plain-object input.
+ * Checks both attributesGroupName and flat attribute forms.
+ * Returns '1.0' if no declaration is found.
+ */
+function detectXmlVersionFromObj(jObj, options) {
+  const decl = jObj['?xml'];
+  if (decl && typeof decl === 'object') {
+    // attributesGroupName path e.g. { '$$': { '@_version': '1.1' } }
+    if (options.attributesGroupName && decl[options.attributesGroupName]) {
+      const v = decl[options.attributesGroupName][options.attributeNamePrefix + 'version'];
+      if (v) return v;
+    }
+    // flat attribute path e.g. { '@_version': '1.1' }
+    const v = decl[options.attributeNamePrefix + 'version'];
+    if (v) return v;
+  }
+  return '1.0';
+}
+
+/**
+ * Resolve a tag or attribute name through sanitizeName if configured.
+ * Validation via xml-naming's qName is performed first; the sanitizeName
+ * callback is invoked only when the name is invalid. If sanitizeName is
+ * false (default), no validation occurs and the name is used as-is.
+ *
+ * @param {string}  name        - raw name from the JS object
+ * @param {boolean} isAttribute - true when resolving an attribute name
+ * @param {object}  options
+ * @param {Matcher} matcher     - current matcher state (readonly from callback perspective)
+ * @param {string}  xmlVersion  - '1.0' or '1.1', forwarded to xml-naming
+ */
+function fxb_resolveTagName(name, isAttribute, options, matcher, xmlVersion) {
+  if (!options.sanitizeName) return name;
+  if (qName(name, { xmlVersion })) return name;
+  return options.sanitizeName(name, { isAttribute, matcher: matcher.readOnly() });
+}
+
 Builder.prototype.build = function (jObj) {
   if (this.options.preserveOrder) {
     return toXml(jObj, this.options);
@@ -52444,11 +53093,12 @@ Builder.prototype.build = function (jObj) {
     }
     // Initialize matcher for path tracking
     const matcher = new Matcher();
-    return this.j2x(jObj, 0, matcher).val;
+    const xmlVersion = detectXmlVersionFromObj(jObj, this.options);
+    return this.j2x(jObj, 0, matcher, xmlVersion).val;
   }
 };
 
-Builder.prototype.j2x = function (jObj, level, matcher) {
+Builder.prototype.j2x = function (jObj, level, matcher, xmlVersion) {
   let attrStr = '';
   let val = '';
   if (this.options.maxNestedTags && matcher.getDepth() >= this.options.maxNestedTags) {
@@ -52462,6 +53112,22 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
 
   for (let key in jObj) {
     if (!Object.prototype.hasOwnProperty.call(jObj, key)) continue;
+
+    // Resolve the key through sanitizeName before any use.
+    // Special keys (textNodeName, cdataPropName, commentPropName, attributeNamePrefix,
+    // attributesGroupName, "?" PI tags) are exempt — they are builder-internal conventions,
+    // not user-supplied XML names.
+    const isSpecialKey = key === this.options.textNodeName
+      || key === this.options.cdataPropName
+      || key === this.options.commentPropName
+      || (this.options.attributesGroupName && key === this.options.attributesGroupName)
+      || this.isAttribute(key)
+      || key[0] === '?';
+
+    const resolvedKey = isSpecialKey
+      ? key
+      : fxb_resolveTagName(key, false, this.options, matcher, xmlVersion);
+
     if (typeof jObj[key] === 'undefined') {
       // supress undefined node only if it is not an attribute
       if (this.isAttribute(key)) {
@@ -52471,21 +53137,22 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
       // null attribute should be ignored by the attribute list, but should not cause the tag closing
       if (this.isAttribute(key)) {
         val += '';
-      } else if (key === this.options.cdataPropName) {
+      } else if (resolvedKey === this.options.cdataPropName || resolvedKey === this.options.commentPropName) {
         val += '';
-      } else if (key[0] === '?') {
-        val += this.indentate(level) + '<' + key + '?' + this.tagEndChar;
+      } else if (resolvedKey[0] === '?') {
+        val += this.indentate(level) + '<' + resolvedKey + '?' + this.tagEndChar;
       } else {
-        val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+        val += this.indentate(level) + '<' + resolvedKey + '/' + this.tagEndChar;
       }
-      // val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
     } else if (jObj[key] instanceof Date) {
-      val += this.buildTextValNode(jObj[key], key, '', level, matcher);
+      val += this.buildTextValNode(jObj[key], resolvedKey, '', level, matcher);
     } else if (typeof jObj[key] !== 'object') {
       //premitive type
       const attr = this.isAttribute(key);
       if (attr && !this.ignoreAttributesFn(attr, jPath)) {
-        attrStr += this.buildAttrPairStr(attr, '' + jObj[key], isCurrentStopNode);
+        // Resolve the attribute name through sanitizeName
+        const resolvedAttr = fxb_resolveTagName(attr, true, this.options, matcher, xmlVersion);
+        attrStr += this.buildAttrPairStr(resolvedAttr, '' + jObj[key], isCurrentStopNode);
       } else if (!attr) {
         //tag value
         if (key === this.options.textNodeName) {
@@ -52493,7 +53160,7 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
           val += this.replaceEntitiesValue(newval);
         } else {
           // Check if this is a stopNode before building
-          matcher.push(key);
+          matcher.push(resolvedKey);
           const isStopNode = this.checkStopNode(matcher);
           matcher.pop();
 
@@ -52501,12 +53168,12 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
             // Build as raw content without encoding
             const textValue = '' + jObj[key];
             if (textValue === '') {
-              val += this.indentate(level) + '<' + key + this.closeTag(key) + this.tagEndChar;
+              val += this.indentate(level) + '<' + resolvedKey + this.closeTag(resolvedKey) + this.tagEndChar;
             } else {
-              val += this.indentate(level) + '<' + key + '>' + textValue + '</' + key + this.tagEndChar;
+              val += this.indentate(level) + '<' + resolvedKey + '>' + textValue + '</' + resolvedKey + this.tagEndChar;
             }
           } else {
-            val += this.buildTextValNode(jObj[key], key, '', level, matcher);
+            val += this.buildTextValNode(jObj[key], resolvedKey, '', level, matcher);
           }
         }
       }
@@ -52520,14 +53187,13 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
         if (typeof item === 'undefined') {
           // supress undefined node
         } else if (item === null) {
-          if (key[0] === "?") val += this.indentate(level) + '<' + key + '?' + this.tagEndChar;
-          else val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
-          // val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+          if (resolvedKey[0] === "?") val += this.indentate(level) + '<' + resolvedKey + '?' + this.tagEndChar;
+          else val += this.indentate(level) + '<' + resolvedKey + '/' + this.tagEndChar;
         } else if (typeof item === 'object') {
           if (this.options.oneListGroup) {
             // Push tag to matcher before recursive call
-            matcher.push(key);
-            const result = this.j2x(item, level + 1, matcher);
+            matcher.push(resolvedKey);
+            const result = this.j2x(item, level + 1, matcher, xmlVersion);
             // Pop tag from matcher after recursive call
             matcher.pop();
 
@@ -52536,16 +53202,16 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
               listTagAttr += result.attrStr
             }
           } else {
-            listTagVal += this.processTextOrObjNode(item, key, level, matcher)
+            listTagVal += this.processTextOrObjNode(item, resolvedKey, level, matcher, xmlVersion)
           }
         } else {
           if (this.options.oneListGroup) {
-            let textValue = this.options.tagValueProcessor(key, item);
+            let textValue = this.options.tagValueProcessor(resolvedKey, item);
             textValue = this.replaceEntitiesValue(textValue);
             listTagVal += textValue;
           } else {
             // Check if this is a stopNode before building
-            matcher.push(key);
+            matcher.push(resolvedKey);
             const isStopNode = this.checkStopNode(matcher);
             matcher.pop();
 
@@ -52553,18 +53219,18 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
               // Build as raw content without encoding
               const textValue = '' + item;
               if (textValue === '') {
-                listTagVal += this.indentate(level) + '<' + key + this.closeTag(key) + this.tagEndChar;
+                listTagVal += this.indentate(level) + '<' + resolvedKey + this.closeTag(resolvedKey) + this.tagEndChar;
               } else {
-                listTagVal += this.indentate(level) + '<' + key + '>' + textValue + '</' + key + this.tagEndChar;
+                listTagVal += this.indentate(level) + '<' + resolvedKey + '>' + textValue + '</' + resolvedKey + this.tagEndChar;
               }
             } else {
-              listTagVal += this.buildTextValNode(item, key, '', level, matcher);
+              listTagVal += this.buildTextValNode(item, resolvedKey, '', level, matcher);
             }
           }
         }
       }
       if (this.options.oneListGroup) {
-        listTagVal = this.buildObjectNode(listTagVal, key, listTagAttr, level);
+        listTagVal = this.buildObjectNode(listTagVal, resolvedKey, listTagAttr, level);
       }
       val += listTagVal;
     } else {
@@ -52573,10 +53239,12 @@ Builder.prototype.j2x = function (jObj, level, matcher) {
         const Ks = Object.keys(jObj[key]);
         const L = Ks.length;
         for (let j = 0; j < L; j++) {
-          attrStr += this.buildAttrPairStr(Ks[j], '' + jObj[key][Ks[j]], isCurrentStopNode);
+          // Resolve attribute names inside attributesGroupName
+          const resolvedAttr = fxb_resolveTagName(Ks[j], true, this.options, matcher, xmlVersion);
+          attrStr += this.buildAttrPairStr(resolvedAttr, '' + jObj[key][Ks[j]], isCurrentStopNode);
         }
       } else {
-        val += this.processTextOrObjNode(jObj[key], key, level, matcher)
+        val += this.processTextOrObjNode(jObj[key], resolvedKey, level, matcher, xmlVersion)
       }
     }
   }
@@ -52590,10 +53258,10 @@ Builder.prototype.buildAttrPairStr = function (attrName, val, isStopNode) {
   }
   if (this.options.suppressBooleanAttributes && val === "true") {
     return ' ' + attrName;
-  } else return ' ' + attrName + '="' + val + '"';
+  } else return ' ' + attrName + '="' + escapeAttribute(val) + '"';
 }
 
-function processTextOrObjNode(object, key, level, matcher) {
+function processTextOrObjNode(object, key, level, matcher, xmlVersion) {
   // Extract attributes to pass to matcher
   const attrValues = this.extractAttributes(object);
 
@@ -52611,11 +53279,15 @@ function processTextOrObjNode(object, key, level, matcher) {
     return this.buildObjectNode(rawContent, key, attrStr, level);
   }
 
-  const result = this.j2x(object, level + 1, matcher);
+  const result = this.j2x(object, level + 1, matcher, xmlVersion);
   // Pop tag from matcher after recursion
   matcher.pop();
 
-  if (object[this.options.textNodeName] !== undefined && Object.keys(object).length === 1) {
+  // PI/XML-declaration tags must never emit text content — route through
+  // buildTextValNode which correctly ignores the text node for "?" tags.
+  if (key[0] === '?') {
+    return this.buildTextValNode('', key, result.attrStr, level, matcher);
+  } else if (object[this.options.textNodeName] !== undefined && Object.keys(object).length === 1) {
     return this.buildTextValNode(object[this.options.textNodeName], key, result.attrStr, level, matcher);
   } else {
     return this.buildObjectNode(result.val, key, result.attrStr, level);
@@ -52638,7 +53310,7 @@ Builder.prototype.extractAttributes = function (obj) {
       const cleanKey = attrKey.startsWith(this.options.attributeNamePrefix)
         ? attrKey.substring(this.options.attributeNamePrefix.length)
         : attrKey;
-      attrValues[cleanKey] = attrGroup[attrKey];
+      attrValues[cleanKey] = escapeAttribute(attrGroup[attrKey]);
       hasAttrs = true;
     }
   } else {
@@ -52647,7 +53319,7 @@ Builder.prototype.extractAttributes = function (obj) {
       if (!Object.prototype.hasOwnProperty.call(obj, key)) continue;
       const attr = this.isAttribute(key);
       if (attr) {
-        attrValues[attr] = obj[key];
+        attrValues[attr] = escapeAttribute(obj[key]);
         hasAttrs = true;
       }
     }
@@ -52764,8 +53436,10 @@ Builder.prototype.buildObjectNode = function (val, key, attrStr, level) {
     else {
       return this.indentate(level) + '<' + key + attrStr + this.closeTag(key) + this.tagEndChar;
     }
+  } else if (key[0] === "?") {
+    // PI/XML-declaration tags never have body content — treat them like empty.
+    return this.indentate(level) + '<' + key + attrStr + '?' + this.tagEndChar;
   } else {
-
     let tagEndExp = '</' + key + this.tagEndChar;
     let piClosingChar = "";
 
@@ -52818,16 +53492,17 @@ function buildEmptyObjNode(val, key, attrStr, level) {
     if (key[0] === "?") return this.indentate(level) + '<' + key + attrStr + '?' + this.tagEndChar;
     else {
       return this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
-      // return this.buildTagStr(level,key, attrStr);
     }
   }
 }
 
 Builder.prototype.buildTextValNode = function (val, key, attrStr, level, matcher) {
   if (this.options.cdataPropName !== false && key === this.options.cdataPropName) {
-    return this.indentate(level) + `<![CDATA[${val}]]>` + this.newLine;
+    const safeVal = safeCdata(val);
+    return this.indentate(level) + `<![CDATA[${safeVal}]]>` + this.newLine;
   } else if (this.options.commentPropName !== false && key === this.options.commentPropName) {
-    return this.indentate(level) + `<!--${val}-->` + this.newLine;
+    const safeVal = safeComment(val);
+    return this.indentate(level) + `<!--${safeVal}-->` + this.newLine;
   } else if (key[0] === "?") {//PI tag
     return this.indentate(level) + '<' + key + attrStr + '?' + this.tagEndChar;
   } else {
@@ -52866,14 +53541,14 @@ function isAttribute(name /*, options*/) {
     return false;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js
 // Re-export from fast-xml-builder for backward compatibility
 
 /* harmony default export */ const json2xml = (Builder);
 
 // If there are any named exports you also want to re-export:
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/util.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/util.js
 
 
 const nameStartChar = ':A-Za-z_\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
@@ -52935,7 +53610,7 @@ const DANGEROUS_PROPERTY_NAMES = [
 ];
 
 const criticalProperties = ["__proto__", "constructor", "prototype"];
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/validator.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/validator.js
 
 
 
@@ -52946,7 +53621,7 @@ const validator_defaultOptions = {
 };
 
 //const tagsPattern = new RegExp("<\\/?([\\w:\\-_\.]+)\\s*\/?>","g");
-function validate(xmlData, options) {
+function validator_validate(xmlData, options) {
   options = Object.assign({}, validator_defaultOptions, options);
 
   //xmlData = xmlData.replace(/(\r\n|\n|\r)/gm,"");//make it single line
@@ -53362,7 +54037,7 @@ function getPositionFromMatch(match) {
   return match.startIndex + match[1].length;
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/fxp.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/fxp.js
 
 
 
@@ -53370,10 +54045,11 @@ function getPositionFromMatch(match) {
 
 
 const XMLValidator = {
-  validate: validate
+  validate: validator_validate
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js
+
 
 
 const defaultOnDangerousProperty = (name) => {
@@ -53415,6 +54091,7 @@ const OptionsBuilder_defaultOptions = {
   unpairedTags: [],
   processEntities: true,
   htmlEntities: false,
+  entityDecoder: null,
   ignoreDeclaration: false,
   ignorePiTags: false,
   transformTagName: false,
@@ -53461,18 +54138,19 @@ function validatePropertyName(propertyName, optionName) {
  * @param {boolean|object} value 
  * @returns {object} Always returns normalized object
  */
-function normalizeProcessEntities(value) {
+function normalizeProcessEntities(value, htmlEntities) {
   // Boolean backward compatibility
   if (typeof value === 'boolean') {
     return {
       enabled: value, // true or false
       maxEntitySize: 10000,
-      maxExpansionDepth: 10,
-      maxTotalExpansions: 1000,
+      maxExpansionDepth: 10000,
+      maxTotalExpansions: Infinity,
       maxExpandedLength: 100000,
-      maxEntityCount: 100,
+      maxEntityCount: 1000,
       allowedTags: null,
-      tagFilter: null
+      tagFilter: null,
+      appliesTo: "all",
     };
   }
 
@@ -53486,7 +54164,8 @@ function normalizeProcessEntities(value) {
       maxExpandedLength: Math.max(1, value.maxExpandedLength ?? 100000),
       maxEntityCount: Math.max(1, value.maxEntityCount ?? 1000),
       allowedTags: value.allowedTags ?? null,
-      tagFilter: value.tagFilter ?? null
+      tagFilter: value.tagFilter ?? null,
+      appliesTo: value.appliesTo ?? "all",
     };
   }
 
@@ -53517,8 +54196,8 @@ const buildOptions = function (options) {
   }
 
   // Always normalize processEntities for backward compatibility and validation
-  built.processEntities = normalizeProcessEntities(built.processEntities);
-
+  built.processEntities = normalizeProcessEntities(built.processEntities, built.htmlEntities);
+  built.unpairedTagsSet = new Set(built.unpairedTags);
   // Convert old-style stopNodes for backward compatibility
   if (built.stopNodes && Array.isArray(built.stopNodes)) {
     built.stopNodes = built.stopNodes.map(node => {
@@ -53533,7 +54212,7 @@ const buildOptions = function (options) {
   //console.debug(built.processEntities)
   return built;
 };
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/xmlNode.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/xmlNode.js
 
 
 let METADATA_SYMBOL;
@@ -53575,15 +54254,19 @@ class XmlNode {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js
 
 
 class DocTypeReader {
-    constructor(options) {
+    constructor(options, xmlVersion) {
         this.suppressValidationErr = !options;
         this.options = options;
+        this.xmlVersion = xmlVersion || 1.0;
     }
 
+    setXmlVersion(xmlVersion = 1.0) {
+        this.xmlVersion = xmlVersion;
+    }
     readDocType(xmlData, i) {
         const entities = Object.create(null);
         let entityCount = 0;
@@ -53613,11 +54296,8 @@ class DocTypeReader {
                                 );
                             }
                             //const escaped = entityName.replace(/[.\-+*:]/g, '\\.');
-                            const escaped = entityName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                            entities[entityName] = {
-                                regx: RegExp(`&${escaped};`, "g"),
-                                val: val
-                            };
+                            //const escaped = entityName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                            entities[entityName] = val;
                             entityCount++;
                         }
                     }
@@ -53684,7 +54364,7 @@ class DocTypeReader {
         }
         let entityName = xmlData.substring(startIndex, i);
 
-        validateEntityName(entityName);
+        validateEntityName(entityName, { xmlVersion: this.xmlVersion });
 
         // Skip whitespace after entity name
         i = skipWhitespace(xmlData, i);
@@ -53727,7 +54407,7 @@ class DocTypeReader {
         }
         let notationName = xmlData.substring(startIndex, i);
 
-        !this.suppressValidationErr && validateEntityName(notationName);
+        !this.suppressValidationErr && validateEntityName(notationName, { xmlVersion: this.xmlVersion });
 
         // Skip whitespace after notation name
         i = skipWhitespace(xmlData, i);
@@ -53807,7 +54487,7 @@ class DocTypeReader {
         let elementName = xmlData.substring(startIndex, i);
 
         // Validate element name
-        if (!this.suppressValidationErr && !isName(elementName)) {
+        if (!this.suppressValidationErr && !qName(elementName, { xmlVersion: this.xmlVersion })) {
             throw new Error(`Invalid element name: "${elementName}"`);
         }
 
@@ -53854,7 +54534,7 @@ class DocTypeReader {
         let elementName = xmlData.substring(startIndex, i);
 
         // Validate element name
-        validateEntityName(elementName)
+        validateEntityName(elementName, { xmlVersion: this.xmlVersion })
 
         // Skip whitespace after element name
         i = skipWhitespace(xmlData, i);
@@ -53867,7 +54547,7 @@ class DocTypeReader {
         let attributeName = xmlData.substring(startIndex, i);
 
         // Validate attribute name
-        if (!validateEntityName(attributeName)) {
+        if (!validateEntityName(attributeName, { xmlVersion: this.xmlVersion })) {
             throw new Error(`Invalid attribute name: "${attributeName}"`);
         }
 
@@ -53902,7 +54582,7 @@ class DocTypeReader {
 
                 // Validate notation name
                 notation = notation.trim();
-                if (!validateEntityName(notation)) {
+                if (!validateEntityName(notation, { xmlVersion: this.xmlVersion })) {
                     throw new Error(`Invalid notation name: "${notation}"`);
                 }
 
@@ -53980,22 +54660,22 @@ function hasSeq(data, seq, i) {
     return true;
 }
 
-function validateEntityName(name) {
-    if (isName(name))
+function validateEntityName(name, xmlVersion) {
+    if (qName(name, { xmlVersion: xmlVersion }))
         return name;
     else
         throw new Error(`Invalid entity name ${name}`);
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/strnum@2.2.2/node_modules/strnum/strnum.js
+;// CONCATENATED MODULE: ./node_modules/strnum/strnum.js
 const hexRegex = /^[-+]?0x[a-fA-F0-9]+$/;
+const binRegex = /^0b[01]+$/;
+const octRegex = /^0o[0-7]+$/;
 const numRegex = /^([\-\+])?(0*)([0-9]*(\.[0-9]*)?)$/;
-// const octRegex = /^0x[a-z0-9]+/;
-// const binRegex = /0x[a-z0-9]+/;
-
 
 const consider = {
     hex: true,
-    // oct: false,
+    binary: false,
+    octal: false,
     leadingZeros: true,
     decimalPoint: "\.",
     eNotation: true,
@@ -54014,14 +54694,14 @@ function toNumber(str, options = {}) {
     else if (trimmedStr === "0") return 0;
     else if (options.hex && hexRegex.test(trimmedStr)) {
         return parse_int(trimmedStr, 16);
-        // }else if (options.oct && octRegex.test(str)) {
-        //     return Number.parseInt(val, 8);
+    } else if (options.binary && binRegex.test(trimmedStr)) {
+        return parse_int(trimmedStr, 2);
+    } else if (options.octal && octRegex.test(trimmedStr)) {
+        return parse_int(trimmedStr, 8);
     } else if (!isFinite(trimmedStr)) { //Infinity
         return handleInfinity(str, Number(trimmedStr), options);
     } else if (trimmedStr.includes('e') || trimmedStr.includes('E')) { //eNotation
         return resolveEnotation(str, trimmedStr, options);
-        // }else if (options.parseBin && binRegex.test(str)) {
-        //     return Number.parseInt(val, 2);
     } else {
         //separate negative sign, leading zeros, and rest number
         const match = numRegex.exec(trimmedStr);
@@ -54119,11 +54799,13 @@ function trimZeros(numStr) {
 }
 
 function parse_int(numStr, base) {
-    //polyfill
+    const str = numStr.trim();
+    if (base === 2 || base === 8) numStr = str.substring(2);
+
     if (parseInt) return parseInt(numStr, base);
     else if (Number.parseInt) return Number.parseInt(numStr, base);
     else if (window && window.parseInt) return window.parseInt(numStr, base);
-    else throw new Error("parseInt, Number.parseInt, window.parseInt are not supported")
+    else throw new Error("parseInt, Number.parseInt, window.parseInt are not supported");
 }
 
 /**
@@ -54148,7 +54830,7 @@ function handleInfinity(str, num, options) {
             return str; // Return original string like "1e1000"
     }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/ignoreAttributes.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/ignoreAttributes.js
 function ignoreAttributes_getIgnoreAttributesFn(ignoreAttributes) {
     if (typeof ignoreAttributes === 'function') {
         return ignoreAttributes
@@ -54167,9 +54849,1926 @@ function ignoreAttributes_getIgnoreAttributesFn(ignoreAttributes) {
     }
     return () => false
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js
+;// CONCATENATED MODULE: ./node_modules/path-expression-matcher/src/ExpressionSet.js
+/**
+ * ExpressionSet - An indexed collection of Expressions for efficient bulk matching
+ *
+ * Instead of iterating all expressions on every tag, ExpressionSet pre-indexes
+ * them at insertion time by depth and terminal tag name. At match time, only
+ * the relevant bucket is evaluated — typically reducing checks from O(E) to O(1)
+ * lookup plus O(small bucket) matches.
+ *
+ * Three buckets are maintained:
+ *  - `_byDepthAndTag`  — exact depth + exact tag name  (tightest, used first)
+ *  - `_wildcardByDepth` — exact depth + wildcard tag `*` (depth-matched only)
+ *  - `_deepWildcards`  — expressions containing `..`  (cannot be depth-indexed)
+ *
+ * @example
+ * import { Expression, ExpressionSet } from 'fast-xml-tagger';
+ *
+ * // Build once at config time
+ * const stopNodes = new ExpressionSet();
+ * stopNodes.add(new Expression('root.users.user'));
+ * stopNodes.add(new Expression('root.config.setting'));
+ * stopNodes.add(new Expression('..script'));
+ *
+ * // Query on every tag — hot path
+ * if (stopNodes.matchesAny(matcher)) { ... }
+ */
+class ExpressionSet {
+  constructor() {
+    /** @type {Map<string, import('./Expression.js').default[]>} depth:tag → expressions */
+    this._byDepthAndTag = new Map();
+
+    /** @type {Map<number, import('./Expression.js').default[]>} depth → wildcard-tag expressions */
+    this._wildcardByDepth = new Map();
+
+    /** @type {import('./Expression.js').default[]} expressions containing deep wildcard (..) */
+    this._deepWildcards = [];
+
+    /** @type {Set<string>} pattern strings already added — used for deduplication */
+    this._patterns = new Set();
+
+    /** @type {boolean} whether the set is sealed against further additions */
+    this._sealed = false;
+  }
+
+  /**
+   * Add an Expression to the set.
+   * Duplicate patterns (same pattern string) are silently ignored.
+   *
+   * @param {import('./Expression.js').default} expression - A pre-constructed Expression instance
+   * @returns {this} for chaining
+   * @throws {TypeError} if called after seal()
+   *
+   * @example
+   * set.add(new Expression('root.users.user'));
+   * set.add(new Expression('..script'));
+   */
+  add(expression) {
+    if (this._sealed) {
+      throw new TypeError(
+        'ExpressionSet is sealed. Create a new ExpressionSet to add more expressions.'
+      );
+    }
+
+    // Deduplicate by pattern string
+    if (this._patterns.has(expression.pattern)) return this;
+    this._patterns.add(expression.pattern);
+
+    if (expression.hasDeepWildcard()) {
+      this._deepWildcards.push(expression);
+      return this;
+    }
+
+    const depth = expression.length;
+    const lastSeg = expression.segments[expression.segments.length - 1];
+    const tag = lastSeg?.tag;
+
+    if (!tag || tag === '*') {
+      // Can index by depth but not by tag
+      if (!this._wildcardByDepth.has(depth)) this._wildcardByDepth.set(depth, []);
+      this._wildcardByDepth.get(depth).push(expression);
+    } else {
+      // Tightest bucket: depth + tag
+      const key = `${depth}:${tag}`;
+      if (!this._byDepthAndTag.has(key)) this._byDepthAndTag.set(key, []);
+      this._byDepthAndTag.get(key).push(expression);
+    }
+
+    return this;
+  }
+
+  /**
+   * Add multiple expressions at once.
+   *
+   * @param {import('./Expression.js').default[]} expressions - Array of Expression instances
+   * @returns {this} for chaining
+   *
+   * @example
+   * set.addAll([
+   *   new Expression('root.users.user'),
+   *   new Expression('root.config.setting'),
+   * ]);
+   */
+  addAll(expressions) {
+    for (const expr of expressions) this.add(expr);
+    return this;
+  }
+
+  /**
+   * Check whether a pattern string is already present in the set.
+   *
+   * @param {import('./Expression.js').default} expression
+   * @returns {boolean}
+   */
+  has(expression) {
+    return this._patterns.has(expression.pattern);
+  }
+
+  /**
+   * Number of expressions in the set.
+   * @type {number}
+   */
+  get size() {
+    return this._patterns.size;
+  }
+
+  /**
+   * Seal the set against further modifications.
+   * Useful to prevent accidental mutations after config is built.
+   * Calling add() or addAll() on a sealed set throws a TypeError.
+   *
+   * @returns {this}
+   */
+  seal() {
+    this._sealed = true;
+    return this;
+  }
+
+  /**
+   * Whether the set has been sealed.
+   * @type {boolean}
+   */
+  get isSealed() {
+    return this._sealed;
+  }
+
+  /**
+   * Test whether the matcher's current path matches any expression in the set.
+   *
+   * Evaluation order (cheapest → most expensive):
+   *  1. Exact depth + tag bucket  — O(1) lookup, typically 0–2 expressions
+   *  2. Depth-only wildcard bucket — O(1) lookup, rare
+   *  3. Deep-wildcard list         — always checked, but usually small
+   *
+   * @param {import('./Matcher.js').default} matcher - Matcher instance (or readOnly view)
+   * @returns {boolean} true if any expression matches the current path
+   *
+   * @example
+   * if (stopNodes.matchesAny(matcher)) {
+   *   // handle stop node
+   * }
+   */
+  matchesAny(matcher) {
+    return this.findMatch(matcher) !== null;
+  }
+  /**
+ * Find and return the first Expression that matches the matcher's current path.
+ *
+ * Uses the same evaluation order as matchesAny (cheapest → most expensive):
+ *  1. Exact depth + tag bucket
+ *  2. Depth-only wildcard bucket
+ *  3. Deep-wildcard list
+ *
+ * @param {import('./Matcher.js').default} matcher - Matcher instance (or readOnly view)
+ * @returns {import('./Expression.js').default | null} the first matching Expression, or null
+ *
+ * @example
+ * const expr = stopNodes.findMatch(matcher);
+ * if (expr) {
+ *   // access expr.config, expr.pattern, etc.
+ * }
+ */
+  findMatch(matcher) {
+    const depth = matcher.getDepth();
+    const tag = matcher.getCurrentTag();
+
+    // 1. Tightest bucket — most expressions live here
+    const exactKey = `${depth}:${tag}`;
+    const exactBucket = this._byDepthAndTag.get(exactKey);
+    if (exactBucket) {
+      for (let i = 0; i < exactBucket.length; i++) {
+        if (matcher.matches(exactBucket[i])) return exactBucket[i];
+      }
+    }
+
+    // 2. Depth-matched wildcard-tag expressions
+    const wildcardBucket = this._wildcardByDepth.get(depth);
+    if (wildcardBucket) {
+      for (let i = 0; i < wildcardBucket.length; i++) {
+        if (matcher.matches(wildcardBucket[i])) return wildcardBucket[i];
+      }
+    }
+
+    // 3. Deep wildcards — cannot be pre-filtered by depth or tag
+    for (let i = 0; i < this._deepWildcards.length; i++) {
+      if (matcher.matches(this._deepWildcards[i])) return this._deepWildcards[i];
+    }
+
+    return null;
+  }
+}
+
+;// CONCATENATED MODULE: ./node_modules/@nodable/entities/src/entities.js
+// ---------------------------------------------------------------------------
+// Complete HTML5 named entity reference
+// Organized by logical categories for easy maintenance and selective importing
+// ---------------------------------------------------------------------------
+
+/**
+ * Basic Latin & Special Characters
+ * @type {Record<string, string>}
+ */
+const BASIC_LATIN = {
+  amp: '&',
+  AMP: '&',
+  lt: '<',
+  LT: '<',
+  gt: '>',
+  GT: '>',
+  quot: '"',
+  QUOT: '"',
+  apos: "'",
+  lsquo: '‘',
+  rsquo: '’',
+  ldquo: '“',
+  rdquo: '”',
+  lsquor: '‚',
+  rsquor: '’',
+  ldquor: '„',
+  bdquo: '„',
+  comma: ',',
+  period: '.',
+  colon: ':',
+  semi: ';',
+  excl: '!',
+  quest: '?',
+  num: '#',
+  dollar: '$',
+  percent: '%',
+  ast: '*',
+  commat: '@',
+  lowbar: '_',
+  verbar: '|',
+  vert: '|',
+  sol: '/',
+  bsol: '\\',
+  lbrace: '{',
+  rbrace: '}',
+  lbrack: '[',
+  rbrack: ']',
+  lpar: '(',
+  rpar: ')',
+  nbsp: '\u00a0',
+  iexcl: '¡',
+  cent: '¢',
+  pound: '£',
+  curren: '¤',
+  yen: '¥',
+  brvbar: '¦',
+  sect: '§',
+  uml: '¨',
+  copy: '©',
+  COPY: '©',
+  ordf: 'ª',
+  laquo: '«',
+  not: '¬',
+  shy: '\u00ad',
+  reg: '®',
+  REG: '®',
+  macr: '¯',
+  deg: '°',
+  plusmn: '±',
+  sup2: '²',
+  sup3: '³',
+  acute: '´',
+  micro: 'µ',
+  para: '¶',
+  middot: '·',
+  cedil: '¸',
+  sup1: '¹',
+  ordm: 'º',
+  raquo: '»',
+  frac14: '¼',
+  frac12: '½',
+  half: '½',
+  frac34: '¾',
+  iquest: '¿',
+  times: '×',
+  div: '÷',
+  divide: '÷',
+};
+
+/**
+ * Latin Extended & Accented Letters (A-Z)
+ * @type {Record<string, string>}
+ */
+const LATIN_ACCENTS = {
+  Agrave: 'À',
+  agrave: 'à',
+  Aacute: 'Á',
+  aacute: 'á',
+  Acirc: 'Â',
+  acirc: 'â',
+  Atilde: 'Ã',
+  atilde: 'ã',
+  Auml: 'Ä',
+  auml: 'ä',
+  Aring: 'Å',
+  aring: 'å',
+  AElig: 'Æ',
+  aelig: 'æ',
+  Ccedil: 'Ç',
+  ccedil: 'ç',
+  Egrave: 'È',
+  egrave: 'è',
+  Eacute: 'É',
+  eacute: 'é',
+  Ecirc: 'Ê',
+  ecirc: 'ê',
+  Euml: 'Ë',
+  euml: 'ë',
+  Igrave: 'Ì',
+  igrave: 'ì',
+  Iacute: 'Í',
+  iacute: 'í',
+  Icirc: 'Î',
+  icirc: 'î',
+  Iuml: 'Ï',
+  iuml: 'ï',
+  ETH: 'Ð',
+  eth: 'ð',
+  Ntilde: 'Ñ',
+  ntilde: 'ñ',
+  Ograve: 'Ò',
+  ograve: 'ò',
+  Oacute: 'Ó',
+  oacute: 'ó',
+  Ocirc: 'Ô',
+  ocirc: 'ô',
+  Otilde: 'Õ',
+  otilde: 'õ',
+  Ouml: 'Ö',
+  ouml: 'ö',
+  Oslash: 'Ø',
+  oslash: 'ø',
+  Ugrave: 'Ù',
+  ugrave: 'ù',
+  Uacute: 'Ú',
+  uacute: 'ú',
+  Ucirc: 'Û',
+  ucirc: 'û',
+  Uuml: 'Ü',
+  uuml: 'ü',
+  Yacute: 'Ý',
+  yacute: 'ý',
+  THORN: 'Þ',
+  thorn: 'þ',
+  szlig: 'ß',
+  yuml: 'ÿ',
+  Yuml: 'Ÿ',
+};
+
+/**
+ * Latin Extended (Letters with diacritics)
+ * @type {Record<string, string>}
+ */
+const LATIN_EXTENDED = {
+  Amacr: 'Ā',
+  amacr: 'ā',
+  Abreve: 'Ă',
+  abreve: 'ă',
+  Aogon: 'Ą',
+  aogon: 'ą',
+  Cacute: 'Ć',
+  cacute: 'ć',
+  Ccirc: 'Ĉ',
+  ccirc: 'ĉ',
+  Cdot: 'Ċ',
+  cdot: 'ċ',
+  Ccaron: 'Č',
+  ccaron: 'č',
+  Dcaron: 'Ď',
+  dcaron: 'ď',
+  Dstrok: 'Đ',
+  dstrok: 'đ',
+  Emacr: 'Ē',
+  emacr: 'ē',
+  Ecaron: 'Ě',
+  ecaron: 'ě',
+  Edot: 'Ė',
+  edot: 'ė',
+  Eogon: 'Ę',
+  eogon: 'ę',
+  Gcirc: 'Ĝ',
+  gcirc: 'ĝ',
+  Gbreve: 'Ğ',
+  gbreve: 'ğ',
+  Gdot: 'Ġ',
+  gdot: 'ġ',
+  Gcedil: 'Ģ',
+  Hcirc: 'Ĥ',
+  hcirc: 'ĥ',
+  Hstrok: 'Ħ',
+  hstrok: 'ħ',
+  Itilde: 'Ĩ',
+  itilde: 'ĩ',
+  Imacr: 'Ī',
+  imacr: 'ī',
+  Iogon: 'Į',
+  iogon: 'į',
+  Idot: 'İ',
+  IJlig: 'Ĳ',
+  ijlig: 'ĳ',
+  Jcirc: 'Ĵ',
+  jcirc: 'ĵ',
+  Kcedil: 'Ķ',
+  kcedil: 'ķ',
+  kgreen: 'ĸ',
+  Lacute: 'Ĺ',
+  lacute: 'ĺ',
+  Lcedil: 'Ļ',
+  lcedil: 'ļ',
+  Lcaron: 'Ľ',
+  lcaron: 'ľ',
+  Lmidot: 'Ŀ',
+  lmidot: 'ŀ',
+  Lstrok: 'Ł',
+  lstrok: 'ł',
+  Nacute: 'Ń',
+  nacute: 'ń',
+  Ncaron: 'Ň',
+  ncaron: 'ň',
+  Ncedil: 'Ņ',
+  ncedil: 'ņ',
+  ENG: 'Ŋ',
+  eng: 'ŋ',
+  Omacr: 'Ō',
+  omacr: 'ō',
+  Odblac: 'Ő',
+  odblac: 'ő',
+  OElig: 'Œ',
+  oelig: 'œ',
+  Racute: 'Ŕ',
+  racute: 'ŕ',
+  Rcaron: 'Ř',
+  rcaron: 'ř',
+  Rcedil: 'Ŗ',
+  rcedil: 'ŗ',
+  Sacute: 'Ś',
+  sacute: 'ś',
+  Scirc: 'Ŝ',
+  scirc: 'ŝ',
+  Scedil: 'Ş',
+  scedil: 'ş',
+  Scaron: 'Š',
+  scaron: 'š',
+  Tcedil: 'Ţ',
+  tcedil: 'ţ',
+  Tcaron: 'Ť',
+  tcaron: 'ť',
+  Tstrok: 'Ŧ',
+  tstrok: 'ŧ',
+  Utilde: 'Ũ',
+  utilde: 'ũ',
+  Umacr: 'Ū',
+  umacr: 'ū',
+  Ubreve: 'Ŭ',
+  ubreve: 'ŭ',
+  Uring: 'Ů',
+  uring: 'ů',
+  Udblac: 'Ű',
+  udblac: 'ű',
+  Uogon: 'Ų',
+  uogon: 'ų',
+  Wcirc: 'Ŵ',
+  wcirc: 'ŵ',
+  Ycirc: 'Ŷ',
+  ycirc: 'ŷ',
+  Zacute: 'Ź',
+  zacute: 'ź',
+  Zdot: 'Ż',
+  zdot: 'ż',
+  Zcaron: 'Ž',
+  zcaron: 'ž',
+};
+
+/**
+ * Greek Letters
+ * @type {Record<string, string>}
+ */
+const GREEK = {
+  Alpha: 'Α',
+  alpha: 'α',
+  Beta: 'Β',
+  beta: 'β',
+  Gamma: 'Γ',
+  gamma: 'γ',
+  Delta: 'Δ',
+  delta: 'δ',
+  Epsilon: 'Ε',
+  epsilon: 'ε',
+  epsiv: 'ϵ',
+  varepsilon: 'ϵ',
+  Zeta: 'Ζ',
+  zeta: 'ζ',
+  Eta: 'Η',
+  eta: 'η',
+  Theta: 'Θ',
+  theta: 'θ',
+  thetasym: 'ϑ',
+  vartheta: 'ϑ',
+  Iota: 'Ι',
+  iota: 'ι',
+  Kappa: 'Κ',
+  kappa: 'κ',
+  kappav: 'ϰ',
+  varkappa: 'ϰ',
+  Lambda: 'Λ',
+  lambda: 'λ',
+  Mu: 'Μ',
+  mu: 'μ',
+  Nu: 'Ν',
+  nu: 'ν',
+  Xi: 'Ξ',
+  xi: 'ξ',
+  Omicron: 'Ο',
+  omicron: 'ο',
+  Pi: 'Π',
+  pi: 'π',
+  piv: 'ϖ',
+  varpi: 'ϖ',
+  Rho: 'Ρ',
+  rho: 'ρ',
+  rhov: 'ϱ',
+  varrho: 'ϱ',
+  Sigma: 'Σ',
+  sigma: 'σ',
+  sigmaf: 'ς',
+  sigmav: 'ς',
+  varsigma: 'ς',
+  Tau: 'Τ',
+  tau: 'τ',
+  Upsilon: 'Υ',
+  upsilon: 'υ',
+  upsi: 'υ',
+  Upsi: 'ϒ',
+  upsih: 'ϒ',
+  Phi: 'Φ',
+  phi: 'φ',
+  phiv: 'ϕ',
+  varphi: 'ϕ',
+  Chi: 'Χ',
+  chi: 'χ',
+  Psi: 'Ψ',
+  psi: 'ψ',
+  Omega: 'Ω',
+  omega: 'ω',
+  ohm: 'Ω',
+  Gammad: 'Ϝ',
+  gammad: 'ϝ',
+  digamma: 'ϝ',
+};
+
+/**
+ * Cyrillic Letters
+ * @type {Record<string, string>}
+ */
+const CYRILLIC = {
+  Afr: '𝔄',
+  afr: '𝔞',
+  Acy: 'А',
+  acy: 'а',
+  Bcy: 'Б',
+  bcy: 'б',
+  Vcy: 'В',
+  vcy: 'в',
+  Gcy: 'Г',
+  gcy: 'г',
+  Dcy: 'Д',
+  dcy: 'д',
+  IEcy: 'Е',
+  iecy: 'е',
+  IOcy: 'Ё',
+  iocy: 'ё',
+  ZHcy: 'Ж',
+  zhcy: 'ж',
+  Zcy: 'З',
+  zcy: 'з',
+  Icy: 'И',
+  icy: 'и',
+  Jcy: 'Й',
+  jcy: 'й',
+  Kcy: 'К',
+  kcy: 'к',
+  Lcy: 'Л',
+  lcy: 'л',
+  Mcy: 'М',
+  mcy: 'м',
+  Ncy: 'Н',
+  ncy: 'н',
+  Ocy: 'О',
+  ocy: 'о',
+  Pcy: 'П',
+  pcy: 'п',
+  Rcy: 'Р',
+  rcy: 'р',
+  Scy: 'С',
+  scy: 'с',
+  Tcy: 'Т',
+  tcy: 'т',
+  Ucy: 'У',
+  ucy: 'у',
+  Fcy: 'Ф',
+  fcy: 'ф',
+  KHcy: 'Х',
+  khcy: 'х',
+  TScy: 'Ц',
+  tscy: 'ц',
+  CHcy: 'Ч',
+  chcy: 'ч',
+  SHcy: 'Ш',
+  shcy: 'ш',
+  SHCHcy: 'Щ',
+  shchcy: 'щ',
+  HARDcy: 'Ъ',
+  hardcy: 'ъ',
+  Ycy: 'Ы',
+  ycy: 'ы',
+  SOFTcy: 'Ь',
+  softcy: 'ь',
+  Ecy: 'Э',
+  ecy: 'э',
+  YUcy: 'Ю',
+  yucy: 'ю',
+  YAcy: 'Я',
+  yacy: 'я',
+  DJcy: 'Ђ',
+  djcy: 'ђ',
+  GJcy: 'Ѓ',
+  gjcy: 'ѓ',
+  Jukcy: 'Є',
+  jukcy: 'є',
+  DScy: 'Ѕ',
+  dscy: 'ѕ',
+  Iukcy: 'І',
+  iukcy: 'і',
+  YIcy: 'Ї',
+  yicy: 'ї',
+  Jsercy: 'Ј',
+  jsercy: 'ј',
+  LJcy: 'Љ',
+  ljcy: 'љ',
+  NJcy: 'Њ',
+  njcy: 'њ',
+  TSHcy: 'Ћ',
+  tshcy: 'ћ',
+  KJcy: 'Ќ',
+  kjcy: 'ќ',
+  Ubrcy: 'Ў',
+  ubrcy: 'ў',
+  DZcy: 'Џ',
+  dzcy: 'џ',
+};
+
+/**
+ * Mathematical Operators & Relations
+ * @type {Record<string, string>}
+ */
+const MATH = {
+  plus: '+',
+  pm: '±',
+  times: '×',
+  div: '÷',
+  divide: '÷',
+  sdot: '⋅',
+  star: '☆',
+  starf: '★',
+  bigstar: '★',
+  lowast: '∗',
+  ast: '*',
+  midast: '*',
+  compfn: '∘',
+  smallcircle: '∘',
+  bullet: '•',
+  bull: '•',
+  nbsp: '\u00a0',
+  hellip: '…',
+  mldr: '…',
+  prime: '′',
+  Prime: '″',
+  tprime: '‴',
+  bprime: '‵',
+  backprime: '‵',
+  minus: '−',
+  minusd: '∸',
+  dotminus: '∸',
+  plusdo: '∔',
+  dotplus: '∔',
+  plusmn: '±',
+  minusplus: '∓',
+  mnplus: '∓',
+  mp: '∓',
+  setminus: '∖',
+  smallsetminus: '∖',
+  Backslash: '∖',
+  setmn: '∖',
+  ssetmn: '∖',
+  lowbar: '_',
+  verbar: '|',
+  vert: '|',
+  VerticalLine: '|',
+  colon: ':',
+  Colon: '∷',
+  Proportion: '∷',
+  ratio: '∶',
+  equals: '=',
+  ne: '≠',
+  nequiv: '≢',
+  equiv: '≡',
+  Congruent: '≡',
+  sim: '∼',
+  thicksim: '∼',
+  thksim: '∼',
+  sime: '≃',
+  simeq: '≃',
+  TildeEqual: '≃',
+  asymp: '≈',
+  approx: '≈',
+  thickapprox: '≈',
+  thkap: '≈',
+  TildeTilde: '≈',
+  ncong: '≇',
+  cong: '≅',
+  TildeFullEqual: '≅',
+  asympeq: '≍',
+  CupCap: '≍',
+  bump: '≎',
+  Bumpeq: '≎',
+  HumpDownHump: '≎',
+  bumpe: '≏',
+  bumpeq: '≏',
+  HumpEqual: '≏',
+  le: '≤',
+  LessEqual: '≤',
+  ge: '≥',
+  GreaterEqual: '≥',
+  lesseqgtr: '⋚',
+  lesseqqgtr: '⪋',
+  greater: '>',
+  less: '<',
+};
+
+/**
+ * Mathematical Operators (Advanced)
+ * @type {Record<string, string>}
+ */
+const MATH_ADVANCED = {
+  alefsym: 'ℵ',
+  aleph: 'ℵ',
+  beth: 'ℶ',
+  gimel: 'ℷ',
+  daleth: 'ℸ',
+  forall: '∀',
+  ForAll: '∀',
+  part: '∂',
+  PartialD: '∂',
+  exist: '∃',
+  Exists: '∃',
+  nexist: '∄',
+  nexists: '∄',
+  empty: '∅',
+  emptyset: '∅',
+  emptyv: '∅',
+  varnothing: '∅',
+  nabla: '∇',
+  Del: '∇',
+  isin: '∈',
+  isinv: '∈',
+  in: '∈',
+  Element: '∈',
+  notin: '∉',
+  notinva: '∉',
+  ni: '∋',
+  niv: '∋',
+  SuchThat: '∋',
+  ReverseElement: '∋',
+  notni: '∌',
+  notniva: '∌',
+  prod: '∏',
+  Product: '∏',
+  coprod: '∐',
+  Coproduct: '∐',
+  sum: '∑',
+  Sum: '∑',
+  minus: '−',
+  mp: '∓',
+  plusdo: '∔',
+  dotplus: '∔',
+  setminus: '∖',
+  lowast: '∗',
+  radic: '√',
+  Sqrt: '√',
+  prop: '∝',
+  propto: '∝',
+  Proportional: '∝',
+  varpropto: '∝',
+  infin: '∞',
+  infintie: '⧝',
+  ang: '∠',
+  angle: '∠',
+  angmsd: '∡',
+  measuredangle: '∡',
+  angsph: '∢',
+  mid: '∣',
+  VerticalBar: '∣',
+  nmid: '∤',
+  nsmid: '∤',
+  npar: '∦',
+  parallel: '∥',
+  spar: '∥',
+  nparallel: '∦',
+  nspar: '∦',
+  and: '∧',
+  wedge: '∧',
+  or: '∨',
+  vee: '∨',
+  cap: '∩',
+  cup: '∪',
+  int: '∫',
+  Integral: '∫',
+  conint: '∮',
+  ContourIntegral: '∮',
+  Conint: '∯',
+  DoubleContourIntegral: '∯',
+  Cconint: '∰',
+  there4: '∴',
+  therefore: '∴',
+  Therefore: '∴',
+  becaus: '∵',
+  because: '∵',
+  Because: '∵',
+  ratio: '∶',
+  Proportion: '∷',
+  minusd: '∸',
+  dotminus: '∸',
+  mDDot: '∺',
+  homtht: '∻',
+  sim: '∼',
+  bsimg: '∽',
+  backsim: '∽',
+  ac: '∾',
+  mstpos: '∾',
+  acd: '∿',
+  VerticalTilde: '≀',
+  wr: '≀',
+  wreath: '≀',
+  nsime: '≄',
+  nsimeq: '≄',
+  ncong: '≇',
+  simne: '≆',
+  ncongdot: '⩭̸',
+  ngsim: '≵',
+  nsim: '≁',
+  napprox: '≉',
+  nap: '≉',
+  ngeq: '≱',
+  nge: '≱',
+  nleq: '≰',
+  nle: '≰',
+  ngtr: '≯',
+  ngt: '≯',
+  nless: '≮',
+  nlt: '≮',
+  nprec: '⊀',
+  npr: '⊀',
+  nsucc: '⊁',
+  nsc: '⊁',
+};
+
+/**
+ * Arrows
+ * @type {Record<string, string>}
+ */
+const ARROWS = {
+  larr: '←',
+  leftarrow: '←',
+  LeftArrow: '←',
+  uarr: '↑',
+  uparrow: '↑',
+  UpArrow: '↑',
+  rarr: '→',
+  rightarrow: '→',
+  RightArrow: '→',
+  darr: '↓',
+  downarrow: '↓',
+  DownArrow: '↓',
+  harr: '↔',
+  leftrightarrow: '↔',
+  LeftRightArrow: '↔',
+  varr: '↕',
+  updownarrow: '↕',
+  UpDownArrow: '↕',
+  nwarr: '↖',
+  nwarrow: '↖',
+  UpperLeftArrow: '↖',
+  nearr: '↗',
+  nearrow: '↗',
+  UpperRightArrow: '↗',
+  searr: '↘',
+  searrow: '↘',
+  LowerRightArrow: '↘',
+  swarr: '↙',
+  swarrow: '↙',
+  LowerLeftArrow: '↙',
+  lArr: '⇐',
+  Leftarrow: '⇐',
+  uArr: '⇑',
+  Uparrow: '⇑',
+  rArr: '⇒',
+  Rightarrow: '⇒',
+  dArr: '⇓',
+  Downarrow: '⇓',
+  hArr: '⇔',
+  Leftrightarrow: '⇔',
+  iff: '⇔',
+  vArr: '⇕',
+  Updownarrow: '⇕',
+  lAarr: '⇚',
+  Lleftarrow: '⇚',
+  rAarr: '⇛',
+  Rrightarrow: '⇛',
+  lrarr: '⇆',
+  leftrightarrows: '⇆',
+  rlarr: '⇄',
+  rightleftarrows: '⇄',
+  lrhar: '⇋',
+  leftrightharpoons: '⇋',
+  ReverseEquilibrium: '⇋',
+  rlhar: '⇌',
+  rightleftharpoons: '⇌',
+  Equilibrium: '⇌',
+  udarr: '⇅',
+  UpArrowDownArrow: '⇅',
+  duarr: '⇵',
+  DownArrowUpArrow: '⇵',
+  llarr: '⇇',
+  leftleftarrows: '⇇',
+  rrarr: '⇉',
+  rightrightarrows: '⇉',
+  ddarr: '⇊',
+  downdownarrows: '⇊',
+  har: '↽',
+  lhard: '↽',
+  leftharpoondown: '↽',
+  lharu: '↼',
+  leftharpoonup: '↼',
+  rhard: '⇁',
+  rightharpoondown: '⇁',
+  rharu: '⇀',
+  rightharpoonup: '⇀',
+  lsh: '↰',
+  Lsh: '↰',
+  rsh: '↱',
+  Rsh: '↱',
+  ldsh: '↲',
+  rdsh: '↳',
+  hookleftarrow: '↩',
+  hookrightarrow: '↪',
+  mapstoleft: '↤',
+  mapstoup: '↥',
+  map: '↦',
+  mapsto: '↦',
+  mapstodown: '↧',
+  crarr: '↵',
+  nleftarrow: '↚',
+  nleftrightarrow: '↮',
+  nrightarrow: '↛',
+  nrarr: '↛',
+  larrtl: '↢',
+  rarrtl: '↣',
+  leftarrowtail: '↢',
+  rightarrowtail: '↣',
+  twoheadleftarrow: '↞',
+  twoheadrightarrow: '↠',
+  Larr: '↞',
+  Rarr: '↠',
+  larrhk: '↩',
+  rarrhk: '↪',
+  larrlp: '↫',
+  looparrowleft: '↫',
+  rarrlp: '↬',
+  looparrowright: '↬',
+  harrw: '↭',
+  leftrightsquigarrow: '↭',
+  nrarrw: '↝̸',
+  rarrw: '↝',
+  rightsquigarrow: '↝',
+  larrbfs: '⤟',
+  rarrbfs: '⤠',
+  nvHarr: '⤄',
+  nvlArr: '⤂',
+  nvrArr: '⤃',
+  larrfs: '⤝',
+  rarrfs: '⤞',
+  Map: '⤅',
+  larrsim: '⥳',
+  rarrsim: '⥴',
+  harrcir: '⥈',
+  Uarrocir: '⥉',
+  lurdshar: '⥊',
+  ldrdhar: '⥧',
+  ldrushar: '⥋',
+  rdldhar: '⥩',
+  lrhard: '⥭',
+  uharr: '↾',
+  uharl: '↿',
+  dharr: '⇂',
+  dharl: '⇃',
+  Uarr: '↟',
+  Darr: '↡',
+  zigrarr: '⇝',
+  nwArr: '⇖',
+  neArr: '⇗',
+  seArr: '⇘',
+  swArr: '⇙',
+  nharr: '↮',
+  nhArr: '⇎',
+  nlarr: '↚',
+  nlArr: '⇍',
+  nrArr: '⇏',
+  larrb: '⇤',
+  LeftArrowBar: '⇤',
+  rarrb: '⇥',
+  RightArrowBar: '⇥',
+};
+
+/**
+ * Geometric Shapes
+ * @type {Record<string, string>}
+ */
+const SHAPES = {
+  square: '□',
+  Square: '□',
+  squ: '□',
+  squf: '▪',
+  squarf: '▪',
+  blacksquar: '▪',
+  blacksquare: '▪',
+  FilledVerySmallSquare: '▪',
+  blk34: '▓',
+  blk12: '▒',
+  blk14: '░',
+  block: '█',
+  srect: '▭',
+  rect: '▭',
+  sdot: '⋅',
+  sdotb: '⊡',
+  dotsquare: '⊡',
+  triangle: '▵',
+  tri: '▵',
+  trine: '▵',
+  utri: '▵',
+  triangledown: '▿',
+  dtri: '▿',
+  tridown: '▿',
+  triangleleft: '◃',
+  ltri: '◃',
+  triangleright: '▹',
+  rtri: '▹',
+  blacktriangle: '▴',
+  utrif: '▴',
+  blacktriangledown: '▾',
+  dtrif: '▾',
+  blacktriangleleft: '◂',
+  ltrif: '◂',
+  blacktriangleright: '▸',
+  rtrif: '▸',
+  loz: '◊',
+  lozenge: '◊',
+  blacklozenge: '⧫',
+  lozf: '⧫',
+  bigcirc: '◯',
+  xcirc: '◯',
+  circ: 'ˆ',
+  Circle: '○',
+  cir: '○',
+  o: '○',
+  bullet: '•',
+  bull: '•',
+  hellip: '…',
+  mldr: '…',
+  nldr: '‥',
+  boxh: '─',
+  HorizontalLine: '─',
+  boxv: '│',
+  boxdr: '┌',
+  boxdl: '┐',
+  boxur: '└',
+  boxul: '┘',
+  boxvr: '├',
+  boxvl: '┤',
+  boxhd: '┬',
+  boxhu: '┴',
+  boxvh: '┼',
+  boxH: '═',
+  boxV: '║',
+  boxdR: '╒',
+  boxDr: '╓',
+  boxDR: '╔',
+  boxDl: '╕',
+  boxdL: '╖',
+  boxDL: '╗',
+  boxuR: '╘',
+  boxUr: '╙',
+  boxUR: '╚',
+  boxUl: '╜',
+  boxuL: '╛',
+  boxUL: '╝',
+  boxvR: '╞',
+  boxVr: '╟',
+  boxVR: '╠',
+  boxVl: '╢',
+  boxvL: '╡',
+  boxVL: '╣',
+  boxHd: '╤',
+  boxhD: '╥',
+  boxHD: '╦',
+  boxHu: '╧',
+  boxhU: '╨',
+  boxHU: '╩',
+  boxvH: '╪',
+  boxVh: '╫',
+  boxVH: '╬',
+};
+
+/**
+ * Punctuation & Diacritics
+ * @type {Record<string, string>}
+ */
+const PUNCTUATION = {
+  excl: '!',
+  iexcl: '¡',
+  brvbar: '¦',
+  sect: '§',
+  uml: '¨',
+  copy: '©',
+  ordf: 'ª',
+  laquo: '«',
+  not: '¬',
+  shy: '\u00ad',
+  reg: '®',
+  macr: '¯',
+  deg: '°',
+  plusmn: '±',
+  sup2: '²',
+  sup3: '³',
+  acute: '´',
+  micro: 'µ',
+  para: '¶',
+  middot: '·',
+  cedil: '¸',
+  sup1: '¹',
+  ordm: 'º',
+  raquo: '»',
+  frac14: '¼',
+  frac12: '½',
+  frac34: '¾',
+  iquest: '¿',
+  nbsp: '\u00a0',
+  comma: ',',
+  period: '.',
+  colon: ':',
+  semi: ';',
+  vert: '|',
+  Verbar: '‖',
+  verbar: '|',
+  dblac: '˝',
+  circ: 'ˆ',
+  caron: 'ˇ',
+  breve: '˘',
+  dot: '˙',
+  ring: '˚',
+  ogon: '˛',
+  tilde: '˜',
+  DiacriticalGrave: '`',
+  DiacriticalAcute: '´',
+  DiacriticalTilde: '˜',
+  DiacriticalDot: '˙',
+  DiacriticalDoubleAcute: '˝',
+  grave: '`',
+};
+
+/**
+ * Currency Symbols
+ * @type {Record<string, string>}
+ */
+const CURRENCY = {
+  cent: '¢',
+  pound: '£',
+  curren: '¤',
+  yen: '¥',
+  euro: '€',
+  dollar: '$',
+  fnof: 'ƒ',
+  inr: '₹',
+  af: '؋',
+  birr: 'ብር',
+  peso: '₱',
+  rub: '₽',
+  won: '₩',
+  yuan: '¥',
+  cedil: '¸',
+};
+
+/**
+ * Fractions
+ * @type {Record<string, string>}
+ */
+const FRACTIONS = {
+  frac12: '½',
+  half: '½',
+  frac13: '⅓',
+  frac14: '¼',
+  frac15: '⅕',
+  frac16: '⅙',
+  frac18: '⅛',
+  frac23: '⅔',
+  frac25: '⅖',
+  frac34: '¾',
+  frac35: '⅗',
+  frac38: '⅜',
+  frac45: '⅘',
+  frac56: '⅚',
+  frac58: '⅝',
+  frac78: '⅞',
+  frasl: '⁄',
+};
+
+/**
+ * Miscellaneous Symbols
+ * @type {Record<string, string>}
+ */
+const MISC_SYMBOLS = {
+  trade: '™',
+  TRADE: '™',
+  telrec: '⌕',
+  target: '⌖',
+  ulcorn: '⌜',
+  ulcorner: '⌜',
+  urcorn: '⌝',
+  urcorner: '⌝',
+  dlcorn: '⌞',
+  llcorner: '⌞',
+  drcorn: '⌟',
+  lrcorner: '⌟',
+  intercal: '⊺',
+  intcal: '⊺',
+  oplus: '⊕',
+  CirclePlus: '⊕',
+  ominus: '⊖',
+  CircleMinus: '⊖',
+  otimes: '⊗',
+  CircleTimes: '⊗',
+  osol: '⊘',
+  odot: '⊙',
+  CircleDot: '⊙',
+  oast: '⊛',
+  circledast: '⊛',
+  odash: '⊝',
+  circleddash: '⊝',
+  ocirc: '⊚',
+  circledcirc: '⊚',
+  boxplus: '⊞',
+  plusb: '⊞',
+  boxminus: '⊟',
+  minusb: '⊟',
+  boxtimes: '⊠',
+  timesb: '⊠',
+  boxdot: '⊡',
+  sdotb: '⊡',
+  veebar: '⊻',
+  vee: '∨',
+  barvee: '⊽',
+  and: '∧',
+  wedge: '∧',
+  Cap: '⋒',
+  Cup: '⋓',
+  Fork: '⋔',
+  pitchfork: '⋔',
+  epar: '⋕',
+  ltlarr: '⥶',
+  nvap: '≍⃒',
+  nvsim: '∼⃒',
+  nvge: '≥⃒',
+  nvle: '≤⃒',
+  nvlt: '<⃒',
+  nvgt: '>⃒',
+  nvltrie: '⊴⃒',
+  nvrtrie: '⊵⃒',
+  Vdash: '⊩',
+  dashv: '⊣',
+  vDash: '⊨',
+  Vvdash: '⊪',
+  nvdash: '⊬',
+  nvDash: '⊭',
+  nVdash: '⊮',
+  nVDash: '⊯',
+};
+
+/**
+ * All entities combined (if you need everything)
+ * @type {Record<string, string>}
+ */
+const ALL_ENTITIES = {
+  ...BASIC_LATIN,
+  ...LATIN_ACCENTS,
+  ...LATIN_EXTENDED,
+  ...GREEK,
+  ...CYRILLIC,
+  ...MATH,
+  ...MATH_ADVANCED,
+  ...ARROWS,
+  ...SHAPES,
+  ...PUNCTUATION,
+  ...CURRENCY,
+  ...FRACTIONS,
+  ...MISC_SYMBOLS,
+};
+
+const XML = {
+  amp: "&",
+  apos: "'",
+  gt: ">",
+  lt: "<",
+  quot: "\""
+}
+const COMMON_HTML = {
+  nbsp: '\u00a0',
+  copy: '\u00a9',
+  reg: '\u00ae',
+  trade: '\u2122',
+  mdash: '\u2014',
+  ndash: '\u2013',
+  hellip: '\u2026',
+  laquo: '\u00ab',
+  raquo: '\u00bb',
+  lsquo: '\u2018',
+  rsquo: '\u2019',
+  ldquo: '\u201c',
+  rdquo: '\u201d',
+  bull: '\u2022',
+  para: '\u00b6',
+  sect: '\u00a7',
+  deg: '\u00b0',
+  frac12: '\u00bd',
+  frac14: '\u00bc',
+  frac34: '\u00be',
+}
+// ---------------------------------------------------------------------------
+// Note: NUMERIC_ENTITIES (&#NNN; / &#xHH;) are handled by the scanner directly
+// via String.fromCodePoint() without any map lookup.
+// ---------------------------------------------------------------------------
+;// CONCATENATED MODULE: ./node_modules/@nodable/entities/src/EntityDecoder.js
+// ---------------------------------------------------------------------------
+// Built-in named entity map  (name → replacement string)
+// No regex, no {regex,val} objects — just flat key/value pairs.
+// ---------------------------------------------------------------------------
+
+
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+const SPECIAL_CHARS = new Set('!?\\\\/[]$%{}^&*()<>|+');
+
+/**
+ * Validate that an entity name contains no dangerous characters.
+ * @param {string} name
+ * @returns {string} the name, unchanged
+ * @throws {Error} on invalid characters
+ */
+function EntityDecoder_validateEntityName(name) {
+  if (name[0] === '#') {
+    throw new Error(`[EntityReplacer] Invalid character '#' in entity name: "${name}"`);
+  }
+  for (const ch of name) {
+    if (SPECIAL_CHARS.has(ch)) {
+      throw new Error(`[EntityReplacer] Invalid character '${ch}' in entity name: "${name}"`);
+    }
+  }
+  return name;
+}
+
+/**
+ * Merge one or more entity maps into a flat name→string map.
+ * Accepts either:
+ *   - plain string values:             { amp: '&' }
+ *   - legacy {regex,val} / {regx,val}: { lt: { regex: /.../, val: '<' } }
+ *
+ * Values containing '&' are skipped (recursive expansion risk).
+ *
+ * @param {...object} maps
+ * @returns {Record<string, string>}
+ */
+function mergeEntityMaps(...maps) {
+  const out = Object.create(null);
+  for (const map of maps) {
+    if (!map) continue;
+    for (const key of Object.keys(map)) {
+      const raw = map[key];
+      if (typeof raw === 'string') {
+        out[key] = raw;
+      } else if (raw && typeof raw === 'object' && raw.val !== undefined) {
+        // Legacy {regex,val} or {regx,val} — extract the string val only
+        const val = raw.val;
+        if (typeof val === 'string') {
+          out[key] = val;
+        }
+        // function vals are not supported in the scanner — skip
+      }
+    }
+  }
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// applyLimitsTo helpers
+// ---------------------------------------------------------------------------
+
+const LIMIT_TIER_EXTERNAL = 'external'; // input/runtime + persistent external maps
+const LIMIT_TIER_BASE = 'base';     // DEFAULT_XML_ENTITIES + namedEntities (system) maps
+const LIMIT_TIER_ALL = 'all';      // every entity regardless of tier
+
+/**
+ * Resolve `applyLimitsTo` option into a normalised Set of tier strings.
+ * Accepted values: 'external' | 'base' | 'all' | string[]
+ * Default: 'external' (only untrusted injected entities are counted).
+ * @param {string|string[]|undefined} raw
+ * @returns {Set<string>}
+ */
+function parseLimitTiers(raw) {
+  if (!raw || raw === LIMIT_TIER_EXTERNAL) return new Set([LIMIT_TIER_EXTERNAL]);
+  if (raw === LIMIT_TIER_ALL) return new Set([LIMIT_TIER_ALL]);
+  if (raw === LIMIT_TIER_BASE) return new Set([LIMIT_TIER_BASE]);
+  if (Array.isArray(raw)) return new Set(raw);
+  return new Set([LIMIT_TIER_EXTERNAL]); // safe default for unrecognised values
+}
+
+// ---------------------------------------------------------------------------
+// NCR (Numeric Character Reference) classification
+// ---------------------------------------------------------------------------
+
+// Severity order — higher number = stricter action.
+// Used to enforce minimum action levels for specific codepoint ranges.
+const NCR_LEVEL = Object.freeze({ allow: 0, leave: 1, remove: 2, throw: 3 });
+
+// XML 1.0 §2.2: allowed chars are #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]
+// Restricted C0: U+0001–U+001F excluding U+0009, U+000A, U+000D
+const XML10_ALLOWED_C0 = new Set([0x09, 0x0A, 0x0D]);
+
+/**
+ * Parse the `ncr` constructor option into flat, hot-path-friendly fields.
+ * @param {object|undefined} ncr
+ * @returns {{ xmlVersion: number, onLevel: number, nullLevel: number }}
+ */
+function parseNCRConfig(ncr) {
+  if (!ncr) {
+    return { xmlVersion: 1.0, onLevel: NCR_LEVEL.allow, nullLevel: NCR_LEVEL.remove };
+  }
+  const xmlVersion = ncr.xmlVersion === 1.1 ? 1.1 : 1.0;
+  const onLevel = NCR_LEVEL[ncr.onNCR] ?? NCR_LEVEL.allow;
+  const nullLevel = NCR_LEVEL[ncr.nullNCR] ?? NCR_LEVEL.remove;
+  // 'allow' is not meaningful for null — clamp to at least 'remove'
+  const clampedNull = Math.max(nullLevel, NCR_LEVEL.remove);
+  return { xmlVersion, onLevel, nullLevel: clampedNull };
+}
+
+// ---------------------------------------------------------------------------
+// EntityReplacer
+// ---------------------------------------------------------------------------
+
+/**
+ * Single-pass, zero-regex entity replacer for XML/HTML content.
+ *
+ * Algorithm: scan the string once for '&', read to ';', resolve via map
+ * or direct codepoint conversion, build output chunks, join once at the end.
+ *
+ * Entity lookup priority (highest → lowest):
+ *   1. input / runtime  (DOCTYPE entities for current document)
+ *   2. persistent external (survive across documents)
+ *   3. base named map   (DEFAULT_XML_ENTITIES + user-supplied namedEntities)
+ *
+ * Both input and external resolve as the 'external' tier for limit purposes.
+ * Base map entities resolve as the 'base' tier.
+ *
+ * Numeric / hex references (&#NNN; / &#xHH;) are resolved directly via
+ * String.fromCodePoint() — no map needed. They count as 'base' tier.
+ *
+ * @example
+ * const replacer = new EntityReplacer({ namedEntities: COMMON_HTML });
+ * replacer.setExternalEntities({ brand: 'Acme' });
+ *
+ * const instance = replacer.reset();
+ * instance.addInputEntities({ version: '1.0' });
+ * instance.encode('&brand; v&version; &lt;'); // 'Acme v1.0 <'
+ */
+class EntityDecoder {
+  /**
+   * @param {object} [options]
+   * @param {object|null}  [options.namedEntities]        — extra named entities merged into base map
+   * @param {object}  [options.limit]                 — security limits
+   * @param {number}       [options.limit.maxTotalExpansions=0]  — 0 = unlimited
+   * @param {number}       [options.limit.maxExpandedLength=0]   — 0 = unlimited
+   * @param {'external'|'base'|'all'|string[]} [options.limit.applyLimitsTo='external']
+   *   Which entity tiers count against the security limits:
+   *   - 'external' (default) — only input/runtime + persistent external entities
+   *   - 'base'               — only DEFAULT_XML_ENTITIES + namedEntities
+   *   - 'all'                — every entity regardless of tier
+   *   - string[]             — explicit combination, e.g. ['external', 'base']
+   * @param {((resolved: string, original: string) => string)|null} [options.postCheck=null]
+   * @param {string[]} [options.remove=[]] — entity names (e.g. ['nbsp', '#13']) to delete (replace with empty string)
+   * @param {string[]} [options.leave=[]]  — entity names to keep as literal (unchanged in output)
+   * @param {object}   [options.ncr]       — Numeric Character Reference controls
+   * @param {1.0|1.1}  [options.ncr.xmlVersion=1.0]
+   *   XML version governing which codepoint ranges are restricted:
+   *   - 1.0 — C0 controls U+0001–U+001F (except U+0009/000A/000D) are prohibited
+   *   - 1.1 — C0 controls are allowed when written as NCRs; C1 (U+007F–U+009F) decoded as-is
+   * @param {'allow'|'leave'|'remove'|'throw'} [options.ncr.onNCR='allow']
+   *   Base action for numeric references. Severity order: allow < leave < remove < throw.
+   *   For codepoint ranges that carry a minimum level (surrogates → remove, XML 1.0 C0 → remove),
+   *   the effective action is max(onNCR, rangeMinimum).
+   * @param {'remove'|'throw'} [options.ncr.nullNCR='remove']
+   *   Action for U+0000 (null). 'allow' and 'leave' are clamped to 'remove' since null is never safe.
+   */
+  constructor(options = {}) {
+    this._limit = options.limit || {};
+    this._maxTotalExpansions = this._limit.maxTotalExpansions || 0;
+    this._maxExpandedLength = this._limit.maxExpandedLength || 0;
+    this._postCheck = typeof options.postCheck === 'function' ? options.postCheck : r => r;
+    this._limitTiers = parseLimitTiers(this._limit.applyLimitsTo ?? LIMIT_TIER_EXTERNAL);
+    this._numericAllowed = options.numericAllowed ?? true;
+    // Base map: DEFAULT_XML_ENTITIES + user-supplied extras. Immutable after construction.
+    this._baseMap = mergeEntityMaps(XML, options.namedEntities || null);
+
+    // Persistent external entities — survive across documents.
+    // Stored as a separate map so reset() never touches them.
+    /** @type {Record<string, string>} */
+    this._externalMap = Object.create(null);
+
+    // Input / runtime entities — current document only, wiped on reset().
+    /** @type {Record<string, string>} */
+    this._inputMap = Object.create(null);
+
+    // Per-document counters
+    this._totalExpansions = 0;
+    this._expandedLength = 0;
+
+    // --- New: remove / leave sets ---
+    /** @type {Set<string>} */
+    this._removeSet = new Set(options.remove && Array.isArray(options.remove) ? options.remove : []);
+    /** @type {Set<string>} */
+    this._leaveSet = new Set(options.leave && Array.isArray(options.leave) ? options.leave : []);
+
+    // --- NCR config (parsed into flat fields for hot-path speed) ---
+    const ncrCfg = parseNCRConfig(options.ncr);
+    this._ncrXmlVersion = ncrCfg.xmlVersion;
+    this._ncrOnLevel = ncrCfg.onLevel;
+    this._ncrNullLevel = ncrCfg.nullLevel;
+  }
+
+  // -------------------------------------------------------------------------
+  // Persistent external entity registration
+  // -------------------------------------------------------------------------
+
+  /**
+   * Replace the full set of persistent external entities.
+   * All keys are validated — throws on invalid characters.
+   * @param {Record<string, string | { regex?: RegExp, val: string }>} map
+   */
+  setExternalEntities(map) {
+    if (map) {
+      for (const key of Object.keys(map)) {
+        EntityDecoder_validateEntityName(key);
+      }
+    }
+    this._externalMap = mergeEntityMaps(map);
+  }
+
+  /**
+   * Add a single persistent external entity.
+   * @param {string} key
+   * @param {string} value
+   */
+  addExternalEntity(key, value) {
+    EntityDecoder_validateEntityName(key);
+    if (typeof value === 'string' && value.indexOf('&') === -1) {
+      this._externalMap[key] = value;
+    }
+  }
+
+  // -------------------------------------------------------------------------
+  // Input / runtime entity registration (per document)
+  // -------------------------------------------------------------------------
+
+  /**
+   * Inject DOCTYPE entities for the current document.
+   * Also resets per-document expansion counters.
+   * @param {Record<string, string | { regx?: RegExp, regex?: RegExp, val: string }>} map
+   */
+  addInputEntities(map) {
+    this._totalExpansions = 0;
+    this._expandedLength = 0;
+    this._inputMap = mergeEntityMaps(map);
+  }
+
+  // -------------------------------------------------------------------------
+  // Per-document reset
+  // -------------------------------------------------------------------------
+
+  /**
+   * Wipe input/runtime entities and reset counters.
+   * Call this before processing each new document.
+   * @returns {this}
+   */
+  reset() {
+    this._inputMap = Object.create(null);
+    this._totalExpansions = 0;
+    this._expandedLength = 0;
+    return this;
+  }
+
+  // -------------------------------------------------------------------------
+  // XML version (can be set after construction, e.g. once parser reads <?xml?>)
+  // -------------------------------------------------------------------------
+
+  /**
+   * Update the XML version used for NCR classification.
+   * Call this as soon as the document's `<?xml version="...">` declaration is parsed.
+   * @param {1.0|1.1|number} version
+   */
+  setXmlVersion(version) {
+    this._ncrXmlVersion = version === 1.1 ? 1.1 : 1.0;
+  }
+
+  // -------------------------------------------------------------------------
+  // Primary API
+  // -------------------------------------------------------------------------
+
+  /**
+   * Replace all entity references in `str` in a single pass.
+   *
+   * @param {string} str
+   * @returns {string}
+   */
+  decode(str) {
+    if (typeof str !== 'string' || str.length === 0) return str;
+    //TODO: check if needed
+    if (str.indexOf('&') === -1) return str; // fast path — no entities at all
+
+    const original = str;
+    const chunks = [];
+    const len = str.length;
+    let last = 0; // start of next unprocessed literal chunk
+    let i = 0;
+
+    const limitExpansions = this._maxTotalExpansions > 0;
+    const limitLength = this._maxExpandedLength > 0;
+    const checkLimits = limitExpansions || limitLength;
+
+    while (i < len) {
+      // Scan forward to next '&'
+      if (str.charCodeAt(i) !== 38 /* '&' */) { i++; continue; }
+
+      // --- Found '&' at position i ---
+
+      // Scan forward to ';'
+      let j = i + 1;
+      while (j < len && str.charCodeAt(j) !== 59 /* ';' */ && (j - i) <= 32) j++;
+
+      if (j >= len || str.charCodeAt(j) !== 59) {
+        // No closing ';' within window — treat '&' as literal
+        i++;
+        continue;
+      }
+
+      // Raw token between '&' and ';' (exclusive)
+      const token = str.slice(i + 1, j);
+      if (token.length === 0) { i++; continue; }
+
+      let replacement;
+      let tier; // which limit tier this entity belongs to
+
+      if (this._removeSet.has(token)) {
+        // Remove entity: replace with empty string
+        replacement = '';
+        // If entity was unknown (replacement undefined), we still need a tier for limits.
+        // Treat as external tier because it's user-directed removal of an unknown reference.
+        if (tier === undefined) {
+          tier = LIMIT_TIER_EXTERNAL;
+        }
+      } else if (this._leaveSet.has(token)) {
+        // Do not replace — keep original &token; as literal
+        i++;
+        continue;
+      } else if (token.charCodeAt(0) === 35 /* '#' */) {
+        // ---- Numeric / NCR reference ----
+        // NCR classification always runs first — prohibited codepoints must be
+        // caught regardless of numericAllowed.
+        const ncrResult = this._resolveNCR(token);
+        if (ncrResult === undefined) {
+          // 'leave' action — keep original &token; as-is
+          i++;
+          continue;
+        }
+        replacement = ncrResult; // '' for remove, char string for allow
+        tier = LIMIT_TIER_BASE;
+      } else {
+        // ---- Named reference ----
+        const resolved = this._resolveName(token);
+        replacement = resolved?.value;
+        tier = resolved?.tier;
+      }
+
+      if (replacement === undefined) {
+        // Unknown entity — leave as-is, advance past '&' only
+        i++;
+        continue;
+      }
+
+      // Flush literal chunk before this entity
+      if (i > last) chunks.push(str.slice(last, i));
+      chunks.push(replacement);
+      last = j + 1; // skip past ';'
+      i = last;
+
+      // Apply expansion limits only if this tier is being tracked
+      if (checkLimits && this._tierCounts(tier)) {
+        if (limitExpansions) {
+          this._totalExpansions++;
+          if (this._totalExpansions > this._maxTotalExpansions) {
+            throw new Error(
+              `[EntityReplacer] Entity expansion count limit exceeded: ` +
+              `${this._totalExpansions} > ${this._maxTotalExpansions}`
+            );
+          }
+        }
+        if (limitLength) {
+          // delta: replacement.length minus the raw &token; length (token.length + 2 for '&' and ';')
+          const delta = replacement.length - (token.length + 2);
+          if (delta > 0) {
+            this._expandedLength += delta;
+            if (this._expandedLength > this._maxExpandedLength) {
+              throw new Error(
+                `[EntityReplacer] Expanded content length limit exceeded: ` +
+                `${this._expandedLength} > ${this._maxExpandedLength}`
+              );
+            }
+          }
+        }
+      }
+    }
+
+    // Flush trailing literal
+    if (last < len) chunks.push(str.slice(last));
+
+    // If nothing was replaced, chunks is empty — return original
+    const result = chunks.length === 0 ? str : chunks.join('');
+
+    return this._postCheck(result, original);
+  }
+
+  // -------------------------------------------------------------------------
+  // Private: limit tier check
+  // -------------------------------------------------------------------------
+
+  /**
+   * Returns true if a resolved entity of the given tier should count
+   * against the expansion/length limits.
+   * @param {string} tier  — LIMIT_TIER_EXTERNAL | LIMIT_TIER_BASE
+   * @returns {boolean}
+   */
+  _tierCounts(tier) {
+    if (this._limitTiers.has(LIMIT_TIER_ALL)) return true;
+    return this._limitTiers.has(tier);
+  }
+
+  // -------------------------------------------------------------------------
+  // Private: entity resolution
+  // -------------------------------------------------------------------------
+
+  /**
+   * Resolve a named entity token (without & and ;).
+   * Priority: inputMap > externalMap > baseMap
+   * Returns the resolved value tagged with its limit tier.
+   *
+   * @param {string} name
+   * @returns {{ value: string, tier: string }|undefined}
+   */
+  _resolveName(name) {
+    // input and external both count as 'external' tier for limit purposes —
+    // they are injected at runtime and are the untrusted surface.
+    if (name in this._inputMap) return { value: this._inputMap[name], tier: LIMIT_TIER_EXTERNAL };
+    if (name in this._externalMap) return { value: this._externalMap[name], tier: LIMIT_TIER_EXTERNAL };
+    if (name in this._baseMap) return { value: this._baseMap[name], tier: LIMIT_TIER_BASE };
+    return undefined;
+  }
+
+  /**
+   * Classify a codepoint and return the minimum action level that must be applied.
+   * Returns -1 when no minimum is imposed (normal allow path).
+   *
+   * Ranges checked (in priority order):
+   *   1. U+0000            — null, governed by nullNCR (always ≥ remove)
+   *   2. U+D800–U+DFFF     — surrogates, always prohibited (min: remove)
+   *   3. U+0001–U+001F \ {0x09,0x0A,0x0D}  — XML 1.0 restricted C0 (min: remove)
+   *      (skipped in XML 1.1 — C0 controls are allowed when written as NCRs)
+   *
+   * @param {number} cp  — codepoint
+   * @returns {number}   — minimum NCR_LEVEL value, or -1 for no restriction
+   */
+  _classifyNCR(cp) {
+    // 1. Null
+    if (cp === 0) return this._ncrNullLevel;
+
+    // 2. Surrogates — always prohibited, minimum 'remove'
+    if (cp >= 0xD800 && cp <= 0xDFFF) return NCR_LEVEL.remove;
+
+    // 3. XML 1.0 restricted C0 controls
+    if (this._ncrXmlVersion === 1.0) {
+      if (cp >= 0x01 && cp <= 0x1F && !XML10_ALLOWED_C0.has(cp)) return NCR_LEVEL.remove;
+    }
+
+    return -1; // no restriction
+  }
+
+  /**
+   * Execute a resolved NCR action.
+   *
+   * @param {number} action   — NCR_LEVEL value
+   * @param {string} token    — raw token (e.g. '#38') for error messages
+   * @param {number} cp       — codepoint, used only for error messages
+   * @returns {string|undefined}
+   *   - decoded character string  → 'allow'
+   *   - ''                        → 'remove'
+   *   - undefined                 → 'leave' (caller must skip past '&' only)
+   *   - throws Error              → 'throw'
+   */
+  _applyNCRAction(action, token, cp) {
+    switch (action) {
+      case NCR_LEVEL.allow: return String.fromCodePoint(cp);
+      case NCR_LEVEL.remove: return '';
+      case NCR_LEVEL.leave: return undefined; // signal: keep literal
+      case NCR_LEVEL.throw:
+        throw new Error(
+          `[EntityDecoder] Prohibited numeric character reference ` +
+          `&${token}; (U+${cp.toString(16).toUpperCase().padStart(4, '0')})`
+        );
+      default: return String.fromCodePoint(cp);
+    }
+  }
+
+  /**
+   * Full NCR resolution pipeline for a numeric token.
+   *
+   * Steps:
+   *   1. Parse the codepoint (decimal or hex).
+   *   2. Validate the raw codepoint range (NaN, <0, >0x10FFFF).
+   *   3. If numericAllowed is false and no minimum restriction applies → leave as-is.
+   *   4. Classify the codepoint to find the minimum required action level.
+   *   5. Resolve effective action = max(onNCR, minimum).
+   *   6. Apply and return.
+   *
+   * @param {string} token  — e.g. '#38', '#x26', '#X26'
+   * @returns {string|undefined}
+   *   - string (incl. '')  — replacement ('' = remove)
+   *   - undefined          — leave original &token; as-is
+   */
+  _resolveNCR(token) {
+    // Step 1: parse codepoint
+    const second = token.charCodeAt(1);
+    let cp;
+    if (second === 120 /* x */ || second === 88 /* X */) {
+      cp = parseInt(token.slice(2), 16);
+    } else {
+      cp = parseInt(token.slice(1), 10);
+    }
+
+    // Step 2: out-of-range → leave as-is unconditionally
+    if (Number.isNaN(cp) || cp < 0 || cp > 0x10FFFF) return undefined;
+
+    // Step 3: classify to get minimum action level
+    const minimum = this._classifyNCR(cp);
+
+    // Step 4: if numericAllowed is false and no hard minimum → leave
+    if (!this._numericAllowed && minimum < NCR_LEVEL.remove) return undefined;
+
+    // Step 5: effective action = max(configured onNCR, range minimum)
+    const effective = minimum === -1
+      ? this._ncrOnLevel
+      : Math.max(this._ncrOnLevel, minimum);
+
+    // Step 6: apply
+    return this._applyNCRAction(effective, token, cp);
+  }
+}
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js
 
 ///@ts-check
+
+
 
 
 
@@ -54237,36 +56836,10 @@ function extractNamespace(rawTagName) {
 }
 
 class OrderedObjParser {
-  constructor(options) {
+  constructor(options, externalEntities) {
     this.options = options;
     this.currentNode = null;
     this.tagsNodeStack = [];
-    this.docTypeEntities = {};
-    this.lastEntities = {
-      "apos": { regex: /&(apos|#39|#x27);/g, val: "'" },
-      "gt": { regex: /&(gt|#62|#x3E);/g, val: ">" },
-      "lt": { regex: /&(lt|#60|#x3C);/g, val: "<" },
-      "quot": { regex: /&(quot|#34|#x22);/g, val: "\"" },
-    };
-    this.ampEntity = { regex: /&(amp|#38|#x26);/g, val: "&" };
-    this.htmlEntities = {
-      "space": { regex: /&(nbsp|#160);/g, val: " " },
-      // "lt" : { regex: /&(lt|#60);/g, val: "<" },
-      // "gt" : { regex: /&(gt|#62);/g, val: ">" },
-      // "amp" : { regex: /&(amp|#38);/g, val: "&" },
-      // "quot" : { regex: /&(quot|#34);/g, val: "\"" },
-      // "apos" : { regex: /&(apos|#39);/g, val: "'" },
-      "cent": { regex: /&(cent|#162);/g, val: "¢" },
-      "pound": { regex: /&(pound|#163);/g, val: "£" },
-      "yen": { regex: /&(yen|#165);/g, val: "¥" },
-      "euro": { regex: /&(euro|#8364);/g, val: "€" },
-      "copyright": { regex: /&(copy|#169);/g, val: "©" },
-      "reg": { regex: /&(reg|#174);/g, val: "®" },
-      "inr": { regex: /&(inr|#8377);/g, val: "₹" },
-      "num_dec": { regex: /&#([0-9]{1,7});/g, val: (_, str) => fromCodePoint(str, 10, "&#") },
-      "num_hex": { regex: /&#x([0-9a-fA-F]{1,6});/g, val: (_, str) => fromCodePoint(str, 16, "&#x") },
-    };
-    this.addExternalEntities = addExternalEntities;
     this.parseXml = parseXml;
     this.parseTextData = parseTextData;
     this.resolveNameSpace = resolveNameSpace;
@@ -54279,46 +56852,51 @@ class OrderedObjParser {
     this.ignoreAttributesFn = ignoreAttributes_getIgnoreAttributesFn(this.options.ignoreAttributes)
     this.entityExpansionCount = 0;
     this.currentExpandedLength = 0;
+    let namedEntities = { ...XML };
+    if (this.options.entityDecoder) {
+      this.entityDecoder = this.options.entityDecoder
+    } else {
+      if (typeof this.options.htmlEntities === "object") namedEntities = this.options.htmlEntities;
+      else if (this.options.htmlEntities === true) namedEntities = { ...COMMON_HTML, ...CURRENCY };
+      this.entityDecoder = new EntityDecoder({
+        namedEntities: { ...namedEntities, ...externalEntities },
+        numericAllowed: this.options.htmlEntities,
+        limit: {
+          maxTotalExpansions: this.options.processEntities.maxTotalExpansions,
+          maxExpandedLength: this.options.processEntities.maxExpandedLength,
+          applyLimitsTo: this.options.processEntities.appliesTo,
+        }
+        //postCheck: resolved => resolved
+      });
+    }
 
     // Initialize path matcher for path-expression-matcher
     this.matcher = new Matcher();
-
-    // Live read-only proxy of matcher — PEM creates and caches this internally.
-    // All user callbacks receive this instead of the mutable matcher.
     this.readonlyMatcher = this.matcher.readOnly();
 
     // Flag to track if current node is a stop node (optimization)
     this.isCurrentNodeStopNode = false;
 
     // Pre-compile stopNodes expressions
-    if (this.options.stopNodes && this.options.stopNodes.length > 0) {
-      this.stopNodeExpressions = [];
-      for (let i = 0; i < this.options.stopNodes.length; i++) {
-        const stopNodeExp = this.options.stopNodes[i];
+    this.stopNodeExpressionsSet = new ExpressionSet();
+    const stopNodesOpts = this.options.stopNodes;
+    if (stopNodesOpts && stopNodesOpts.length > 0) {
+      for (let i = 0; i < stopNodesOpts.length; i++) {
+        const stopNodeExp = stopNodesOpts[i];
         if (typeof stopNodeExp === 'string') {
           // Convert string to Expression object
-          this.stopNodeExpressions.push(new Expression(stopNodeExp));
+          this.stopNodeExpressionsSet.add(new Expression(stopNodeExp));
         } else if (stopNodeExp instanceof Expression) {
           // Already an Expression object
-          this.stopNodeExpressions.push(stopNodeExp);
+          this.stopNodeExpressionsSet.add(stopNodeExp);
         }
       }
+      this.stopNodeExpressionsSet.seal();
     }
   }
 
 }
 
-function addExternalEntities(externalEntities) {
-  const entKeys = Object.keys(externalEntities);
-  for (let i = 0; i < entKeys.length; i++) {
-    const ent = entKeys[i];
-    const escaped = ent.replace(/[.\-+*:]/g, '\\.');
-    this.lastEntities[ent] = {
-      regex: new RegExp("&" + escaped + ";", "g"),
-      val: externalEntities[ent]
-    }
-  }
-}
 
 /**
  * @param {string} val
@@ -54330,28 +56908,29 @@ function addExternalEntities(externalEntities) {
  * @param {boolean} escapeEntities
  */
 function parseTextData(val, tagName, jPath, dontTrim, hasAttributes, isLeafNode, escapeEntities) {
+  const options = this.options;
   if (val !== undefined) {
-    if (this.options.trimValues && !dontTrim) {
+    if (options.trimValues && !dontTrim) {
       val = val.trim();
     }
     if (val.length > 0) {
       if (!escapeEntities) val = this.replaceEntitiesValue(val, tagName, jPath);
 
       // Pass jPath string or matcher based on options.jPath setting
-      const jPathOrMatcher = this.options.jPath ? jPath.toString() : jPath;
-      const newval = this.options.tagValueProcessor(tagName, val, jPathOrMatcher, hasAttributes, isLeafNode);
+      const jPathOrMatcher = options.jPath ? jPath.toString() : jPath;
+      const newval = options.tagValueProcessor(tagName, val, jPathOrMatcher, hasAttributes, isLeafNode);
       if (newval === null || newval === undefined) {
         //don't parse
         return val;
       } else if (typeof newval !== typeof val || newval !== val) {
         //overwrite
         return newval;
-      } else if (this.options.trimValues) {
-        return parseValue(val, this.options.parseTagValue, this.options.numberParseOptions);
+      } else if (options.trimValues) {
+        return parseValue(val, options.parseTagValue, options.numberParseOptions);
       } else {
         const trimmedVal = val.trim();
         if (trimmedVal === val) {
-          return parseValue(val, this.options.parseTagValue, this.options.numberParseOptions);
+          return parseValue(val, options.parseTagValue, options.numberParseOptions);
         } else {
           return val;
         }
@@ -54378,8 +56957,9 @@ function resolveNameSpace(tagname) {
 //const attrsRegx = new RegExp("([\\w\\-\\.\\:]+)\\s*=\\s*(['\"])((.|\n)*?)\\2","gm");
 const attrsRegx = new RegExp('([^\\s=]+)\\s*(=\\s*([\'"])([\\s\\S]*?)\\3)?', 'gm');
 
-function buildAttributesMap(attrStr, jPath, tagName) {
-  if (this.options.ignoreAttributes !== true && typeof attrStr === 'string') {
+function buildAttributesMap(attrStr, jPath, tagName, force = false) {
+  const options = this.options;
+  if (force === true || (options.ignoreAttributes !== true && typeof attrStr === 'string')) {
     // attrStr = attrStr.replace(/\r?\n/g, ' ');
     //attrStr = attrStr || attrStr.trim();
 
@@ -54399,7 +56979,7 @@ function buildAttributesMap(attrStr, jPath, tagName) {
 
       if (attrName.length && oldVal !== undefined) {
         let val = oldVal;
-        if (this.options.trimValues) val = val.trim();
+        if (options.trimValues) val = val.trim();
         val = this.replaceEntitiesValue(val, tagName, this.readonlyMatcher);
         processedVals[i] = val;
 
@@ -54414,7 +56994,7 @@ function buildAttributesMap(attrStr, jPath, tagName) {
     }
 
     // Hoist toString() once — path doesn't change during attribute processing
-    const jPathStr = this.options.jPath ? jPath.toString() : this.readonlyMatcher;
+    const jPathStr = options.jPath ? jPath.toString() : this.readonlyMatcher;
 
     // Second pass: apply processors, build final attrs
     let hasAttrs = false;
@@ -54423,28 +57003,28 @@ function buildAttributesMap(attrStr, jPath, tagName) {
 
       if (this.ignoreAttributesFn(attrName, jPathStr)) continue;
 
-      let aName = this.options.attributeNamePrefix + attrName;
+      let aName = options.attributeNamePrefix + attrName;
 
       if (attrName.length) {
-        if (this.options.transformAttributeName) {
-          aName = this.options.transformAttributeName(aName);
+        if (options.transformAttributeName) {
+          aName = options.transformAttributeName(aName);
         }
-        aName = sanitizeName(aName, this.options);
+        aName = sanitizeName(aName, options);
 
         if (matches[i][4] !== undefined) {
           // Reuse already-processed value — no double entity replacement
           const oldVal = processedVals[i];
 
-          const newVal = this.options.attributeValueProcessor(attrName, oldVal, jPathStr);
+          const newVal = options.attributeValueProcessor(attrName, oldVal, jPathStr);
           if (newVal === null || newVal === undefined) {
             attrs[aName] = oldVal;
           } else if (typeof newVal !== typeof oldVal || newVal !== oldVal) {
             attrs[aName] = newVal;
           } else {
-            attrs[aName] = parseValue(oldVal, this.options.parseAttributeValue, this.options.numberParseOptions);
+            attrs[aName] = parseValue(oldVal, options.parseAttributeValue, options.numberParseOptions);
           }
           hasAttrs = true;
-        } else if (this.options.allowBooleanAttributes) {
+        } else if (options.allowBooleanAttributes) {
           attrs[aName] = true;
           hasAttrs = true;
         }
@@ -54453,9 +57033,9 @@ function buildAttributesMap(attrStr, jPath, tagName) {
 
     if (!hasAttrs) return;
 
-    if (this.options.attributesGroupName) {
+    if (options.attributesGroupName && !options.preserveOrder) {
       const attrCollection = {};
-      attrCollection[this.options.attributesGroupName] = attrs;
+      attrCollection[options.attributesGroupName] = attrs;
       return attrCollection;
     }
     return attrs;
@@ -54469,29 +57049,32 @@ const parseXml = function (xmlData) {
 
   // Reset matcher for new document
   this.matcher.reset();
+  this.entityDecoder.reset();
 
   // Reset entity expansion counters for this document
   this.entityExpansionCount = 0;
   this.currentExpandedLength = 0;
-
-  const docTypeReader = new DocTypeReader(this.options.processEntities);
-  for (let i = 0; i < xmlData.length; i++) {//for each char in XML data
+  const options = this.options;
+  const docTypeReader = new DocTypeReader(options.processEntities);
+  const xmlLen = xmlData.length;
+  for (let i = 0; i < xmlLen; i++) {//for each char in XML data
     const ch = xmlData[i];
     if (ch === '<') {
       // const nextIndex = i+1;
       // const _2ndChar = xmlData[nextIndex];
-      if (xmlData[i + 1] === '/') {//Closing Tag
+      const c1 = xmlData.charCodeAt(i + 1);
+      if (c1 === 47) {//Closing Tag '/'
         const closeIndex = findClosingIndex(xmlData, ">", i, "Closing Tag is not closed.")
         let tagName = xmlData.substring(i + 2, closeIndex).trim();
 
-        if (this.options.removeNSPrefix) {
+        if (options.removeNSPrefix) {
           const colonIndex = tagName.indexOf(":");
           if (colonIndex !== -1) {
             tagName = tagName.substr(colonIndex + 1);
           }
         }
 
-        tagName = transformTagName(this.options.transformTagName, tagName, "", this.options).tagName;
+        tagName = transformTagName(options.transformTagName, tagName, "", options).tagName;
 
         if (currentNode) {
           textData = this.saveTextToParentTag(textData, currentNode, this.readonlyMatcher);
@@ -54499,10 +57082,10 @@ const parseXml = function (xmlData) {
 
         //check if last tag of nested tag was unpaired tag
         const lastTagName = this.matcher.getCurrentTag();
-        if (tagName && this.options.unpairedTags.indexOf(tagName) !== -1) {
+        if (tagName && options.unpairedTagsSet.has(tagName)) {
           throw new Error(`Unpaired tag can not be used as closing tag: </${tagName}>`);
         }
-        if (lastTagName && this.options.unpairedTags.indexOf(lastTagName) !== -1) {
+        if (lastTagName && options.unpairedTagsSet.has(lastTagName)) {
           // Pop the unpaired tag
           this.matcher.pop();
           this.tagsNodeStack.pop();
@@ -54514,42 +57097,52 @@ const parseXml = function (xmlData) {
         currentNode = this.tagsNodeStack.pop();//avoid recursion, set the parent tag scope
         textData = "";
         i = closeIndex;
-      } else if (xmlData[i + 1] === '?') {
+      } else if (c1 === 63) { //'?'
 
         let tagData = readTagExp(xmlData, i, false, "?>");
         if (!tagData) throw new Error("Pi Tag is not closed.");
 
         textData = this.saveTextToParentTag(textData, currentNode, this.readonlyMatcher);
-        if ((this.options.ignoreDeclaration && tagData.tagName === "?xml") || this.options.ignorePiTags) {
+        const attsMap = this.buildAttributesMap(tagData.tagExp, this.matcher, tagData.tagName, true);
+        if (attsMap) {
+          const ver = attsMap[this.options.attributeNamePrefix + "version"];
+          this.entityDecoder.setXmlVersion(Number(ver) || 1.0);
+          docTypeReader.setXmlVersion(Number(ver) || 1.0);
+        }
+        if ((options.ignoreDeclaration && tagData.tagName === "?xml") || options.ignorePiTags) {
           //do nothing
         } else {
 
           const childNode = new XmlNode(tagData.tagName);
-          childNode.add(this.options.textNodeName, "");
+          childNode.add(options.textNodeName, "");
 
-          if (tagData.tagName !== tagData.tagExp && tagData.attrExpPresent) {
-            childNode[":@"] = this.buildAttributesMap(tagData.tagExp, this.matcher, tagData.tagName);
+          if (tagData.tagName !== tagData.tagExp && tagData.attrExpPresent && options.ignoreAttributes !== true) {
+            childNode[":@"] = attsMap
           }
           this.addChild(currentNode, childNode, this.readonlyMatcher, i);
         }
 
 
         i = tagData.closeIndex + 1;
-      } else if (xmlData.substr(i + 1, 3) === '!--') {
+      } else if (c1 === 33
+        && xmlData.charCodeAt(i + 2) === 45
+        && xmlData.charCodeAt(i + 3) === 45) { //'!--'
         const endIndex = findClosingIndex(xmlData, "-->", i + 4, "Comment is not closed.")
-        if (this.options.commentPropName) {
+        if (options.commentPropName) {
           const comment = xmlData.substring(i + 4, endIndex - 2);
 
           textData = this.saveTextToParentTag(textData, currentNode, this.readonlyMatcher);
 
-          currentNode.add(this.options.commentPropName, [{ [this.options.textNodeName]: comment }]);
+          currentNode.add(options.commentPropName, [{ [options.textNodeName]: comment }]);
         }
         i = endIndex;
-      } else if (xmlData.substr(i + 1, 2) === '!D') {
+      } else if (c1 === 33
+        && xmlData.charCodeAt(i + 2) === 68) { //'!D'
         const result = docTypeReader.readDocType(xmlData, i);
-        this.docTypeEntities = result.entities;
+        this.entityDecoder.addInputEntities(result.entities);
         i = result.i;
-      } else if (xmlData.substr(i + 1, 2) === '![') {
+      } else if (c1 === 33
+        && xmlData.charCodeAt(i + 2) === 91) { // '!['
         const closeIndex = findClosingIndex(xmlData, "]]>", i, "CDATA is not closed.") - 2;
         const tagExp = xmlData.substring(i + 9, closeIndex);
 
@@ -54559,20 +57152,20 @@ const parseXml = function (xmlData) {
         if (val == undefined) val = "";
 
         //cdata should be set even if it is 0 length string
-        if (this.options.cdataPropName) {
-          currentNode.add(this.options.cdataPropName, [{ [this.options.textNodeName]: tagExp }]);
+        if (options.cdataPropName) {
+          currentNode.add(options.cdataPropName, [{ [options.textNodeName]: tagExp }]);
         } else {
-          currentNode.add(this.options.textNodeName, val);
+          currentNode.add(options.textNodeName, val);
         }
 
         i = closeIndex + 2;
       } else {//Opening tag
-        let result = readTagExp(xmlData, i, this.options.removeNSPrefix);
+        let result = readTagExp(xmlData, i, options.removeNSPrefix);
 
         // Safety check: readTagExp can return undefined
         if (!result) {
           // Log context for debugging
-          const context = xmlData.substring(Math.max(0, i - 50), Math.min(xmlData.length, i + 50));
+          const context = xmlData.substring(Math.max(0, i - 50), Math.min(xmlLen, i + 50));
           throw new Error(`readTagExp returned undefined at position ${i}. Context: "${context}"`);
         }
 
@@ -54582,13 +57175,13 @@ const parseXml = function (xmlData) {
         let attrExpPresent = result.attrExpPresent;
         let closeIndex = result.closeIndex;
 
-        ({ tagName, tagExp } = transformTagName(this.options.transformTagName, tagName, tagExp, this.options));
+        ({ tagName, tagExp } = transformTagName(options.transformTagName, tagName, tagExp, options));
 
-        if (this.options.strictReservedNames &&
-          (tagName === this.options.commentPropName
-            || tagName === this.options.cdataPropName
-            || tagName === this.options.textNodeName
-            || tagName === this.options.attributesGroupName
+        if (options.strictReservedNames &&
+          (tagName === options.commentPropName
+            || tagName === options.cdataPropName
+            || tagName === options.textNodeName
+            || tagName === options.attributesGroupName
           )) {
           throw new Error(`Invalid tag name: ${tagName}`);
         }
@@ -54603,7 +57196,7 @@ const parseXml = function (xmlData) {
 
         //check if last tag was unpaired tag
         const lastTag = currentNode;
-        if (lastTag && this.options.unpairedTags.indexOf(lastTag.tagname) !== -1) {
+        if (lastTag && options.unpairedTagsSet.has(lastTag.tagname)) {
           currentNode = this.tagsNodeStack.pop();
           this.matcher.pop();
         }
@@ -54645,13 +57238,14 @@ const parseXml = function (xmlData) {
 
           if (prefixedAttrs) {
             // Extract raw attributes (without prefix) for our use
-            rawAttrs = extractRawAttributes(prefixedAttrs, this.options);
+            //TODO: seems a performance overhead
+            rawAttrs = extractRawAttributes(prefixedAttrs, options);
           }
         }
 
         // Now check if this is a stop node (after attributes are set)
         if (tagName !== xmlObj.tagname) {
-          this.isCurrentNodeStopNode = this.isItStopNode(this.stopNodeExpressions, this.matcher);
+          this.isCurrentNodeStopNode = this.isItStopNode();
         }
 
         const startIndex = i;
@@ -54663,7 +57257,7 @@ const parseXml = function (xmlData) {
             i = result.closeIndex;
           }
           //unpaired tag
-          else if (this.options.unpairedTags.indexOf(tagName) !== -1) {
+          else if (options.unpairedTagsSet.has(tagName)) {
             i = result.closeIndex;
           }
           //normal tag
@@ -54682,7 +57276,7 @@ const parseXml = function (xmlData) {
           }
 
           // For stop nodes, store raw content as-is without any processing
-          childNode.add(this.options.textNodeName, tagContent);
+          childNode.add(options.textNodeName, tagContent);
 
           this.matcher.pop(); // Pop the stop node tag
           this.isCurrentNodeStopNode = false; // Reset flag
@@ -54691,7 +57285,7 @@ const parseXml = function (xmlData) {
         } else {
           //selfClosing tag
           if (isSelfClosing) {
-            ({ tagName, tagExp } = transformTagName(this.options.transformTagName, tagName, tagExp, this.options));
+            ({ tagName, tagExp } = transformTagName(options.transformTagName, tagName, tagExp, options));
 
             const childNode = new XmlNode(tagName);
             if (prefixedAttrs) {
@@ -54701,7 +57295,7 @@ const parseXml = function (xmlData) {
             this.matcher.pop(); // Pop self-closing tag
             this.isCurrentNodeStopNode = false; // Reset flag
           }
-          else if (this.options.unpairedTags.indexOf(tagName) !== -1) {//unpaired tag
+          else if (options.unpairedTagsSet.has(tagName)) {//unpaired tag
             const childNode = new XmlNode(tagName);
             if (prefixedAttrs) {
               childNode[":@"] = prefixedAttrs;
@@ -54716,7 +57310,7 @@ const parseXml = function (xmlData) {
           //opening tag
           else {
             const childNode = new XmlNode(tagName);
-            if (this.tagsNodeStack.length > this.options.maxNestedTags) {
+            if (this.tagsNodeStack.length > options.maxNestedTags) {
               throw new Error("Maximum nested tags exceeded");
             }
             this.tagsNodeStack.push(currentNode);
@@ -54787,80 +57381,7 @@ function OrderedObjParser_replaceEntitiesValue(val, tagName, jPath) {
     }
   }
 
-  // Replace DOCTYPE entities
-  for (const entityName of Object.keys(this.docTypeEntities)) {
-    const entity = this.docTypeEntities[entityName];
-    const matches = val.match(entity.regx);
-
-    if (matches) {
-      // Track expansions
-      this.entityExpansionCount += matches.length;
-
-      // Check expansion limit
-      if (entityConfig.maxTotalExpansions &&
-        this.entityExpansionCount > entityConfig.maxTotalExpansions) {
-        throw new Error(
-          `Entity expansion limit exceeded: ${this.entityExpansionCount} > ${entityConfig.maxTotalExpansions}`
-        );
-      }
-
-      // Store length before replacement
-      const lengthBefore = val.length;
-      val = val.replace(entity.regx, entity.val);
-
-      // Check expanded length immediately after replacement
-      if (entityConfig.maxExpandedLength) {
-        this.currentExpandedLength += (val.length - lengthBefore);
-
-        if (this.currentExpandedLength > entityConfig.maxExpandedLength) {
-          throw new Error(
-            `Total expanded content size exceeded: ${this.currentExpandedLength} > ${entityConfig.maxExpandedLength}`
-          );
-        }
-      }
-    }
-  }
-  if (val.indexOf('&') === -1) return val;
-  // Replace standard entities
-  for (const entityName of Object.keys(this.lastEntities)) {
-    const entity = this.lastEntities[entityName];
-    const matches = val.match(entity.regex);
-    if (matches) {
-      this.entityExpansionCount += matches.length;
-      if (entityConfig.maxTotalExpansions &&
-        this.entityExpansionCount > entityConfig.maxTotalExpansions) {
-        throw new Error(
-          `Entity expansion limit exceeded: ${this.entityExpansionCount} > ${entityConfig.maxTotalExpansions}`
-        );
-      }
-    }
-    val = val.replace(entity.regex, entity.val);
-  }
-  if (val.indexOf('&') === -1) return val;
-
-  // Replace HTML entities if enabled
-  if (this.options.htmlEntities) {
-    for (const entityName of Object.keys(this.htmlEntities)) {
-      const entity = this.htmlEntities[entityName];
-      const matches = val.match(entity.regex);
-      if (matches) {
-        //console.log(matches);
-        this.entityExpansionCount += matches.length;
-        if (entityConfig.maxTotalExpansions &&
-          this.entityExpansionCount > entityConfig.maxTotalExpansions) {
-          throw new Error(
-            `Entity expansion limit exceeded: ${this.entityExpansionCount} > ${entityConfig.maxTotalExpansions}`
-          );
-        }
-      }
-      val = val.replace(entity.regex, entity.val);
-    }
-  }
-
-  // Replace ampersand entity last
-  val = val.replace(this.ampEntity.regex, this.ampEntity.val);
-
-  return val;
+  return this.entityDecoder.decode(val);
 }
 
 
@@ -54882,20 +57403,14 @@ function saveTextToParentTag(textData, parentNode, matcher, isLeafNode) {
   return textData;
 }
 
-//TODO: use jPath to simplify the logic
 /**
  * @param {Array<Expression>} stopNodeExpressions - Array of compiled Expression objects
  * @param {Matcher} matcher - Current path matcher
  */
-function isItStopNode(stopNodeExpressions, matcher) {
-  if (!stopNodeExpressions || stopNodeExpressions.length === 0) return false;
+function isItStopNode() {
+  if (this.stopNodeExpressionsSet.size === 0) return false;
 
-  for (let i = 0; i < stopNodeExpressions.length; i++) {
-    if (matcher.matches(stopNodeExpressions[i])) {
-      return true;
-    }
-  }
-  return false;
+  return this.matcher.matchesAny(this.stopNodeExpressionsSet);
 }
 
 /**
@@ -54905,32 +57420,38 @@ function isItStopNode(stopNodeExpressions, matcher) {
  * @returns 
  */
 function tagExpWithClosingIndex(xmlData, i, closingChar = ">") {
-  let attrBoundary;
-  let tagExp = "";
-  for (let index = i; index < xmlData.length; index++) {
-    let ch = xmlData[index];
+  //TODO: ignore boolean attributes in tag expression
+  //TODO: if ignore attributes, dont read full attribute expression but the end. But read for xml declaration
+  let attrBoundary = 0;
+  const len = xmlData.length;
+  const closeCode0 = closingChar.charCodeAt(0);
+  const closeCode1 = closingChar.length > 1 ? closingChar.charCodeAt(1) : -1;
+
+  let result = '';
+  let segmentStart = i;
+
+  for (let index = i; index < len; index++) {
+    const code = xmlData.charCodeAt(index);
+
     if (attrBoundary) {
-      if (ch === attrBoundary) attrBoundary = "";//reset
-    } else if (ch === '"' || ch === "'") {
-      attrBoundary = ch;
-    } else if (ch === closingChar[0]) {
-      if (closingChar[1]) {
-        if (xmlData[index + 1] === closingChar[1]) {
-          return {
-            data: tagExp,
-            index: index
-          }
+      if (code === attrBoundary) attrBoundary = 0;
+    } else if (code === 34 || code === 39) { // " or '
+      attrBoundary = code;
+    } else if (code === closeCode0) {
+      if (closeCode1 !== -1) {
+        if (xmlData.charCodeAt(index + 1) === closeCode1) {
+          result += xmlData.substring(segmentStart, index);
+          return { data: result, index };
         }
       } else {
-        return {
-          data: tagExp,
-          index: index
-        }
+        result += xmlData.substring(segmentStart, index);
+        return { data: result, index };
       }
-    } else if (ch === '\t') {
-      ch = " "
+    } else if (code === 9 && !attrBoundary) { // \t - only replace with space outside attribute values
+      // Flush accumulated segment, add space, start new segment
+      result += xmlData.substring(segmentStart, index) + ' ';
+      segmentStart = index + 1;
     }
-    tagExp += ch;
   }
 }
 
@@ -54941,6 +57462,12 @@ function findClosingIndex(xmlData, str, i, errMsg) {
   } else {
     return closingIndex + str.length - 1;
   }
+}
+
+function findClosingChar(xmlData, char, i, errMsg) {
+  const closingIndex = xmlData.indexOf(char, i);
+  if (closingIndex === -1) throw new Error(errMsg);
+  return closingIndex; // no offset needed
 }
 
 function readTagExp(xmlData, i, removeNSPrefix, closingChar = ">") {
@@ -54984,10 +57511,12 @@ function readStopNodeData(xmlData, tagName, i) {
   // Starting at 1 since we already have an open tag
   let openTagCount = 1;
 
-  for (; i < xmlData.length; i++) {
+  const xmllen = xmlData.length;
+  for (; i < xmllen; i++) {
     if (xmlData[i] === "<") {
-      if (xmlData[i + 1] === "/") {//close tag
-        const closeIndex = findClosingIndex(xmlData, ">", i, `${tagName} is not closed`);
+      const c1 = xmlData.charCodeAt(i + 1);
+      if (c1 === 47) {//close tag '/'
+        const closeIndex = findClosingChar(xmlData, ">", i, `${tagName} is not closed`);
         let closeTagName = xmlData.substring(i + 2, closeIndex).trim();
         if (closeTagName === tagName) {
           openTagCount--;
@@ -54999,17 +57528,20 @@ function readStopNodeData(xmlData, tagName, i) {
           }
         }
         i = closeIndex;
-      } else if (xmlData[i + 1] === '?') {
+      } else if (c1 === 63) { //?
         const closeIndex = findClosingIndex(xmlData, "?>", i + 1, "StopNode is not closed.")
         i = closeIndex;
-      } else if (xmlData.substr(i + 1, 3) === '!--') {
+      } else if (c1 === 33
+        && xmlData.charCodeAt(i + 2) === 45
+        && xmlData.charCodeAt(i + 3) === 45) { // '!--'
         const closeIndex = findClosingIndex(xmlData, "-->", i + 3, "StopNode is not closed.")
         i = closeIndex;
-      } else if (xmlData.substr(i + 1, 2) === '![') {
+      } else if (c1 === 33
+        && xmlData.charCodeAt(i + 2) === 91) { // '!['
         const closeIndex = findClosingIndex(xmlData, "]]>", i, "StopNode is not closed.") - 2;
         i = closeIndex;
       } else {
-        const tagData = readTagExp(xmlData, i, '>')
+        const tagData = readTagExp(xmlData, i, false)
 
         if (tagData) {
           const openTagName = tagData && tagData.tagName;
@@ -55071,7 +57603,7 @@ function sanitizeName(name, options) {
   }
   return name;
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/node2json.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/node2json.js
 
 
 
@@ -55144,6 +57676,10 @@ function compress(arr, options, matcher, readonlyMatcher) {
 
       let val = compress(tagObj[property], options, matcher, readonlyMatcher);
       const isLeaf = isLeafTag(val, options);
+
+      if (Object.keys(val).length === 0 && options.alwaysCreateTextNode) {
+        val[options.textNodeName] = "";
+      }
 
       if (tagObj[":@"]) {
         assignAttributes(val, tagObj[":@"], readonlyMatcher, options);
@@ -55245,7 +57781,7 @@ function isLeafTag(obj, options) {
 
   return false;
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/fast-xml-parser@5.5.10/node_modules/fast-xml-parser/src/xmlparser/XMLParser.js
+;// CONCATENATED MODULE: ./node_modules/fast-xml-parser/src/xmlparser/XMLParser.js
 
 
 
@@ -55274,13 +57810,13 @@ class XMLParser {
         if (validationOption) {
             if (validationOption === true) validationOption = {}; //validate with default options
 
-            const result = validate(xmlData, validationOption);
+            const result = validator_validate(xmlData, validationOption);
             if (result !== true) {
                 throw Error(`${result.err.msg}:${result.err.line}:${result.err.col}`)
             }
         }
-        const orderedObjParser = new OrderedObjParser(this.options);
-        orderedObjParser.addExternalEntities(this.externalEntities);
+        const orderedObjParser = new OrderedObjParser(this.options, this.externalEntities);
+        // orderedObjParser.entityDecoder.setExternalEntities(this.externalEntities);
         const orderedResult = orderedObjParser.parseXml(xmlData);
         if (this.options.preserveOrder || orderedResult === undefined) return orderedResult;
         else return prettify(orderedResult, this.options, orderedObjParser.matcher, orderedObjParser.readonlyMatcher);
@@ -55317,7 +57853,7 @@ class XMLParser {
         return XmlNode.getMetaDataSymbol();
     }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-xml@1.5.0/node_modules/@azure/core-xml/dist/esm/xml.common.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-xml/dist/esm/xml.common.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -55329,26 +57865,40 @@ const xml_common_XML_ATTRKEY = "$";
  */
 const xml_common_XML_CHARKEY = "_";
 //# sourceMappingURL=xml.common.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-xml@1.5.0/node_modules/@azure/core-xml/dist/esm/xml.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-xml/dist/esm/xml.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 
 function getCommonOptions(options) {
-    var _a;
     return {
         attributesGroupName: xml_common_XML_ATTRKEY,
-        textNodeName: (_a = options.xmlCharKey) !== null && _a !== void 0 ? _a : xml_common_XML_CHARKEY,
+        textNodeName: options.xmlCharKey ?? xml_common_XML_CHARKEY,
         ignoreAttributes: false,
         suppressBooleanAttributes: false,
     };
 }
 function getSerializerOptions(options = {}) {
-    var _a, _b;
-    return Object.assign(Object.assign({}, getCommonOptions(options)), { attributeNamePrefix: "@_", format: true, suppressEmptyNode: true, indentBy: "", rootNodeName: (_a = options.rootName) !== null && _a !== void 0 ? _a : "root", cdataPropName: (_b = options.cdataPropName) !== null && _b !== void 0 ? _b : "__cdata" });
+    return {
+        ...getCommonOptions(options),
+        attributeNamePrefix: "@_",
+        format: true,
+        suppressEmptyNode: true,
+        indentBy: "",
+        rootNodeName: options.rootName ?? "root",
+        cdataPropName: options.cdataPropName ?? "__cdata",
+    };
 }
 function getParserOptions(options = {}) {
-    return Object.assign(Object.assign({}, getCommonOptions(options)), { parseAttributeValue: false, parseTagValue: false, attributeNamePrefix: "", stopNodes: options.stopNodes, processEntities: true, trimValues: false });
+    return {
+        ...getCommonOptions(options),
+        parseAttributeValue: false,
+        parseTagValue: false,
+        attributeNamePrefix: "",
+        stopNodes: options.stopNodes,
+        processEntities: true,
+        trimValues: false,
+    };
 }
 /**
  * Converts given JSON object to XML string
@@ -55387,13 +57937,13 @@ async function parseXML(str, opts = {}) {
     if (!opts.includeRoot) {
         for (const key of Object.keys(parsedXml)) {
             const value = parsedXml[key];
-            return typeof value === "object" ? Object.assign({}, value) : value;
+            return typeof value === "object" ? { ...value } : value;
         }
     }
     return parsedXml;
 }
 //# sourceMappingURL=xml.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/log.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -55402,7 +57952,7 @@ async function parseXML(str, opts = {}) {
  */
 const storage_blob_dist_esm_log_logger = esm_createClientLogger("storage-blob");
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/BuffersStream.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/BuffersStream.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -55502,7 +58052,7 @@ class BuffersStream extends external_node_stream_.Readable {
 //# sourceMappingURL=BuffersStream.js.map
 // EXTERNAL MODULE: external "node:buffer"
 var external_node_buffer_ = __nccwpck_require__(4573);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/PooledBuffer.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/PooledBuffer.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -55598,7 +58148,7 @@ class PooledBuffer {
     }
 }
 //# sourceMappingURL=PooledBuffer.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/BufferScheduler.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/BufferScheduler.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -55877,7 +58427,7 @@ class BufferScheduler {
     }
 }
 //# sourceMappingURL=BufferScheduler.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/cache.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/cache.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -55889,7 +58439,7 @@ function cache_getCachedDefaultHttpClient() {
     return _defaultHttpClient;
 }
 //# sourceMappingURL=cache.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/RequestPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/RequestPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -55932,7 +58482,7 @@ class BaseRequestPolicy {
     }
 }
 //# sourceMappingURL=RequestPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/utils/constants.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/utils/constants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 const utils_constants_SDK_VERSION = "1.0.0";
@@ -55997,7 +58547,7 @@ const constants_PathStylePorts = (/* unused pure expression or super */ null && 
     "11104",
 ]));
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/utils/utils.common.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/utils/utils.common.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56542,7 +59092,7 @@ function assertResponse(response) {
     throw new TypeError(`Unexpected response object ${response}`);
 }
 //# sourceMappingURL=utils.common.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageBrowserPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageBrowserPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56590,7 +59140,7 @@ class StorageBrowserPolicy extends BaseRequestPolicy {
     }
 }
 //# sourceMappingURL=StorageBrowserPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/StorageBrowserPolicyFactory.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/StorageBrowserPolicyFactory.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56610,7 +59160,7 @@ class StorageBrowserPolicyFactory {
     }
 }
 //# sourceMappingURL=StorageBrowserPolicyFactory.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/CredentialPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/CredentialPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56640,7 +59190,7 @@ class CredentialPolicy extends BaseRequestPolicy {
     }
 }
 //# sourceMappingURL=CredentialPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/AnonymousCredentialPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/AnonymousCredentialPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56661,7 +59211,7 @@ class AnonymousCredentialPolicy extends CredentialPolicy {
     }
 }
 //# sourceMappingURL=AnonymousCredentialPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/credentials/Credential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/credentials/Credential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -56680,7 +59230,7 @@ class Credential {
     }
 }
 //# sourceMappingURL=Credential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/credentials/AnonymousCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/credentials/AnonymousCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56703,7 +59253,7 @@ class AnonymousCredential extends Credential {
     }
 }
 //# sourceMappingURL=AnonymousCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/utils/SharedKeyComparator.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/utils/SharedKeyComparator.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /*
@@ -56777,7 +59327,7 @@ function isLessThan(lhs, rhs) {
     return false;
 }
 //# sourceMappingURL=SharedKeyComparator.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageSharedKeyCredentialPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageSharedKeyCredentialPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56923,7 +59473,7 @@ class StorageSharedKeyCredentialPolicy extends CredentialPolicy {
     }
 }
 //# sourceMappingURL=StorageSharedKeyCredentialPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/credentials/StorageSharedKeyCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/credentials/StorageSharedKeyCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56972,7 +59522,7 @@ class StorageSharedKeyCredential extends Credential {
     }
 }
 //# sourceMappingURL=StorageSharedKeyCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/log.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/log.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -56981,7 +59531,7 @@ class StorageSharedKeyCredential extends Credential {
  */
 const storage_common_dist_esm_log_logger = esm_createClientLogger("storage-common");
 //# sourceMappingURL=log.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicyType.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicyType.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -56999,7 +59549,7 @@ var StorageRetryPolicyType;
     StorageRetryPolicyType[StorageRetryPolicyType["FIXED"] = 1] = "FIXED";
 })(StorageRetryPolicyType || (StorageRetryPolicyType = {}));
 //# sourceMappingURL=StorageRetryPolicyType.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57219,7 +59769,7 @@ class StorageRetryPolicy extends BaseRequestPolicy {
     }
 }
 //# sourceMappingURL=StorageRetryPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/StorageRetryPolicyFactory.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/StorageRetryPolicyFactory.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57248,7 +59798,7 @@ class StorageRetryPolicyFactory {
     }
 }
 //# sourceMappingURL=StorageRetryPolicyFactory.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageBrowserPolicyV2.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageBrowserPolicyV2.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57280,7 +59830,7 @@ function storageBrowserPolicy() {
     };
 }
 //# sourceMappingURL=StorageBrowserPolicyV2.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageCorrectContentLengthPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageCorrectContentLengthPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57308,7 +59858,7 @@ function storageCorrectContentLengthPolicy() {
     };
 }
 //# sourceMappingURL=StorageCorrectContentLengthPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicyV2.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageRetryPolicyV2.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57473,7 +60023,7 @@ function storageRetryPolicy(options = {}) {
     };
 }
 //# sourceMappingURL=StorageRetryPolicyV2.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageSharedKeyCredentialPolicyV2.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageSharedKeyCredentialPolicyV2.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57606,7 +60156,7 @@ function storageSharedKeyCredentialPolicy(options) {
     };
 }
 //# sourceMappingURL=StorageSharedKeyCredentialPolicyV2.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/policies/StorageRequestFailureDetailsParserPolicy.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/policies/StorageRequestFailureDetailsParserPolicy.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -57641,7 +60191,7 @@ function storageRequestFailureDetailsParserPolicy() {
     };
 }
 //# sourceMappingURL=StorageRequestFailureDetailsParserPolicy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/credentials/UserDelegationKeyCredential.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/credentials/UserDelegationKeyCredential.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57685,7 +60235,7 @@ class UserDelegationKeyCredential {
     }
 }
 //# sourceMappingURL=UserDelegationKeyCredential.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-common@12.3.0/node_modules/@azure/storage-common/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-common/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -57707,7 +60257,7 @@ class UserDelegationKeyCredential {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/constants.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/constants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 const esm_utils_constants_SDK_VERSION = "12.31.0";
@@ -57934,7 +60484,7 @@ const utils_constants_PathStylePorts = [
     "11104",
 ];
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/Pipeline.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/Pipeline.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -58206,7 +60756,7 @@ function isCoreHttpPolicyFactory(factory) {
     });
 }
 //# sourceMappingURL=Pipeline.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/models/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/models/index.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -58471,7 +61021,7 @@ var KnownStorageErrorCode;
     KnownStorageErrorCode["BlobAccessTierNotSupportedForAccountType"] = "BlobAccessTierNotSupportedForAccountType";
 })(KnownStorageErrorCode || (KnownStorageErrorCode = {}));
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/models/mappers.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/models/mappers.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -66802,7 +69352,7 @@ const BlockBlobGetBlockListExceptionHeaders = {
     },
 };
 //# sourceMappingURL=mappers.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/models/parameters.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/models/parameters.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -68477,7 +71027,7 @@ const listType = {
     },
 };
 //# sourceMappingURL=parameters.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/service.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/service.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -68802,7 +71352,7 @@ const filterBlobsOperationSpec = {
     serializer: xmlSerializer,
 };
 //# sourceMappingURL=service.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/container.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/container.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -69519,7 +72069,7 @@ const container_getAccountInfoOperationSpec = {
     serializer: container_xmlSerializer,
 };
 //# sourceMappingURL=container.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/blob.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/blob.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -70550,7 +73100,7 @@ const setTagsOperationSpec = {
     serializer: blob_xmlSerializer,
 };
 //# sourceMappingURL=blob.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/pageBlob.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/pageBlob.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71009,7 +73559,7 @@ const copyIncrementalOperationSpec = {
     serializer: pageBlob_xmlSerializer,
 };
 //# sourceMappingURL=pageBlob.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/appendBlob.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/appendBlob.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71233,7 +73783,7 @@ const sealOperationSpec = {
     serializer: appendBlob_xmlSerializer,
 };
 //# sourceMappingURL=appendBlob.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/blockBlob.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/blockBlob.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71602,7 +74152,7 @@ const getBlockListOperationSpec = {
     serializer: blockBlob_xmlSerializer,
 };
 //# sourceMappingURL=blockBlob.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/operations/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/operations/index.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71617,7 +74167,7 @@ const getBlockListOperationSpec = {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/storageClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/storageClient.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71679,7 +74229,7 @@ class StorageClient extends ExtendedServiceClient {
     blockBlob;
 }
 //# sourceMappingURL=storageClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generated/src/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generated/src/index.js
 /*
  * Copyright (c) Microsoft Corporation.
  * Licensed under the MIT License.
@@ -71691,7 +74241,7 @@ class StorageClient extends ExtendedServiceClient {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/StorageContextClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/StorageContextClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -71709,7 +74259,7 @@ class StorageContextClient extends StorageClient {
     }
 }
 //# sourceMappingURL=StorageContextClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/utils.common.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/utils.common.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -72479,7 +75029,7 @@ function utils_common_assertResponse(response) {
     throw new TypeError(`Unexpected response object ${response}`);
 }
 //# sourceMappingURL=utils.common.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/StorageClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/StorageClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -72532,7 +75082,7 @@ class StorageClient_StorageClient {
     }
 }
 //# sourceMappingURL=StorageClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/tracing.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/tracing.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -72547,7 +75097,7 @@ const tracingClient = createTracingClient({
     namespace: "Microsoft.Storage",
 });
 //# sourceMappingURL=tracing.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/BlobSASPermissions.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/BlobSASPermissions.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -72741,7 +75291,7 @@ class BlobSASPermissions {
     }
 }
 //# sourceMappingURL=BlobSASPermissions.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/ContainerSASPermissions.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/ContainerSASPermissions.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -72961,7 +75511,7 @@ class ContainerSASPermissions {
     }
 }
 //# sourceMappingURL=ContainerSASPermissions.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/SasIPRange.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/SasIPRange.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -72975,7 +75525,7 @@ function ipRangeToString(ipRange) {
     return ipRange.end ? `${ipRange.start}-${ipRange.end}` : ipRange.start;
 }
 //# sourceMappingURL=SasIPRange.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/SASQueryParameters.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/SASQueryParameters.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -73339,7 +75889,7 @@ class SASQueryParameters {
     }
 }
 //# sourceMappingURL=SASQueryParameters.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/BlobSASSignatureValues.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/BlobSASSignatureValues.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -74006,7 +76556,7 @@ function SASSignatureValuesSanityCheckAndAutofill(blobSASSignatureValues) {
     return blobSASSignatureValues;
 }
 //# sourceMappingURL=BlobSASSignatureValues.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobLeaseClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobLeaseClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -74208,7 +76758,7 @@ class BlobLeaseClient {
     }
 }
 //# sourceMappingURL=BlobLeaseClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/RetriableReadableStream.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/RetriableReadableStream.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -74336,7 +76886,7 @@ class RetriableReadableStream extends external_node_stream_.Readable {
     }
 }
 //# sourceMappingURL=RetriableReadableStream.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobDownloadResponse.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobDownloadResponse.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -74802,7 +77352,7 @@ class BlobDownloadResponse {
     }
 }
 //# sourceMappingURL=BlobDownloadResponse.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroConstants.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroConstants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 const AVRO_SYNC_MARKER_SIZE = 16;
@@ -74810,7 +77360,7 @@ const AVRO_INIT_BYTES = new Uint8Array([79, 98, 106, 1]);
 const AVRO_CODEC_KEY = "avro.codec";
 const AVRO_SCHEMA_KEY = "avro.schema";
 //# sourceMappingURL=AvroConstants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroParser.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroParser.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 class AvroParser {
@@ -75134,7 +77684,7 @@ class AvroRecordType extends AvroType {
     }
 }
 //# sourceMappingURL=AvroParser.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/utils/utils.common.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/utils/utils.common.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 function arraysEqual(a, b) {
@@ -75151,7 +77701,7 @@ function arraysEqual(a, b) {
     return true;
 }
 //# sourceMappingURL=utils.common.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReader.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReader.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // TODO: Do a review of non-interfaces
@@ -75268,7 +77818,7 @@ class AvroReader {
     }
 }
 //# sourceMappingURL=AvroReader.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReadable.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReadable.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 class AvroReadable {
@@ -75276,7 +77826,7 @@ class AvroReadable {
 //# sourceMappingURL=AvroReadable.js.map
 ;// CONCATENATED MODULE: external "buffer"
 const external_buffer_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("buffer");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReadableFromStream.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/AvroReadableFromStream.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -75363,14 +77913,14 @@ class AvroReadableFromStream extends AvroReadable {
     }
 }
 //# sourceMappingURL=AvroReadableFromStream.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/internal-avro/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/internal-avro/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/BlobQuickQueryStream.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/BlobQuickQueryStream.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -75487,7 +78037,7 @@ class BlobQuickQueryStream extends external_node_stream_.Readable {
     }
 }
 //# sourceMappingURL=BlobQuickQueryStream.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobQueryResponse.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobQueryResponse.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -75857,7 +78407,7 @@ class BlobQueryResponse {
     }
 }
 //# sourceMappingURL=BlobQueryResponse.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/models.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/models.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -75973,7 +78523,7 @@ function getBlobServiceAccountAudience(storageAccountName) {
     return `https://${storageAccountName}.blob.core.windows.net/.default`;
 }
 //# sourceMappingURL=models.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/PageBlobRangeResponse.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/PageBlobRangeResponse.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -76005,7 +78555,7 @@ function rangeResponseFromModel(response) {
     };
 }
 //# sourceMappingURL=PageBlobRangeResponse.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/logger.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/logger.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76015,7 +78565,7 @@ function rangeResponseFromModel(response) {
  */
 const logger_logger = esm_createClientLogger("core-lro");
 //# sourceMappingURL=logger.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/poller/constants.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/poller/constants.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 /**
@@ -76027,7 +78577,7 @@ const constants_POLL_INTERVAL_IN_MS = 2000;
  */
 const terminalStates = ["succeeded", "canceled", "failed"];
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/poller/operation.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/poller/operation.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76194,7 +78744,7 @@ async function operation_pollOperation(inputs) {
     }
 }
 //# sourceMappingURL=operation.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/http/operation.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/http/operation.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76477,7 +79027,7 @@ async function pollHttpOperation(inputs) {
     });
 }
 //# sourceMappingURL=operation.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/poller/poller.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/poller/poller.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76648,7 +79198,7 @@ function poller_buildCreatePoller(inputs) {
     };
 }
 //# sourceMappingURL=poller.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/http/poller.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/http/poller.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76693,7 +79243,7 @@ async function createHttpPoller(lro, options) {
     });
 }
 //# sourceMappingURL=poller.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/operation.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/operation.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -76778,7 +79328,7 @@ class GenericPollOperation {
     }
 }
 //# sourceMappingURL=operation.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/legacy/poller.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/legacy/poller.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 /**
@@ -77176,7 +79726,7 @@ class Poller {
     }
 }
 //# sourceMappingURL=poller.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/lroEngine.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/lroEngine.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -77206,12 +79756,12 @@ class LroEngine extends Poller {
     }
 }
 //# sourceMappingURL=lroEngine.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/legacy/lroEngine/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+core-lro@2.7.2/node_modules/@azure/core-lro/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/core-lro/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
@@ -77231,7 +79781,7 @@ class LroEngine extends Poller {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/pollers/BlobStartCopyFromUrlPoller.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/pollers/BlobStartCopyFromUrlPoller.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -77366,7 +79916,7 @@ function makeBlobBeginCopyFromURLPollOperation(state) {
     };
 }
 //# sourceMappingURL=BlobStartCopyFromUrlPoller.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/Range.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/Range.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -77388,7 +79938,7 @@ function rangeToString(iRange) {
         : `bytes=${iRange.offset}-`;
 }
 //# sourceMappingURL=Range.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/Batch.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/Batch.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // In browser, during webpack or browserify bundling, this module will be replaced by 'events'
@@ -77521,7 +80071,7 @@ class Batch {
 //# sourceMappingURL=Batch.js.map
 ;// CONCATENATED MODULE: external "node:fs"
 const external_node_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/utils.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/utils.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -77654,7 +80204,7 @@ async function readStreamToLocalFile(rs, file) {
 const fsStat = external_node_util_.promisify(external_node_fs_namespaceObject.stat);
 const fsCreateReadStream = external_node_fs_namespaceObject.createReadStream;
 //# sourceMappingURL=utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/Clients.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/Clients.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -80500,7 +83050,7 @@ class PageBlobClient extends BlobClient {
     }
 }
 //# sourceMappingURL=Clients.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BatchUtils.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BatchUtils.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -80516,7 +83066,7 @@ function utf8ByteLength(str) {
     return Buffer.byteLength(str);
 }
 //# sourceMappingURL=BatchUtils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BatchResponseParser.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BatchResponseParser.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -80659,7 +83209,7 @@ class BatchResponseParser {
     }
 }
 //# sourceMappingURL=BatchResponseParser.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/utils/Mutex.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/utils/Mutex.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 var MutexLockStatus;
@@ -80725,7 +83275,7 @@ class Mutex {
     }
 }
 //# sourceMappingURL=Mutex.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobBatch.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobBatch.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -81000,7 +83550,7 @@ function batchHeaderFilterPolicy() {
     };
 }
 //# sourceMappingURL=BlobBatch.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobBatchClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobBatchClient.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -81173,7 +83723,7 @@ class BlobBatchClient {
     }
 }
 //# sourceMappingURL=BlobBatchClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/ContainerClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/ContainerClient.js
 
 
 
@@ -82467,7 +85017,7 @@ class ContainerClient extends StorageClient_StorageClient {
     }
 }
 //# sourceMappingURL=ContainerClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/AccountSASPermissions.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/AccountSASPermissions.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -82693,7 +85243,7 @@ class AccountSASPermissions {
     }
 }
 //# sourceMappingURL=AccountSASPermissions.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/AccountSASResourceTypes.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/AccountSASResourceTypes.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -82764,7 +85314,7 @@ class AccountSASResourceTypes {
     }
 }
 //# sourceMappingURL=AccountSASResourceTypes.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/AccountSASServices.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/AccountSASServices.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /**
@@ -82843,7 +85393,7 @@ class AccountSASServices {
     }
 }
 //# sourceMappingURL=AccountSASServices.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/sas/AccountSASSignatureValues.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/sas/AccountSASSignatureValues.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -82944,7 +85494,7 @@ function generateAccountSASQueryParametersInternal(accountSASSignatureValues, sh
     };
 }
 //# sourceMappingURL=AccountSASSignatureValues.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/BlobServiceClient.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/BlobServiceClient.js
 
 
 
@@ -83647,7 +86197,7 @@ class BlobServiceClient extends StorageClient_StorageClient {
     }
 }
 //# sourceMappingURL=BlobServiceClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/generatedModels.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/generatedModels.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 /** Known values of {@link EncryptionAlgorithmType} that the service accepts. */
@@ -83656,7 +86206,7 @@ var generatedModels_KnownEncryptionAlgorithmType;
     KnownEncryptionAlgorithmType["AES256"] = "AES256";
 })(generatedModels_KnownEncryptionAlgorithmType || (generatedModels_KnownEncryptionAlgorithmType = {}));
 //# sourceMappingURL=generatedModels.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@azure+storage-blob@12.31.0/node_modules/@azure/storage-blob/dist/esm/index.js
+;// CONCATENATED MODULE: ./node_modules/@azure/storage-blob/dist/esm/index.js
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -83682,7 +86232,7 @@ var generatedModels_KnownEncryptionAlgorithmType;
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/shared/errors.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/shared/errors.js
 class FilesNotFoundError extends Error {
     constructor(files = []) {
         let message = 'No files were found to upload';
@@ -83733,7 +86283,7 @@ NetworkError.isNetworkErrorCode = (code) => {
 };
 class UsageError extends Error {
     constructor() {
-        const message = `Cache storage quota has been hit. Unable to upload any new cache entries. Usage is recalculated every 6-12 hours.\nMore info on storage limits: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#calculating-minute-and-storage-spending`;
+        const message = `Cache storage quota has been hit. Unable to upload any new cache entries.\nMore info on storage limits: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#calculating-minute-and-storage-spending`;
         super(message);
         this.name = 'UsageError';
     }
@@ -83750,7 +86300,7 @@ class RateLimitError extends Error {
     }
 }
 //# sourceMappingURL=errors.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/uploadUtils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/uploadUtils.js
 var uploadUtils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -83890,7 +86440,7 @@ function uploadCacheArchiveSDK(signedUploadURL, archivePath, options) {
     });
 }
 //# sourceMappingURL=uploadUtils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/requestUtils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/requestUtils.js
 var requestUtils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -83996,7 +86546,7 @@ function requestUtils_retryHttpClientResponse(name_1, method_1) {
     });
 }
 //# sourceMappingURL=requestUtils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/downloadUtils.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/downloadUtils.js
 var downloadUtils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -84344,7 +86894,7 @@ const promiseWithTimeout = (timeoutMs, promise) => downloadUtils_awaiter(void 0,
     });
 });
 //# sourceMappingURL=downloadUtils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/options.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/options.js
 
 /**
  * Returns a copy of the upload options with defaults filled in.
@@ -84434,7 +86984,7 @@ function options_getDownloadOptions(copy) {
     return result;
 }
 //# sourceMappingURL=options.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/config.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/config.js
 function isGhes() {
     const ghUrl = new URL(process.env['GITHUB_SERVER_URL'] || 'https://github.com');
     const hostname = ghUrl.hostname.trimEnd().toUpperCase();
@@ -84466,9 +87016,9 @@ function getCacheServiceURL() {
     }
 }
 //# sourceMappingURL=config.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/shared/package-version.cjs
-var package_version = __nccwpck_require__(5575);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/shared/user-agent.js
+// EXTERNAL MODULE: ./node_modules/@actions/cache/lib/internal/shared/package-version.cjs
+var package_version = __nccwpck_require__(8658);
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/shared/user-agent.js
 
 /**
  * Ensure that this User Agent String is used in all HTTP calls so that we can monitor telemetry between different versions of this package
@@ -84477,7 +87027,7 @@ function user_agent_getUserAgentString() {
     return `@actions/cache-${package_version.version}`;
 }
 //# sourceMappingURL=user-agent.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/cacheHttpClient.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/cacheHttpClient.js
 var cacheHttpClient_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -84703,11 +87253,11 @@ function saveCache(cacheId, archivePath, signedUploadURL, options) {
     });
 }
 //# sourceMappingURL=cacheHttpClient.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@protobuf-ts+runtime-rpc@2.11.1/node_modules/@protobuf-ts/runtime-rpc/build/commonjs/index.js
-var commonjs = __nccwpck_require__(5980);
-// EXTERNAL MODULE: ./node_modules/.pnpm/@protobuf-ts+runtime@2.11.1/node_modules/@protobuf-ts/runtime/build/commonjs/index.js
-var build_commonjs = __nccwpck_require__(8140);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/generated/results/entities/v1/cachescope.js
+// EXTERNAL MODULE: ./node_modules/@protobuf-ts/runtime-rpc/build/commonjs/index.js
+var commonjs = __nccwpck_require__(4420);
+// EXTERNAL MODULE: ./node_modules/@protobuf-ts/runtime/build/commonjs/index.js
+var build_commonjs = __nccwpck_require__(8886);
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/generated/results/entities/v1/cachescope.js
 
 
 
@@ -84768,7 +87318,7 @@ class CacheScope$Type extends build_commonjs.MessageType {
  */
 const CacheScope = new CacheScope$Type();
 //# sourceMappingURL=cachescope.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/generated/results/entities/v1/cachemetadata.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/generated/results/entities/v1/cachemetadata.js
 
 
 
@@ -84830,7 +87380,7 @@ class CacheMetadata$Type extends build_commonjs.MessageType {
  */
 const CacheMetadata = new CacheMetadata$Type();
 //# sourceMappingURL=cachemetadata.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/generated/results/api/v1/cache.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/generated/results/api/v1/cache.js
 // @generated by protobuf-ts 2.9.1 with parameter long_type_string,client_none,generate_dependencies
 // @generated from protobuf file "results/api/v1/cache.proto" (package "github.actions.results.api.v1", syntax proto3)
 // tslint:disable
@@ -85230,7 +87780,7 @@ const CacheService = new commonjs/* ServiceType */.C0("github.actions.results.ap
     { name: "GetCacheEntryDownloadURL", options: {}, I: cache_GetCacheEntryDownloadURLRequest, O: cache_GetCacheEntryDownloadURLResponse }
 ]);
 //# sourceMappingURL=cache.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/generated/results/api/v1/cache.twirp-client.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/generated/results/api/v1/cache.twirp-client.js
 
 class CacheServiceClientJSON {
     constructor(rpc) {
@@ -85294,7 +87844,7 @@ class CacheServiceClientProtobuf {
     }
 }
 //# sourceMappingURL=cache.twirp-client.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/shared/util.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/shared/util.js
 
 /**
  * Masks the `sig` parameter in a URL and sets it as a secret.
@@ -85364,7 +87914,7 @@ function maskSecretUrls(body) {
     }
 }
 //# sourceMappingURL=util.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/shared/cacheTwirpClient.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/shared/cacheTwirpClient.js
 var cacheTwirpClient_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -85537,7 +88087,7 @@ function internalCacheTwirpClient(options) {
     return new CacheServiceClientJSON(client);
 }
 //# sourceMappingURL=cacheTwirpClient.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/internal/tar.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/internal/tar.js
 var tar_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -85781,7 +88331,7 @@ function createTar(archiveFolder, sourceDirectories, compressionMethod) {
     });
 }
 //# sourceMappingURL=tar.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+cache@6.0.0/node_modules/@actions/cache/lib/cache.js
+;// CONCATENATED MODULE: ./node_modules/@actions/cache/lib/cache.js
 var cache_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
