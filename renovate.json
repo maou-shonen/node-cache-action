@@ -2,11 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>maou-shonen/.github:renovate-config"],
   "automergeStrategy": "squash",
-  "postUpgradeTasks": {
-    "commands": ["bun install --frozen-lockfile", "bun run build"],
-    "fileFilters": ["dist/**"],
-    "executionMode": "branch"
-  },
   "packageRules": [
     {
       "description": "Automerge GitHub Actions including majors; CI exercises them",
@@ -20,12 +15,15 @@
       "pinDigests": false
     },
     {
-      "description": "Automerge non-major npm, pins, and lockfile maintenance",
-      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance"],
+      "description": "Automerge non-major npm and pins; lockfile/runtime bumps that rewrite dist/ stay manual",
+      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest"],
       "automerge": true
     },
     {
-      "description": "Automerge @types majors (compile-time only)",
+      "description": "Runtime/bundler updates rewrite committed dist/; rebuild manually",
+      "matchPackageNames": ["@actions/cache", "@actions/core", "@actions/exec", "@vercel/ncc"],
+      "automerge": false
+    },
       "matchPackageNames": ["@types/{/,}**"],
       "matchUpdateTypes": ["major"],
       "automerge": true
