@@ -24,6 +24,8 @@
       "matchPackageNames": ["@actions/cache", "@actions/core", "@actions/exec", "@vercel/ncc"],
       "automerge": false
     },
+    {
+      "description": "Automerge @types majors (compile-time only)",
       "matchPackageNames": ["@types/{/,}**"],
       "matchUpdateTypes": ["major"],
       "automerge": true
