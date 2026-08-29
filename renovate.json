@@ -1,4 +1,50 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>maou-shonen/.github:renovate-config"]
+  "extends": ["local>maou-shonen/.github:renovate-config"],
+  "automergeStrategy": "squash",
+  "packageRules": [
+    {
+      "description": "Automerge GitHub Actions including majors; CI exercises them. Keep shared 3-day age for version bumps.",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "automerge": true
+    },
+    {
+      "description": "Keep integration.yml on floating @v1 to test the published tag",
+      "matchPackageNames": ["maou-shonen/node-cache-action"],
+      "pinDigests": false
+    },
+    {
+      "description": "Automerge non-major npm; shared 3-day minimumReleaseAge still applies",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "description": "Pin/digest freeze already-published refs; skip age delay so automerge is not stuck on renovate/stability-days",
+      "matchUpdateTypes": ["pin", "pinDigest", "digest"],
+      "minimumReleaseAge": null,
+      "automerge": true
+    },
+    {
+      "description": "Runtime/bundler updates rewrite committed dist/; rebuild manually",
+      "matchPackageNames": ["@actions/cache", "@actions/core", "@actions/exec", "@vercel/ncc"],
+      "automerge": false
+    },
+    {
+      "description": "Automerge @types majors (compile-time only)",
+      "matchPackageNames": ["@types/{/,}**"],
+      "matchUpdateTypes": ["major"],
+      "automerge": true
+    },
+    {
+      "description": "minimatch override stays on v3; v10 drops CJS default export used by @actions/glob",
+      "matchPackageNames": ["minimatch"],
+      "allowedVersions": "<4"
+    },
+    {
+      "description": "TypeScript 7 breaks ncc 0.38/0.45 ts-loader; reopen when ncc supports it",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    }
+  ]
 }
