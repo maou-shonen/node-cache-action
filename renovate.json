@@ -4,11 +4,10 @@
   "automergeStrategy": "squash",
   "packageRules": [
     {
-      "description": "Automerge GitHub Actions including majors; CI exercises them",
+      "description": "Automerge GitHub Actions including majors; CI exercises them. Keep shared 3-day age for version bumps.",
       "matchManagers": ["github-actions"],
       "groupName": "github actions",
-      "automerge": true,
-      "minimumReleaseAge": null
+      "automerge": true
     },
     {
       "description": "Keep integration.yml on floating @v1 to test the published tag",
